@@ -1854,7 +1854,137 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: {},
+  methods: {
+    getPhoto: function getPhoto() {
+      return "img/logo.png";
+    }
+  },
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: {},
+  methods: {
+    getPhoto: function getPhoto() {
+      return "img/paint.jpg";
+    }
+  },
   mounted: function mounted() {
     console.log('Component mounted.');
   }
@@ -37254,29 +37384,428 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "panel panel-default mt-5" }, [
+          _c("div", { staticClass: "panel-heading" }, [
+            _vm._v(
+              "\n                    This is mpanel heading \n                "
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "panel-body" }, [
+            _c("img", { attrs: { src: _vm.getPhoto() } })
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "col-lg-3" }, [
+      _c("img", {
+        attrs: { src: _vm.getPhoto(), width: "350px", height: "250px" }
+      })
+    ]),
+    _vm._v(" "),
+    _vm._m(0)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
+    return _c("div", { staticClass: "col-lg-9" }, [
+      _c(
+        "div",
+        {
+          staticClass: "carousel slide",
+          attrs: {
+            id: "myCarousel1",
+            "data-ride": "carousel",
+            "data-interval": "2000"
+          }
+        },
+        [
+          _c("ol", { staticClass: "carousel-indicators" }, [
+            _c("li", {
+              staticClass: "active",
+              attrs: { "data-target": "#myCarousel1", "data-slide-to": "0" }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              attrs: { "data-target": "#myCarousel1", "data-slide-to": "1" }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              attrs: { "data-target": "#myCarousel1", "data-slide-to": "2" }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              staticClass: "active",
+              attrs: { "data-target": "#myCarousel1", "data-slide-to": "3" }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              attrs: { "data-target": "#myCarousel1", "data-slide-to": "4" }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              attrs: { "data-target": "#myCarousel1", "data-slide-to": "5" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "carousel-inner" }, [
+            _c("div", { staticClass: "item active" }, [
+              _c(
+                "h1",
+                {
+                  staticClass: "text-center",
+                  staticStyle: { "font-size": "75px" }
+                },
+                [
+                  _c("span", { staticStyle: { color: "red" } }, [
+                    _vm._v("Flora|")
+                  ]),
+                  _c("span", { staticStyle: { color: "red" } }, [
+                    _vm._v("Digest")
+                  ]),
+                  _vm._v(" Research")
+                ]
+              ),
+              _c("br"),
+              _c("br"),
+              _c("br"),
+              _vm._v(" "),
+              _c("span", { staticClass: "text-center" }, [
+                _vm._v(
+                  "The first one of its kind. Purchase our research proposals and get all what you needed. Its always under a single place"
+                )
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+            _c("div", { staticClass: "item" }, [
+              _c("h1", [_vm._v("Text 3")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
+                _c(
+                  "h1",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: {
+                      "font-size": "75px",
+                      "margin-top": "-50px",
+                      color: "red",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [_vm._v("Politics")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel panel-primary" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-heading",
+                      staticStyle: { "background-color": "#562fc6" }
+                    },
+                    [
+                      _c("p", { staticClass: "panel-heading" }, [
+                        _vm._v(
+                          "With the latest political trends both national and internationaly."
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    staticStyle: {
+                      "border-radius": "20px",
+                      "font-size": "30px",
+                      "background-color": "#ff4900 !important",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-info" }),
+                    _vm._v("  Read More")
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "item" }, [
+              _c("h1", [_vm._v("Text 3")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
+                _c(
+                  "h1",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: {
+                      "font-size": "75px",
+                      "margin-top": "-50px",
+                      color: "red",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [_vm._v("Logistics")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel panel-primary" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-heading",
+                      staticStyle: { "background-color": "#562fc6" }
+                    },
+                    [
+                      _c("p", { staticClass: "panel-heading" }, [
+                        _vm._v(
+                          "With our packaging services,We guarantee you that the packages will be received on time and also on the right condition"
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    staticStyle: {
+                      "border-radius": "20px",
+                      "font-size": "30px",
+                      "background-color": "#ff4900 !important",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-info" }),
+                    _vm._v("  Read More")
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "item" }, [
+              _c("h1", [_vm._v("Text 3")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
+                _c(
+                  "h1",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: {
+                      "font-size": "75px",
+                      "margin-top": "-50px",
+                      color: "red",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [_vm._v("News")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel panel-primary" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-heading",
+                      staticStyle: { "background-color": "#562fc6" }
+                    },
+                    [
+                      _c("p", { staticClass: "panel-heading" }, [
+                        _vm._v(
+                          "With our reliable source of news, we provide real coverage on whatever goes on.We thus provide reliable information"
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    staticStyle: {
+                      "border-radius": "20px",
+                      "font-size": "30px",
+                      "background-color": "#ff4900 !important",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-info" }),
+                    _vm._v("  Read More")
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "item" }, [
+              _c("h1", [_vm._v("Text 2")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
+                _c(
+                  "h1",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: {
+                      "font-size": "75px",
+                      "margin-top": "-50px",
+                      color: "red",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [_vm._v("Opinions")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel panel-primary" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-heading",
+                      staticStyle: { "background-color": "#562fc6" }
+                    },
+                    [
+                      _c("p", { staticClass: "panel-heading" }, [
+                        _vm._v(
+                          "With value your opinions, Talk to us about the services provided to you.We highly value your feedback"
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    staticStyle: {
+                      "border-radius": "20px",
+                      "font-size": "30px",
+                      "background-color": "#ff4900 !important",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-info" }),
+                    _vm._v("  Read More")
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "item" }, [
+              _c("h1", [_vm._v("Text one ")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
+                _c(
+                  "h1",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: {
+                      "font-size": "75px",
+                      "margin-top": "-50px",
+                      color: "red",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [_vm._v("Research")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel panel-primary" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-heading",
+                      staticStyle: { "background-color": "#562fc6" }
+                    },
+                    [
+                      _c("p", { staticClass: "panel-heading" }, [
+                        _vm._v(
+                          "With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you"
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    staticStyle: {
+                      "border-radius": "20px",
+                      "font-size": "30px",
+                      "background-color": "#ff4900 !important",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-info" }),
+                    _vm._v("  Read More")
+                  ]
+                )
+              ])
             ])
-          ])
-        ])
-      ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "left carousel-control",
+              attrs: { href: "#myCarousel1", "data-slide": "prev" }
+            },
+            [
+              _c("span", { staticClass: "glyphicon glyphicon-chevron-left" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "right carousel-control",
+              attrs: { href: "#myCarousel1", "data-slide": "next" }
+            },
+            [
+              _c("span", { staticClass: "glyphicon glyphicon-chevron-right" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -49448,6 +49977,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
+Vue.component('home-component', __webpack_require__(/*! ./components/HomeComponent.vue */ "./resources/js/components/HomeComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -49569,6 +50099,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/HomeComponent.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/components/HomeComponent.vue ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeComponent.vue?vue&type=template&id=782dcf83& */ "./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&");
+/* harmony import */ var _HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/HomeComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/HomeComponent.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./HomeComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./HomeComponent.vue?vue&type=template&id=782dcf83& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
