@@ -1941,36 +1941,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: {},
   methods: {
@@ -37420,7 +37390,7 @@ var render = function() {
   return _c("div", { staticClass: "row" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "col-lg-3" }, [
+    _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3" }, [
       _c("img", {
         attrs: { src: _vm.getPhoto(), width: "350px", height: "250px" }
       })
@@ -37434,7 +37404,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-lg-9", staticStyle: { "padding-left": "50px" } },
+      {
+        staticClass: "col-lg-9 col-md-9 col-sm-9",
+        staticStyle: { "padding-left": "50px" }
+      },
       [
         _c(
           "div",
@@ -37482,7 +37455,7 @@ var staticRenderFns = [
                     "h1",
                     {
                       staticClass: "text-center",
-                      staticStyle: { "font-size": "50px" }
+                      staticStyle: { "font-size": "30px" }
                     },
                     [
                       _c("span", { staticStyle: { color: "red" } }, [
@@ -37503,7 +37476,7 @@ var staticRenderFns = [
                   "span",
                   {
                     staticClass: "text-center",
-                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
                   },
                   [
                     _vm._v(
@@ -37518,7 +37491,7 @@ var staticRenderFns = [
                   "span",
                   {
                     staticClass: "text-center",
-                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
                   },
                   [
                     _vm._v(
@@ -37535,8 +37508,8 @@ var staticRenderFns = [
                     {
                       staticClass: "btn btn-primary",
                       staticStyle: {
-                        "border-radius": "20px",
-                        "font-size": "30px",
+                        "border-radius": "15px",
+                        "font-size": "15px",
                         "background-color": "#ff4900 !important",
                         "font-weight": "bold"
                       }
@@ -37564,7 +37537,7 @@ var staticRenderFns = [
                     "h1",
                     {
                       staticClass: "text-center",
-                      staticStyle: { "font-size": "50px" }
+                      staticStyle: { "font-size": "30px" }
                     },
                     [
                       _c("span", { staticStyle: { color: "red" } }, [
@@ -37585,7 +37558,7 @@ var staticRenderFns = [
                   "span",
                   {
                     staticClass: "text-center",
-                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
                   },
                   [
                     _vm._v(
@@ -37600,7 +37573,7 @@ var staticRenderFns = [
                   "span",
                   {
                     staticClass: "text-center",
-                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
                   },
                   [
                     _vm._v(
@@ -37618,8 +37591,8 @@ var staticRenderFns = [
                     {
                       staticClass: "btn btn-primary",
                       staticStyle: {
-                        "border-radius": "20px",
-                        "font-size": "30px",
+                        "border-radius": "15px",
+                        "font-size": "15px",
                         "background-color": "#ff4900 !important",
                         "font-weight": "bold"
                       }
@@ -37647,7 +37620,7 @@ var staticRenderFns = [
                     "h1",
                     {
                       staticClass: "text-center",
-                      staticStyle: { "font-size": "50px" }
+                      staticStyle: { "font-size": "30px" }
                     },
                     [
                       _c("span", { staticStyle: { color: "red" } }, [
@@ -37668,7 +37641,7 @@ var staticRenderFns = [
                   "span",
                   {
                     staticClass: "text-center",
-                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
                   },
                   [
                     _vm._v(
@@ -37683,7 +37656,7 @@ var staticRenderFns = [
                   "span",
                   {
                     staticClass: "text-center",
-                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
                   },
                   [
                     _vm._v(
@@ -37701,14 +37674,14 @@ var staticRenderFns = [
                     {
                       staticClass: "btn btn-primary",
                       staticStyle: {
-                        "border-radius": "20px",
-                        "font-size": "30px",
+                        "border-radius": "15px",
+                        "font-size": "15px",
                         "background-color": "#ff4900 !important",
                         "font-weight": "bold"
                       }
                     },
                     [
-                      _c("i", { staticClass: "fa fa-info" }),
+                      _c("i", { staticClass: "fa fa-angle-double-left" }),
                       _vm._v("  Learn More...")
                     ]
                   )
@@ -37725,177 +37698,81 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item" }, [
-                _c("h1", [_vm._v("Text 3")]),
+                _c("u", [
+                  _c(
+                    "h1",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: { "font-size": "30px" }
+                    },
+                    [
+                      _c("span", { staticStyle: { color: "red" } }, [
+                        _vm._v("Flora|")
+                      ]),
+                      _c("span", { staticStyle: { color: "red" } }, [
+                        _vm._v("Digest")
+                      ]),
+                      _vm._v(" News")
+                    ]
+                  )
+                ]),
+                _c("br"),
+                _c("br"),
+                _c("br"),
                 _vm._v(" "),
                 _c(
-                  "div",
-                  { staticClass: "carousel-caption d-none d-md-block" },
+                  "span",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
+                  },
                   [
-                    _c(
-                      "h1",
-                      {
-                        staticClass: "text-center",
-                        staticStyle: {
-                          "font-size": "75px",
-                          "margin-top": "-50px",
-                          color: "red",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [_vm._v("News")]
+                    _vm._v(
+                      "TWith a wide and trusted news source,we provide reliable and true information regarding on the matters rising. "
                     ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-primary" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          staticStyle: { "background-color": "#562fc6" }
-                        },
-                        [
-                          _c("p", { staticClass: "panel-heading" }, [
-                            _vm._v(
-                              "With our reliable source of news, we provide real coverage on whatever goes on.We thus provide reliable information"
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        staticStyle: {
-                          "border-radius": "20px",
-                          "font-size": "30px",
-                          "background-color": "#ff4900 !important",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-info" }),
-                        _vm._v("  Read More")
-                      ]
-                    )
+                    _c("br"),
+                    _vm._v("We do both Local and international news")
                   ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item" }, [
-                _c("h1", [_vm._v("Text 2")]),
+                ),
                 _vm._v(" "),
                 _c(
-                  "div",
-                  { staticClass: "carousel-caption d-none d-md-block" },
+                  "span",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: { "font-size": "15px", "font-weight": "bold" }
+                  },
                   [
-                    _c(
-                      "h1",
-                      {
-                        staticClass: "text-center",
-                        staticStyle: {
-                          "font-size": "75px",
-                          "margin-top": "-50px",
-                          color: "red",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [_vm._v("Opinions")]
+                    _vm._v(
+                      "We are the leading online news platform. We are here to spread the news."
                     ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-primary" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          staticStyle: { "background-color": "#562fc6" }
-                        },
-                        [
-                          _c("p", { staticClass: "panel-heading" }, [
-                            _vm._v(
-                              "With value your opinions, Talk to us about the services provided to you.We highly value your feedback"
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        staticStyle: {
-                          "border-radius": "20px",
-                          "font-size": "30px",
-                          "background-color": "#ff4900 !important",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-info" }),
-                        _vm._v("  Read More")
-                      ]
-                    )
+                    _c("br")
                   ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item" }, [
-                _c("h1", [_vm._v("Text one ")]),
+                ),
+                _c("br"),
+                _c("br"),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "carousel-caption d-none d-md-block" },
-                  [
-                    _c(
-                      "h1",
-                      {
-                        staticClass: "text-center",
-                        staticStyle: {
-                          "font-size": "75px",
-                          "margin-top": "-50px",
-                          color: "red",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [_vm._v("Research")]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-primary" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          staticStyle: { "background-color": "#562fc6" }
-                        },
-                        [
-                          _c("p", { staticClass: "panel-heading" }, [
-                            _vm._v(
-                              "With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you"
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        staticStyle: {
-                          "border-radius": "20px",
-                          "font-size": "30px",
-                          "background-color": "#ff4900 !important",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-info" }),
-                        _vm._v("  Read More")
-                      ]
-                    )
-                  ]
-                )
+                _c("span", { staticClass: "text-center" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      staticStyle: {
+                        "border-radius": "15px",
+                        "font-size": "15px",
+                        "background-color": "#ff4900 !important",
+                        "font-weight": "bold"
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "fa fa-bell" }),
+                      _vm._v("  Read Site News")
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _c("br"),
+                _c("br")
               ])
             ]),
             _vm._v(" "),
@@ -37960,15 +37837,50 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-lg-4" }, [
-        _c("div", { staticClass: "panel panel-default" }, [
-          _c("div", { staticClass: "panel-body" }, [
-            _vm._v("\n                this is the sample panel\n            ")
+    return _c(
+      "div",
+      { staticClass: "row", staticStyle: { "background-color": "#f5f5f5" } },
+      [
+        _c("div", { staticClass: "well well-lg" }, [
+          _c("h2", { staticClass: "text-center" }, [
+            _vm._v("Academic Proposals Writing")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-4 col-md-4 col-sm-4" }, [
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c("div", { staticClass: "panel-body" }, [
+                _c("ul", { staticStyle: { "list-style-type": "none" } }, [
+                  _c("li", [
+                    _c("i", { staticClass: "fa fa-check" }),
+                    _vm._v("  Diploma projects")
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-4 col-md-4 col-sm-4" }, [
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c("div", { staticClass: "panel-body" }, [
+                _vm._v(
+                  "\n                    this is the sample panel\n                "
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-4 col-md-4 col-sm-4" }, [
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c("div", { staticClass: "panel-body" }, [
+                _vm._v(
+                  "\n                    this is the sample panel\n                "
+                )
+              ])
+            ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true

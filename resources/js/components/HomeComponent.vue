@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-lg-9" style="padding-left:50px">
+        <div class="col-lg-9 col-md-9 col-sm-9" style="padding-left:50px">
              <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="2000">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -15,64 +15,34 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-                <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Research</h1></u><br><br><br>
-                <span class="text-center" style="font-size:20px;font-weight:bold">The first one of its kind. Purchase our research proposals and get all what you needed. <br>Its always under a single place</span>
-                <span class="text-center" style="font-size:20px;font-weight:bold" >With our advanced tools,experts and also researchers, we bet you will like us</span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Purchase membership</button></span>
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Research</h1></u><br><br><br>
+                <span class="text-center" style="font-size:15px;font-weight:bold">The first one of its kind. Purchase our research proposals and get all what you needed. <br>Its always under a single place</span>
+                <span class="text-center" style="font-size:15px;font-weight:bold" >With our advanced tools,experts and also researchers, we bet you will like us</span><br><br>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Purchase membership</button></span>
                 <br><br><br><br><br><br><br><br>
             </div>
       <!-- writer carousel -->
 <div class="item">
-                <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Writers</h1></u><br><br><br>
-                <span class="text-center" style="font-size:20px;font-weight:bold">If your are looking for writing services anywhere within the globe. <br>Then, you can count on Us</span>
-                <span class="text-center" style="font-size:20px;font-weight:bold" >With our clients retention rates,its evident we provide high quality assignments<br></span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</button></span>
-                <br><br><br><br><br><br><br><br>
-            </div>
-          
-            <div class="item">
-                <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Logistics</h1></u><br><br><br>
-                <span class="text-center" style="font-size:20px;font-weight:bold">The fastest, easiest way to get products to our clients. <br>The tools we use exceeds clients expectations.</span>
-                <span class="text-center" style="font-size:20px;font-weight:bold" >No one ships packages better for you  more than we do.<br></span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Learn More...</button></span>
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Writers</h1></u><br><br><br>
+                <span class="text-center" style="font-size:15px;font-weight:bold">If your are looking for writing services anywhere within the globe. <br>Then, you can count on Us</span>
+                <span class="text-center" style="font-size:15px;font-weight:bold" >With our clients retention rates,its evident we provide high quality assignments<br></span><br><br>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</button></span>
                 <br><br><br><br><br><br><br><br>
             </div>
             <div class="item">
-                    <h1>Text 3</h1>
-                   <div class="carousel-caption d-none d-md-block">
-                    <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">News</h1>
-                    <div class="panel panel-primary">
-                    <div class="panel-heading"  style="background-color:#562fc6">
-                            <p class="panel-heading">With our reliable source of news, we provide real coverage on whatever goes on.We thus provide reliable information</p>
-                    </div>
-                    </div>
-                    <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
-                </div>
-                  </div>
-                  <div class="item">
-                       <h1>Text 2</h1>
-                        <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Opinions</h1>
-                                <div class="panel panel-primary">
-                                <div class="panel-heading"  style="background-color:#562fc6">
-                                        <p class="panel-heading">With value your opinions, Talk to us about the services provided to you.We highly value your feedback</p>
-                                </div>
-                                </div>
-                                <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
-                            </div>
-                      </div>
-                      <div class="item">
-                            <h1>Text one </h1>
-                            <div class="carousel-caption d-none d-md-block">
-                                    <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Research</h1>
-                                    <div class="panel panel-primary">
-                                    <div class="panel-heading"  style="background-color:#562fc6">
-                                        <p class="panel-heading">With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you</p>
-                                    </div>
-                                    </div>
-                                    <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
-                                </div>
-                          </div>
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Logistics</h1></u><br><br><br>
+                <span class="text-center" style="font-size:15px;font-weight:bold">The fastest, easiest way to get products to our clients. <br>The tools we use exceeds clients expectations.</span>
+                <span class="text-center" style="font-size:15px;font-weight:bold" >No one ships packages better for you  more than we do.<br></span><br><br>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-angle-double-left"></i>&nbsp;&nbsp;Learn More...</button></span>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div class="item">
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;News</h1></u><br><br><br>
+                <span class="text-center" style="font-size:15px;font-weight:bold">TWith a wide and trusted news source,we provide reliable and true information regarding on the matters rising. <br>We do both Local and international news</span>
+                <span class="text-center" style="font-size:15px;font-weight:bold" >We are the leading online news platform. We are here to spread the news.<br></span><br><br>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-bell"></i>&nbsp;&nbsp;Read Site News</button></span>
+                <br><br><br>
+            </div>      
           </div>
       
           <!-- Left and right controls -->
@@ -86,7 +56,7 @@
           </a>
         </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3 col-sm-3">
             <img :src="getPhoto()" width="350px" height="250px">
         </div>
     </div>
