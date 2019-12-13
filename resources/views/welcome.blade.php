@@ -107,9 +107,10 @@
         </div>
       </div>
       <div class="row">
-            <div id="app">
-                    <home-component></home-component>
-                </div>
+        <div id="app">
+                <home-component></home-component>
+                <projects-component></projects-component>
+        </div>
       </div>
 @endsection
 

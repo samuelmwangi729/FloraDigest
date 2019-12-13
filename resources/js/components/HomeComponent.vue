@@ -16,23 +16,18 @@
           <div class="carousel-inner">
             <div class="item active">
                 <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Research</h1></u><br><br><br>
-                <span class="text-right">The first one of its kind. Purchase our research proposals and get all what you needed. Its always under a single place</span>
-                <span class="text-right">With our advanced tools,experts and also researchers, we bet you will like us</span><br><br>
+                <span class="text-center" style="font-size:20px;font-weight:bold">The first one of its kind. Purchase our research proposals and get all what you needed. <br>Its always under a single place</span>
+                <span class="text-center" style="font-size:20px;font-weight:bold" >With our advanced tools,experts and also researchers, we bet you will like us</span><br><br>
                 <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Purchase membership</button></span>
                 <br><br><br><br><br><br><br><br>
             </div>
-      
-            <div class="item">
-                   <h1>Text 3</h1>
-            <div class="carousel-caption d-none d-md-block">
-                <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Politics</h1>
-                <div class="panel panel-primary">
-                <div class="panel-heading"  style="background-color:#562fc6">
-                <p class="panel-heading">With the latest political trends both national and internationaly.</p>
-                </div>
-                </div>
-                <button class="btn btn-primary text-center" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
-            </div>
+      <!-- writer carousel -->
+<div class="item">
+                <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Writers</h1></u><br><br><br>
+                <span class="text-center" style="font-size:20px;font-weight:bold">If your are looking for writing services anywhere within the globe. <br>Then, you can count on Us</span>
+                <span class="text-center" style="font-size:20px;font-weight:bold" >With our clients retention rates,its evident we provide high quality assignments<br></span><br><br>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Order Service</button></span>
+                <br><br><br><br><br><br><br><br>
             </div>
           
             <div class="item">
