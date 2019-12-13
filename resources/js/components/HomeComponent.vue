@@ -25,7 +25,7 @@
 <div class="item">
                 <u><h1 class="text-center" style="font-size:30px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Writers</h1></u><br><br><br>
                 <span class="text-center" style="font-size:15px;font-weight:bold">If your are looking for writing services anywhere within the globe. <br>Then, you can count on Us</span>
-                <span class="text-center" style="font-size:15px;font-weight:bold" >With our clients retention rates,its evident we provide high quality assignments<br></span><br><br>
+                <span class="text-center" style="font-size:15px;font-weight:bold" >With our clients retention rates,its evident we provide high quality assignments</span><br><br>
                 <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</button></span>
                 <br><br><br><br><br><br><br><br>
             </div>
@@ -38,8 +38,8 @@
             </div>
             <div class="item">
                 <u><h1 class="text-center" style="font-size:30px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;News</h1></u><br><br><br>
-                <span class="text-center" style="font-size:15px;font-weight:bold">TWith a wide and trusted news source,we provide reliable and true information regarding on the matters rising. <br>We do both Local and international news</span>
-                <span class="text-center" style="font-size:15px;font-weight:bold" >We are the leading online news platform. We are here to spread the news.<br></span><br><br>
+                <span class="text-center" style="font-size:15px;font-weight:bold">With a wide and trusted news source,we provide reliable and true information regarding on the matters rising.</span>
+                <span class="text-center" style="font-size:15px;font-weight:bold" >We are the leading online news platform. We are here to spread the news.</span><br><br>
                 <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-bell"></i>&nbsp;&nbsp;Read Site News</button></span>
                 <br><br><br>
             </div>      

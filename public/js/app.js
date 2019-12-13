@@ -37578,8 +37578,7 @@ var staticRenderFns = [
                   [
                     _vm._v(
                       "With our clients retention rates,its evident we provide high quality assignments"
-                    ),
-                    _c("br")
+                    )
                   ]
                 ),
                 _c("br"),
@@ -37728,10 +37727,8 @@ var staticRenderFns = [
                   },
                   [
                     _vm._v(
-                      "TWith a wide and trusted news source,we provide reliable and true information regarding on the matters rising. "
-                    ),
-                    _c("br"),
-                    _vm._v("We do both Local and international news")
+                      "With a wide and trusted news source,we provide reliable and true information regarding on the matters rising."
+                    )
                   ]
                 ),
                 _vm._v(" "),
@@ -37744,8 +37741,7 @@ var staticRenderFns = [
                   [
                     _vm._v(
                       "We are the leading online news platform. We are here to spread the news."
-                    ),
-                    _c("br")
+                    )
                   ]
                 ),
                 _c("br"),
@@ -37843,39 +37839,109 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "well well-lg" }, [
           _c("h2", { staticClass: "text-center" }, [
-            _vm._v("Academic Proposals Writing")
+            _vm._v("Academic & Research Proposals Writing")
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-lg-4 col-md-4 col-sm-4" }, [
             _c("div", { staticClass: "panel panel-default" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("ul", { staticStyle: { "list-style-type": "none" } }, [
-                  _c("li", [
-                    _c("i", { staticClass: "fa fa-check" }),
-                    _vm._v("  Diploma projects")
+              _c(
+                "div",
+                { staticClass: "panel-body", staticStyle: { height: "150px" } },
+                [
+                  _c("ul", { staticStyle: { "list-style-type": "none" } }, [
+                    _c("li", { staticClass: "text-center" }, [
+                      _c("i", { staticClass: "fa fa-check" }),
+                      _vm._v(
+                        "  Diploma research Proposal writing & Project Writing"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "text-center" }, [
+                      _c("i", { staticClass: "fa fa-check" }),
+                      _vm._v(
+                        "  Undegraduate research Proposal writing & Project Writing"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "text-center" }, [
+                      _c("i", { staticClass: "fa fa-check" }),
+                      _vm._v(
+                        "  Masters research Proposal writing & Project Writing"
+                      )
+                    ])
                   ])
-                ])
-              ])
+                ]
+              )
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-lg-4 col-md-4 col-sm-4" }, [
             _c("div", { staticClass: "panel panel-default" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _vm._v(
-                  "\n                    this is the sample panel\n                "
-                )
-              ])
+              _c(
+                "div",
+                { staticClass: "panel-body", staticStyle: { height: "150px" } },
+                [
+                  _c("ul", { staticStyle: { "list-style-type": "none" } }, [
+                    _c(
+                      "li",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "padding-top": "20px" }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-check" }),
+                        _vm._v(
+                          "  PhD research Proposal writing & Project Writing"
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "text-center" }, [
+                      _c("i", { staticClass: "fa fa-check" }),
+                      _vm._v("  Article Writing & Publication")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "text-center" }, [
+                      _c("i", { staticClass: "fa fa-check" }),
+                      _vm._v("  Journal Publication")
+                    ])
+                  ])
+                ]
+              )
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-lg-4 col-md-4 col-sm-4" }, [
             _c("div", { staticClass: "panel panel-default" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _vm._v(
-                  "\n                    this is the sample panel\n                "
-                )
-              ])
+              _c(
+                "div",
+                { staticClass: "panel-body", staticStyle: { height: "150px" } },
+                [
+                  _c("ul", { staticStyle: { "list-style-type": "none" } }, [
+                    _c(
+                      "li",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "padding-top": "20px" }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-check" }),
+                        _vm._v("  Quick turnaround for Assignments")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "text-center" }, [
+                      _c("i", { staticClass: "fa fa-check" }),
+                      _vm._v("  Topics Research")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "text-center" }, [
+                      _c("i", { staticClass: "fa fa-check" }),
+                      _vm._v("  Data collection & Analysis")
+                    ])
+                  ])
+                ]
+              )
             ])
           ])
         ])
