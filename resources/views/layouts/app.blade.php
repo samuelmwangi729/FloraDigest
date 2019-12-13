@@ -39,7 +39,7 @@
             <a href="#" class="logo">
             <b>{{config('app.name')}}</b>
             </a>
-
+            
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->

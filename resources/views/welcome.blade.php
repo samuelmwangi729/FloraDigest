@@ -110,7 +110,8 @@
         <div id="app">
                 <home-component></home-component>
                 <projects-component></projects-component>
-                <writers-component></writers-component>
+                <contact-component></contact-component>
+                <footer-component></footer-component>
         </div>
       </div>
 @endsection
