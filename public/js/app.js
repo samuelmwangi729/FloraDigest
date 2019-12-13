@@ -1978,6 +1978,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: {},
   methods: {
@@ -37425,13 +37428,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
+    _vm._m(0),
+    _vm._v(" "),
     _c("div", { staticClass: "col-lg-3" }, [
       _c("img", {
         attrs: { src: _vm.getPhoto(), width: "350px", height: "250px" }
       })
-    ]),
-    _vm._v(" "),
-    _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
@@ -37439,374 +37442,438 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-9" }, [
-      _c(
-        "div",
-        {
-          staticClass: "carousel slide",
-          attrs: {
-            id: "myCarousel1",
-            "data-ride": "carousel",
-            "data-interval": "2000"
-          }
-        },
-        [
-          _c("ol", { staticClass: "carousel-indicators" }, [
-            _c("li", {
-              staticClass: "active",
-              attrs: { "data-target": "#myCarousel1", "data-slide-to": "0" }
-            }),
-            _vm._v(" "),
-            _c("li", {
-              attrs: { "data-target": "#myCarousel1", "data-slide-to": "1" }
-            }),
-            _vm._v(" "),
-            _c("li", {
-              attrs: { "data-target": "#myCarousel1", "data-slide-to": "2" }
-            }),
-            _vm._v(" "),
-            _c("li", {
-              staticClass: "active",
-              attrs: { "data-target": "#myCarousel1", "data-slide-to": "3" }
-            }),
-            _vm._v(" "),
-            _c("li", {
-              attrs: { "data-target": "#myCarousel1", "data-slide-to": "4" }
-            }),
-            _vm._v(" "),
-            _c("li", {
-              attrs: { "data-target": "#myCarousel1", "data-slide-to": "5" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "carousel-inner" }, [
-            _c("div", { staticClass: "item active" }, [
-              _c(
-                "h1",
-                {
-                  staticClass: "text-center",
-                  staticStyle: { "font-size": "75px" }
-                },
-                [
-                  _c("span", { staticStyle: { color: "red" } }, [
-                    _vm._v("Flora|")
-                  ]),
-                  _c("span", { staticStyle: { color: "red" } }, [
-                    _vm._v("Digest")
-                  ]),
-                  _vm._v(" Research")
-                ]
-              ),
-              _c("br"),
-              _c("br"),
-              _c("br"),
+    return _c(
+      "div",
+      { staticClass: "col-lg-9", staticStyle: { "padding-left": "50px" } },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "carousel slide",
+            attrs: {
+              id: "myCarousel1",
+              "data-ride": "carousel",
+              "data-interval": "2000"
+            }
+          },
+          [
+            _c("ol", { staticClass: "carousel-indicators" }, [
+              _c("li", {
+                staticClass: "active",
+                attrs: { "data-target": "#myCarousel1", "data-slide-to": "0" }
+              }),
               _vm._v(" "),
-              _c("span", { staticClass: "text-center" }, [
-                _vm._v(
-                  "The first one of its kind. Purchase our research proposals and get all what you needed. Its always under a single place"
-                )
-              ])
+              _c("li", {
+                attrs: { "data-target": "#myCarousel1", "data-slide-to": "1" }
+              }),
+              _vm._v(" "),
+              _c("li", {
+                attrs: { "data-target": "#myCarousel1", "data-slide-to": "2" }
+              }),
+              _vm._v(" "),
+              _c("li", {
+                staticClass: "active",
+                attrs: { "data-target": "#myCarousel1", "data-slide-to": "3" }
+              }),
+              _vm._v(" "),
+              _c("li", {
+                attrs: { "data-target": "#myCarousel1", "data-slide-to": "4" }
+              }),
+              _vm._v(" "),
+              _c("li", {
+                attrs: { "data-target": "#myCarousel1", "data-slide-to": "5" }
+              })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("h1", [_vm._v("Text 3")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
-                _c(
-                  "h1",
-                  {
-                    staticClass: "text-center",
-                    staticStyle: {
-                      "font-size": "75px",
-                      "margin-top": "-50px",
-                      color: "red",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [_vm._v("Politics")]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel panel-primary" }, [
+            _c("div", { staticClass: "carousel-inner" }, [
+              _c("div", { staticClass: "item active" }, [
+                _c("u", [
                   _c(
-                    "div",
+                    "h1",
                     {
-                      staticClass: "panel-heading",
-                      staticStyle: { "background-color": "#562fc6" }
+                      staticClass: "text-center",
+                      staticStyle: { "font-size": "50px" }
                     },
                     [
-                      _c("p", { staticClass: "panel-heading" }, [
-                        _vm._v(
-                          "With the latest political trends both national and internationaly."
-                        )
-                      ])
+                      _c("span", { staticStyle: { color: "red" } }, [
+                        _vm._v("Flora|")
+                      ]),
+                      _c("span", { staticStyle: { color: "red" } }, [
+                        _vm._v("Digest")
+                      ]),
+                      _vm._v(" Research")
+                    ]
+                  )
+                ]),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "text-right" }, [
+                  _vm._v(
+                    "The first one of its kind. Purchase our research proposals and get all what you needed. Its always under a single place"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "text-right" }, [
+                  _vm._v(
+                    "With our advanced tools,experts and also researchers, we bet you will like us"
+                  )
+                ]),
+                _c("br"),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "text-center" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      staticStyle: {
+                        "border-radius": "20px",
+                        "font-size": "30px",
+                        "background-color": "#ff4900 !important",
+                        "font-weight": "bold"
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "fa fa-credit-card" }),
+                      _vm._v("  Purchase membership")
                     ]
                   )
                 ]),
                 _vm._v(" "),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "item" }, [
+                _c("h1", [_vm._v("Text 3")]),
+                _vm._v(" "),
                 _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary",
-                    staticStyle: {
-                      "border-radius": "20px",
-                      "font-size": "30px",
-                      "background-color": "#ff4900 !important",
-                      "font-weight": "bold"
-                    }
-                  },
+                  "div",
+                  { staticClass: "carousel-caption d-none d-md-block" },
                   [
-                    _c("i", { staticClass: "fa fa-info" }),
-                    _vm._v("  Read More")
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: {
+                          "font-size": "75px",
+                          "margin-top": "-50px",
+                          color: "red",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Politics")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-primary" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: { "background-color": "#562fc6" }
+                        },
+                        [
+                          _c("p", { staticClass: "panel-heading" }, [
+                            _vm._v(
+                              "With the latest political trends both national and internationaly."
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary text-center",
+                        staticStyle: {
+                          "border-radius": "20px",
+                          "font-size": "30px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-info" }),
+                        _vm._v("  Read More")
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "item" }, [
+                _c("h1", [_vm._v("Text 3")]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "carousel-caption d-none d-md-block" },
+                  [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: {
+                          "font-size": "75px",
+                          "margin-top": "-50px",
+                          color: "red",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Logistics")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-primary" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: { "background-color": "#562fc6" }
+                        },
+                        [
+                          _c("p", { staticClass: "panel-heading" }, [
+                            _vm._v(
+                              "With our packaging services,We guarantee you that the packages will be received on time and also on the right condition"
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "20px",
+                          "font-size": "30px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-info" }),
+                        _vm._v("  Read More")
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "item" }, [
+                _c("h1", [_vm._v("Text 3")]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "carousel-caption d-none d-md-block" },
+                  [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: {
+                          "font-size": "75px",
+                          "margin-top": "-50px",
+                          color: "red",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("News")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-primary" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: { "background-color": "#562fc6" }
+                        },
+                        [
+                          _c("p", { staticClass: "panel-heading" }, [
+                            _vm._v(
+                              "With our reliable source of news, we provide real coverage on whatever goes on.We thus provide reliable information"
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "20px",
+                          "font-size": "30px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-info" }),
+                        _vm._v("  Read More")
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "item" }, [
+                _c("h1", [_vm._v("Text 2")]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "carousel-caption d-none d-md-block" },
+                  [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: {
+                          "font-size": "75px",
+                          "margin-top": "-50px",
+                          color: "red",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Opinions")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-primary" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: { "background-color": "#562fc6" }
+                        },
+                        [
+                          _c("p", { staticClass: "panel-heading" }, [
+                            _vm._v(
+                              "With value your opinions, Talk to us about the services provided to you.We highly value your feedback"
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "20px",
+                          "font-size": "30px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-info" }),
+                        _vm._v("  Read More")
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "item" }, [
+                _c("h1", [_vm._v("Text one ")]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "carousel-caption d-none d-md-block" },
+                  [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: {
+                          "font-size": "75px",
+                          "margin-top": "-50px",
+                          color: "red",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Research")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-primary" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: { "background-color": "#562fc6" }
+                        },
+                        [
+                          _c("p", { staticClass: "panel-heading" }, [
+                            _vm._v(
+                              "With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you"
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "20px",
+                          "font-size": "30px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-info" }),
+                        _vm._v("  Read More")
+                      ]
+                    )
                   ]
                 )
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("h1", [_vm._v("Text 3")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
-                _c(
-                  "h1",
-                  {
-                    staticClass: "text-center",
-                    staticStyle: {
-                      "font-size": "75px",
-                      "margin-top": "-50px",
-                      color: "red",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [_vm._v("Logistics")]
-                ),
+            _c(
+              "a",
+              {
+                staticClass: "left carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "prev" }
+              },
+              [
+                _c("span", { staticClass: "glyphicon glyphicon-chevron-left" }),
                 _vm._v(" "),
-                _c("div", { staticClass: "panel panel-primary" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-heading",
-                      staticStyle: { "background-color": "#562fc6" }
-                    },
-                    [
-                      _c("p", { staticClass: "panel-heading" }, [
-                        _vm._v(
-                          "With our packaging services,We guarantee you that the packages will be received on time and also on the right condition"
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary",
-                    staticStyle: {
-                      "border-radius": "20px",
-                      "font-size": "30px",
-                      "background-color": "#ff4900 !important",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [
-                    _c("i", { staticClass: "fa fa-info" }),
-                    _vm._v("  Read More")
-                  ]
-                )
-              ])
-            ]),
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("h1", [_vm._v("Text 3")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
-                _c(
-                  "h1",
-                  {
-                    staticClass: "text-center",
-                    staticStyle: {
-                      "font-size": "75px",
-                      "margin-top": "-50px",
-                      color: "red",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [_vm._v("News")]
-                ),
+            _c(
+              "a",
+              {
+                staticClass: "right carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "next" }
+              },
+              [
+                _c("span", {
+                  staticClass: "glyphicon glyphicon-chevron-right"
+                }),
                 _vm._v(" "),
-                _c("div", { staticClass: "panel panel-primary" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-heading",
-                      staticStyle: { "background-color": "#562fc6" }
-                    },
-                    [
-                      _c("p", { staticClass: "panel-heading" }, [
-                        _vm._v(
-                          "With our reliable source of news, we provide real coverage on whatever goes on.We thus provide reliable information"
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary",
-                    staticStyle: {
-                      "border-radius": "20px",
-                      "font-size": "30px",
-                      "background-color": "#ff4900 !important",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [
-                    _c("i", { staticClass: "fa fa-info" }),
-                    _vm._v("  Read More")
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("h1", [_vm._v("Text 2")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
-                _c(
-                  "h1",
-                  {
-                    staticClass: "text-center",
-                    staticStyle: {
-                      "font-size": "75px",
-                      "margin-top": "-50px",
-                      color: "red",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [_vm._v("Opinions")]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel panel-primary" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-heading",
-                      staticStyle: { "background-color": "#562fc6" }
-                    },
-                    [
-                      _c("p", { staticClass: "panel-heading" }, [
-                        _vm._v(
-                          "With value your opinions, Talk to us about the services provided to you.We highly value your feedback"
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary",
-                    staticStyle: {
-                      "border-radius": "20px",
-                      "font-size": "30px",
-                      "background-color": "#ff4900 !important",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [
-                    _c("i", { staticClass: "fa fa-info" }),
-                    _vm._v("  Read More")
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("h1", [_vm._v("Text one ")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-caption d-none d-md-block" }, [
-                _c(
-                  "h1",
-                  {
-                    staticClass: "text-center",
-                    staticStyle: {
-                      "font-size": "75px",
-                      "margin-top": "-50px",
-                      color: "red",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [_vm._v("Research")]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel panel-primary" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-heading",
-                      staticStyle: { "background-color": "#562fc6" }
-                    },
-                    [
-                      _c("p", { staticClass: "panel-heading" }, [
-                        _vm._v(
-                          "With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you"
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary",
-                    staticStyle: {
-                      "border-radius": "20px",
-                      "font-size": "30px",
-                      "background-color": "#ff4900 !important",
-                      "font-weight": "bold"
-                    }
-                  },
-                  [
-                    _c("i", { staticClass: "fa fa-info" }),
-                    _vm._v("  Read More")
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "left carousel-control",
-              attrs: { href: "#myCarousel1", "data-slide": "prev" }
-            },
-            [
-              _c("span", { staticClass: "glyphicon glyphicon-chevron-left" }),
-              _vm._v(" "),
-              _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "right carousel-control",
-              attrs: { href: "#myCarousel1", "data-slide": "next" }
-            },
-            [
-              _c("span", { staticClass: "glyphicon glyphicon-chevron-right" }),
-              _vm._v(" "),
-              _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
-            ]
-          )
-        ]
-      )
-    ])
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+              ]
+            )
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true

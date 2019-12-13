@@ -1,9 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-lg-3">
-            <img :src="getPhoto()" width="350px" height="250px">
-        </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9" style="padding-left:50px">
              <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="2000">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -18,8 +15,11 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-                <h1 class="text-center" style="font-size:75px"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Research</h1><br><br><br>
-                <span class="text-center">The first one of its kind. Purchase our research proposals and get all what you needed. Its always under a single place</span>
+                <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Research</h1></u><br><br><br>
+                <span class="text-right">The first one of its kind. Purchase our research proposals and get all what you needed. Its always under a single place</span>
+                <span class="text-right">With our advanced tools,experts and also researchers, we bet you will like us</span><br><br>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Purchase membership</button></span>
+                <br><br><br><br><br><br><br><br>
             </div>
       
             <div class="item">
@@ -31,7 +31,7 @@
                 <p class="panel-heading">With the latest political trends both national and internationaly.</p>
                 </div>
                 </div>
-                <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
+                <button class="btn btn-primary text-center" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
             </div>
             </div>
           
@@ -95,6 +95,9 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        </div>
+        <div class="col-lg-3">
+            <img :src="getPhoto()" width="350px" height="250px">
         </div>
     </div>
 </template>
