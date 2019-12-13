@@ -1971,11 +1971,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: {},
   methods: {
@@ -37630,7 +37625,7 @@ var staticRenderFns = [
                       }
                     },
                     [
-                      _c("i", { staticClass: "fa fa-credit-card" }),
+                      _c("i", { staticClass: "fa fa-info" }),
                       _vm._v("  Order Service")
                     ]
                   )
@@ -37647,61 +37642,86 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item" }, [
-                _c("h1", [_vm._v("Text 3")]),
+                _c("u", [
+                  _c(
+                    "h1",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: { "font-size": "50px" }
+                    },
+                    [
+                      _c("span", { staticStyle: { color: "red" } }, [
+                        _vm._v("Flora|")
+                      ]),
+                      _c("span", { staticStyle: { color: "red" } }, [
+                        _vm._v("Digest")
+                      ]),
+                      _vm._v(" Logistics")
+                    ]
+                  )
+                ]),
+                _c("br"),
+                _c("br"),
+                _c("br"),
                 _vm._v(" "),
                 _c(
-                  "div",
-                  { staticClass: "carousel-caption d-none d-md-block" },
+                  "span",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                  },
                   [
-                    _c(
-                      "h1",
-                      {
-                        staticClass: "text-center",
-                        staticStyle: {
-                          "font-size": "75px",
-                          "margin-top": "-50px",
-                          color: "red",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [_vm._v("Logistics")]
+                    _vm._v(
+                      "The fastest, easiest way to get products to our clients. "
                     ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-primary" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          staticStyle: { "background-color": "#562fc6" }
-                        },
-                        [
-                          _c("p", { staticClass: "panel-heading" }, [
-                            _vm._v(
-                              "With our packaging services,We guarantee you that the packages will be received on time and also on the right condition"
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        staticStyle: {
-                          "border-radius": "20px",
-                          "font-size": "30px",
-                          "background-color": "#ff4900 !important",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-info" }),
-                        _vm._v("  Read More")
-                      ]
-                    )
+                    _c("br"),
+                    _vm._v("The tools we use exceeds clients expectations.")
                   ]
-                )
+                ),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  {
+                    staticClass: "text-center",
+                    staticStyle: { "font-size": "20px", "font-weight": "bold" }
+                  },
+                  [
+                    _vm._v(
+                      "No one ships packages better for you  more than we do."
+                    ),
+                    _c("br")
+                  ]
+                ),
+                _c("br"),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "text-center" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      staticStyle: {
+                        "border-radius": "20px",
+                        "font-size": "30px",
+                        "background-color": "#ff4900 !important",
+                        "font-weight": "bold"
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "fa fa-info" }),
+                      _vm._v("  Learn More...")
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _c("br")
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item" }, [

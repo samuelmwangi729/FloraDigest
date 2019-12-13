@@ -26,21 +26,16 @@
                 <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Writers</h1></u><br><br><br>
                 <span class="text-center" style="font-size:20px;font-weight:bold">If your are looking for writing services anywhere within the globe. <br>Then, you can count on Us</span>
                 <span class="text-center" style="font-size:20px;font-weight:bold" >With our clients retention rates,its evident we provide high quality assignments<br></span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Order Service</button></span>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</button></span>
                 <br><br><br><br><br><br><br><br>
             </div>
           
             <div class="item">
-             <h1>Text 3</h1>
-              <div class="carousel-caption d-none d-md-block">
-                    <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Logistics</h1>
-                    <div class="panel panel-primary">
-                    <div class="panel-heading"  style="background-color:#562fc6">
-                            <p class="panel-heading">With our packaging services,We guarantee you that the packages will be received on time and also on the right condition</p>
-                    </div>
-                    </div>
-                    <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
-                </div>
+                <u><h1 class="text-center" style="font-size:50px;"><span style="color:red">Flora|</span><span style="color:red">Digest</span>&nbsp;Logistics</h1></u><br><br><br>
+                <span class="text-center" style="font-size:20px;font-weight:bold">The fastest, easiest way to get products to our clients. <br>The tools we use exceeds clients expectations.</span>
+                <span class="text-center" style="font-size:20px;font-weight:bold" >No one ships packages better for you  more than we do.<br></span><br><br>
+                <span class="text-center"> <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Learn More...</button></span>
+                <br><br><br><br><br><br><br><br>
             </div>
             <div class="item">
                     <h1>Text 3</h1>
