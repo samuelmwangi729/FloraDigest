@@ -1829,6 +1829,144 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Academia.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Academia.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: {},
+  methods: {
+    getPhoto: function getPhoto() {
+      return "img/background/laptop.jpg";
+    }
+  },
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -37332,6 +37470,248 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Academia.vue?vue&type=template&id=4e08c7f0&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Academia.vue?vue&type=template&id=4e08c7f0& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12" }, [
+          _c(
+            "div",
+            {
+              staticClass: "carousel slide",
+              attrs: {
+                id: "myCarousel1",
+                "data-ride": "carousel",
+                "data-interval": "5000"
+              }
+            },
+            [
+              _c("div", { staticClass: "carousel-inner" }, [
+                _c("div", { staticClass: "item active" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel panel-primary",
+                      staticStyle: { height: "250px", width: "100%" }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: {
+                            "background-color": "#562fc6 !important"
+                          }
+                        },
+                        [
+                          _c("h3", { staticClass: "h1 text-center" }, [
+                            _c("i", {
+                              staticClass: "fa fa-credit-card",
+                              staticStyle: { color: "red" }
+                            }),
+                            _vm._v("  Great Pay for Great Writing")
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "panel-body text-center" }, [
+                        _vm._v(
+                          "\n                    Over 10 years we have been the number one project and proposal writing company in Kenya. We have written over 500 PhD proposals, masters’ proposals, and degree and diploma projects.\n                     With our highly experienced staffs in fields of study we will be able to crack any work with a short time. \n                     Our experience serving as Masters student—and our combined reading, critiquing, evaluating, and editing of literally \n                     thousands of theses, dissertations, and projects—provides us with an insider’s perspective that will help you complete your master’s thesis, doctoral dissertation, or capstone project and earn your degree.\n                "
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "item" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel panel-primary",
+                      staticStyle: { height: "250px", width: "100%" }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: {
+                            "background-color": "#562fc6 !important"
+                          }
+                        },
+                        [
+                          _c("h3", { staticClass: "h1 text-center" }, [
+                            _c("i", {
+                              staticClass: "fa fa-graduation-cap",
+                              staticStyle: { color: "red" }
+                            }),
+                            _vm._v("  Study More Efficiently")
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "panel-body text-center" }, [
+                        _vm._v(
+                          "\n                   We will serve you at your convenience, with just a call or text message we will start \n                   working on your work and deliver within the preset timeline. We understand your busy schedule and \n                   you may be far from Nairobi, so that’s why we will deliver the work online through email or whaatsap.\n                    We have written all research proposals in all universities in Kenya and abroad and we all are well \n                    acquainted with the proposal guidelines and format.\n                "
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "item" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel panel-primary",
+                      staticStyle: { height: "250px", width: "100%" }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          staticStyle: {
+                            "background-color": "#562fc6 !important"
+                          }
+                        },
+                        [
+                          _c("h3", { staticClass: "h1 text-center" }, [
+                            _c("i", {
+                              staticClass: "fa fa-sort-alpha-desc",
+                              staticStyle: { color: "red" }
+                            }),
+                            _vm._v("  Boost Your Grades")
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "panel-body text-center" }, [
+                        _vm._v(
+                          "\n                   Get walked through your toughest problems and learn how to solve them from expert writers.\n                   Do you feel juggling work, studying, exams, and a personal life can sometimes feel a little bit overwhelming? \n                   You’re not alone, a lot of students do. College life these days is demanding and requires a lot of time, \n                   which you sometimes might not have. That’s where Edusson can help you.\n                    We are a dedicated essay writing service that can help you put together a top-quality essay.\n                "
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "left carousel-control",
+                  attrs: { href: "#myCarousel1", "data-slide": "prev" }
+                },
+                [
+                  _c("span", {
+                    staticClass: "glyphicon glyphicon-chevron-left"
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "right carousel-control",
+                  attrs: { href: "#myCarousel1", "data-slide": "next" }
+                },
+                [
+                  _c("span", {
+                    staticClass: "glyphicon glyphicon-chevron-right"
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+                ]
+              )
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row well" }, [
+        _c("div", { staticClass: "col-lg-9" }, [
+          _c("span", [
+            _vm._v(
+              "We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals\n            and other educational materials that will help you in whatever you need. All we do give you sample 3 topics and you have \n            to choose one of your choice.\n\n            All after writting, we guarantee you a high quality job and also unlimited revisions on the proposals written for youApart from writing the \n            research proposals for you. We also publish our own research proposals and then one has to purchase them from our website.\n        "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-3 panel-body" }, [
+          _c("h3", [
+            _c("i", {
+              staticClass: "fa fa-exclamation-triangle",
+              staticStyle: { color: "red" }
+            }),
+            _vm._v("  How We Work")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row well" }, [
+        _c("u", [
+          _c("h1", { staticClass: "text-center" }, [
+            _vm._v("Research Proposals")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+            _vm._v(
+              "\n           Having completed hundreds of proposals \n           over a nine year period for a variety of industries and clients. We take our skill a deft hand at research and solid \n           communication with involved parties to produce proposals that meet needs of parties on both sides of the table. \n           We understand Our responsibilities as technical writers is to pay attention to the details and craft material that conveys \n           the importance of any potential transaction. We approach every project with this attitude effectively \n           relaying the needs of the company and through winning original and convincing content how the client can meet those needs.\n        "
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+            _vm._v(
+              "\n           Our professional research skills and technical writing services are renowned for being the best there is.\n            We have helped thousands of students and have provided a supportive, reliable service. \n            You can relax knowing any essay we provide will be a unique, authentic and insightful. \n            If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n            we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n            your academic needs.\n            Our essay writing services are an easy, stress-free alternative to achieving your goals.\n        "
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row-fluid" }, [
+        _c("div", { staticClass: "col-lg-6" }, [
+          _vm._v("\n        Who we are\n    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-6" }, [
+          _vm._v(
+            "\n        Our professional essay writing service is renowned for being the best there is. \n        We have helped thousands of students and have provided a supportive, reliable service. \n        You can relax knowing any essay we provide will be a unique, authentic and insightful. \n        If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n        we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n        your academic needs. \n        Our essay writing services are an easy, stress-free alternative to achieving your goals.\n    "
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6&":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6& ***!
@@ -50599,6 +50979,7 @@ Vue.component('home-component', __webpack_require__(/*! ./components/HomeCompone
 Vue.component('projects-component', __webpack_require__(/*! ./components/ProjectsComponent.vue */ "./resources/js/components/ProjectsComponent.vue")["default"]);
 Vue.component('contact-component', __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue")["default"]);
 Vue.component('footer-component', __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]);
+Vue.component('academia-component', __webpack_require__(/*! ./components/Academia.vue */ "./resources/js/components/Academia.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -50653,6 +51034,75 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/Academia.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Academia.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Academia.vue?vue&type=template&id=4e08c7f0& */ "./resources/js/components/Academia.vue?vue&type=template&id=4e08c7f0&");
+/* harmony import */ var _Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Academia.vue?vue&type=script&lang=js& */ "./resources/js/components/Academia.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Academia.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Academia.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/Academia.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Academia.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Academia.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Academia.vue?vue&type=template&id=4e08c7f0&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/Academia.vue?vue&type=template&id=4e08c7f0& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Academia.vue?vue&type=template&id=4e08c7f0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Academia.vue?vue&type=template&id=4e08c7f0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

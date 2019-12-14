@@ -44,3 +44,4 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+route::get('/academia','AcademiaController@index');

@@ -25,7 +25,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
-
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('css')
     <script src="{{ asset('js/twak.js') }}"></script>
 </head>
@@ -128,7 +128,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse" style="font-size:15px;font-family:Arial, Helvetica, sans-serif">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Academia</a></li>
+                    <li><a href="{{ url('/academia') }}" style="color:white;font-weight:bold;margin-top:10px">Academia</a></li>
                     <li><a href="{{ url('/logistics') }}" style="color:white;font-weight:bold;margin-top:10px">Logistics</a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">News </a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Politics</a></li>
