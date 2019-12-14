@@ -115,9 +115,6 @@
 </template>
 <script>
     export default {
-        data:{
-
-        },
         methods:{
             getPhoto:function(){
                 return "img/background/laptop.jpg";
