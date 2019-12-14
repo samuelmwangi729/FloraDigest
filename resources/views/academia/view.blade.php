@@ -3,8 +3,11 @@
 
 @section('content')
 
-<div id="app">
-    <academia-component></academia-component>
+<div id="row">
+    <div id="app">
+        <academia-component></academia-component>
+        <footer-component></footer-component>
+    </div>
 </div>
 
 @endsection

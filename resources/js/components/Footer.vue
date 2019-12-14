@@ -1,5 +1,6 @@
 <template>
-    <footer class="footer_part" style="background-color:#562fc6;color:white;margin-top:20px">
+    <div class="row">
+        <footer class="footer_part" style="background-color:#562fc6;color:white;margin-top:20px">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
@@ -52,4 +53,5 @@
             </div>
         </div>
     </footer>
+    </div>
 </template>

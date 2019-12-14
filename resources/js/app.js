@@ -25,6 +25,7 @@ Vue.component('projects-component', require('./components/ProjectsComponent.vue'
 Vue.component('contact-component', require('./components/Contact.vue').default);
 Vue.component('footer-component', require('./components/Footer.vue').default);
 Vue.component('academia-component', require('./components/Academia.vue').default);
+Vue.component('logistics-component', require('./components/Logistics.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

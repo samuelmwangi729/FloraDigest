@@ -1829,143 +1829,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Academia.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Academia.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  methods: {
-    getPhoto: function getPhoto() {
-      return "img/background/laptop.jpg";
-    }
-  },
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -1993,7 +1856,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: {},
   methods: {
     getPhoto: function getPhoto() {
       return "img/logo.png";
@@ -37484,223 +37346,420 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "container mt-5" },
+      [
+        _c(
+          "marquee",
+          {
+            staticStyle: {
+              "background-color": "#562fc6",
+              color: "white",
+              "font-weight": "bold"
+            }
+          },
+          [
+            _c(
+              "span",
+              { staticStyle: { color: "red", "font-weight": "bold" } },
+              [_vm._v("Flora|")]
+            ),
+            _c("span", [_vm._v("Digest")]),
+            _vm._v(
+              " is a legitimate, reliable, quick and top-rated online essay writing service that provides high-quality, affordable papers."
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _vm._m(5)
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _vm._m(6)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12" }, [
-          _c(
-            "div",
-            {
-              staticClass: "carousel slide",
-              attrs: {
-                id: "myCarousel1",
-                "data-ride": "carousel",
-                "data-interval": "5000"
-              }
-            },
-            [
-              _c("div", { staticClass: "carousel-inner" }, [
-                _c("div", { staticClass: "item active" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel panel-primary",
-                      staticStyle: { height: "250px", width: "100%" }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          staticStyle: {
-                            "background-color": "#562fc6 !important"
-                          }
-                        },
-                        [
-                          _c("h3", { staticClass: "h1 text-center" }, [
-                            _c("i", {
-                              staticClass: "fa fa-credit-card",
-                              staticStyle: { color: "red" }
-                            }),
-                            _vm._v("  Great Pay for Great Writing")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "panel-body text-center" }, [
-                        _vm._v(
-                          "\n                    Over 10 years we have been the number one project and proposal writing company in Kenya. We have written over 500 PhD proposals, masters’ proposals, and degree and diploma projects.\n                     With our highly experienced staffs in fields of study we will be able to crack any work with a short time. \n                     Our experience serving as Masters student—and our combined reading, critiquing, evaluating, and editing of literally \n                     thousands of theses, dissertations, and projects—provides us with an insider’s perspective that will help you complete your master’s thesis, doctoral dissertation, or capstone project and earn your degree.\n                "
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "item" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel panel-primary",
-                      staticStyle: { height: "250px", width: "100%" }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          staticStyle: {
-                            "background-color": "#562fc6 !important"
-                          }
-                        },
-                        [
-                          _c("h3", { staticClass: "h1 text-center" }, [
-                            _c("i", {
-                              staticClass: "fa fa-graduation-cap",
-                              staticStyle: { color: "red" }
-                            }),
-                            _vm._v("  Study More Efficiently")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "panel-body text-center" }, [
-                        _vm._v(
-                          "\n                   We will serve you at your convenience, with just a call or text message we will start \n                   working on your work and deliver within the preset timeline. We understand your busy schedule and \n                   you may be far from Nairobi, so that’s why we will deliver the work online through email or whaatsap.\n                    We have written all research proposals in all universities in Kenya and abroad and we all are well \n                    acquainted with the proposal guidelines and format.\n                "
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "item" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel panel-primary",
-                      staticStyle: { height: "250px", width: "100%" }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          staticStyle: {
-                            "background-color": "#562fc6 !important"
-                          }
-                        },
-                        [
-                          _c("h3", { staticClass: "h1 text-center" }, [
-                            _c("i", {
-                              staticClass: "fa fa-sort-alpha-desc",
-                              staticStyle: { color: "red" }
-                            }),
-                            _vm._v("  Boost Your Grades")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "panel-body text-center" }, [
-                        _vm._v(
-                          "\n                   Get walked through your toughest problems and learn how to solve them from expert writers.\n                   Do you feel juggling work, studying, exams, and a personal life can sometimes feel a little bit overwhelming? \n                   You’re not alone, a lot of students do. College life these days is demanding and requires a lot of time, \n                   which you sometimes might not have. That’s where Edusson can help you.\n                    We are a dedicated essay writing service that can help you put together a top-quality essay.\n                "
-                        )
-                      ])
-                    ]
-                  )
-                ])
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12" }, [
+        _c(
+          "div",
+          {
+            staticClass: "carousel slide",
+            attrs: {
+              id: "myCarousel1",
+              "data-ride": "carousel",
+              "data-interval": "5000"
+            }
+          },
+          [
+            _c("div", { staticClass: "carousel-inner" }, [
+              _c("div", { staticClass: "item active" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel panel-primary",
+                    staticStyle: { height: "250px", width: "100%" }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        staticStyle: {
+                          "background-color": "#562fc6 !important"
+                        }
+                      },
+                      [
+                        _c("h3", { staticClass: "h1 text-center" }, [
+                          _c("i", {
+                            staticClass: "fa fa-credit-card",
+                            staticStyle: { color: "red" }
+                          }),
+                          _vm._v("  Great Pay for Great Writing")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel-body text-center" }, [
+                      _vm._v(
+                        "\n                    Our goal is to provide the best essay writing service there is online to give you the perfect essay custom to\n                     your needs. Our essay writers know your satisfaction is their objective. If you have an urgent request or need an essay a few weeks \n                     down the line, we can cater to any request, \n                    we know that sometimes things can go wrong and an unexpected urgent essay might be needed.\n                "
+                      )
+                    ])
+                  ]
+                )
               ]),
               _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "left carousel-control",
-                  attrs: { href: "#myCarousel1", "data-slide": "prev" }
-                },
-                [
-                  _c("span", {
-                    staticClass: "glyphicon glyphicon-chevron-left"
-                  }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
-                ]
-              ),
+              _c("div", { staticClass: "item" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel panel-primary",
+                    staticStyle: { height: "250px", width: "100%" }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        staticStyle: {
+                          "background-color": "#562fc6 !important"
+                        }
+                      },
+                      [
+                        _c("h3", { staticClass: "h1 text-center" }, [
+                          _c("i", {
+                            staticClass: "fa fa-graduation-cap",
+                            staticStyle: { color: "red" }
+                          }),
+                          _vm._v("  Study More Efficiently")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel-body text-center" }, [
+                      _vm._v(
+                        "\n                   We will serve you at your convenience, with just a call or text message we will start \n                   working on your work and deliver within the preset timeline. We understand your busy schedule and \n                   you may be far from Nairobi, so that’s why we will deliver the work online through email or whaatsap.\n                    We have written all research proposals in all universities in Kenya and abroad and we all are well \n                    acquainted with the proposal guidelines and format.\n                "
+                      )
+                    ])
+                  ]
+                )
+              ]),
               _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "right carousel-control",
-                  attrs: { href: "#myCarousel1", "data-slide": "next" }
-                },
-                [
-                  _c("span", {
-                    staticClass: "glyphicon glyphicon-chevron-right"
-                  }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
-                ]
-              )
-            ]
+              _c("div", { staticClass: "item" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel panel-primary",
+                    staticStyle: { height: "250px", width: "100%" }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        staticStyle: {
+                          "background-color": "#562fc6 !important"
+                        }
+                      },
+                      [
+                        _c("h3", { staticClass: "h1 text-center" }, [
+                          _c("i", {
+                            staticClass: "fa fa-sort-alpha-desc",
+                            staticStyle: { color: "red" }
+                          }),
+                          _vm._v("  Boost Your Grades")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel-body text-center" }, [
+                      _vm._v(
+                        "\n                   Get walked through your toughest problems and learn how to solve them from expert writers.\n                   Personal life can sometimes feel a little bit overwhelming.\n                   You’re not alone, a lot of students do. College life these days is demanding and requires a lot of time, \n                   which you sometimes might not have. That’s where Edusson can help you.\n                    We are a dedicated essay writing service that can help you put together a top-quality essay.\n                "
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "left carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "prev" }
+              },
+              [
+                _c("span", { staticClass: "glyphicon glyphicon-chevron-left" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "right carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "next" }
+              },
+              [
+                _c("span", {
+                  staticClass: "glyphicon glyphicon-chevron-right"
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+              ]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row well" }, [
+      _c("div", { staticClass: "col-lg-9" }, [
+        _c("span", [
+          _vm._v(
+            "We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals\n            and other educational materials that will help you in whatever you need. All we do give you sample 3 topics and you have \n            to choose one of your choice.\n\n            All after writting, we guarantee you a high quality job and also unlimited revisions on the proposals written for youApart from writing the \n            research proposals for you. We also publish our own research proposals and then one has to purchase them from our website.\n        "
           )
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row well" }, [
-        _c("div", { staticClass: "col-lg-9" }, [
-          _c("span", [
-            _vm._v(
-              "We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals\n            and other educational materials that will help you in whatever you need. All we do give you sample 3 topics and you have \n            to choose one of your choice.\n\n            All after writting, we guarantee you a high quality job and also unlimited revisions on the proposals written for youApart from writing the \n            research proposals for you. We also publish our own research proposals and then one has to purchase them from our website.\n        "
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-lg-3 panel-body" }, [
-          _c("h3", [
-            _c("i", {
-              staticClass: "fa fa-exclamation-triangle",
-              staticStyle: { color: "red" }
-            }),
-            _vm._v("  How We Work")
-          ])
+      _c("div", { staticClass: "col-lg-3 panel-body" }, [
+        _c("h3", [
+          _c("i", {
+            staticClass: "fa fa-exclamation-triangle",
+            staticStyle: { color: "red" }
+          }),
+          _vm._v("  How We Work")
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row well" }, [
+      _c("u", [
+        _c("h1", { staticClass: "text-center" }, [_vm._v("Research Proposals")])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row well" }, [
-        _c("u", [
-          _c("h1", { staticClass: "text-center" }, [
-            _vm._v("Research Proposals")
-          ])
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+          _vm._v(
+            "\n           Having completed hundreds of proposals \n           over a nine year period for a variety of industries and clients. We take our skill a deft hand at research and solid \n           communication with involved parties to produce proposals that meet needs of parties on both sides of the table. \n           We understand Our responsibilities as technical writers is to pay attention to the details and craft material that conveys \n           the importance of any potential transaction. We approach every project with this attitude effectively \n           relaying the needs of the company and through winning original and convincing content how the client can meet those needs.\n        "
+          )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+        _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+          _vm._v(
+            "\n           Our professional research skills and technical writing services are renowned for being the best there is.\n            We have helped thousands of students and have provided a supportive, reliable service. \n            You can relax knowing any essay we provide will be a unique, authentic and insightful. \n            If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n            we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n            your academic needs.\n            Our essay writing services are an easy, stress-free alternative to achieving your goals.\n        "
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row-fluid" }, [
+      _c("h1", { staticClass: "text-center" }, [
+        _vm._v("Who are We"),
+        _c("i", {
+          staticClass: "fa fa-question-circle",
+          staticStyle: { color: "red" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-6" }, [
+        _vm._v(
+          "\n       We understand ordering an essay online can seem a little daunting. There’s a risk the quality\n        won’t be up to scratch, or the formatting will be wrong. When you are working with tight deadlines, \n        there is no margin for these risks. Which is why we screen our writers’ degrees and qualifications \n        before they write for us. Our writers are real people and we review examples of their previous work \n        to make sure it adheres to all correct American university standards. We alleviate the risks, \n       so you can feel safe knowing you are working with a trustworthy pro essay writing service.\n    "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-6" }, [
+        _vm._v(
+          "\n        Our professional report writing service is renowned for being the best there is. \n        We have helped thousands of students and have provided a supportive, reliable service. \n        You can relax knowing any essay we provide will be a unique, authentic and insightful. \n        If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n        we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n        your academic needs. \n        Our essay writing services are an easy, stress-free alternative to achieving your goals.\n    "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("u", [
+      _c("h2", { staticClass: "text-center" }, [
+        _vm._v("Why students choose "),
+        _c("span", { staticStyle: { color: "red", "font-weight": "bold" } }, [
+          _vm._v("Flora|")
+        ]),
+        _c("span", [_vm._v("Digest")]),
+        _vm._v(" Essay writing service?")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+        _c("ul", [
+          _c("li", [
+            _c("b", [_vm._v("High Quality Job")]),
+            _c("br"),
             _vm._v(
-              "\n           Having completed hundreds of proposals \n           over a nine year period for a variety of industries and clients. We take our skill a deft hand at research and solid \n           communication with involved parties to produce proposals that meet needs of parties on both sides of the table. \n           We understand Our responsibilities as technical writers is to pay attention to the details and craft material that conveys \n           the importance of any potential transaction. We approach every project with this attitude effectively \n           relaying the needs of the company and through winning original and convincing content how the client can meet those needs.\n        "
+              "\n                    our essays will only be original and plagiarism free. \n                    Our essay writers use correct referencing formats that follow university standards – always.\n                "
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+          _c("li", [
+            _c("b", [_vm._v("Confidentiality")]),
+            _c("br"),
             _vm._v(
-              "\n           Our professional research skills and technical writing services are renowned for being the best there is.\n            We have helped thousands of students and have provided a supportive, reliable service. \n            You can relax knowing any essay we provide will be a unique, authentic and insightful. \n            If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n            we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n            your academic needs.\n            Our essay writing services are an easy, stress-free alternative to achieving your goals.\n        "
+              "\n                    For each and every proposal bought,we guarantee that the research proposal is valid and has never been presented before.\n                "
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("b", [_vm._v(" 24/7 support")]),
+            _c("br"),
+            _vm._v(
+              "\n                  our team of writers are on hand whenever you need them, no matter what time of day. If you have a last-minute request at 4 am, don’t worry because we’ll be here to help. Customer service is important to us, which is why we are here whenever you need, we want you to feel fully supported each step of the way.\n                "
             )
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row-fluid" }, [
-        _c("div", { staticClass: "col-lg-6" }, [
-          _vm._v("\n        Who we are\n    ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-lg-6" }, [
-          _vm._v(
-            "\n        Our professional essay writing service is renowned for being the best there is. \n        We have helped thousands of students and have provided a supportive, reliable service. \n        You can relax knowing any essay we provide will be a unique, authentic and insightful. \n        If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n        we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n        your academic needs. \n        Our essay writing services are an easy, stress-free alternative to achieving your goals.\n    "
-          )
+      _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+        _c("ul", [
+          _c("li", [
+            _c("b", [_vm._v("Fast essay writing")]),
+            _c("br"),
+            _vm._v(
+              "\n                    We write your essay as fast as you need – If you need an essay in a few hours or a few days,\n                    We can accommodate any deadline\n                "
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "\n                    Quickly get your essay from idea to final draft. Save time, money and effort\n                "
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "\n                    We want to make the ordering process as easy as possible for you. Which is why, we developed this platform so you can\n                    get what you need from our site even if we will be unavailable\n                "
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "list-unstyled text-center" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                staticStyle: {
+                  "border-radius": "20px",
+                  "margin-top": "30px",
+                  "background-color": "#ff4900 !important"
+                }
+              },
+              [
+                _c("i", { staticClass: "fa fa-eye" }),
+                _vm._v("  Available Proposals")
+              ]
+            ),
+            _vm._v("   "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                staticStyle: {
+                  "border-radius": "20px",
+                  "margin-top": "30px",
+                  "background-color": "#ff4900 !important"
+                }
+              },
+              [
+                _c("i", { staticClass: "fa fa-info" }),
+                _vm._v("  Order Your Proposal")
+              ]
+            )
+          ])
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row well" }, [
+      _c("div", { staticClass: "col-lg-4" }, [
+        _c("h3", { staticStyle: { "font-weight": "bold" } }, [
+          _vm._v("Meet Our Writers")
+        ]),
+        _vm._v(
+          "\n        and our positive reviews reflect this commitment to great service. Over the years, \n        we have perfected the art of essay writing and our team of pro writers is dedicated, \n        experienced, and always ready when you need them\n    "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-4" }, [
+        _c("h4", { staticStyle: { "font-weight": "bold" } }, [
+          _vm._v("Guides to Research Projects")
+        ]),
+        _vm._v(
+          "\n        Our writers can guide you, provide recommendations, write a full essay or help you construct the main ideas that you might be\n         finding difficult to get across. They’re experts, \n        so no matter what you’re struggling with, they can help.\n    "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-4 text-center" }, [
+        _c("img", {
+          staticStyle: { "border-radius": "200px" },
+          attrs: { src: "img/pioneer/img.jpg", width: "280px", height: "280px" }
+        })
       ])
     ])
   }
@@ -37971,268 +38030,270 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "footer",
-      {
-        staticClass: "footer_part",
-        staticStyle: {
-          "background-color": "#562fc6",
-          color: "white",
-          "margin-top": "20px"
-        }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-4 col-md-4 col-lg-4" }, [
-              _c("div", { staticClass: "single_footer_part" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "footer_logo_iner",
-                    attrs: { href: "index.html" }
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "img/logo.png",
-                        height: "100px",
-                        width: "100%",
-                        alt: "#"
-                      }
-                    })
-                  ]
-                ),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.\n                    "
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "footer",
+        {
+          staticClass: "footer_part",
+          staticStyle: {
+            "background-color": "#562fc6",
+            color: "white",
+            "margin-top": "20px"
+          }
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm-4 col-md-4 col-lg-4" }, [
+                _c("div", { staticClass: "single_footer_part" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "footer_logo_iner",
+                      attrs: { href: "index.html" }
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "img/logo.png",
+                          height: "100px",
+                          width: "100%",
+                          alt: "#"
+                        }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.\n                    "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-3 col-md-2 col-lg-3" }, [
+                _c("div", { staticClass: "single_footer_part" }, [
+                  _c("u", [_c("h4", [_vm._v("About Us")])]),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "list-unstyled",
+                      staticStyle: { "margin-top": "30px" }
+                    },
+                    [
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Managed Website")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Manage Reputation")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Power Tools")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Marketing Service")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Customer Service")]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-3 col-md-3 col-lg-3" }, [
+                _c("div", { staticClass: "single_footer_part" }, [
+                  _c("u", [_c("h4", [_vm._v("Quick Links")])]),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "list-unstyled",
+                      staticStyle: { "margin-top": "30px" }
+                    },
+                    [
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Store Hours")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Brand Assets")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Investor Relations")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Terms of Service")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Privacy & Policy")]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-3 col-md-2 col-lg-2" }, [
+                _c("div", { staticClass: "single_footer_part" }, [
+                  _c("u", [_c("h4", [_vm._v("Resources")])]),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "list-unstyled",
+                      staticStyle: { "margin-top": "30px" }
+                    },
+                    [
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Application Security")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Software Policy")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Supply Chain")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Agencies Relation")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticStyle: { color: "white" },
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("Manage Reputation")]
+                        )
+                      ])
+                    ]
                   )
                 ])
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-sm-3 col-md-2 col-lg-3" }, [
-              _c("div", { staticClass: "single_footer_part" }, [
-                _c("u", [_c("h4", [_vm._v("About Us")])]),
-                _vm._v(" "),
-                _c(
-                  "ul",
-                  {
-                    staticClass: "list-unstyled",
-                    staticStyle: { "margin-top": "30px" }
-                  },
-                  [
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Managed Website")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Manage Reputation")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Power Tools")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Marketing Service")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Customer Service")]
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ]),
+            _c("hr"),
             _vm._v(" "),
-            _c("div", { staticClass: "col-sm-3 col-md-3 col-lg-3" }, [
-              _c("div", { staticClass: "single_footer_part" }, [
-                _c("u", [_c("h4", [_vm._v("Quick Links")])]),
-                _vm._v(" "),
-                _c(
-                  "ul",
-                  {
-                    staticClass: "list-unstyled",
-                    staticStyle: { "margin-top": "30px" }
-                  },
-                  [
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Store Hours")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Brand Assets")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Investor Relations")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Terms of Service")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Privacy & Policy")]
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-sm-3 col-md-2 col-lg-2" }, [
-              _c("div", { staticClass: "single_footer_part" }, [
-                _c("u", [_c("h4", [_vm._v("Resources")])]),
-                _vm._v(" "),
-                _c(
-                  "ul",
-                  {
-                    staticClass: "list-unstyled",
-                    staticStyle: { "margin-top": "30px" }
-                  },
-                  [
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Application Security")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Software Policy")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Supply Chain")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Agencies Relation")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticStyle: { color: "white" },
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("Manage Reputation")]
-                      )
-                    ])
-                  ]
-                )
-              ])
+            _c("div", { staticClass: "row text-center" }, [
+              _vm._v("\n            © 2019 "),
+              _c("span", { staticStyle: { color: "red" } }, [_vm._v("Flora|")]),
+              _vm._v("Digest All rights reserved\n        ")
             ])
-          ]),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("div", { staticClass: "row text-center" }, [
-            _vm._v("\n            © 2019 "),
-            _c("span", { staticStyle: { color: "red" } }, [_vm._v("Flora|")]),
-            _vm._v("Digest All rights reserved\n        ")
           ])
-        ])
-      ]
-    )
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -38660,6 +38721,474 @@ var staticRenderFns = [
         )
       ]
     )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8& ***!
+  \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        {
+          staticClass: "row",
+          staticStyle: {
+            "background-image": "url(img/package.jpg)",
+            "background-size": "cover",
+            height: "400px",
+            "background-position": "center"
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "container",
+              staticStyle: { "padding-top": "100px" }
+            },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass: "text-center",
+                  staticStyle: {
+                    "font-size": "75px",
+                    "margin-top": "-50px",
+                    color: "red",
+                    "font-weight": "bold"
+                  }
+                },
+                [_vm._v("Logistics")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "panel panel-primary" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-body text-center",
+                    staticStyle: {
+                      "background-color": "#562fc6",
+                      color: "white"
+                    }
+                  },
+                  [
+                    _c("p", { staticClass: "panel-heading" }, [
+                      _vm._v(
+                        "With our packaging services,We guarantee you that the packages will be received on time and \n                also on the right condition. We provide an Outstanding flexble packaging and labels.\n                "
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "We are the ultimate solution in  provision of tailor-made solutions to all the flexible packaging and labelling requirements.\n                 "
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("h2", { staticClass: "text-center" }, [
+          _c("span", { staticStyle: { color: "red", "font-weight": "bold" } }, [
+            _vm._v("Flora|")
+          ]),
+          _vm._v("Digest Logistics")
+        ]),
+        _vm._v(" "),
+        _c("h4", { staticClass: "text-center" }, [
+          _vm._v("What do we package")
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4", staticStyle: { "padding-left": "30px" } },
+          [
+            _c("h3", { staticClass: "text-bold" }, [_vm._v(" FMCG")]),
+            _vm._v(
+              "\nFast-moving consumer goods (FMCG) or consumer packaged goods (CPG) are products that are sold quickly and at relatively low cost. \nExamples include non-durable goods such as soft drinks, toiletries, over-the-counter drugs, processed foods and many other consumables. \nBy the very nature of its buying pattern, the packed product should be intact as intended as well as the packaging should be very attractive to \ncatch the buyers eye. Flexible packaging is best suited to “interact” in this industry segment. Platinum Packaging Limited has always been committed \nowards sustainable options of flexible packaging. \nBeing on the edge of innovation we provide packaging that keeps the products safe, fresh and devoid of any harmful reactions.\n    "
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-4" }, [
+          _c("h3", { staticClass: "text-bold" }, [_vm._v(" Food & Beverages")]),
+          _vm._v(
+            "\n        Most food products require modified atmosphere or vacuum packaging. This includes fresh meats, \n        processed meats, cheeses, seafood and other perishable products- these require high oxygen barriers to avoid oxidation \n        of the product. Substrates such as Poly-amide or EVOH is used to provide protection against oxygen contaminating the product. \n        In cases of snacks, biscuits coffee & milk powder which are highly hygroscopic, these products require the highest form of protection from \n        moisture.The packaging is thus custom combinations of film structures of mono layers or a composite laminated structure with the lowest \n        Moisture Vapour Transmission Rate,\n         and also provides excellent optics and high abrasion and puncture resistance.\n    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-4" }, [
+          _c("h3", { staticClass: "text-bold" }, [_vm._v(" Agro Chemicals")]),
+          _vm._v(
+            "\n        Agro-chemicals are of different types. Granules, powders or liquids. Depending on the barrier\n         property required, the packaging is chosen. For example, for aggressive liquid packaging, the solution is to have \n         a laminated structure which is two-ply or three-ply which has resistance to aggressive substances- this construction \n         deters the product to penetrate the substrates. For normal powders and granules, depending on how hygroscopic the product is, \n         the packaging is chosen accordingly. For hygroscopic agro—chemical products, \n        a composite laminated structure with the lowest Moisture Vapour Transmission Rate is used.\n    "
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-lg-4", staticStyle: { "padding-top": "200px" } },
+          [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: {
+                  "background-color": "#562fc6 !important",
+                  height: "100px"
+                }
+              },
+              [
+                _c(
+                  "h3",
+                  {
+                    staticClass: "h1",
+                    staticStyle: { "font-size": "10px !important" }
+                  },
+                  [
+                    _c("i", {
+                      staticClass: "fa fa-credit-card",
+                      staticStyle: { color: "red" }
+                    }),
+                    _vm._v(
+                      "  Want It shippe for You?\n          Fill The form and We will get back to you\n          "
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-8" }, [
+          _c("table", { staticClass: "table table-striped" }, [
+            _c("tbody", [
+              _c("tr", [
+                _c("td", { attrs: { colspan: "1" } }, [
+                  _c("form", { staticClass: "well form-horizontal" }, [
+                    _c("fieldset", [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("Full Name")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-user"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "fullName",
+                                  name: "fullName",
+                                  placeholder: "Full Name",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("Address Line 1")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-home"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "addressLine1",
+                                  name: "addressLine1",
+                                  placeholder: "Address Line 1",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("Address Line 2")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-home"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "addressLine2",
+                                  name: "addressLine2",
+                                  placeholder: "Address Line 2",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("City")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-home"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "city",
+                                  name: "city",
+                                  placeholder: "City",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("State/Province/Region")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-home"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "state",
+                                  name: "state",
+                                  placeholder: "State/Province/Region",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("Postal Code/ZIP")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-home"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "postcode",
+                                  name: "postcode",
+                                  placeholder: "Postal Code/ZIP",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("Country")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c(
+                                "span",
+                                {
+                                  staticClass: "input-group-addon",
+                                  staticStyle: { "max-width": "100%" }
+                                },
+                                [
+                                  _c("i", {
+                                    staticClass: "glyphicon glyphicon-list"
+                                  })
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "select",
+                                { staticClass: "selectpicker form-control" },
+                                [
+                                  _c("option", [
+                                    _vm._v(
+                                      "A really long option to push the menu over the edget"
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("Email")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-envelope"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "email",
+                                  name: "email",
+                                  placeholder: "Email",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { staticClass: "col-md-4 control-label" }, [
+                          _vm._v("Phone Number")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-8 inputGroupContainer" },
+                          [
+                            _c("div", { staticClass: "input-group" }, [
+                              _c("span", { staticClass: "input-group-addon" }, [
+                                _c("i", {
+                                  staticClass: "glyphicon glyphicon-earphone"
+                                })
+                              ]),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  id: "phoneNumber",
+                                  name: "phoneNumber",
+                                  placeholder: "Phone Number",
+                                  required: "true",
+                                  value: "",
+                                  type: "text"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -50979,6 +51508,7 @@ Vue.component('projects-component', __webpack_require__(/*! ./components/Project
 Vue.component('contact-component', __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue")["default"]);
 Vue.component('footer-component', __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]);
 Vue.component('academia-component', __webpack_require__(/*! ./components/Academia.vue */ "./resources/js/components/Academia.vue")["default"]);
+Vue.component('logistics-component', __webpack_require__(/*! ./components/Logistics.vue */ "./resources/js/components/Logistics.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -51046,17 +51576,15 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Academia.vue?vue&type=template&id=4e08c7f0& */ "./resources/js/components/Academia.vue?vue&type=template&id=4e08c7f0&");
-/* harmony import */ var _Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Academia.vue?vue&type=script&lang=js& */ "./resources/js/components/Academia.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-
-
+var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
   _Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Academia_vue_vue_type_template_id_4e08c7f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -51070,20 +51598,6 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/Academia.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Academia.vue?vue&type=script&lang=js&":
-/*!***********************************************************************!*\
-  !*** ./resources/js/components/Academia.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Academia.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Academia.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Academia_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -51344,6 +51858,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Logistics.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/Logistics.vue ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Logistics.vue?vue&type=template&id=4bcc42b8& */ "./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Logistics.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8& ***!
+  \******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Logistics.vue?vue&type=template&id=4bcc42b8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

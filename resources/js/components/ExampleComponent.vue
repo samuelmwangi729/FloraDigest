@@ -17,9 +17,6 @@
 
 <script>
     export default {
-        data:{
-
-        },
         methods:{
             getPhoto:function(){
                 return "img/logo.png";

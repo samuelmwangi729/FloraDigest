@@ -5,7 +5,7 @@
 
 
 
-<div class="row" style="background-image:url('banner_img.png')">
+<div class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Indicators -->
           <ol class="carousel-indicators">
