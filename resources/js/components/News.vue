@@ -4,35 +4,47 @@
              <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="5000">     
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
-            <div class="item active" style="background-image:url('img/news/1.jpg');background-size:cover;color:white;background-position:center;height:400px">
-                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Research</h1></u><br><br><br>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black">The first one of its kind. Purchase our research proposals and get all what you needed. <br>Its always under a single place</span>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black" >With our advanced tools,experts and also researchers, we bet you will like us</span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Purchase membership</button></span>
+            <div class="item active" style="background-image:url('img/news/4.jpg');background-size:cover;color:white;background-position:center;height:500px;">
+                <u><h1 class="text-center" style="font-size:30px;opacity:1 !important"> <span style="color:#ff4900">Flora|Digest</span>&nbsp;About Us</h1></u><br><br><br>
+                <h3 class="text-center" style="font-size:30px;font-weight:bold">We are the  leading public service news site in East and Central Africa</h3>
+                <h3 class="text-center" style="font-size:20px;font-weight:bolder;line-height:50px" >We’re impartial and independent, and every day we create distinctive, world-class programmes and content which inform, educate and entertain 
+                    millions of people  around the world.</h3><br><br>
+                <h3 class="text-center"><button class="btn" style="border-radius:15px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-angle-double-down"></i></button></h3>
                 <br><br><br><br><br><br><br><br>
             </div>
       <!-- writer carousel -->
-<div class="item" style="background-image:url('img/news/2.jpg');background-size:cover;color:white;background-position:center;height:400px">
-                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Writers</h1></u><br><br><br>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black">If your are looking for writing services anywhere within the globe. <br>Then, you can count on Us</span>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black" >With our clients retention rates,its evident we provide high quality assignments</span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</button></span>
+            <div class="item" style="background-image:url('img/news/8.jpg');background-size:cover;color:black;background-position:center;height:500px">
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Services</h1></u><br><br><br>
+                    <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">We are the  leading public service news site in East and Central Africa</h3>
+                <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">Our commercial operations generate income to invest in new programmes and content</h3><br><br>
+               <h3 class="text-center"><button class="btn" style="border-radius:15px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</button></h3>
                 <br><br><br><br><br><br><br><br>
             </div>
-            <div class="item" style="background-image:url('img/news/3.jpg');background-size:cover;color:white;background-position:center;height:400px">
-                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Logistics</h1></u><br><br><br>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black">The fastest, easiest way to get products to our clients. <br>The tools we use exceeds clients expectations.</span>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black" >No one ships packages better for you  more than we do.<br></span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-angle-double-left"></i>&nbsp;&nbsp;Learn More...</button></span>
+            <div class="item" style="background-image:url('img/news/5.jpg');background-size:cover;color:black;background-position:center;height:500px">
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;<span style="color:white">Reports</span></h1></u><br><br><br>
+                    <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">Following the launch of our Code of Practice we’ve reviewed and assessed our internal processes to ensure we are able to hold ourselves and others to account</h3>
+                <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">Our purpose and commitment across the five principles was clear:
+                <ul class="list-unstyled text-center" style="font-size:14px">
+                    <i><li><i class="fa fa-check"></i>Lead by Example</li></i>
+                    <i><li><i class="fa fa-check"></i>Portlayal Should be authentic</li></i>
+                    <i><li><i class="fa fa-check"></i>Casting should be open and fair</li></i>
+                </ul>
+                </h3><br><br>
                 <br><br><br><br><br><br><br><br>
             </div>
-            <div class="item" style="background-image:url('img/news/2.jpg');background-size:cover;color:white;background-position:center;height:400px">
-                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;News</h1></u><br><br><br>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black">With a wide and trusted news source,we provide reliable and true information regarding on the matters rising.</span>
-                <span class="text-center" style="font-size:15px;font-weight:bold;background-color:black" >We are the leading online news platform. We are here to spread the news.</span><br><br>
-                <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-bell"></i>&nbsp;&nbsp;Read Site News</button></span>
-                <br><br><br>
-            </div>      
+            <div class="item" style="background-image:url('img/news/7.jpg');background-size:cover;color:black;background-position:center;height:500px">
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Ethics</h1></u><br><br><br>
+                    <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">The work undertaken through the Code of Practice has 
+                        given us a real opportunity to identify areas of excellence within the our Organization and the producers we work with. It has also highlighted opportunities 
+                        for improvement and areas for greater investment 
+                        to ensure that there is an increase in the wealth of voices, perspectives and stories visible on-screen, on-air and within our productions</h3>
+                <br><br><br><br><br><br><br><br>
+            </div> 
+             <div class="item" style="background-image:url('img/news/1.jpg');background-size:cover;color:black;background-position:center;height:500px">
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Commercials</h1></u><br><br><br>
+                    <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">The Institutions Board has published a review into the its transparency in the commercial subsidiaries of the BBC.</h3>
+                <br><br><br><br><br><br><br><br>
+            </div>     
           </div>
       
           <!-- Left and right controls -->
@@ -47,41 +59,40 @@
         </div>
     </div>
     <div class="col-lg-3">
-        <h3 class="h1" style="font-family:courier;text-decoration:underline;background-color:red">Latest News</h3>
+        <h3 class="h1" style="font-family:courier;text-decoration:underline;background-color:red">Top News</h3>
         <ul class="list-unstyled" style="font-size:13px">
-            <li>
+            <li class="well well-sm" style="height:100px">
                 <a href="#">
                     <img src="img/news/1.jpg" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
+                </a>
+                <br>
+                UN climate change talks in Madrid are struggling to reach agreement on crucial measures
+                <span style="font-weight:bold;opacity:.4">Category:</span><i><b>Science & Environment</b></i>
+            </li>
+            <li class="well well-sm" style="height:100px">
+                <a href="#">
+                    <img src="img/news/4.jpg" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
                 </a>
                 <br>
                 UN climate change talks in Madrid are struggling to reach agreement on crucial measures.
                 <span style="font-weight:bold;opacity:.4">Category:</span><i><b>Science & Environment</b></i>
             </li>
-            <li>
+            <li class="well well-sm">
                 <a href="#">
-                    <img src="img/news/1.jpg" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
+                    <img src="img/news/5.jpg" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
                 </a>
                 <br>
                 UN climate change talks in Madrid are struggling to reach agreement on crucial measures.
                 <span style="font-weight:bold;opacity:.4">Category:</span><i><b>Science & Environment</b></i>
             </li>
-            <li>
+            <li class="well well-sm">
                 <a href="#">
-                    <img src="img/news/1.jpg" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
+                    <img src="img/news/6.jpg" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
                 </a>
                 <br>
                 UN climate change talks in Madrid are struggling to reach agreement on crucial measures.
                 <span style="font-weight:bold;opacity:.4">Category:</span><i><b>Science & Environment</b></i>
             </li>
-            <li>
-                <a href="#">
-                    <img src="img/news/1.jpg" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
-                </a>
-                <br>
-                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.
-                <span style="font-weight:bold;opacity:.4">Category:</span><i><b>Science & Environment</b></i>
-            </li>
-            <hr>
         </ul>
     </div>
 </div>

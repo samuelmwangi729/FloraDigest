@@ -2048,6 +2048,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -39336,11 +39347,11 @@ var staticRenderFns = [
                 {
                   staticClass: "item active",
                   staticStyle: {
-                    "background-image": "url('img/news/1.jpg')",
+                    "background-image": "url('img/news/4.jpg')",
                     "background-size": "cover",
                     color: "white",
                     "background-position": "center",
-                    height: "400px"
+                    height: "500px"
                   }
                 },
                 [
@@ -39349,13 +39360,16 @@ var staticRenderFns = [
                       "h1",
                       {
                         staticClass: "text-center",
-                        staticStyle: { "font-size": "30px" }
+                        staticStyle: {
+                          "font-size": "30px",
+                          opacity: "1 !important"
+                        }
                       },
                       [
                         _c("span", { staticStyle: { color: "#ff4900" } }, [
                           _vm._v("Flora|Digest")
                         ]),
-                        _vm._v(" Research")
+                        _vm._v(" About Us")
                       ]
                     )
                   ]),
@@ -39364,59 +39378,53 @@ var staticRenderFns = [
                   _c("br"),
                   _vm._v(" "),
                   _c(
-                    "span",
+                    "h3",
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "15px",
-                        "font-weight": "bold",
-                        "background-color": "black"
+                        "font-size": "30px",
+                        "font-weight": "bold"
                       }
                     },
                     [
                       _vm._v(
-                        "The first one of its kind. Purchase our research proposals and get all what you needed. "
-                      ),
-                      _c("br"),
-                      _vm._v("Its always under a single place")
+                        "We are the  leading public service news site in East and Central Africa"
+                      )
                     ]
                   ),
                   _vm._v(" "),
                   _c(
-                    "span",
+                    "h3",
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "15px",
-                        "font-weight": "bold",
-                        "background-color": "black"
+                        "font-size": "20px",
+                        "font-weight": "bolder",
+                        "line-height": "50px"
                       }
                     },
                     [
                       _vm._v(
-                        "With our advanced tools,experts and also researchers, we bet you will like us"
+                        "We’re impartial and independent, and every day we create distinctive, world-class programmes and content which inform, educate and entertain \n                    millions of people  around the world."
                       )
                     ]
                   ),
                   _c("br"),
                   _c("br"),
                   _vm._v(" "),
-                  _c("span", { staticClass: "text-center" }, [
+                  _c("h3", { staticClass: "text-center" }, [
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-primary",
+                        staticClass: "btn",
                         staticStyle: {
                           "border-radius": "15px",
-                          "font-size": "15px",
+                          "font-size": "20px",
                           "background-color": "#ff4900 !important",
                           "font-weight": "bold"
                         }
                       },
-                      [
-                        _c("i", { staticClass: "fa fa-credit-card" }),
-                        _vm._v("  Purchase membership")
-                      ]
+                      [_c("i", { staticClass: "fa fa-angle-double-down" })]
                     )
                   ]),
                   _vm._v(" "),
@@ -39436,11 +39444,11 @@ var staticRenderFns = [
                 {
                   staticClass: "item",
                   staticStyle: {
-                    "background-image": "url('img/news/2.jpg')",
+                    "background-image": "url('img/news/8.jpg')",
                     "background-size": "cover",
-                    color: "white",
+                    color: "black",
                     "background-position": "center",
-                    height: "400px"
+                    height: "500px"
                   }
                 },
                 [
@@ -39455,7 +39463,7 @@ var staticRenderFns = [
                         _c("span", { staticStyle: { color: "#ff4900" } }, [
                           _vm._v("Flora|Digest")
                         ]),
-                        _vm._v(" Writers")
+                        _vm._v(" Services")
                       ]
                     )
                   ]),
@@ -39464,51 +39472,49 @@ var staticRenderFns = [
                   _c("br"),
                   _vm._v(" "),
                   _c(
-                    "span",
+                    "h3",
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "15px",
+                        "font-size": "30px",
                         "font-weight": "bold",
-                        "background-color": "black"
+                        "background-color": "white"
                       }
                     },
                     [
                       _vm._v(
-                        "If your are looking for writing services anywhere within the globe. "
-                      ),
-                      _c("br"),
-                      _vm._v("Then, you can count on Us")
+                        "We are the  leading public service news site in East and Central Africa"
+                      )
                     ]
                   ),
                   _vm._v(" "),
                   _c(
-                    "span",
+                    "h3",
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "15px",
+                        "font-size": "30px",
                         "font-weight": "bold",
-                        "background-color": "black"
+                        "background-color": "white"
                       }
                     },
                     [
                       _vm._v(
-                        "With our clients retention rates,its evident we provide high quality assignments"
+                        "Our commercial operations generate income to invest in new programmes and content"
                       )
                     ]
                   ),
                   _c("br"),
                   _c("br"),
                   _vm._v(" "),
-                  _c("span", { staticClass: "text-center" }, [
+                  _c("h3", { staticClass: "text-center" }, [
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-primary",
+                        staticClass: "btn",
                         staticStyle: {
                           "border-radius": "15px",
-                          "font-size": "15px",
+                          "font-size": "20px",
                           "background-color": "#ff4900 !important",
                           "font-weight": "bold"
                         }
@@ -39536,11 +39542,11 @@ var staticRenderFns = [
                 {
                   staticClass: "item",
                   staticStyle: {
-                    "background-image": "url('img/news/3.jpg')",
+                    "background-image": "url('img/news/5.jpg')",
                     "background-size": "cover",
-                    color: "white",
+                    color: "black",
                     "background-position": "center",
-                    height: "400px"
+                    height: "500px"
                   }
                 },
                 [
@@ -39555,7 +39561,10 @@ var staticRenderFns = [
                         _c("span", { staticStyle: { color: "#ff4900" } }, [
                           _vm._v("Flora|Digest")
                         ]),
-                        _vm._v(" Logistics")
+                        _vm._v(" "),
+                        _c("span", { staticStyle: { color: "white" } }, [
+                          _vm._v("Reports")
+                        ])
                       ]
                     )
                   ]),
@@ -39564,62 +39573,69 @@ var staticRenderFns = [
                   _c("br"),
                   _vm._v(" "),
                   _c(
-                    "span",
+                    "h3",
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "15px",
+                        "font-size": "30px",
                         "font-weight": "bold",
-                        "background-color": "black"
+                        "background-color": "white"
                       }
                     },
                     [
                       _vm._v(
-                        "The fastest, easiest way to get products to our clients. "
-                      ),
-                      _c("br"),
-                      _vm._v("The tools we use exceeds clients expectations.")
+                        "Following the launch of our Code of Practice we’ve reviewed and assessed our internal processes to ensure we are able to hold ourselves and others to account"
+                      )
                     ]
                   ),
                   _vm._v(" "),
                   _c(
-                    "span",
+                    "h3",
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "15px",
+                        "font-size": "30px",
                         "font-weight": "bold",
-                        "background-color": "black"
+                        "background-color": "white"
                       }
                     },
                     [
                       _vm._v(
-                        "No one ships packages better for you  more than we do."
+                        "Our purpose and commitment across the five principles was clear:\n                "
                       ),
-                      _c("br")
+                      _c(
+                        "ul",
+                        {
+                          staticClass: "list-unstyled text-center",
+                          staticStyle: { "font-size": "14px" }
+                        },
+                        [
+                          _c("i", [
+                            _c("li", [
+                              _c("i", { staticClass: "fa fa-check" }),
+                              _vm._v("Lead by Example")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("i", [
+                            _c("li", [
+                              _c("i", { staticClass: "fa fa-check" }),
+                              _vm._v("Portlayal Should be authentic")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("i", [
+                            _c("li", [
+                              _c("i", { staticClass: "fa fa-check" }),
+                              _vm._v("Casting should be open and fair")
+                            ])
+                          ])
+                        ]
+                      )
                     ]
                   ),
                   _c("br"),
                   _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "text-center" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        staticStyle: {
-                          "border-radius": "15px",
-                          "font-size": "15px",
-                          "background-color": "#ff4900 !important",
-                          "font-weight": "bold"
-                        }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-angle-double-left" }),
-                        _vm._v("  Learn More...")
-                      ]
-                    )
-                  ]),
                   _vm._v(" "),
                   _c("br"),
                   _c("br"),
@@ -39637,11 +39653,11 @@ var staticRenderFns = [
                 {
                   staticClass: "item",
                   staticStyle: {
-                    "background-image": "url('img/news/2.jpg')",
+                    "background-image": "url('img/news/7.jpg')",
                     "background-size": "cover",
-                    color: "white",
+                    color: "black",
                     "background-position": "center",
-                    height: "400px"
+                    height: "500px"
                   }
                 },
                 [
@@ -39656,7 +39672,7 @@ var staticRenderFns = [
                         _c("span", { staticStyle: { color: "#ff4900" } }, [
                           _vm._v("Flora|Digest")
                         ]),
-                        _vm._v(" News")
+                        _vm._v(" Ethics")
                       ]
                     )
                   ]),
@@ -39665,60 +39681,87 @@ var staticRenderFns = [
                   _c("br"),
                   _vm._v(" "),
                   _c(
-                    "span",
+                    "h3",
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "15px",
+                        "font-size": "30px",
                         "font-weight": "bold",
-                        "background-color": "black"
+                        "background-color": "white"
                       }
                     },
                     [
                       _vm._v(
-                        "With a wide and trusted news source,we provide reliable and true information regarding on the matters rising."
+                        "The work undertaken through the Code of Practice has \n                        given us a real opportunity to identify areas of excellence within the our Organization and the producers we work with. It has also highlighted opportunities \n                        for improvement and areas for greater investment \n                        to ensure that there is an increase in the wealth of voices, perspectives and stories visible on-screen, on-air and within our productions"
                       )
                     ]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "span",
-                    {
-                      staticClass: "text-center",
-                      staticStyle: {
-                        "font-size": "15px",
-                        "font-weight": "bold",
-                        "background-color": "black"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "We are the leading online news platform. We are here to spread the news."
-                      )
-                    ]
-                  ),
                   _c("br"),
                   _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "text-center" }, [
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/1.jpg')",
+                    "background-size": "cover",
+                    color: "black",
+                    "background-position": "center",
+                    height: "500px"
+                  }
+                },
+                [
+                  _c("u", [
                     _c(
-                      "button",
+                      "h1",
                       {
-                        staticClass: "btn btn-primary",
-                        staticStyle: {
-                          "border-radius": "15px",
-                          "font-size": "15px",
-                          "background-color": "#ff4900 !important",
-                          "font-weight": "bold"
-                        }
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
                       },
                       [
-                        _c("i", { staticClass: "fa fa-bell" }),
-                        _vm._v("  Read Site News")
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" Commercials")
                       ]
                     )
                   ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
                   _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "30px",
+                        "font-weight": "bold",
+                        "background-color": "white"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "The Institutions Board has published a review into the its transparency in the commercial subsidiaries of the BBC."
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
                   _c("br"),
                   _c("br"),
                   _c("br")
@@ -39768,7 +39811,7 @@ var staticRenderFns = [
               "background-color": "red"
             }
           },
-          [_vm._v("Latest News")]
+          [_vm._v("Top News")]
         ),
         _vm._v(" "),
         _c(
@@ -39778,12 +39821,72 @@ var staticRenderFns = [
             staticStyle: { "font-size": "13px" }
           },
           [
-            _c("li", [
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n                ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures\n                "
+                ),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n                ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+                ),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c("li", { staticClass: "well well-sm" }, [
               _c("a", { attrs: { href: "#" } }, [
                 _c("img", {
                   staticStyle: { "border-radius": "50px" },
                   attrs: {
-                    src: "img/news/1.jpg",
+                    src: "img/news/5.jpg",
                     width: "50px",
                     height: "50px",
                     align: "left"
@@ -39804,12 +39907,12 @@ var staticRenderFns = [
               _c("i", [_c("b", [_vm._v("Science & Environment")])])
             ]),
             _vm._v(" "),
-            _c("li", [
+            _c("li", { staticClass: "well well-sm" }, [
               _c("a", { attrs: { href: "#" } }, [
                 _c("img", {
                   staticStyle: { "border-radius": "50px" },
                   attrs: {
-                    src: "img/news/1.jpg",
+                    src: "img/news/6.jpg",
                     width: "50px",
                     height: "50px",
                     align: "left"
@@ -39828,61 +39931,7 @@ var staticRenderFns = [
                 [_vm._v("Category:")]
               ),
               _c("i", [_c("b", [_vm._v("Science & Environment")])])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [
-                _c("img", {
-                  staticStyle: { "border-radius": "50px" },
-                  attrs: {
-                    src: "img/news/1.jpg",
-                    width: "50px",
-                    height: "50px",
-                    align: "left"
-                  }
-                }),
-                _vm._v("Call for change in the UNEP\n                ")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(
-                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
-              ),
-              _c(
-                "span",
-                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
-                [_vm._v("Category:")]
-              ),
-              _c("i", [_c("b", [_vm._v("Science & Environment")])])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [
-                _c("img", {
-                  staticStyle: { "border-radius": "50px" },
-                  attrs: {
-                    src: "img/news/1.jpg",
-                    width: "50px",
-                    height: "50px",
-                    align: "left"
-                  }
-                }),
-                _vm._v("Call for change in the UNEP\n                ")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(
-                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
-              ),
-              _c(
-                "span",
-                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
-                [_vm._v("Category:")]
-              ),
-              _c("i", [_c("b", [_vm._v("Science & Environment")])])
-            ]),
-            _vm._v(" "),
-            _c("hr")
+            ])
           ]
         )
       ])
