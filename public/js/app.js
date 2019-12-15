@@ -1860,9 +1860,6 @@ __webpack_require__.r(__webpack_exports__);
     getPhoto: function getPhoto() {
       return "img/logo.png";
     }
-  },
-  mounted: function mounted() {
-    console.log('Component mounted.');
   }
 });
 
@@ -1951,6 +1948,107 @@ __webpack_require__.r(__webpack_exports__);
     console.log('Component mounted.');
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/News.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/News.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -39197,6 +39295,606 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/News.vue?vue&type=template&id=12793f84&":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/News.vue?vue&type=template&id=12793f84& ***!
+  \*******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-9 col-md-9 col-sm-9" }, [
+        _c(
+          "div",
+          {
+            staticClass: "carousel slide",
+            attrs: {
+              id: "myCarousel1",
+              "data-ride": "carousel",
+              "data-interval": "5000"
+            }
+          },
+          [
+            _c("div", { staticClass: "carousel-inner" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "item active",
+                  staticStyle: {
+                    "background-image": "url('img/news/1.jpg')",
+                    "background-size": "cover",
+                    color: "white",
+                    "background-position": "center",
+                    height: "400px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" Research")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "The first one of its kind. Purchase our research proposals and get all what you needed. "
+                      ),
+                      _c("br"),
+                      _vm._v("Its always under a single place")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "With our advanced tools,experts and also researchers, we bet you will like us"
+                      )
+                    ]
+                  ),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "text-center" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "15px",
+                          "font-size": "15px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-credit-card" }),
+                        _vm._v("  Purchase membership")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/2.jpg')",
+                    "background-size": "cover",
+                    color: "white",
+                    "background-position": "center",
+                    height: "400px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" Writers")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "If your are looking for writing services anywhere within the globe. "
+                      ),
+                      _c("br"),
+                      _vm._v("Then, you can count on Us")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "With our clients retention rates,its evident we provide high quality assignments"
+                      )
+                    ]
+                  ),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "text-center" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "15px",
+                          "font-size": "15px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-info" }),
+                        _vm._v("  Order Service")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/3.jpg')",
+                    "background-size": "cover",
+                    color: "white",
+                    "background-position": "center",
+                    height: "400px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" Logistics")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "The fastest, easiest way to get products to our clients. "
+                      ),
+                      _c("br"),
+                      _vm._v("The tools we use exceeds clients expectations.")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "No one ships packages better for you  more than we do."
+                      ),
+                      _c("br")
+                    ]
+                  ),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "text-center" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "15px",
+                          "font-size": "15px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-angle-double-left" }),
+                        _vm._v("  Learn More...")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/2.jpg')",
+                    "background-size": "cover",
+                    color: "white",
+                    "background-position": "center",
+                    height: "400px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" News")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "With a wide and trusted news source,we provide reliable and true information regarding on the matters rising."
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "black"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "We are the leading online news platform. We are here to spread the news."
+                      )
+                    ]
+                  ),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "text-center" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        staticStyle: {
+                          "border-radius": "15px",
+                          "font-size": "15px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-bell" }),
+                        _vm._v("  Read Site News")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "left carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "prev" }
+              },
+              [
+                _c("span", { staticClass: "glyphicon glyphicon-chevron-left" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "right carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "next" }
+              },
+              [
+                _c("span", {
+                  staticClass: "glyphicon glyphicon-chevron-right"
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+              ]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-3" }, [
+        _c(
+          "h3",
+          {
+            staticClass: "h1",
+            staticStyle: {
+              "font-family": "courier",
+              "text-decoration": "underline",
+              "background-color": "red"
+            }
+          },
+          [_vm._v("Latest News")]
+        ),
+        _vm._v(" "),
+        _c(
+          "ul",
+          {
+            staticClass: "list-unstyled",
+            staticStyle: { "font-size": "13px" }
+          },
+          [
+            _c("li", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  staticStyle: { "border-radius": "50px" },
+                  attrs: {
+                    src: "img/news/1.jpg",
+                    width: "50px",
+                    height: "50px",
+                    align: "left"
+                  }
+                }),
+                _vm._v("Call for change in the UNEP\n                ")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(
+                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+              ),
+              _c(
+                "span",
+                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                [_vm._v("Category:")]
+              ),
+              _c("i", [_c("b", [_vm._v("Science & Environment")])])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  staticStyle: { "border-radius": "50px" },
+                  attrs: {
+                    src: "img/news/1.jpg",
+                    width: "50px",
+                    height: "50px",
+                    align: "left"
+                  }
+                }),
+                _vm._v("Call for change in the UNEP\n                ")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(
+                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+              ),
+              _c(
+                "span",
+                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                [_vm._v("Category:")]
+              ),
+              _c("i", [_c("b", [_vm._v("Science & Environment")])])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  staticStyle: { "border-radius": "50px" },
+                  attrs: {
+                    src: "img/news/1.jpg",
+                    width: "50px",
+                    height: "50px",
+                    align: "left"
+                  }
+                }),
+                _vm._v("Call for change in the UNEP\n                ")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(
+                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+              ),
+              _c(
+                "span",
+                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                [_vm._v("Category:")]
+              ),
+              _c("i", [_c("b", [_vm._v("Science & Environment")])])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  staticStyle: { "border-radius": "50px" },
+                  attrs: {
+                    src: "img/news/1.jpg",
+                    width: "50px",
+                    height: "50px",
+                    align: "left"
+                  }
+                }),
+                _vm._v("Call for change in the UNEP\n                ")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(
+                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+              ),
+              _c(
+                "span",
+                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                [_vm._v("Category:")]
+              ),
+              _c("i", [_c("b", [_vm._v("Science & Environment")])])
+            ]),
+            _vm._v(" "),
+            _c("hr")
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectsComponent.vue?vue&type=template&id=20cb5d70&":
 /*!********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProjectsComponent.vue?vue&type=template&id=20cb5d70& ***!
@@ -51509,6 +52207,7 @@ Vue.component('contact-component', __webpack_require__(/*! ./components/Contact.
 Vue.component('footer-component', __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]);
 Vue.component('academia-component', __webpack_require__(/*! ./components/Academia.vue */ "./resources/js/components/Academia.vue")["default"]);
 Vue.component('logistics-component', __webpack_require__(/*! ./components/Logistics.vue */ "./resources/js/components/Logistics.vue")["default"]);
+Vue.component('news-component', __webpack_require__(/*! ./components/News.vue */ "./resources/js/components/News.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -51911,6 +52610,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logistics_vue_vue_type_template_id_4bcc42b8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/News.vue":
+/*!******************************************!*\
+  !*** ./resources/js/components/News.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./News.vue?vue&type=template&id=12793f84& */ "./resources/js/components/News.vue?vue&type=template&id=12793f84&");
+/* harmony import */ var _News_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./News.vue?vue&type=script&lang=js& */ "./resources/js/components/News.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _News_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/News.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/News.vue?vue&type=script&lang=js&":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/News.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_News_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./News.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/News.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_News_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/News.vue?vue&type=template&id=12793f84&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/News.vue?vue&type=template&id=12793f84& ***!
+  \*************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./News.vue?vue&type=template&id=12793f84& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/News.vue?vue&type=template&id=12793f84&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

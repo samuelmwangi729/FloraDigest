@@ -21,9 +21,6 @@
             getPhoto:function(){
                 return "img/logo.png";
             }
-        },
-        mounted() {
-            console.log('Component mounted.')
         }
     }
 </script>

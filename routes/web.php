@@ -45,3 +45,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 route::get('/academia','AcademiaController@index');
+Route::get('/news','NewsController@index');

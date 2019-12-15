@@ -1,0 +1,11 @@
+@extends('layouts.app')
+
+
+@section('content')
+
+
+<div id="app">
+    <news-component></news-component>
+</div>
+
+@endsection

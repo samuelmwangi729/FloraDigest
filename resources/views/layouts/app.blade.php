@@ -141,7 +141,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/academia') }}" style="color:white;font-weight:bold;margin-top:10px">Academia</a></li>
                     <li><a href="{{ url('/logistics') }}" style="color:white;font-weight:bold;margin-top:10px">Logistics</a></li>
-                    <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">News </a></li>
+                    <li><a href="{{ url('/news') }}" style="color:white;font-weight:bold;margin-top:10px">News </a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Politics</a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Blogs </a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Opinions</a></li>
