@@ -52,4 +52,6 @@ Route::get('/blog',[
     'as' => 'post.create'
 ]);
 
-Route::resource('posts', 'PostController');
+Route::group(['prefix' => 'blog','middleware' => 'auth'], function () {
+    Route::resource('posts', 'PostController');
+});
