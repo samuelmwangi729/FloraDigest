@@ -2053,12 +2053,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -39382,7 +39376,7 @@ var staticRenderFns = [
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "30px",
+                        "font-size": "20px",
                         "font-weight": "bold"
                       }
                     },
@@ -39398,7 +39392,7 @@ var staticRenderFns = [
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "20px",
+                        "font-size": "15px",
                         "font-weight": "bolder",
                         "line-height": "50px"
                       }
@@ -39476,7 +39470,7 @@ var staticRenderFns = [
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "30px",
+                        "font-size": "15px",
                         "font-weight": "bold",
                         "background-color": "white"
                       }
@@ -39493,7 +39487,7 @@ var staticRenderFns = [
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "30px",
+                        "font-size": "15px",
                         "font-weight": "bold",
                         "background-color": "white"
                       }
@@ -39577,7 +39571,7 @@ var staticRenderFns = [
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "30px",
+                        "font-size": "15px",
                         "font-weight": "bold",
                         "background-color": "white"
                       }
@@ -39589,51 +39583,6 @@ var staticRenderFns = [
                     ]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "h3",
-                    {
-                      staticClass: "text-center",
-                      staticStyle: {
-                        "font-size": "30px",
-                        "font-weight": "bold",
-                        "background-color": "white"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "Our purpose and commitment across the five principles was clear:\n                "
-                      ),
-                      _c(
-                        "ul",
-                        {
-                          staticClass: "list-unstyled text-center",
-                          staticStyle: { "font-size": "14px" }
-                        },
-                        [
-                          _c("i", [
-                            _c("li", [
-                              _c("i", { staticClass: "fa fa-check" }),
-                              _vm._v("Lead by Example")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("i", [
-                            _c("li", [
-                              _c("i", { staticClass: "fa fa-check" }),
-                              _vm._v("Portlayal Should be authentic")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("i", [
-                            _c("li", [
-                              _c("i", { staticClass: "fa fa-check" }),
-                              _vm._v("Casting should be open and fair")
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
                   _c("br"),
                   _c("br"),
                   _vm._v(" "),
@@ -39685,7 +39634,7 @@ var staticRenderFns = [
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "30px",
+                        "font-size": "15px",
                         "font-weight": "bold",
                         "background-color": "white"
                       }
@@ -39745,7 +39694,7 @@ var staticRenderFns = [
                     {
                       staticClass: "text-center",
                       staticStyle: {
-                        "font-size": "30px",
+                        "font-size": "15px",
                         "font-weight": "bold",
                         "background-color": "white"
                       }

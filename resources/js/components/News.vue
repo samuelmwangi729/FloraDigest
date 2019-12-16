@@ -6,7 +6,7 @@
           <div class="carousel-inner">
             <div class="item active" style="background-image:url('img/news/4.jpg');background-size:cover;color:white;background-position:center;height:500px;">
                 <u><h1 class="text-center" style="font-size:30px;opacity:1 !important"> <span style="color:#ff4900">Flora|Digest</span>&nbsp;About Us</h1></u><br><br><br>
-                <h3 class="text-center" style="font-size:30px;font-weight:bold">We are the  leading public service news site in East and Central Africa</h3>
+                <h3 class="text-center" style="font-size:20px;font-weight:bold">We are the  leading public service news site in East and Central Africa</h3>
                 <h3 class="text-center" style="font-size:15px;font-weight:bolder;line-height:50px" >We’re impartial and independent, and every day we create distinctive, world-class programmes and content which inform, educate and entertain 
                     millions of people  around the world.</h3><br><br>
                 <h3 class="text-center"><button class="btn" style="border-radius:15px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-angle-double-down"></i></button></h3>
