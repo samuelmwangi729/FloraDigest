@@ -51,3 +51,5 @@ Route::get('/blog',[
     'uses' => 'PostController@index',
     'as' => 'post.create'
 ]);
+
+Route::resource('posts', 'PostController');
