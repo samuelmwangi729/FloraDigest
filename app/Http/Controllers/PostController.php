@@ -54,6 +54,14 @@ class PostController extends AppBaseController
      */
     public function store(CreatePostRequest $request)
     {
+
+        dd($request->all());
+        $this->validate($request,[
+            'title'=>'required|max:255',
+            'text'=>'required|max:255',
+            'content'=>'required',
+            'image'=>'required|image'
+        ]);
         $input = $request->all();
 
         $post = $this->postRepository->create($input);
