@@ -27,6 +27,9 @@ Vue.component('footer-component', require('./components/Footer.vue').default);
 Vue.component('academia-component', require('./components/Academia.vue').default);
 Vue.component('logistics-component', require('./components/Logistics.vue').default);
 Vue.component('news-component', require('./components/News.vue').default);
+Vue.component('latest-component', require('./components/LatestNews.vue').default);
+Vue.component('politics-component',require('./components/Politics.vue').default);
+Vue.component('latestpolitical-component',require('./components/LatestPolitical.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

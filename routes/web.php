@@ -46,3 +46,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 route::get('/academia','AcademiaController@index');
 Route::get('/news','NewsController@index');
+Route::get('/politics','PoliticsController@index');
+Route::get('/blog',[
+    'uses' => 'PostController@index',
+    'as' => 'post.create'
+]);

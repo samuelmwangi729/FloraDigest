@@ -2057,6 +2057,112 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Politics.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Politics.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -38832,6 +38938,506 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LatestNews.vue?vue&type=template&id=9adfdab6&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LatestNews.vue?vue&type=template&id=9adfdab6& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c(
+        "h3",
+        {
+          staticClass: "h1",
+          staticStyle: { color: "red !important", "padding-left": "30px" }
+        },
+        [_vm._v("Latest News")]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12" }, [
+        _c(
+          "ul",
+          {
+            staticClass: "list-unstyled",
+            staticStyle: { "font-size": "13px" }
+          },
+          [
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures"
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures."
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures"
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures."
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures"
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures."
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c("li", { staticClass: "text-center" }, [
+              _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fa fa-angle-double-down" }),
+                _vm._v("More News")
+              ])
+            ])
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LatestPolitical.vue?vue&type=template&id=06694eca&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LatestPolitical.vue?vue&type=template&id=06694eca& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c(
+        "h3",
+        {
+          staticClass: "h1",
+          staticStyle: { color: "red !important", "padding-left": "30px" }
+        },
+        [_vm._v("Latest Politics News")]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12" }, [
+        _c(
+          "ul",
+          {
+            staticClass: "list-unstyled",
+            staticStyle: { "font-size": "13px" }
+          },
+          [
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures"
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures."
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures"
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures."
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures"
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n            UN climate change talks in Madrid are struggling to reach agreement on crucial measures."
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c("li", { staticClass: "text-center" }, [
+              _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fa fa-angle-double-down" }),
+                _vm._v("More News")
+              ])
+            ])
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8&":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Logistics.vue?vue&type=template&id=4bcc42b8& ***!
@@ -39797,6 +40403,599 @@ var staticRenderFns = [
                   [_vm._v("Category:")]
                 ),
                 _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/4.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for change in the UNEP\n                ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+                ),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Science & Environment")])])
+              ]
+            ),
+            _vm._v(" "),
+            _c("li", { staticClass: "well well-sm" }, [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  staticStyle: { "border-radius": "50px" },
+                  attrs: {
+                    src: "img/news/5.jpg",
+                    width: "50px",
+                    height: "50px",
+                    align: "left"
+                  }
+                }),
+                _vm._v("Call for change in the UNEP\n                ")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(
+                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+              ),
+              _c(
+                "span",
+                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                [_vm._v("Category:")]
+              ),
+              _c("i", [_c("b", [_vm._v("Science & Environment")])])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "well well-sm" }, [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  staticStyle: { "border-radius": "50px" },
+                  attrs: {
+                    src: "img/news/6.jpg",
+                    width: "50px",
+                    height: "50px",
+                    align: "left"
+                  }
+                }),
+                _vm._v("Call for change in the UNEP\n                ")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(
+                "\n                UN climate change talks in Madrid are struggling to reach agreement on crucial measures.\n                "
+              ),
+              _c(
+                "span",
+                { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                [_vm._v("Category:")]
+              ),
+              _c("i", [_c("b", [_vm._v("Science & Environment")])])
+            ])
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Politics.vue?vue&type=template&id=5a01284c&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Politics.vue?vue&type=template&id=5a01284c& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-9 col-md-9 col-sm-9" }, [
+        _c(
+          "div",
+          {
+            staticClass: "carousel slide",
+            attrs: {
+              id: "myCarousel1",
+              "data-ride": "carousel",
+              "data-interval": "5000"
+            }
+          },
+          [
+            _c("div", { staticClass: "carousel-inner" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "item active",
+                  staticStyle: {
+                    "background-image": "url('img/news/4.jpg')",
+                    "background-size": "cover",
+                    color: "white",
+                    "background-position": "center",
+                    height: "500px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: {
+                          "font-size": "30px",
+                          opacity: "1 !important"
+                        }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" About Us")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "20px",
+                        "font-weight": "bold"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "We are the  leading public service news site in East and Central Africa"
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bolder",
+                        "line-height": "50px"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "We’re impartial and independent, and every day we create distinctive, world-class programmes and content which inform, educate and entertain \n                    millions of people  around the world."
+                      )
+                    ]
+                  ),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("h3", { staticClass: "text-center" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn",
+                        staticStyle: {
+                          "border-radius": "15px",
+                          "font-size": "20px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_c("i", { staticClass: "fa fa-angle-double-down" })]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/8.jpg')",
+                    "background-size": "cover",
+                    color: "black",
+                    "background-position": "center",
+                    height: "500px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" Services")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "white"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "We are the  leading public service news site in East and Central Africa"
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "white"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "Our commercial operations generate income to invest in new programmes and content"
+                      )
+                    ]
+                  ),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("h3", { staticClass: "text-center" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn",
+                        staticStyle: {
+                          "border-radius": "15px",
+                          "font-size": "20px",
+                          "background-color": "#ff4900 !important",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-info" }),
+                        _vm._v("  Order Service")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/5.jpg')",
+                    "background-size": "cover",
+                    color: "black",
+                    "background-position": "center",
+                    height: "500px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticStyle: { color: "white" } }, [
+                          _vm._v("Reports")
+                        ])
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "white"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "Following the launch of our Code of Practice we’ve reviewed and assessed our internal processes to ensure we are able to hold ourselves and others to account"
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/7.jpg')",
+                    "background-size": "cover",
+                    color: "black",
+                    "background-position": "center",
+                    height: "500px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" Ethics")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "white"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "The work undertaken through the Code of Practice has \n                        given us a real opportunity to identify areas of excellence within the our Organization and the producers we work with. It has also highlighted opportunities \n                        for improvement and areas for greater investment \n                        to ensure that there is an increase in the wealth of voices, perspectives and stories visible on-screen, on-air and within our productions"
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "item",
+                  staticStyle: {
+                    "background-image": "url('img/news/1.jpg')",
+                    "background-size": "cover",
+                    color: "black",
+                    "background-position": "center",
+                    height: "500px"
+                  }
+                },
+                [
+                  _c("u", [
+                    _c(
+                      "h1",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { "font-size": "30px" }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "#ff4900" } }, [
+                          _vm._v("Flora|Digest")
+                        ]),
+                        _vm._v(" Commercials")
+                      ]
+                    )
+                  ]),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: {
+                        "font-size": "15px",
+                        "font-weight": "bold",
+                        "background-color": "white"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "The Institutions Board has published a review into the its transparency in the commercial subsidiaries of the BBC."
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br"),
+                  _c("br")
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "left carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "prev" }
+              },
+              [
+                _c("span", { staticClass: "glyphicon glyphicon-chevron-left" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "right carousel-control",
+                attrs: { href: "#myCarousel1", "data-slide": "next" }
+              },
+              [
+                _c("span", {
+                  staticClass: "glyphicon glyphicon-chevron-right"
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+              ]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-3" }, [
+        _c(
+          "h3",
+          {
+            staticClass: "h1",
+            staticStyle: {
+              "font-family": "courier",
+              "text-decoration": "underline",
+              color: "red"
+            }
+          },
+          [_vm._v("Top Political News")]
+        ),
+        _vm._v(" "),
+        _c(
+          "ul",
+          {
+            staticClass: "list-unstyled",
+            staticStyle: { "font-size": "13px" }
+          },
+          [
+            _c(
+              "li",
+              { staticClass: "well well-sm", staticStyle: { height: "100px" } },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    staticStyle: { "border-radius": "50px" },
+                    attrs: {
+                      src: "img/news/1.jpg",
+                      width: "50px",
+                      height: "50px",
+                      align: "left"
+                    }
+                  }),
+                  _vm._v("Call for in BBI proposal\n                ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n                Voters Feel neglected over the new Constitution change drafted in Building Bridge Initiative report\n                "
+                ),
+                _c(
+                  "span",
+                  { staticStyle: { "font-weight": "bold", opacity: ".4" } },
+                  [_vm._v("Category:")]
+                ),
+                _c("i", [_c("b", [_vm._v("Political & Analysis")])])
               ]
             ),
             _vm._v(" "),
@@ -52206,6 +53405,9 @@ Vue.component('footer-component', __webpack_require__(/*! ./components/Footer.vu
 Vue.component('academia-component', __webpack_require__(/*! ./components/Academia.vue */ "./resources/js/components/Academia.vue")["default"]);
 Vue.component('logistics-component', __webpack_require__(/*! ./components/Logistics.vue */ "./resources/js/components/Logistics.vue")["default"]);
 Vue.component('news-component', __webpack_require__(/*! ./components/News.vue */ "./resources/js/components/News.vue")["default"]);
+Vue.component('latest-component', __webpack_require__(/*! ./components/LatestNews.vue */ "./resources/js/components/LatestNews.vue")["default"]);
+Vue.component('politics-component', __webpack_require__(/*! ./components/Politics.vue */ "./resources/js/components/Politics.vue")["default"]);
+Vue.component('latestpolitical-component', __webpack_require__(/*! ./components/LatestPolitical.vue */ "./resources/js/components/LatestPolitical.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -52560,6 +53762,112 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/LatestNews.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/LatestNews.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LatestNews_vue_vue_type_template_id_9adfdab6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LatestNews.vue?vue&type=template&id=9adfdab6& */ "./resources/js/components/LatestNews.vue?vue&type=template&id=9adfdab6&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _LatestNews_vue_vue_type_template_id_9adfdab6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LatestNews_vue_vue_type_template_id_9adfdab6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/LatestNews.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/LatestNews.vue?vue&type=template&id=9adfdab6&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/LatestNews.vue?vue&type=template&id=9adfdab6& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LatestNews_vue_vue_type_template_id_9adfdab6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./LatestNews.vue?vue&type=template&id=9adfdab6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LatestNews.vue?vue&type=template&id=9adfdab6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LatestNews_vue_vue_type_template_id_9adfdab6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LatestNews_vue_vue_type_template_id_9adfdab6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/LatestPolitical.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/LatestPolitical.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LatestPolitical_vue_vue_type_template_id_06694eca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LatestPolitical.vue?vue&type=template&id=06694eca& */ "./resources/js/components/LatestPolitical.vue?vue&type=template&id=06694eca&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _LatestPolitical_vue_vue_type_template_id_06694eca___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LatestPolitical_vue_vue_type_template_id_06694eca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/LatestPolitical.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/LatestPolitical.vue?vue&type=template&id=06694eca&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/LatestPolitical.vue?vue&type=template&id=06694eca& ***!
+  \************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LatestPolitical_vue_vue_type_template_id_06694eca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./LatestPolitical.vue?vue&type=template&id=06694eca& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LatestPolitical.vue?vue&type=template&id=06694eca&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LatestPolitical_vue_vue_type_template_id_06694eca___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LatestPolitical_vue_vue_type_template_id_06694eca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Logistics.vue":
 /*!***********************************************!*\
   !*** ./resources/js/components/Logistics.vue ***!
@@ -52677,6 +53985,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_News_vue_vue_type_template_id_12793f84___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Politics.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Politics.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Politics_vue_vue_type_template_id_5a01284c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Politics.vue?vue&type=template&id=5a01284c& */ "./resources/js/components/Politics.vue?vue&type=template&id=5a01284c&");
+/* harmony import */ var _Politics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Politics.vue?vue&type=script&lang=js& */ "./resources/js/components/Politics.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Politics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Politics_vue_vue_type_template_id_5a01284c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Politics_vue_vue_type_template_id_5a01284c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Politics.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Politics.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/Politics.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Politics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Politics.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Politics.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Politics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Politics.vue?vue&type=template&id=5a01284c&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/Politics.vue?vue&type=template&id=5a01284c& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Politics_vue_vue_type_template_id_5a01284c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Politics.vue?vue&type=template&id=5a01284c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Politics.vue?vue&type=template&id=5a01284c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Politics_vue_vue_type_template_id_5a01284c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Politics_vue_vue_type_template_id_5a01284c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
