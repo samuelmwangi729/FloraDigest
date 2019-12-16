@@ -23,18 +23,12 @@
             <div class="item" style="background-image:url('img/news/5.jpg');background-size:cover;color:black;background-position:center;height:500px">
                 <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;<span style="color:white">Reports</span></h1></u><br><br><br>
                     <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">Following the launch of our Code of Practice we’ve reviewed and assessed our internal processes to ensure we are able to hold ourselves and others to account</h3>
-                <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">Our purpose and commitment across the five principles was clear:
-                <ul class="list-unstyled text-center" style="font-size:14px">
-                    <i><li><i class="fa fa-check"></i>Lead by Example</li></i>
-                    <i><li><i class="fa fa-check"></i>Portlayal Should be authentic</li></i>
-                    <i><li><i class="fa fa-check"></i>Casting should be open and fair</li></i>
-                </ul>
-                </h3><br><br>
+                <br><br>
                 <br><br><br><br><br><br><br><br>
             </div>
             <div class="item" style="background-image:url('img/news/7.jpg');background-size:cover;color:black;background-position:center;height:500px">
                 <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Ethics</h1></u><br><br><br>
-                    <h3 class="text-center" style="font-size:30px;font-weight:bold;background-color:white;">The work undertaken through the Code of Practice has 
+                    <h3 class="text-center" style="font-size:20px;font-weight:bold;background-color:white;">The work undertaken through the Code of Practice has 
                         given us a real opportunity to identify areas of excellence within the our Organization and the producers we work with. It has also highlighted opportunities 
                         for improvement and areas for greater investment 
                         to ensure that there is an increase in the wealth of voices, perspectives and stories visible on-screen, on-air and within our productions</h3>
