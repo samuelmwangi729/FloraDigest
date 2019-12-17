@@ -35,7 +35,8 @@ class Post extends Model
         'text',
         'content',
         'category_id',
-        'image'
+        'image',
+        'slug'
     ];
 
     /**
