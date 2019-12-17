@@ -9,14 +9,15 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "doctrine/dbal": "~2.3",
         "fideloper/proxy": "^4.0",
+        "infyomlabs/adminlte-templates": "6.0.x-dev",
+        "infyomlabs/laravel-generator": "6.0.x-dev",
         "laravel/framework": "^6.2",
+        "laravel/helpers": "^1.1",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.1",
-        "laravelcollective/html": "^6.0",
-        "infyomlabs/laravel-generator": "6.0.x-dev",
-        "infyomlabs/adminlte-templates": "6.0.x-dev",
-        "doctrine/dbal": "~2.3"
+        "laravelcollective/html": "^6.0"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
