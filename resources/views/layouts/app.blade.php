@@ -81,6 +81,7 @@
                     <li><a href="{{ url('/register') }}" style="color:white;font-weight:bold;margin-top:10px">Register</a></li>
                     <li><a href="{{ url('/login') }}" style="color:white;font-weight:bold;margin-top:10px">Login</a></li>
                     @else
+                    <li><a href="/home" style="color:white;font-weight:bold;margin-top:10px">Dashboard</a></li>
                     <a href="{{ url('/logout') }}" class="btn btn-flat" style="color:white;font-weight:bold;margin-top:10px"
                                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         Sign out
