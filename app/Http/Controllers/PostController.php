@@ -55,7 +55,6 @@ class PostController extends AppBaseController
     public function store(CreatePostRequest $request)
     {
 
-        dd($request->all());
         $this->validate($request,[
             'title'=>'required|max:255',
             'text'=>'required|max:255',
