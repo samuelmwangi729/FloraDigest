@@ -9,6 +9,9 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use Session;
+use App\Category;
+use App\Post;
 
 class PostController extends AppBaseController
 {
@@ -42,7 +45,7 @@ class PostController extends AppBaseController
      */
     public function create()
     {
-        return view('posts.create');
+        return view('posts.create')->with('categories',Category::all());
     }
 
     /**
@@ -54,18 +57,32 @@ class PostController extends AppBaseController
      */
     public function store(CreatePostRequest $request)
     {
+        // dd($request->image);
 
         $this->validate($request,[
             'title'=>'required|max:255',
             'text'=>'required|max:255',
             'content'=>'required',
-            'image'=>'required|image'
+            'image'=>'required|image',
+            'category_id'=>'required'
         ]);
+
+        $image=$request->image;
+        $newImageName=time().$image->getClientOriginalName();
+        $image->move('uploads/posts',$newImageName);
         $input = $request->all();
 
-        $post = $this->postRepository->create($input);
+        $post = $this->postRepository->create([
+            'title'=> $request->title,
+            'slug'=> str_slug($request->title),
+            'text'=>$request->text,
+            'content'=>$request->content,
+            'image'=>'uploads/posts/'.$newImageName,
+            'category_id'=>$request->category_id
+        ]);
 
-        Flash::success('Post saved successfully.');
+        // Flash::success('Post saved successfully.');
+        Session::flash('success','Post Successfully saved');
 
         return redirect(route('posts.index'));
     }
@@ -82,12 +99,15 @@ class PostController extends AppBaseController
         $post = $this->postRepository->find($id);
 
         if (empty($post)) {
-            Flash::error('Post not found');
+            Session::flash('error','Post not Found');
 
             return redirect(route('posts.index'));
         }
 
-        return view('posts.show')->with('post', $post);
+        return view('posts.show')->with([
+            'post', $post,
+            'categories',Category::all(),
+        ]);
     }
 
     /**
@@ -100,9 +120,8 @@ class PostController extends AppBaseController
     public function edit($id)
     {
         $post = $this->postRepository->find($id);
-
         if (empty($post)) {
-            Flash::error('Post not found');
+            Session::flash('error','Post Not Found');
 
             return redirect(route('posts.index'));
         }
@@ -123,14 +142,13 @@ class PostController extends AppBaseController
         $post = $this->postRepository->find($id);
 
         if (empty($post)) {
-            Flash::error('Post not found');
+            Session::flash('error','Post Not Found');
 
             return redirect(route('posts.index'));
         }
 
         $post = $this->postRepository->update($request->all(), $id);
-
-        Flash::success('Post updated successfully.');
+        Session::flash('success','Post Successfully updated');
 
         return redirect(route('posts.index'));
     }
@@ -150,13 +168,13 @@ class PostController extends AppBaseController
 
         if (empty($post)) {
             Flash::error('Post not found');
+            Session::flash('success','Post Not Found ');
 
             return redirect(route('posts.index'));
         }
 
         $this->postRepository->delete($id);
-
-        Flash::success('Post deleted successfully.');
+        Session::flash('success','Post Successfully Deleted');
 
         return redirect(route('posts.index'));
     }

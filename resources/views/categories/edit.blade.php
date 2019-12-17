@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Post
+            Category
         </h1>
    </section>
    <div class="content">
@@ -11,10 +11,9 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {{-- {{ $categories }} --}}
-                   {!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'patch']) !!}
+                   {!! Form::model($category, ['route' => ['categories.update', $category->id], 'method' => 'patch']) !!}
 
-                        {{-- @include('posts.fields') --}}
+                        @include('categories.fields')
 
                    {!! Form::close() !!}
                </div>

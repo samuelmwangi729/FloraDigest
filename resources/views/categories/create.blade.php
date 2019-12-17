@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Post
+            Category
         </h1>
     </section>
     <div class="content">
@@ -11,10 +11,11 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                     <form enctype="multipart/form-data" method="POST" action="{{ route('posts.store') }}">
-                        {{ csrf_field() }}
-                        @include('posts.fields')
-                     </form>
+                    {!! Form::open(['route' => 'categories.store']) !!}
+
+                        @include('categories.fields')
+
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>

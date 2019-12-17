@@ -1,35 +1,43 @@
 <!-- Title Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('title', 'Title:') !!}
-    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+    <div class="label-control text-bold">
+        Title
+    </div>
+    <input type="text" class="form-control input-md" name="title" placeholder="Enter the title here">
 </div>
-
-<!-- Text Field -->
+<!-- Title Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('text', 'Text:') !!}
-    {!! Form::text('text', null, ['class' => 'form-control']) !!}
+    <div class="label-control text-bold">
+        Text 
+    </div>
+    <input type="text" class="form-control input-md" name="text" placeholder="Enter the title here">
 </div>
-
-<!-- Content Field -->
+<!-- Title Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('content', 'Content:') !!}
-    {!! Form::text('content', null, ['class' => 'form-control']) !!}
+    <div class="label-control text-bold">
+        Content 
+    </div>
+    <input type="text" class="form-control input-md" name="content" placeholder="Enter the title here">
 </div>
-
-<!-- Category Id Field -->
+<!-- Title Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('category_id', 'Category Id:') !!}
-    {!! Form::text('category_id', null, ['class' => 'form-control']) !!}
+    <div class="label-control text-bold">
+        Category_Id
+    </div>
+    <select class="form-control" name="category_id">
+        @foreach($categories as $cat)
+        <option>{{ $cat->name }}</option>
+        @endforeach
+    </select>
 </div>
-
-<!-- Image Field -->
+<!-- Title Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('image', 'Image:') !!}
-    {!! Form::file('image', null, ['class' => 'form-control']) !!}
+    <div class="label-control text-bold">
+        Featured Image 
+    </div>
+    <input type="file" class="form-control" name="image" style="border: none">
 </div>
 
-<!-- Submit Field -->
-<div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{{ route('posts.index') }}" class="btn btn-default">Cancel</a>
+<div class="form-group col-sm-6">
+    <button type="submit" class="btn btn-primary">Submit</button>
 </div>

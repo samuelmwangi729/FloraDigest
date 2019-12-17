@@ -55,3 +55,6 @@ Route::get('/blog',[
 Route::group(['prefix' => 'blog','middleware' => 'auth'], function () {
     Route::resource('posts', 'PostController');
 });
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('categories', 'CategoryController');
+});
