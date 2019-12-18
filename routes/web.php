@@ -54,6 +54,18 @@ Route::get('/blog',[
 
 Route::group(['prefix' => 'blog','middleware' => 'auth'], function () {
     Route::resource('posts', 'PostController');
+    Route::get('/trashed',[
+        'uses'=>'PostController@trashed',
+        'as'=>'posts.trashed'
+    ]);
+    Route::get('/restore',[
+        'uses'=>'PostController@restore',
+        'as'=>'posts.restore'
+    ]);
+    Route::get('/posts/edit/{id}',[
+        'uses'=>'PostController@restore',
+        'as'=>'posts.edit'
+    ]);
 });
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('categories', 'CategoryController');

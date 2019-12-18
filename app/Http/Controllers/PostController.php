@@ -126,7 +126,7 @@ class PostController extends AppBaseController
             return redirect(route('posts.index'));
         }
 
-        return view('posts.edit')->with('post', $post);
+        return view('blog.post.edit')->with('post', $post);
     }
 
     /**
@@ -177,5 +177,15 @@ class PostController extends AppBaseController
         Session::flash('success','Post Successfully Deleted');
 
         return redirect(route('posts.index'));
+    }
+    public function trashed(){
+        $post=Post::onlyTrashed()->get();
+        return view('blog.post.trashed')->with('posts',$post);
+    }
+    public function restore(Request $request){
+        $post=Post::withTrashed()->where('id',$request->id)->first();
+        $post->restore();
+        Session::flash('success','Post Successfully Restored');
+        return redirect()->back();
     }
 }

@@ -1,7 +1,7 @@
 <template>
 <div class="row">
        <div class="col-lg-9 col-md-9 col-sm-9">
-             <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="5000">     
+    <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="5000">     
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active" style="background-image:url('img/news/4.jpg');background-size:cover;color:white;background-position:center;height:500px;">

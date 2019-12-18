@@ -3,7 +3,7 @@
     <header class="main-header">
 
         <!-- Logo -->
-        <a href="#" class="logo">
+        <a href="/" class="logo">
         <b>{{config('app.name')}}</b>
         </a>
         
@@ -19,7 +19,7 @@
                     <!-- User Account Menu -->
                     <li class="dropdown user user-menu">
                         <!-- Menu Toggle Button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="/" class="dropdown-toggle" data-toggle="dropdown">
                             <!-- The user image in the navbar-->
                             <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
                                  class="user-image" alt="User Image"/>

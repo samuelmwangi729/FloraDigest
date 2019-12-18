@@ -1,3 +1,15 @@
+@extends('layouts.app')
+@extends('layouts.hsidebar')
+
+@section('content')
+@if($posts->count()==0)
+<div class="alert alert-danger">
+    <strong><i class="fa fa-exclamation-circle"></i>Error!!!</strong> No Posts Trashed
+    <a href="#" class="close" data-dismiss="alert" style="color:white">&times</a>
+    
+</div>
+@endif
+@if($posts->count()>0)
 <div class="table-responsive">
     <table class="table" id="posts-table">
         <thead>
@@ -20,19 +32,16 @@
             <td>{{ $post->content }}</td>
             <td>{{ $post->category_id }}</td>
             
-            {{-- @if(Auth::check())
+            @if(Auth::check())
                 <td>
-                    {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
-                    <div class='btn-group'>
-                        <a href="{{ route('posts.show', [$post->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                        <a href="{{ route('posts.edit', [$post->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                        {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
-                    </div>
-                    {!! Form::close() !!}
+                    <a href="{{ route('posts.restore',['id'=>$post->id]) }}" class="btn btn-xs btn-danger">Restore</a>
                 </td>
-            @endif --}}
+            @endif
             </tr>
         @endforeach
         </tbody>
     </table>
 </div>
+@endif
+
+@stop
