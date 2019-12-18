@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@include('layouts.hsidebar')
+@extends('layouts.hsidebar')
 @section('content')
 <div class="container">
     <div class="row">
