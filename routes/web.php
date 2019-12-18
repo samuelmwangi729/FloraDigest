@@ -58,12 +58,20 @@ Route::group(['prefix' => 'blog','middleware' => 'auth'], function () {
         'uses'=>'PostController@trashed',
         'as'=>'posts.trashed'
     ]);
+    Route::get('/viewAll',[
+        'uses'=>'PostController@view',
+        'as'=>'posts.view'
+    ]);
     Route::get('/restore',[
         'uses'=>'PostController@restore',
         'as'=>'posts.restore'
     ]);
-    Route::get('/posts/edit/{id}',[
+    Route::get('/posts/restore/{id}',[
         'uses'=>'PostController@restore',
+        'as'=>'posts.restore'
+    ]);
+    Route::get('/posts/edit/{id}',[
+        'uses'=>'PostController@edit',
         'as'=>'posts.edit'
     ]);
 });

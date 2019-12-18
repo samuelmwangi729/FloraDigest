@@ -3,7 +3,7 @@
       <div class="collapse" id="collapseExample">
         <ul class="list-unstyled" style="color:white;padding-left:30px">
             <li><a href="{{ route('posts.create') }}" ><i class="fa fa-plus"></i>&nbsp;&nbsp;Create</a></li>
-            <li><a href="#" ><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a></li>
+            <li><a href="{{ route('posts.view') }}" ><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a></li>
         </ul>
       </div>
 </li>

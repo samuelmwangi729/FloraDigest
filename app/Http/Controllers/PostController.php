@@ -104,10 +104,7 @@ class PostController extends AppBaseController
             return redirect(route('posts.index'));
         }
 
-        return view('posts.show')->with([
-            'post', $post,
-            'categories',Category::all(),
-        ]);
+        return view('blog.post.show')->with('post',$post);
     }
 
     /**
@@ -126,7 +123,7 @@ class PostController extends AppBaseController
             return redirect(route('posts.index'));
         }
 
-        return view('blog.post.edit')->with('post', $post);
+        return view('blog.post.edit')->with('post', $post)->with('categories',Category::all());
     }
 
     /**
@@ -146,11 +143,15 @@ class PostController extends AppBaseController
 
             return redirect(route('posts.index'));
         }
-
-        $post = $this->postRepository->update($request->all(), $id);
+        
+        // if($request->hasFile('image')){
+        //     dd('done');
+        // }
+        $image=$request->image;
+        dd($image->getClientOriginalName);
         Session::flash('success','Post Successfully updated');
 
-        return redirect(route('posts.index'));
+        return redirect(route('posts.view'));
     }
 
     /**
@@ -176,7 +177,7 @@ class PostController extends AppBaseController
         $this->postRepository->delete($id);
         Session::flash('success','Post Successfully Deleted');
 
-        return redirect(route('posts.index'));
+        return redirect()->back();
     }
     public function trashed(){
         $post=Post::onlyTrashed()->get();
@@ -187,5 +188,12 @@ class PostController extends AppBaseController
         $post->restore();
         Session::flash('success','Post Successfully Restored');
         return redirect()->back();
+    }
+    public function view(Request $request)
+    {
+        $posts = $this->postRepository->all();
+
+        return view('blog.post.index')
+            ->with('posts', $posts);
     }
 }

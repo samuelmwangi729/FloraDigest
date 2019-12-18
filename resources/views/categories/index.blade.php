@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@extends('layouts.hsidebar')
 @section('content')
     <section class="content-header">
         <h1 class="pull-left">Categories</h1>

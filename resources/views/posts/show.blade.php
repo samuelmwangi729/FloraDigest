@@ -10,7 +10,7 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
-                    @include('posts.show_fields')
+                    {{ $post }}
                     <a href="{{ route('posts.index') }}" class="btn btn-default">Back</a>
                 </div>
             </div>
