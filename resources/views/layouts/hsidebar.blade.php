@@ -90,7 +90,7 @@
     
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2016 <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>Copyright © <?php echo date('Y');?> <a href="#">flora|Digest</a>.</strong> All rights reserved.
         </footer>
     </div>
     @include('layouts.js')
