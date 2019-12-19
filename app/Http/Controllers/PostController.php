@@ -12,6 +12,7 @@ use Response;
 use Session;
 use App\Category;
 use App\Post;
+use App\Tag;
 
 class PostController extends AppBaseController
 {
@@ -45,7 +46,7 @@ class PostController extends AppBaseController
      */
     public function create()
     {
-        return view('posts.create')->with('categories',Category::all());
+        return view('posts.create')->with('categories',Category::all())->with('tag',Tag::all());
     }
 
     /**
@@ -64,23 +65,24 @@ class PostController extends AppBaseController
             'text'=>'required|max:255',
             'content'=>'required',
             'image'=>'required|image',
-            'category_id'=>'required'
+            'category_id'=>'required',
+            'tags'=>'required'
         ]);
 
         $image=$request->image;
         $newImageName=time().$image->getClientOriginalName();
         $image->move('uploads/posts',$newImageName);
         $input = $request->all();
-
-        $post = $this->postRepository->create([
+        $post=Post::create([
             'title'=> $request->title,
             'slug'=> str_slug($request->title),
             'text'=>$request->text,
             'content'=>$request->content,
+            'category_id'=>$request->category_id,
             'image'=>'uploads/posts/'.$newImageName,
-            'category_id'=>$request->category_id
+            
         ]);
-
+        $post->tags()->attach($request->tags);
         // Flash::success('Post saved successfully.');
         Session::flash('success','Post Successfully saved');
 
@@ -123,7 +125,10 @@ class PostController extends AppBaseController
             return redirect(route('posts.index'));
         }
 
-        return view('blog.post.edit')->with('post', $post)->with('categories',Category::all());
+        return view('blog.post.edit')
+        ->with('post', $post)
+        ->with('categories',Category::all())
+        ->with('tags',Tag::all());
     }
 
     /**
@@ -163,6 +168,7 @@ class PostController extends AppBaseController
         $post->content=$request->content;
         $post->category_id=$request->category_id;
         $post->save();
+        $post->tags()->sync($request->tags);
         Session::flash('success','The post has been Updated');
         return redirect()->route('posts.view');
         // return response($newImageName);

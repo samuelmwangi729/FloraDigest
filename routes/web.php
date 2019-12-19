@@ -79,6 +79,8 @@ Route::group(['prefix' => 'blog','middleware' => 'auth'], function () {
         'as'=>'posts.edit'
     ]);
 });
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['auth','admin']], function () {
     Route::resource('categories', 'CategoryController');
 });
+
+Route::resource('tags', 'TagsController');

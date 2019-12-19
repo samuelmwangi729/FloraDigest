@@ -44,6 +44,9 @@ class Category extends Model
     public static $rules = [
         'name'=>'required'
     ];
-
+    
+    public function category(){
+        return $this->hasMany('App\Post');
+    }
     
 }

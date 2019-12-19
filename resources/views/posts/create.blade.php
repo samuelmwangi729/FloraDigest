@@ -20,3 +20,11 @@
         </div>
     </div>
 @endsection
+@section('css')
+
+@stop
+
+@section('scripts')
+
+
+@stop

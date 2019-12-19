@@ -13,12 +13,11 @@
         <tbody>
         @foreach($posts as $post)
             <tr>
-            <td><img src="{{ asset($post->image) }}" alt="{{ $post->title }}" width="90px" height="90px"></td>
-            <td>{{ $post->title }}</td>
-            <td>{{ $post->slug }}</td>
-            <td>{{ $post->text }}</td>
-            <td>{{ $post->content }}</td>
-            <td>{{ $post->category_id }}</td>
+            <td><img src="{{ asset($post->image) }}" alt="{{ $post->title }}" width="40px" height="40px" style="border-radius:50px"></td>
+            <td style="font-size:10px">{{ $post->title }}</td>
+            <td style="font-size:10px">{{ $post->slug }}</td>
+            <td style="font-size:10px">{{ $post->text }}</td>
+            <td style="font-size:10px">{{ $post->category_id }}</td>
                 <td>
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

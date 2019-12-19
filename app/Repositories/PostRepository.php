@@ -41,4 +41,7 @@ class PostRepository extends BaseRepository
     {
         return Post::class;
     }
+    public function tags(){
+        return $this->belongsToMany('App\Tag');
+    }
 }

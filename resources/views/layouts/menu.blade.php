@@ -8,8 +8,13 @@
       </div>
 </li>
 <li class="{{ Request::is('categories*') ? 'active' : '' }}">
-    <a href="{{ route('categories.index') }}"><i class="fa fa-edit"></i><span>Categories</span></a>
-</li>
-<li class="{{ Request::is('categories*') ? 'active' : '' }}">
     <a href="{{ route('posts.trashed') }}"><i class="fa fa-trash"></i><span>Recycle Bin</span></a>
 </li>
+@if(Auth::user()->admin)
+<li class="{{ Request::is('categories*') ? 'active' : '' }}">
+    <a href="{{ route('categories.index') }}"><i class="fa fa-edit"></i><span>Categories</span></a>
+</li>
+<li class="{{ Request::is('tags*') ? 'active' : '' }}">
+    <a href="{{ route('tags.index') }}"><i class="fa fa-edit"></i><span>Tags</span></a>
+</li>
+@endif

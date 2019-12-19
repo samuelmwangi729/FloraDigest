@@ -13,12 +13,12 @@
 <!-- Content Field -->
 <div class="form-group">
     {!! Form::label('content', 'Content:') !!}
-    <p>{{ $post->content }}</p>
+    <p><?php echo $post->content;?></p>
 </div>
 
 <!-- Category Id Field -->
 <div class="form-group">
-    {!! Form::label('category_id', 'Category Id:') !!}
+    {!! Form::label('category_id', 'Category:') !!}
     <p>{{ $post->category_id }}</p>
 </div>
 

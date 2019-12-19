@@ -10,6 +10,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
 <script>
     @if(Session::has('success'))
         toastr.success("{{ Session::get('success') }}");
@@ -17,4 +18,15 @@
     @if(Session::has('error'))
         toastr.error("{{ Session::get('error') }}");
     @endif
+    @if(Session::has('info'))
+        toastr.info("{{ Session::get('info') }}");
+    @endif
 </script>
+<script>
+    $(document).ready(function() {
+      $('#summernote').summernote({
+          height:500
+      });
+
+    });
+    </script>

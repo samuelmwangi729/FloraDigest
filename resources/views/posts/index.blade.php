@@ -19,8 +19,7 @@
             <a href="#">
                 <img src="{{ asset($post->image) }}" width="50px" height="50px" align="left" style="border-radius:50px">Call for change in the UNEP
             </a>
-            <br>
-           {{ $post->content }}
+            <br><?php echo $post->content;?>
             <span style="font-weight:bold;opacity:.4">Category:</span><i><b>{{ $post->category_id }}</b></i>
         </li>
         @endforeach

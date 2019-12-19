@@ -93,6 +93,7 @@
             <strong>Copyright © <?php echo date('Y');?> <a href="#">flora|Digest</a>.</strong> All rights reserved.
         </footer>
     </div>
+    @yield('scripts')
     @include('layouts.js')
 </body>
 </html>
