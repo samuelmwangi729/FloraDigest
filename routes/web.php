@@ -66,6 +66,10 @@ Route::group(['prefix' => 'blog','middleware' => 'auth'], function () {
         'uses'=>'PostController@restore',
         'as'=>'posts.restore'
     ]);
+    Route::post('/update/{id}',[
+        'uses'=>'PostController@update',
+        'as'=>'posts.update'
+    ]);
     Route::get('/posts/restore/{id}',[
         'uses'=>'PostController@restore',
         'as'=>'posts.restore'

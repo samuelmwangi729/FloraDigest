@@ -32,7 +32,7 @@ class PostController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $posts = $this->postRepository->all();
+        $posts = $this->postRepository->all()->take(4);
 
         return view('posts.index')
             ->with('posts', $posts);
@@ -134,24 +134,38 @@ class PostController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdatePostRequest $request)
-    {
-        $post = $this->postRepository->find($id);
+    public function Update($id, UpdatePostRequest $request)
+    {   
+        $this->validate($request,[
+            'title'=>'required',
+            'text'=>'required',
+            'content'=>'required',
+            'category_id'=>'required',
+            'image'=>'required'
+        ]);
+        $post=Post::find($id);
 
-        if (empty($post)) {
+        if(empty($post)){
             Session::flash('error','Post Not Found');
-
-            return redirect(route('posts.index'));
         }
-        
-        // if($request->hasFile('image')){
-        //     dd('done');
-        // }
-        $image=$request->image;
-        dd($image->getClientOriginalName);
-        Session::flash('success','Post Successfully updated');
 
-        return redirect(route('posts.view'));
+        
+        if($request->hasFile('image')){
+            $image=$request->file('image');
+            $newImageName=time().$image->getClientOriginalName();
+            $image->move('uploads/posts',$newImageName);
+            $post->image='uploads/posts/'.$newImageName;
+        }
+
+        $post->title=$request->title;
+        $post->slug=str_slug($request->title);
+        $post->text=$request->text;
+        $post->content=$request->content;
+        $post->category_id=$request->category_id;
+        $post->save();
+        Session::flash('success','The post has been Updated');
+        return redirect()->route('posts.view');
+        // return response($newImageName);
     }
 
     /**

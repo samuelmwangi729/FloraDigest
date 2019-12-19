@@ -11,11 +11,10 @@
        <div class="box-body">
            <div class="row">
                {{-- {{ $categories }} --}}
-               {!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'patch']) !!}
-
-                    @include('blog.post.fields')
-
-               {!! Form::close() !!}
+               <form method="POST" action="{{ route('posts.update',['id'=>$post->id]) }}" enctype="multipart/form-data">
+                {{ csrf_field() }}
+                @include('blog.post.fields')
+           </form>
            </div>
        </div>
    </div>
