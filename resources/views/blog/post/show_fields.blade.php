@@ -19,7 +19,7 @@
 <!-- Category Id Field -->
 <div class="form-group">
     {!! Form::label('category_id', 'Category:') !!}
-    <p>{{ $post->category_id }}</p>
+    <p>{{ $post->category->name }}</p>
 </div>
 
 <!-- Image Field -->

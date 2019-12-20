@@ -15,7 +15,7 @@
         <span class="fa fa-clock">&nbsp;&nbsp;{{ $postsingle->created_at }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span class=" fa fa-tags text-center">{{ $postsingle->text }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="fa fa-comment">&nbsp;&nbsp;68</span>&nbsp;&nbsp;
-        <span class="fa fa-user">&nbsp;&nbsp;Published by: Admin</span>
+        <span class="fa fa-user">&nbsp;&nbsp;Published by:<i><b>{{ $postsingle->published_by }}</b></i>
     @endforeach
         
  </div>

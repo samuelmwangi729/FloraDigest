@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');
 Route::get('/blog/post/{slug}',[
     'uses'=>'PostController@singlePost',
     'as'=>'posts.single'

@@ -37,8 +37,8 @@ class PostController extends AppBaseController
         $posts = $this->postRepository->all();
 
         return view('posts.index')
-            ->with('posts', Post::orderBy('id','desc')->skip(1)->take(4)->get())
-            ->with('first_post',Post::orderBy('created_at','desc')->first()->get()->take(1));
+            ->with('posts', Post::orderBy('id','desc')->take(4)->get())
+            ->with('first_post',Post::orderBy('id','desc')->take(1)->get());
     }
 
     /**
@@ -82,13 +82,14 @@ class PostController extends AppBaseController
             'content'=>$request->content,
             'category_id'=>$request->category_id,
             'image'=>'uploads/posts/'.$newImageName,
+            'published_by'=>Auth::user()->name,
             
         ]);
         $post->tags()->attach($request->tags);
         // Flash::success('Post saved successfully.');
         Session::flash('success','Post Successfully saved');
 
-        return redirect(route('posts.index'));
+        return redirect(route('index'));
     }
 
     /**

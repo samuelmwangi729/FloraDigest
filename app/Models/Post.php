@@ -50,7 +50,8 @@ class Post extends Model
         'text' => 'string',
         'content' => 'string',
         'category_id' => 'string',
-        'image' => 'string'
+        'image' => 'string',
+        'published_by'=>'string'
     ];
 
     /**
