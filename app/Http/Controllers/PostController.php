@@ -33,10 +33,11 @@ class PostController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $posts = $this->postRepository->all()->take(4);
+        $posts = $this->postRepository->all();
 
         return view('posts.index')
-            ->with('posts', $posts);
+            ->with('posts', Post::orderBy('id','desc')->skip(1)->take(4)->get())
+            ->with('first_post',Post::orderBy('created_at','desc')->first());
     }
 
     /**
@@ -96,9 +97,9 @@ class PostController extends AppBaseController
      *
      * @return Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $post = $this->postRepository->find($id);
+        $post = $this->postRepository->find($slug);
 
         if (empty($post)) {
             Session::flash('error','Post not Found');
