@@ -66,7 +66,7 @@ class Post extends Model
         'image' => 'required'
     ];
 
-    public function post(){
+    public function category(){
         return $this->belongsTo('App\Category');
     }
     public function tags(){

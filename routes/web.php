@@ -14,7 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/blog/post/{slug}',[
+    'uses'=>'PostController@singlePost',
+    'as'=>'posts.single'
+]);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

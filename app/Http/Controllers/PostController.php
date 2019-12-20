@@ -13,6 +13,7 @@ use Session;
 use App\Category;
 use App\Post;
 use App\Tag;
+use Auth;
 
 class PostController extends AppBaseController
 {
@@ -37,7 +38,7 @@ class PostController extends AppBaseController
 
         return view('posts.index')
             ->with('posts', Post::orderBy('id','desc')->skip(1)->take(4)->get())
-            ->with('first_post',Post::orderBy('created_at','desc')->first());
+            ->with('first_post',Post::orderBy('created_at','desc')->first()->get()->take(1));
     }
 
     /**
@@ -132,6 +133,12 @@ class PostController extends AppBaseController
         ->with('tags',Tag::all());
     }
 
+
+    public function singlePost($slug){
+        $post=Post::where('slug',$slug)->first();
+        return view('blog.post.single')->with('post',$post);
+    }
+
     /**
      * Update the specified Post in storage.
      *
@@ -215,6 +222,6 @@ class PostController extends AppBaseController
         $posts = $this->postRepository->all();
 
         return view('blog.post.index')
-            ->with('posts', $posts);
+            ->with('posts', Post::all());
     }
 }

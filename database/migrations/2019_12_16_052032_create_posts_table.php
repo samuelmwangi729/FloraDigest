@@ -21,6 +21,8 @@ class CreatePostsTable extends Migration
             $table->longText('content');
             $table->string('category_id');
             $table->string('image');
+            $table->string('published_by');
+            $table->string('edited_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

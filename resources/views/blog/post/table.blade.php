@@ -17,11 +17,11 @@
             <td style="font-size:10px">{{ $post->title }}</td>
             <td style="font-size:10px">{{ $post->slug }}</td>
             <td style="font-size:10px">{{ $post->text }}</td>
-            <td style="font-size:10px">{{ $post->category_id }}</td>
+            <td style="font-size:10px">{{ $post->category->name }}</td>
                 <td>
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                        <a href="{{ route('posts.show', [$post->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <a href="{{ route('posts.single', [$post->slug]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
                         <a href="{{ route('posts.edit', [$post->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                         {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                     </div>
