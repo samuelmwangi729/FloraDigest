@@ -5,7 +5,7 @@
   <h1>{{ $post->title }}</h1>
 </div>
 <div class="container">
-    <div class="text-center"><img src="{{ asset($post->image) }}" width="50px" height="50" class="img-responsive"></div>
+    <div class="text-center"><img src="{{ asset($post->image) }}" width="50%" height="50%" class="img-responsive"></div>
     <div class="row-fluid text-center"><i class="fa fa-user"></i>&nbsp;&nbsp;Posted by Admin&nbsp;&nbsp;&nbsp;&nbsp;
         <i class="fa fa-clock"></i>&nbsp;&nbsp;{{  $post->created_at->toFormattedDateString() }}&nbsp;&nbsp;&nbsp;&nbsp;
     <i class="fa fa-tags"></i>&nbsp;&nbsp;{{  $post->category->name }}&nbsp;&nbsp;&nbsp;&nbsp;
