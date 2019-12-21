@@ -87,3 +87,19 @@ Route::group(['middleware' => ['auth','admin']], function () {
 });
 
 Route::resource('tags', 'TagsController');
+
+Route::resource('newsTags', 'NewsTagsController');
+Route::get('/restore',[
+    'uses'=>'NewsTagsController@restore',
+    'as'=>'newsTags.restore'
+]);
+Route::get('/newstag/recover/{id}',[
+    'uses'=>'NewsTagsController@recover',
+    'as'=>'newsTags.recover'
+]);
+
+Route::get('/newstag/delete/{id}',[
+    'uses'=>'NewsTagsController@delete',
+    'as'=>'newsTags.delete'
+]);
+Route::resource('news', 'NewsController');

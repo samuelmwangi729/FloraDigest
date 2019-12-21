@@ -18,3 +18,15 @@
     <a href="{{ route('tags.index') }}"><i class="fa fa-edit"></i><span>Tags</span></a>
 </li>
 @endif
+<li class="{{ Request::is('newsTags*') ? 'active' : '' }}">
+    <a href="{{ route('newsTags.index') }}"><i class="fa fa-edit"></i><span>News Tags</span></a>
+</li>
+
+<li class="{{ Request::is('newsTags*') ? 'active' : '' }}">
+    <a href="{{ route('newsTags.restore') }}"><i class="fa fa-trash"></i><span>Trashed NewsTags</span></a>
+</li>
+
+<li class="{{ Request::is('news*') ? 'active' : '' }}">
+    <a href="{{ route('news.index') }}"><i class="fa fa-edit"></i><span>News</span></a>
+</li>
+

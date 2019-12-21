@@ -26,12 +26,12 @@
         <header class="main-header">
     
             <!-- Logo -->
-            <a href="/" class="logo">
+            <a href="/" class="logo" style="background-color:#562fc6 !important">
             <b>{{config('app.name')}}</b>
             </a>
             
             <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top" role="navigation" style="background-color:#562fc6 !important">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>

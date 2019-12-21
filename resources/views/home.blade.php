@@ -2,7 +2,71 @@
 @section('content')
 <div class="container">
     <div class="container">
-        <div class="col-sm-3" style="padding-top:30px;width:250px">
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-success">
+                <div class="panel-heading text-center">
+                    Publications
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-book"></i>&nbsp;
+                    {{ $users }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    Sold Proposals
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-dollar"></i>&nbsp;
+                    {{ $users }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-danger">
+                <div class="panel-heading text-center">
+                    Consultations
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-phone-volume"></i>&nbsp;
+                    {{ $users }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-info">
+                <div class="panel-heading text-center">
+                    Opinions
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-question"></i>&nbsp;
+                    {{ $users }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="panel panel-info">
                 <div class="panel-heading text-center">
                     USERS
@@ -11,9 +75,14 @@
                     <i class="fa fa-user"></i>&nbsp;
                     {{ $users }}
                 </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="col-sm-3" style="padding-top:30px;width:250px">
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="panel panel-success">
                 <div class="panel-heading text-center">
                     POST
@@ -22,9 +91,14 @@
                     <i class="fa fa-clock"></i>&nbsp;
                     {{ $posts }}
                 </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="col-sm-3" style="padding-top:30px;width:250px">
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="panel panel-danger">
                 <div class="panel-heading text-center">
                     CATEGORIES
@@ -33,9 +107,14 @@
                     <i class="fa fa-tag"></i>&nbsp;
                     {{ $categories }}
                 </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="col-sm-3" style="padding-top:30px;width:250px">
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="panel panel-primary">
                 <div class="panel-heading text-center">
                     TRASHED POSTS
@@ -44,9 +123,14 @@
                     <i class="fa fa-tag"></i>&nbsp;
                     {{ $trashed }}
                 </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="col-sm-3" style="padding-top:30px;width:250px">
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="panel panel-warning">
                 <div class="panel-heading text-center">
                     TAGS
@@ -55,6 +139,123 @@
                     <i class="fa fa-tags"></i>&nbsp;
                     {{ $tags }}
                 </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-success">
+                <div class="panel-heading text-center">
+                    In Progress
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-money"></i>&nbsp;
+                    {{ $tags }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-info">
+                <div class="panel-heading text-center">
+                    Logistics
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-money"></i>&nbsp;
+                    {{ $tags }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-success">
+                <div class="panel-heading text-center">
+                    Completed Orders
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-money"></i>&nbsp;
+                    {{ $tags }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-success">
+                <div class="panel-heading text-center">
+                    News
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-bell"></i>&nbsp;
+                    {{ $tags }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-danger">
+                <div class="panel-heading text-center">
+                    Trashed News
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-trash"></i>&nbsp;
+                    {{ $tags }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    Politics
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-users"></i>&nbsp;
+                    {{ $tags }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    Bloggers
+                </div>
+                <div class="panel-body">
+                    <i class="fa fa-code"></i>&nbsp;
+                    {{ $tags }}
+                </div>
+                <a href="#">
+                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                        More Information
+                    </div>
+                </a>
             </div>
         </div>
     </div>

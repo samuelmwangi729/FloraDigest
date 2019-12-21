@@ -1,7 +1,7 @@
 <aside class="main-sidebar" id="sidebar-wrapper">
 
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
+    <section class="sidebar" >
 
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
@@ -11,7 +11,7 @@
             </div>
             <div class="pull-left info">
                 @if (Auth::guest())
-                <p>InfyOm</p>
+                <p>{{ config('app.name') }}</p>
                 @else
                     <p>{{ Auth::user()->name}}</p>
                 @endif
