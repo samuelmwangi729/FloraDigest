@@ -12,4 +12,5 @@
     </div>
     <span class="text-justify"><br><?php echo $post->content;?></span>
 </div>
+@include('layouts.disqus')
 @stop
