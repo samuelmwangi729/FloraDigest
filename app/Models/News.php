@@ -22,8 +22,14 @@ class News extends Model
 
 
 
-    public $fillable = [
-        
+    protected $fillable=[
+        'title',
+        'slug',
+        'text',
+        'content',
+        'category_id',
+        'image',
+        'published_by'
     ];
 
     /**
@@ -40,9 +46,16 @@ class News extends Model
      *
      * @var array
      */
+    
     public static $rules = [
-        
+        'title'=>'required',
+        'text' =>'required',
+        'content' =>'required',
+        'category_id' =>'required',
+        'image' =>'required',
     ];
 
-    
+    public function category(){
+        return $this->belongsTo('App\NewsTags');
+    }
 }

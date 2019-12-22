@@ -13,7 +13,7 @@
     <input type="text" class="form-control input-md" name="text" placeholder="Enter the title here" style="border-radius:20px">
 </div>
 <!-- Title Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-12">
     <div class="label-control text-bold">
         Category
     </div>
@@ -23,18 +23,10 @@
         @endforeach
     </select>
 </div>
-<div class="form-group col-sm-6">
-    <div class="label-control text-bold">
-        Tags
-    </div>
-    @foreach($tag as $tg)
-    <input type="checkbox" name="tags[]" value="{{ $tg->id }}">{{ $tg->tag}}
-    @endforeach
-</div>
 <!-- Title Field -->
 <div class="form-group col-sm-12">
     <div class="label-control text-bold">
-        Featured Image 
+        Display Image 
     </div>
     <input type="file" class="form-control" name="image" style="border-radius:20px">
 </div>

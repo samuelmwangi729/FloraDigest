@@ -106,6 +106,7 @@
           </a>
         </div>
       </div>
+  
       <div class="row">
         <div id="app">
                 <home-component></home-component>

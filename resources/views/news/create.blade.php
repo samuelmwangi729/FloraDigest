@@ -11,7 +11,7 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                    <form enctype="multipart/form-data" method="POST" action="{{ route('posts.store') }}">
+                    <form enctype="multipart/form-data" method="POST" action="{{ route('news.store') }}">
                         {{ csrf_field() }}
                         @include('news.fields')
                      </form>

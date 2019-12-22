@@ -43,6 +43,8 @@ class NewsTags extends Model
     public static $rules = [
         'name'=>'required'
     ];
-
+    public function news(){
+        return $this->belongsToMany('App\News');
+    }
     
 }

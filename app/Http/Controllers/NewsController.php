@@ -9,6 +9,10 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use App\Models\NewsTags;
+use Auth;
+use Session;
+use App\Models\News;
 
 class NewsController extends AppBaseController
 {
@@ -42,7 +46,7 @@ class NewsController extends AppBaseController
      */
     public function create()
     {
-        return view('news.create');
+        return view('news.create')->with('categories',NewsTags::all());
     }
 
     /**
@@ -55,10 +59,26 @@ class NewsController extends AppBaseController
     public function store(CreateNewsRequest $request)
     {
         $input = $request->all();
+            //this renames the image since the user cant be trusted
+        $image=$request->image;
+        $newImageName=time().$image->getClientOriginalName();
+        //upload the image 
+        $image->move('uploads/news',$newImageName);
+        // $news->image='uploads/news/'.$newImageName;
 
-        $news = $this->newsRepository->create($input);
+        $news = $this->newsRepository->create(
+            [
+                'title'=>$request->title,
+                'slug'=>str_slug($request->title),
+                'text'=>$request->text,
+                'category_id'=>$request->category_id,
+                'content'=>$request->content,
+                'image'=>'uploads/news/'.$newImageName,
+                'published_by'=>Auth::user()->name,
+            ]
+        );
 
-        Flash::success('News saved successfully.');
+        Session::flash('success','News Successfully Published');
 
         return redirect(route('news.index'));
     }
@@ -70,9 +90,9 @@ class NewsController extends AppBaseController
      *
      * @return Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $news = $this->newsRepository->find($id);
+        $news =News::where('slug',$slug)->get()->first();
 
         if (empty($news)) {
             Flash::error('News not found');

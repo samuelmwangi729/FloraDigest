@@ -17,7 +17,10 @@ class News extends Model
     ];
 
 
+    public static $rules=[
+        'title'=>'required'
+    ];
     public function category(){
-        return $this->belongsToMany('App\NewsTags');
+        return $this->belongsTo('App\NewsTags');
     }
 }
