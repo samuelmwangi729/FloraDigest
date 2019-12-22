@@ -201,7 +201,7 @@
                 </div>
                 <div class="panel-body">
                     <i class="fa fa-bell"></i>&nbsp;
-                    {{ $tags }}
+                    {{ $news }}
                 </div>
                 <a href="#">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
@@ -217,7 +217,7 @@
                 </div>
                 <div class="panel-body">
                     <i class="fa fa-trash"></i>&nbsp;
-                    {{ $tags }}
+                    {{ $tnews }}
                 </div>
                 <a href="#">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
@@ -233,7 +233,7 @@
                 </div>
                 <div class="panel-body">
                     <i class="fa fa-users"></i>&nbsp;
-                    {{ $tags }}
+                    {{ $blogger }}
                 </div>
                 <a href="#">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
@@ -249,7 +249,7 @@
                 </div>
                 <div class="panel-body">
                     <i class="fa fa-code"></i>&nbsp;
-                    {{ $tags }}
+                    {{ $blogger }}
                 </div>
                 <a href="#">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">

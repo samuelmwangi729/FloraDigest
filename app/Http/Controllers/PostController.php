@@ -209,7 +209,11 @@ class PostController extends AppBaseController
         return redirect()->back();
     }
     public function trashed(){
-        $post=Post::onlyTrashed()->get();
+        $post=Post::onlyTrashed()->get()->all();
+        if(empty($post)){
+            Session::flash('error','No Trashed Posts');
+            return redirect()->back();
+        }
         return view('blog.post.trashed')->with('posts',$post);
     }
     public function restore(Request $request){

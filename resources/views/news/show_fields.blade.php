@@ -19,8 +19,8 @@
     <p><?php echo $news->content;?></p>
 </div>
 <div class="form-group">
-    {!! Form::label('created_at', 'Content:') !!}
-    <p><?php echo $news->category_id?></p>
+    {!! Form::label('created_at', 'Tags:') !!}
+    <p>{{ App\Models\NewsTags::find($news->category_id)->get()->first()->name}}</p>
 </div>
 <div class="form-group">
     {!! Form::label('created_at', 'Publisher:') !!}
@@ -29,7 +29,7 @@
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
-    <p>{{ $news->created_at }}</p>
+    <p>{{ $news->created_at->toFormattedDateString() }}</p>
 </div>
 
 <!-- Updated At Field -->

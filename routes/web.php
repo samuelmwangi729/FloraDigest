@@ -18,6 +18,14 @@ Route::get('/blog/post/{slug}',[
     'uses'=>'PostController@singlePost',
     'as'=>'posts.single'
 ]);
+Route::get('/news/News/{slug}',[
+    'uses'=>'NewsController@singleNews',
+    'as'=>'news.single'
+]);
+Route::get('/News/Categories/{name}',[
+    'uses'=>'NewsController@NewsTag',
+    'as'=>'tag.type'
+]);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -103,3 +111,23 @@ Route::get('/newstag/delete/{id}',[
     'as'=>'newsTags.delete'
 ]);
 Route::resource('news', 'NewsController');
+Route::post('/newsUpdate/{slug}',[
+    'uses'=>'NewsController@update',
+    'as'=>'news.update'
+]);
+Route::get('/News',[
+    'uses'=>'NewsController@Index1',
+    'as'=>'news.Index'
+]);
+Route::get('/deleted',[
+    'uses'=>'NewsController@deleted',
+    'as'=>'news.deleted'
+]);
+Route::get('/newsRestore/{slug}',[
+    'uses'=>'NewsController@restore',
+    'as'=>'news.restore'
+]);
+Route::get('/newsDelete/{slug}',[
+    'uses'=>'NewsController@delete',
+    'as'=>'news.delete'
+]);

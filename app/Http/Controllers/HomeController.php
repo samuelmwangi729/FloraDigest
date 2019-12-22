@@ -7,6 +7,8 @@ use App\Post;
 use App\User;
 use App\Category;
 use App\Tag;
+use App\Models\News;
+use App\Models\NewsTags;
 class HomeController extends Controller
 {
     /**
@@ -34,7 +36,9 @@ class HomeController extends Controller
         ->with('categories',$categories)
         ->with('tags',$tags)
         ->with('users',User::all()->count())
-        ->with('trashed',Post::onlyTrashed()->get()->count()
-    );
+        ->with('trashed',Post::onlyTrashed()->get()->count())
+        ->with('news',News::all()->count())
+        ->with('tnews',News::onlyTrashed()->count())
+        ->with('blogger',User::where('level','blogger')->count());
     }
 }

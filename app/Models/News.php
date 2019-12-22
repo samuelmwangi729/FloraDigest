@@ -55,7 +55,7 @@ class News extends Model
         'image' =>'required',
     ];
 
-    public function category(){
-        return $this->belongsTo('App\NewsTags');
+    public function news_tags(){
+        return $this->belongsTo('App\Models\NewsTags');
     }
 }

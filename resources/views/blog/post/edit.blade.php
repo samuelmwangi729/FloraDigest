@@ -14,7 +14,7 @@
                <form method="POST" action="{{ route('posts.update',['id'=>$post->id]) }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 @include('blog.post.fields')
-           </form>
+                </form>
            </div>
        </div>
    </div>

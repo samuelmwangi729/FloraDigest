@@ -1,3 +1,6 @@
+<li>
+    <a href="/home"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
+</li>
 <li class="{{ Request::is('posts*') ? 'active' : '' }}">
     <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Posts</span></a>
       <div class="collapse" id="collapseExample">
@@ -27,6 +30,9 @@
 </li>
 
 <li class="{{ Request::is('news*') ? 'active' : '' }}">
-    <a href="{{ route('news.index') }}"><i class="fa fa-edit"></i><span>News</span></a>
+    <a href="{{ route('news.index') }}"><i class="fa fa-bell"></i><span>News</span></a>
 </li>
 
+<li class="{{ Request::is('news*') ? 'active' : '' }}">
+    <a href="{{ route('news.deleted') }}"><i class="fa fa-trash"></i><span>Deleted News</span></a>
+</li>

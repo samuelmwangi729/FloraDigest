@@ -15,7 +15,8 @@ class AdminUserSeeder extends Seeder
             'name'=>'Site Admin',
             'email'=>'admin@admin.com',
             'password'=> bcrypt('P!@#four5sam'),
-            'admin'=>'1'
+            'admin'=>'1',
+            'level'=>'Administrator'
         ]);
     }
 }

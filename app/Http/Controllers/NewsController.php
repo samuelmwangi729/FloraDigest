@@ -38,6 +38,14 @@ class NewsController extends AppBaseController
         return view('news.index')
             ->with('news', $news);
     }
+    public function Index1(Request $request)
+    {
+        $news = $this->newsRepository->all();
+
+        return view('news.home')
+            ->with('news', $news)
+            ->with('tags',NewsTags::all()->take(10));
+    }
 
     /**
      * Show the form for creating a new News.
@@ -110,9 +118,9 @@ class NewsController extends AppBaseController
      *
      * @return Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        $news = $this->newsRepository->find($id);
+        $news = News::where('slug',$slug)->get()->first();
 
         if (empty($news)) {
             Flash::error('News not found');
@@ -120,7 +128,9 @@ class NewsController extends AppBaseController
             return redirect(route('news.index'));
         }
 
-        return view('news.edit')->with('news', $news);
+        return view('news.edit')
+        ->with('news', $news)
+        ->with('tags',NewsTags::all());
     }
 
     /**
@@ -131,19 +141,29 @@ class NewsController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdateNewsRequest $request)
+    public function update($slug, UpdateNewsRequest $request)
     {
-        $news = $this->newsRepository->find($id);
-
+        $news = News::where('slug',$slug)->get()->first();
         if (empty($news)) {
             Flash::error('News not found');
 
             return redirect(route('news.index'));
         }
 
-        $news = $this->newsRepository->update($request->all(), $id);
+        if($request->hasFile('image')){
+            $image=$request->image;
+            $newImageName=time().$image->getClientOriginalName();
+            $image->move('uploads/news',$newImageName);
+            $news->image='uploads/news/'.$newImageName;
+        }
+        $news->title=$request->title;
+        $news->slug=str_slug($request->title);
+        $news->text=$request->text;
+        $news->content=$request->content;
+        $news->edited_by=Auth::user()->name;
+        $news->save();
 
-        Flash::success('News updated successfully.');
+        Session::flash('success','News Successfully Updated');
 
         return redirect(route('news.index'));
     }
@@ -162,15 +182,55 @@ class NewsController extends AppBaseController
         $news = $this->newsRepository->find($id);
 
         if (empty($news)) {
-            Flash::error('News not found');
+            Session::flash('error','News Not Found');
 
             return redirect(route('news.index'));
         }
 
         $this->newsRepository->delete($id);
 
-        Flash::success('News deleted successfully.');
+        Session::flash('success','News Deleted');
 
         return redirect(route('news.index'));
+    }
+    public function deleted(){
+        $trashed=News::onlyTrashed()->get()->all();
+        if(empty($trashed)){
+            Session::flash('error','No Trashed News');
+            return redirect()->back();
+        }
+        return view('news.trashed')
+        ->with('tnews',$trashed);
+    }
+
+    public function restore($slug){
+        $news=News::onlyTrashed('slug',$slug)->get()->first();
+        $news->restore();
+        Session::flash('success','News Successfully Restored');
+        return redirect()->route('news.index');
+    }
+    public function delete($slug){
+        $news=News::onlyTrashed('slug',$slug)->get()->first();
+        $news->forceDelete();
+        Session::flash('success','News Permanently Deleted');
+        return  redirect()->route('news.index');
+    }
+    public function singleNews($slug){
+        $new=News::where('slug',$slug)->get()->first();
+        if(is_null($new)){
+            Session::flash('error','no way');
+            return redirect()->back();
+        }
+        return view('news.single')->with('new',$new);
+    }
+
+    public function NewsTag($tag){
+        $id=NewsTags::where('name',$tag)->get()->first()->id;
+        $news=News::where('category_id',$id)->get()->all();
+        if(count($news)==0){
+            Session::flash('error','News Under Such Category are Unavailable');
+            return redirect()->back();
+        }
+        return view('news.tags')->with('news',$news);
     }
 }
