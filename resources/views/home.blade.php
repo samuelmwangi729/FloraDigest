@@ -233,7 +233,7 @@
                 </div>
                 <div class="panel-body">
                     <i class="fa fa-users"></i>&nbsp;
-                    {{ $blogger }}
+                    {{ $politics }}
                 </div>
                 <a href="#">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">

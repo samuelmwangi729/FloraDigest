@@ -131,3 +131,47 @@ Route::get('/newsDelete/{slug}',[
     'uses'=>'NewsController@delete',
     'as'=>'news.delete'
 ]);
+
+Route::resource('politicsTags', 'PoliticsTagsController');
+Route::get('Politics/Trashed',[
+    'uses'=>'PoliticsTagsController@trashed',
+    'as'=>'politics.trashed.tags'
+]);
+Route::get('PoliticsTags/Recover/{id}',[
+    'uses'=>'PoliticsTagsController@recover',
+    'as'=>'political.tags.recover'
+]);
+Route::get('PoliticsTags/Delete/{id}',[
+    'uses'=>'PoliticsTagsController@delete',
+    'as'=>'political.tags.delete'
+]);
+
+Route::resource('politics', 'PoliticsController');
+Route::post('Politics/Update/{id}',[
+    'uses'=>'PoliticsController@update',
+    'as'=>'politics.update'
+]);
+Route::get('/Political/Deleted',[
+    'uses'=>'PoliticsController@trashed',
+    'as'=>'political.news.trashed'
+]);
+Route::get('/Political/restore/{slug}',[
+    'uses'=>'PoliticsController@restore',
+    'as'=>'politics.restore'
+]);
+Route::get('/Political/Destroy/{slug}',[
+    'uses'=>'PoliticsController@Delete',
+    'as'=>'politics.delete'
+]);
+Route::get('/Home/Politics/News',[
+    'uses'=>'PoliticsController@Home',
+    'as'=>'politics.home'
+]);
+Route::get('/Home/Politics/Type/{id}',[
+    'uses'=>'PoliticsController@TagsType',
+    'as'=>'politics.type'
+]);
+Route::get('/Home/Politics/Single/{slug}',[
+    'uses'=>'PoliticsController@single',
+    'as'=>'politics.single'
+]);

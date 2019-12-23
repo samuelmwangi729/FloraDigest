@@ -47,7 +47,7 @@
                     <li><a href="{{ url('/academia') }}" style="color:white;font-weight:bold;margin-top:10px">Academia</a></li>
                     <li><a href="{{ url('/logistics') }}" style="color:white;font-weight:bold;margin-top:10px">Logistics</a></li>
                     <li><a href="{{ url('/News') }}" style="color:white;font-weight:bold;margin-top:10px">News </a></li>
-                    <li><a href="{{ url('/politics') }}" style="color:white;font-weight:bold;margin-top:10px">Politics</a></li>
+                    <li><a href="{{ route('politics.home') }}" style="color:white;font-weight:bold;margin-top:10px">Politics</a></li>
                     <li><a href="{{ url('/blog') }}" style="color:white;font-weight:bold;margin-top:10px">Blogs </a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Opinions</a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Others</a></li>

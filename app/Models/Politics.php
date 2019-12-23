@@ -6,28 +6,28 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class News
+ * Class Politics
  * @package App\Models
- * @version December 21, 2019, 8:27 am UTC
+ * @version December 23, 2019, 6:27 am UTC
  *
  */
-class News extends Model
+class Politics extends Model
 {
     use SoftDeletes;
 
-    public $table = 'news';
+    public $table = 'politics';
     
 
     protected $dates = ['deleted_at'];
 
 
 
-    protected $fillable=[
+    public $fillable = [
         'title',
         'slug',
         'text',
         'content',
-        'category_id',
+        'tag_id',
         'image',
         'published_by'
     ];
@@ -46,15 +46,15 @@ class News extends Model
      *
      * @var array
      */
-    
     public static $rules = [
         'title'=>'required',
-        'text' =>'required',
-        'content' =>'required',
-        'category_id' =>'required',
-        'image' =>'required',
+        'text'=>'required',
+        'content'=>'required',
+        'tag_id'=>'required',
+        'image'=>'required',
     ];
 
-    
-
+    public function tags(){
+        return $this->belongsTo('App\Models\PoliticsTags');
+    }
 }

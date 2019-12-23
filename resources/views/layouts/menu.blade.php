@@ -7,11 +7,9 @@
         <ul class="list-unstyled" style="color:white;padding-left:30px">
             <li><a href="{{ route('posts.create') }}" ><i class="fa fa-plus"></i>&nbsp;&nbsp;Create</a></li>
             <li><a href="{{ route('posts.view') }}" ><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a></li>
+            <li><a href="{{ route('posts.trashed') }}"><i class="fa fa-trash"></i><span>Recycle Bin</span></a></li>
         </ul>
       </div>
-</li>
-<li class="{{ Request::is('categories*') ? 'active' : '' }}">
-    <a href="{{ route('posts.trashed') }}"><i class="fa fa-trash"></i><span>Recycle Bin</span></a>
 </li>
 @if(Auth::user()->admin)
 <li class="{{ Request::is('categories*') ? 'active' : '' }}">
@@ -36,3 +34,18 @@
 <li class="{{ Request::is('news*') ? 'active' : '' }}">
     <a href="{{ route('news.deleted') }}"><i class="fa fa-trash"></i><span>Deleted News</span></a>
 </li>
+<li class="{{ Request::is('politicsTags*') ? 'active' : '' }}">
+    <a href="{{ route('politicsTags.index') }}"><i class="fa fa-edit"></i><span>Politics Tags</span></a>
+</li>
+
+<li class="{{ Request::is('politicsTags*') ? 'active' : '' }}">
+    <a href="{{ route('politics.trashed.tags') }}"><i class="fa fa-edit"></i><span>Deteled Politics Tags</span></a>
+</li>
+<li class="{{ Request::is('politics*') ? 'active' : '' }}">
+    <a href="{{ route('politics.index') }}"><i class="fa fa-edit"></i><span>Politics</span></a>
+</li>
+<li class="{{ Request::is('politics*') ? 'active' : '' }}">
+    <a href="{{ route('political.news.trashed') }}"><i class="fa fa-edit"></i><span>Trashed Political News</span></a>
+</li>
+
+

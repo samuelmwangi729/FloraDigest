@@ -9,6 +9,7 @@ use App\Category;
 use App\Tag;
 use App\Models\News;
 use App\Models\NewsTags;
+use App\Models\Politics;
 class HomeController extends Controller
 {
     /**
@@ -39,6 +40,7 @@ class HomeController extends Controller
         ->with('trashed',Post::onlyTrashed()->get()->count())
         ->with('news',News::all()->count())
         ->with('tnews',News::onlyTrashed()->count())
-        ->with('blogger',User::where('level','blogger')->count());
+        ->with('blogger',User::where('level','blogger')->count())
+        ->with('politics',Politics::all()->count());
     }
 }
