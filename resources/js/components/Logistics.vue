@@ -127,5 +127,6 @@ Being on the edge of innovation we provide packaging that keeps the products saf
        </table>
     </div>       
 </div>
+
 </div>
 </template>

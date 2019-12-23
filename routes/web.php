@@ -175,3 +175,9 @@ Route::get('/Home/Politics/Single/{slug}',[
     'uses'=>'PoliticsController@single',
     'as'=>'politics.single'
 ]);
+
+Route::resource('productsCategories', 'ProductsCategoriesController');
+
+Route::resource('products', 'ProductsController');
+
+Route::resource('subcategories', 'SubCategoriesController');

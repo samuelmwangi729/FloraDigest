@@ -17,8 +17,10 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
         })();
-
+	});
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{asset('js/modal.js')}}"></script>
 </head>
 
 <body class="skin-blue sidebar-mini">
