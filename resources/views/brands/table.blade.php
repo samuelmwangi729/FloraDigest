@@ -2,14 +2,14 @@
     <table class="table" id="brands-table">
         <thead>
             <tr>
-                
+                <th>Brand Name</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
         <tbody>
         @foreach($brands as $brand)
             <tr>
-                
+                <td>{{ $brand->brandName }}</td>
                 <td>
                     {!! Form::open(['route' => ['brands.destroy', $brand->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

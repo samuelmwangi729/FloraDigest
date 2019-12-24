@@ -11,11 +11,11 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                    {!! Form::open(['route' => 'products.store']) !!}
-
+                    <form method="POST" action="{{ route('products.store') }}" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                         @include('products.fields')
 
-                    {!! Form::close() !!}
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,4 +1,10 @@
 
+<!-- Content Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('content', 'Color') !!}
+    {!! Form::text('colorName', null, ['class' => 'form-control']) !!}
+</div>
+
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

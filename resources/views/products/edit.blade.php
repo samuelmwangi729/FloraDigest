@@ -11,11 +11,11 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($products, ['route' => ['products.update', $products->id], 'method' => 'patch']) !!}
-
+                <form method="POST" action="{{ route('products.update',['id'=>$products->id]) }}" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                         @include('products.fields')
 
-                   {!! Form::close() !!}
+                </form>
                </div>
            </div>
        </div>

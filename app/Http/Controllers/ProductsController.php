@@ -9,7 +9,13 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
-
+use App\Models\Products;
+use Auth;
+use Session;
+use App\Models\ProductsCategories;
+use App\Models\Subcategories;
+use App\Models\Brand;
+use App\Models\Color;
 class ProductsController extends AppBaseController
 {
     /** @var  ProductsRepository */
@@ -42,7 +48,11 @@ class ProductsController extends AppBaseController
      */
     public function create()
     {
-        return view('products.create');
+        return view('products.create')
+        ->with('categories',ProductsCategories::all())
+        ->with('subcategories',Subcategories::all())
+        ->with('brands',Brand::all())
+        ->with('colors',Color::all());
     }
 
     /**
@@ -54,11 +64,47 @@ class ProductsController extends AppBaseController
      */
     public function store(CreateProductsRequest $request)
     {
-        $input = $request->all();
+        $image1=$request->image1;
+        $newImage1Name=time().$image1->getClientOriginalName();
+        $image1->move('uploads/products',$newImage1Name);
+        //image 2
+        $image2=$request->image2;
+        $newImage2Name=time().$image2->getClientOriginalName();
+        $image2->move('uploads/products',$newImage2Name);
+        //image 3
+        $image3=$request->image3;
+        $newImage3Name=time().$image1->getClientOriginalName();
+        $image3->move('uploads/products',$newImage3Name);
+        //image 4
+        $image4=$request->image4;
+        $newImage4Name=time().$image4->getClientOriginalName();
+        $image4->move('uploads/products',$newImage4Name);
+        $products = Products::create([
+        'productName'=>$request->productName,
+        'label'=>$request->label,
+        'originalPrice'=>$request->originalPrice,
+        'newPrice'=>$request->newPrice,
+        'image1'=>'uploads/products/'.$newImage1Name,
+        'image2'=>'uploads/products/'.$newImage2Name,
+        'image3'=>'uploads/products/'.$newImage3Name,
+        'image4'=>'uploads/products/'.$newImage4Name,
+        'text'=>$request->text,
+        'category_id'=>$request->category_id,
+        'Description'=>$request->Description,
+        'subcategory_id'=>$request->subcategory_id,
+        'color'=>$request->color,
+        'brand'=>$request->brand,
+        'height'=>$request->height,
+        'weight'=>$request->weight,
+        'width'=>$request->width,
+        'depth'=>$request->depth,
+        'expiry'=>$request->expiry,
+        'status'=>$request->status,
+        'count'=>$request->count,
+        'posted_by'=>Auth::user()->name,
+        ]);
 
-        $products = $this->productsRepository->create($input);
-
-        Flash::success('Products saved successfully.');
+        Session::flash('success','Product Successfully Added');
 
         return redirect(route('products.index'));
     }
@@ -100,7 +146,11 @@ class ProductsController extends AppBaseController
             return redirect(route('products.index'));
         }
 
-        return view('products.edit')->with('products', $products);
+        return view('products.edit')->with('products', $products)
+        ->with('categories',ProductsCategories::all())
+        ->with('subcategories',Subcategories::all())
+        ->with('brands',Brand::all())
+        ->with('colors',Color::all());
     }
 
     /**
@@ -113,17 +163,59 @@ class ProductsController extends AppBaseController
      */
     public function update($id, UpdateProductsRequest $request)
     {
-        $products = $this->productsRepository->find($id);
+        $products = Products::find($id)->get()->first();
 
+        
+        if($request->hasFile('image1')){
+        $image1=$request->image1;
+        $newImage1Name=time().$image1->getClientOriginalName();
+        $image1->move('uploads/products',$newImage1Name);
+        //image 2
+        $image2=$request->image2;
+        $newImage2Name=time().$image2->getClientOriginalName();
+        $image2->move('uploads/products',$newImage2Name);
+        //image 3
+        $image3=$request->image3;
+        $newImage3Name=time().$image1->getClientOriginalName();
+        $image3->move('uploads/products',$newImage3Name);
+        //image 4
+        $image4=$request->image4;
+        $newImage4Name=time().$image4->getClientOriginalName();
+        $image4->move('uploads/products',$newImage4Name);
+        }
+        // dd($request->all());
         if (empty($products)) {
             Flash::error('Products not found');
 
             return redirect(route('products.index'));
         }
 
-        $products = $this->productsRepository->update($request->all(), $id);
+        $products = $this->productsRepository->update([
+        'productName'=>$request->productName,
+        'label'=>$request->label,
+        'originalPrice'=>$request->originalPrice,
+        'newPrice'=>$request->newPrice,
+        'image1'=>'uploads/products/'.$newImage1Name,
+        'image2'=>'uploads/products/'.$newImage2Name,
+        'image3'=>'uploads/products/'.$newImage3Name,
+        'image4'=>'uploads/products/'.$newImage4Name,
+        'text'=>$request->text,
+        'category_id'=>$request->category_id,
+        'Description'=>$request->Description,
+        'subcategory_id'=>$request->subcategory_id,
+        'color'=>$request->color,
+        'brand'=>$request->brand,
+        'height'=>$request->height,
+        'weight'=>$request->weight,
+        'width'=>$request->width,
+        'depth'=>$request->depth,
+        'expiry'=>$request->expiry,
+        'status'=>$request->status,
+        'count'=>$request->count,
+        'edited_by'=>Auth::user()->name,
+        ], $id);
 
-        Flash::success('Products updated successfully.');
+        Session::flash('success','Product Successfully Updated');
 
         return redirect(route('products.index'));
     }

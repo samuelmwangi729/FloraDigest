@@ -189,3 +189,7 @@ Route::get('/Home/Shop',[
 Route::resource('brands', 'BrandController');
 
 Route::resource('colors', 'ColorController');
+Route::post('Product/Update/{id}',[
+    'uses'=>'ProductsController@update',
+    'as'=>'products.update'
+]);

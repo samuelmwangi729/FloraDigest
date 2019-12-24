@@ -24,8 +24,8 @@ class Products extends Model
 
     public $fillable = [
         'productName',
-        'slug',
-        'orioginalPrice',
+        'label',
+        'originalPrice',
         'newPrice',
         'image1',
         'image2',
@@ -34,6 +34,14 @@ class Products extends Model
         'text',
         'category_id',
         'Description',
+        'subcategory_id',
+        'color',
+        'brand',
+        'height',
+        'weight',
+        'width',
+        'depth',
+        'expiry',
         'status',
         'count',
         'posted_by'
@@ -54,7 +62,25 @@ class Products extends Model
      * @var array
      */
     public static $rules = [
-        
+        'productName'=>'required',
+        'label'=>'required',
+        'originalPrice'=>'required',
+        'newPrice'=>'required',
+        'image1'=>'required',
+        'image2'=>'required',
+        'image3'=>'required',
+        'image4'=>'required',
+        'text'=>'required',
+        'category_id'=>'required',
+        'subcategory_id'=>'required',
+        'Description'=>'required',
+        'color'=>'required',
+        'brand'=>'required',
+        'height'=>'required',
+        'weight'=>'required',
+        'width'=>'required',
+        'status'=>'required',
+        'count'=>'required',
     ];
 
     

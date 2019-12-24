@@ -2,14 +2,14 @@
 
 @section('content')
 <div class="row">
-    <div class="col-lg-9 col-md-9 col-sm-9">        
-        <div class="item" style="background-image:url({{asset('uploads/products/watch.jpg')  }});background-size:cover;color:blue;background-position:center;height:500px">
-            <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;The label Goes Here</span></h1></u><br><br><br>
-                {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
-                        {{ $first_post['title'] }}
-                </h3> --}}
-            <br><br><br><br><br><br><br><br>
-        </div> 
+    <div class="col-lg-9 col-md-9 col-sm-9">    
+      @foreach ($products as $product )
+      <div class="item" style="background-image:url({{asset($product->image4)  }});background-size:cover;background-position:center;color:blue;height:500px">
+        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ $product->label }}</span></h1></u>
+            <span>At Ksh {{ $product->originalPrice }}&nbsp; Was Ksh <del>{{ $product->newPrice }}</del></span>
+    </div> 
+    {{ $product->productName }}
+      @endforeach
         {{-- <h2 class="text-center"><a href="{{ route('news.single',['slug'=>$postsingle->slug]) }}">{{$postsingle->title }}</a></h2>
         <span class="fa fa-clock">&nbsp;&nbsp;{{ $postsingle->created_at->toFormattedDateString() }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span class=" fa fa-tags text-center">{{ $postsingle->text }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -25,41 +25,16 @@
         </div>
         <div class="widgets_inner">
           <ul class="list">
+           @foreach($categories as $category)
             <li>
-              <a href="#">Frozen Fish</a>
+              <a href="#">{{ $category->name }}</a>
             </li>
-            <li>
-              <a href="#">Dried Fish</a>
-            </li>
-            <li>
-              <a href="#">Fresh Fish</a>
-            </li>
-            <li>
-              <a href="#">Meat Alternatives</a>
-            </li>
-            <li>
-                <a href="#">Fresh Fish</a>
-              </li>
-              <li>
-                <a href="#">Meat Alternatives</a>
-              </li>
-              <li>
-                <a href="#">Meat</a>
-              </li><li>
-                <a href="#">Fresh Fish</a>
-              </li>
-              <li>
-                <a href="#">Meat Alternatives</a>
-              </li>
-              <li>
-                <a href="#">Meat</a>
-              </li>
+            @endforeach
           </ul>
         </div>
       </aside>
  </div>
 </div>
-
     <!--================Category Product Area =================-->
     <section class="cat_product_area">
         <div class="row-fluid">
@@ -82,37 +57,40 @@
               
               <div class="latest_product_inner">
                 <div class="row">
+                  @foreach ($newProducts as $product )
                   <div class="col-lg-4 col-md-6">
                     <div class="single-product">
                       <div class="product-img">
                         <img
                           class="card-img"
-                          src="{{asset('uploads/products/shoes2.jpg')}}" alt="New york" style="width:100%;height:200px"
+                          src="{{asset($product->image4)}}" alt="New york" style="width:100%;height:200px"
                           alt=""
                         />
                         <div class="p_icon">
                           <a href="#">
-                            <i class="ti-eye"></i>
+                            <i class="fa fa-eye" style="color:red"></i>
                           </a>
                           <a href="#">
-                            <i class="ti-heart"></i>
+                            <i class="fa fa-heart" style="color:red"></i>
                           </a>
                           <a href="#">
-                            <i class="ti-shopping-cart"></i>
+                            <i class="fa fa-shopping-basket" style="color:red"></i>
                           </a>
                         </div>
                       </div>
                       <div class="product-btm">
                         <a href="#" class="d-block">
-                          <h4>Latest men’s sneaker</h4>
+                          <h6 class="text-bold">{{ $product->productName }}</h6>
                         </a>
                         <div class="mt-3">
-                          <span class="mr-4">$25.00</span>
-                          <del>$35.00</del>
+                          <span class="mr-4"><b>Ksh&nbsp;</b>{{ $product->newPrice }}</span>
+                          <del><b>Ksh&nbsp;</b>{{ $product->originalPrice }}</del>
                         </div>
                       </div>
                     </div>
                   </div>
+                  @endforeach
+                  
   
                   <div class="col-lg-4 col-md-6">
                     <div class="single-product">
@@ -124,13 +102,13 @@
                         />
                         <div class="p_icon">
                           <a href="#">
-                            <i class="ti-eye"></i>
+                            <i class="fa fa-eye" style="color:red"></i>
                           </a>
                           <a href="#">
-                            <i class="ti-heart"></i>
+                            <i class="fa fa-heart" style="color:red"></i>
                           </a>
                           <a href="#">
-                            <i class="ti-shopping-cart"></i>
+                            <i class="fa fa-shopping-basket" style="color:red"></i>
                           </a>
                         </div>
                       </div>
@@ -287,21 +265,11 @@
                   </div>
                   <div class="widgets_inner">
                     <ul class="list">
+                      @foreach($brands as $brand)
                       <li>
-                        <a href="#">Apple</a>
+                        <a href="#">{{ $brand->brandName }}</a>
                       </li>
-                      <li>
-                        <a href="#">Asus</a>
-                      </li>
-                      <li class="active">
-                        <a href="#">Gionee</a>
-                      </li>
-                      <li>
-                        <a href="#">Micromax</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung</a>
-                      </li>
+                      @endforeach
                     </ul>
                   </div>
                 </aside>
@@ -312,21 +280,11 @@
                   </div>
                   <div class="widgets_inner">
                     <ul class="list">
+                      @foreach($colors as $color)
                       <li>
-                        <a href="#">Black</a>
+                        <a href="#">{{ $color->colorName }}</a>
                       </li>
-                      <li>
-                        <a href="#">Black Leather</a>
-                      </li>
-                      <li class="active">
-                        <a href="#">Black with red</a>
-                      </li>
-                      <li>
-                        <a href="#">Gold</a>
-                      </li>
-                      <li>
-                        <a href="#">Spacegrey</a>
-                      </li>
+                      @endforeach
                     </ul>
                   </div>
                 </aside>

@@ -9,7 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
-
+use Session;
 class BrandController extends AppBaseController
 {
     /** @var  BrandRepository */
@@ -58,7 +58,7 @@ class BrandController extends AppBaseController
 
         $brand = $this->brandRepository->create($input);
 
-        Flash::success('Brand saved successfully.');
+        Session::flash('success','Brand Successfully Saved');
 
         return redirect(route('brands.index'));
     }
@@ -75,7 +75,7 @@ class BrandController extends AppBaseController
         $brand = $this->brandRepository->find($id);
 
         if (empty($brand)) {
-            Flash::error('Brand not found');
+            Session::flash('error','Brand Not Found');
 
             return redirect(route('brands.index'));
         }
@@ -95,7 +95,7 @@ class BrandController extends AppBaseController
         $brand = $this->brandRepository->find($id);
 
         if (empty($brand)) {
-            Flash::error('Brand not found');
+            Session::flash('error','Brand Not Found');
 
             return redirect(route('brands.index'));
         }
@@ -116,14 +116,14 @@ class BrandController extends AppBaseController
         $brand = $this->brandRepository->find($id);
 
         if (empty($brand)) {
-            Flash::error('Brand not found');
+            Session::flash('error','Brand Not Found');
 
             return redirect(route('brands.index'));
         }
 
         $brand = $this->brandRepository->update($request->all(), $id);
 
-        Flash::success('Brand updated successfully.');
+        Session::flash('success','Brand SUccessfully Updated');
 
         return redirect(route('brands.index'));
     }
@@ -142,14 +142,14 @@ class BrandController extends AppBaseController
         $brand = $this->brandRepository->find($id);
 
         if (empty($brand)) {
-            Flash::error('Brand not found');
+            Session::flash('error','Brand Not Found');
 
             return redirect(route('brands.index'));
         }
 
         $this->brandRepository->delete($id);
 
-        Flash::success('Brand deleted successfully.');
+        Session::flash('error','Brand Successfully Deleted');
 
         return redirect(route('brands.index'));
     }

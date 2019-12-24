@@ -53,6 +53,8 @@
                     <li><a href="{{ url('/blog') }}" style="color:white;font-weight:bold;margin-top:10px">Blogs </a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Opinions</a></li>
                     <li><a href="{{ url('/home') }}" style="color:white;font-weight:bold;margin-top:10px">Others</a></li>
+                    <li><a href="{{ url('/Cart') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-shopping-cart"></i><sup class="color:red">0</sup></a></li>
+                    <li><a href="{{ url('/Cart') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-heart"></i><sup class="color:green">0</sup></a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
