@@ -181,3 +181,11 @@ Route::resource('productsCategories', 'ProductsCategoriesController');
 Route::resource('products', 'ProductsController');
 
 Route::resource('subcategories', 'SubCategoriesController');
+Route::get('/Home/Shop',[
+    'uses'=>'ShopController@index',
+    'as'=>'site.shop'
+]);
+
+Route::resource('brands', 'BrandController');
+
+Route::resource('colors', 'ColorController');

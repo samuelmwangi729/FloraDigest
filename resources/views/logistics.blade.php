@@ -10,7 +10,7 @@
                 <p class="sub text-uppercase">Shop</p>
                 <h3><span>Acquire</span> Your <br />Goods <span>in Style</span></h3>
                 <h4>All you need In One Place.</h4>
-                <a class="main_btn mt-40" href="#" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold">Visit Shop</a>
+                <a class="main_btn mt-40" href="{{ route('site.shop') }}" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold">Visit Shop</a>
               </div>
             </div>
           </div>
@@ -92,8 +92,8 @@
         <div class="col-sm-3">
           <div class="panel panel-primary" style="border:none">
             <div class="panel-body">
-              <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Latest Microscope</span><br>
+              <img src="{{asset('uploads/products/suit.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
+              <span style="font-weight:bold" class="text-center">Men's Suit</span><br>
               <span>$5000 &nbsp; In stead of <span style="text-decoration:line-through">$6000</span></span>
             </div>
             <a href="#">
@@ -106,9 +106,9 @@
         <div class="col-sm-3">
           <div class="panel panel-primary" style="border:none">
             <div class="panel-body">
-              <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Latest Microscope</span><br>
-              <span>$5000 &nbsp; In stead of <span style="text-decoration:line-through">$6000</span></span>
+              <img src="{{asset('uploads/products/phone.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
+              <span style="font-weight:bold" class="text-center">Iphone-X pro</span><br>
+              <span>$500 &nbsp; In stead of <span style="text-decoration:line-through">$600</span></span>
             </div>
             <a href="#">
               <div class="panel-footer text-center">
@@ -120,9 +120,9 @@
         <div class="col-sm-3">
           <div class="panel panel-primary" style="border:none">
             <div class="panel-body">
-              <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Latest Microscope</span><br>
-              <span>$5000 &nbsp; In stead of <span style="text-decoration:line-through">$6000</span></span>
+              <img src="{{asset('uploads/products/shoes.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
+              <span style="font-weight:bold" class="text-center">Addidas Sneakers</span><br>
+              <span>$50 &nbsp; In stead of <span style="text-decoration:line-through">$60</span></span>
             </div>
             <a href="#">
               <div class="panel-footer text-center">
@@ -134,9 +134,9 @@
         <div class="col-sm-3">
           <div class="panel panel-primary" style="border:none">
             <div class="panel-body">
-              <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Latest Microscope</span><br>
-              $5000 &nbsp; In stead of <del>$6000</del></span>
+              <img src="{{asset('uploads/products/laptop.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
+              <span style="font-weight:bold" class="text-center">Macbook Pro</span><br>
+              $500 &nbsp; In stead of <del>$600</del></span>
             </div>
             <a href="#">
               <div class="panel-footer text-center">
@@ -166,7 +166,7 @@
             <h5 class="text-uppercase">collection of 2019</h5>
             <h3 class="text-uppercase">Men’s summer t-shirt</h3>
             <div class="product-img">
-              <img src="{{asset('img/research.jpg')}}" class="img-fluid" alt="New york" style="width:100%;height:350px">
+              <img src="{{asset('uploads/products/tshirt.jpg')}}" class="img-fluid" alt="New york" style="width:100%;height:350px">
             </div>
             <h4>$120.70</h4>
             <a href="#" class="main_btn">Add to cart</a>
@@ -178,10 +178,11 @@
             <div class="col-lg-6 col-md-6">
               <div class="single-product">
                 <div class="product-img">
-                  <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px">
+                  <img src="{{asset('uploads/products/shoes2.jpg')}}" alt="New york" style="width:100%;height:200px">
                   <div class="p_icon">
-                    <a href="#">
+                    <a href="/">
                       <i class="ti-eye"></i>
+                      Home
                     </a>
                     <a href="#">
                       <i class="ti-heart"></i>
@@ -206,7 +207,7 @@
             <div class="col-lg-6 col-md-6">
               <div class="single-product">
                 <div class="product-img">
-                  <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px">
+                  <img src="{{asset('uploads/products/jeans.jpg')}}" alt="New york" style="width:100%;height:200px">
                   <div class="p_icon">
                     <a href="#">
                       <i class="ti-eye"></i>
@@ -234,7 +235,7 @@
             <div class="col-lg-6 col-md-6">
               <div class="single-product">
                 <div class="product-img">
-                  <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px">
+                  <img src="{{asset('uploads/products/shoes1.jpg')}}" alt="New york" style="width:100%;height:200px">
                   <div class="p_icon">
                     <a href="#">
                       <i class="ti-eye"></i>
@@ -249,7 +250,7 @@
                 </div>
                 <div class="product-btm">
                   <a href="#" class="d-block">
-                    <h4>quartz hand watch</h4>
+                    <h4>Addidas Sneakers</h4>
                   </a>
                   <div class="mt-3">
                     <span class="mr-4">$25.00</span>
@@ -262,7 +263,7 @@
             <div class="col-lg-6 col-md-6">
               <div class="single-product">
                 <div class="product-img">
-                  <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:200px">
+                  <img src="{{asset('uploads/products/watch2.jpg')}}" alt="New york" style="width:100%;height:200px">
                   <div class="p_icon">
                     <a href="#">
                       <i class="ti-eye"></i>
@@ -277,7 +278,7 @@
                 </div>
                 <div class="product-btm">
                   <a href="#" class="d-block">
-                    <h4>adidas sport shoe</h4>
+                    <h4>Quertz Wrist Watch</h4>
                   </a>
                   <div class="mt-3">
                     <span class="mr-4">$25.00</span>
