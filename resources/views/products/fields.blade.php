@@ -6,7 +6,11 @@
 
 <div class="col-sm-6 form-group">
     <label for="product name" class="label-control">Product Label</label>
-    <input type="text" class="form-control" name="label" value="{{ $products->label ?? '' }}">
+    <select class="form-control" name="label">
+        @foreach($labels as $label)
+        <option value="{{ $label->id }}">{{ $label->labelName }}</option>
+        @endforeach
+    </select>
 </div>
 
 <div class="col-sm-6 form-group">

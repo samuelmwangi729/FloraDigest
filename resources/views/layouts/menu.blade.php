@@ -56,3 +56,7 @@
     <a href="{{ route('colors.index') }}"><i class="fa fa-edit"></i><span>Colors</span></a>
 </li>
 
+<li class="{{ Request::is('labels*') ? 'active' : '' }}">
+    <a href="{{ route('labels.index') }}"><i class="fa fa-edit"></i><span>Labels</span></a>
+</li>
+

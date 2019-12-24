@@ -67,7 +67,7 @@
                           alt=""
                         />
                         <div class="p_icon">
-                          <a href="#">
+                          <a href="{{ route('product.show',['id'=>$product->id]) }}">
                             <i class="fa fa-eye" style="color:red"></i>
                           </a>
                           <a href="#">
@@ -83,175 +83,13 @@
                           <h6 class="text-bold">{{ $product->productName }}</h6>
                         </a>
                         <div class="mt-3">
-                          <span class="mr-4"><b>Ksh&nbsp;</b>{{ $product->newPrice }}</span>
-                          <del><b>Ksh&nbsp;</b>{{ $product->originalPrice }}</del>
+                          <span class="mr-4"><b></b>{{ $product->newPrice }}</span>
+                          <del>{{ $product->originalPrice }}</del>
                         </div>
                       </div>
                     </div>
                   </div>
                   @endforeach
-                  
-  
-                  <div class="col-lg-4 col-md-6">
-                    <div class="single-product">
-                      <div class="product-img">
-                        <img
-                          class="card-img"
-                          src="{{asset('uploads/products/suit.jpg')}}" alt="New york" style="width:100%;height:200px"
-                          alt=""
-                        />
-                        <div class="p_icon">
-                          <a href="#">
-                            <i class="fa fa-eye" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-heart" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-shopping-basket" style="color:red"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-btm">
-                        <a href="#" class="d-block">
-                          <h4>Latest men’s Suit</h4>
-                        </a>
-                        <div class="mt-3">
-                          <span class="mr-4">$25.00</span>
-                          <del>$35.00</del>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-lg-4 col-md-6">
-                    <div class="single-product">
-                      <div class="product-img">
-                        <img
-                          class="card-img"
-                          src="{{asset('uploads/products/phone.jpg')}}" alt="New york" style="width:100%;height:200px"
-                          alt=""
-                        />
-                        <div class="p_icon">
-                          <a href="#">
-                            <i class="fa fa-eye" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-heart" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-shopping-bag" style="color:red"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-btm">
-                        <a href="#" class="d-block">
-                          <h4>Latest Iphone X pro</h4>
-                        </a>
-                        <div class="mt-3">
-                          <span class="mr-4">$25.00</span>
-                          <del>$35.00</del>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-lg-4 col-md-6">
-                    <div class="single-product">
-                      <div class="product-img">
-                        <img
-                          class="card-img"
-                          src="{{asset('uploads/products/laptop.jpg')}}" alt="New york" style="width:100%;height:200px"
-                          alt=""
-                        />
-                        <div class="p_icon">
-                          <a href="#">
-                            <i class="fa fa-eye" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-heart" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-shopping-bag" style="color:red"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-btm">
-                        <a href="#" class="d-block">
-                          <h4>Macboox Xiera</h4>
-                        </a>
-                        <div class="mt-3">
-                          <span class="mr-4">$25.00</span>
-                          <del>$35.00</del>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  
-  
-                  <div class="col-lg-4 col-md-6">
-                    <div class="single-product">
-                      <div class="product-img">
-                        <img
-                          class="card-img"
-                          src="{{asset('uploads/products/camera3.jpg')}}" alt="New york" style="width:100%;height:200px"
-                          alt=""
-                        />
-                        <div class="p_icon">
-                          <a href="#">
-                            <i class="fa fa-eye" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-heart" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-shopping-bag" style="color:red"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-btm">
-                        <a href="#" class="d-block">
-                          <h4>Nikon New</h4>
-                        </a>
-                        <div class="mt-3">
-                          <span class="mr-4">$25.00</span>
-                          <del>$35.00</del>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="single-product">
-                      <div class="product-img">
-                        <img
-                          class="card-img"
-                          src="{{asset('uploads/products/camera1.jpg')}}" alt="New york" style="width:100%;height:200px"
-                          alt=""
-                        />
-                        <div class="p_icon">
-                          <a href="#">
-                            <i class="fa fa-eye" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-heart" style="color:red"></i>
-                          </a>
-                          <a href="#">
-                            <i class="fa fa-shopping-bag" style="color:red"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-btm">
-                        <a href="#" class="d-block">
-                          <h4>Nikon Pro</h4>
-                        </a>
-                        <div class="mt-3">
-                          <span class="mr-4">$25.00</span>
-                          <del>$35.00</del>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

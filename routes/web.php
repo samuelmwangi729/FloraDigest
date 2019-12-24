@@ -193,3 +193,9 @@ Route::post('Product/Update/{id}',[
     'uses'=>'ProductsController@update',
     'as'=>'products.update'
 ]);
+Route::get('/Shop/Product/{id}',[
+    'uses'=>'ShopController@show',
+    'as'=>'product.show'
+]);
+
+Route::resource('labels', 'LabelController');

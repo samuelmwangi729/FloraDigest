@@ -15,6 +15,10 @@ class ShopController extends Controller
         ->with('brands',Brand::all())
         ->with('colors',Color::orderBy('id','desc')->take(5)->get())
         ->with('products',Products::orderBy('id','desc')->take(1)->get())
-        ->with('newProducts',Products::orderBy('id','desc')->get());
+        ->with('newProducts',Products::orderBy('id','desc')->get()->take(12));
+    }
+
+    public function show(Request $request){
+        dd($request->all());
     }
 }

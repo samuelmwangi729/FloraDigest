@@ -16,6 +16,7 @@ use App\Models\ProductsCategories;
 use App\Models\Subcategories;
 use App\Models\Brand;
 use App\Models\Color;
+use App\Models\Label;
 class ProductsController extends AppBaseController
 {
     /** @var  ProductsRepository */
@@ -52,7 +53,8 @@ class ProductsController extends AppBaseController
         ->with('categories',ProductsCategories::all())
         ->with('subcategories',Subcategories::all())
         ->with('brands',Brand::all())
-        ->with('colors',Color::all());
+        ->with('colors',Color::all())
+        ->with('labels',Label::all());
     }
 
     /**
@@ -82,6 +84,7 @@ class ProductsController extends AppBaseController
         $products = Products::create([
         'productName'=>$request->productName,
         'label'=>$request->label,
+        'slug'=>str_slug($request->productName),
         'originalPrice'=>$request->originalPrice,
         'newPrice'=>$request->newPrice,
         'image1'=>'uploads/products/'.$newImage1Name,
@@ -150,7 +153,8 @@ class ProductsController extends AppBaseController
         ->with('categories',ProductsCategories::all())
         ->with('subcategories',Subcategories::all())
         ->with('brands',Brand::all())
-        ->with('colors',Color::all());
+        ->with('colors',Color::all())
+        ->with('labels',Label::all());
     }
 
     /**
@@ -193,6 +197,7 @@ class ProductsController extends AppBaseController
         $products = $this->productsRepository->update([
         'productName'=>$request->productName,
         'label'=>$request->label,
+        'slug'=>str_slug($request->productName),
         'originalPrice'=>$request->originalPrice,
         'newPrice'=>$request->newPrice,
         'image1'=>'uploads/products/'.$newImage1Name,

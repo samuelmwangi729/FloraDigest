@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->bigIncrements('id');
             $table->string('productName')->unique();
             $table->string('label')->unique();
+            $table->string('slug');
             $table->string('color');
             $table->string('originalPrice');
             $table->string('newPrice');
