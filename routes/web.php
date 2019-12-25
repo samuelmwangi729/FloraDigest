@@ -199,3 +199,13 @@ Route::get('/Shop/Product/{id}',[
 ]);
 
 Route::resource('labels', 'LabelController');
+Route::group(['middleware' => ['auth']], function () {
+    Route::post('/Product/Cart',[
+        'uses'=>'ShopController@cart',
+        'as'=>'product.cart'
+    ]); 
+    Route::get('Shop/Cart/MyAccount',[
+        'uses'=>'CartController@index',
+        'as'=>'cart.index'
+    ]) ;
+});

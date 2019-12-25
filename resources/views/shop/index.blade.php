@@ -5,7 +5,7 @@
     <div class="col-lg-9 col-md-9 col-sm-9">    
       @foreach ($products as $product )
       <div class="item" style="background-image:url({{asset($product->image4)  }});background-size:cover;background-position:center;color:blue;height:500px">
-        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ $product->label }}</span></h1></u>
+        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ App\Models\Label::where('id',$product->label)->get()->first()->labelName }}</span></h1></u>
             <span>At Ksh {{ $product->originalPrice }}&nbsp; Was Ksh <del>{{ $product->newPrice }}</del></span>
     </div> 
     {{ $product->productName }}
@@ -67,7 +67,7 @@
                           alt=""
                         />
                         <div class="p_icon">
-                          <a href="{{ route('product.show',['id'=>$product->id]) }}">
+                          <a href="{{ route('product.show',['id'=>$product->slug]) }}">
                             <i class="fa fa-eye" style="color:red"></i>
                           </a>
                           <a href="#">

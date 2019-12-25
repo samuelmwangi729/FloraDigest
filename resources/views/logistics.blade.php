@@ -89,73 +89,33 @@
     <div class="container">
       <div class="panel panel-primary panel-heading text-center text-bold">Featured Products</div>
       <div class="row">
+        @foreach ($products as $product )
         <div class="col-sm-3">
           <div class="panel panel-primary" style="border:none">
             <div class="panel-body">
-              <img src="{{asset('uploads/products/suit.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Men's Suit</span><br>
-              <span>$5000 &nbsp; In stead of <span style="text-decoration:line-through">$6000</span></span>
+              <img src="{{asset($product->image1)}}" alt="New york" style="width:100%;height:200px"><br>
+              <span style="font-weight:bold" class="text-center">{{ $product->productName }}</span><br>
+              <span>{{ $product->newPrice }} &nbsp; In stead of <span style="text-decoration:line-through">{{ $product->originalPrice }}</span></span>
             </div>
-            <a href="#">
+            <a href="{{ route('product.show',['id'=>$product->slug]) }}">
               <div class="panel-footer text-center">
+                <i class="fa fa-eye"></i>
                 View Product
               </div>
             </a>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="panel panel-primary" style="border:none">
-            <div class="panel-body">
-              <img src="{{asset('uploads/products/phone.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Iphone-X pro</span><br>
-              <span>$500 &nbsp; In stead of <span style="text-decoration:line-through">$600</span></span>
-            </div>
-            <a href="#">
-              <div class="panel-footer text-center">
-                View Product
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="panel panel-primary" style="border:none">
-            <div class="panel-body">
-              <img src="{{asset('uploads/products/shoes.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Addidas Sneakers</span><br>
-              <span>$50 &nbsp; In stead of <span style="text-decoration:line-through">$60</span></span>
-            </div>
-            <a href="#">
-              <div class="panel-footer text-center">
-                View Product
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="panel panel-primary" style="border:none">
-            <div class="panel-body">
-              <img src="{{asset('uploads/products/laptop.jpg')}}" alt="New york" style="width:100%;height:200px"><br>
-              <span style="font-weight:bold" class="text-center">Macbook Pro</span><br>
-              $500 &nbsp; In stead of <del>$600</del></span>
-            </div>
-            <a href="#">
-              <div class="panel-footer text-center">
-                View Product
-              </div>
-            </a>
-          </div>
-        </div>
+        </div> 
+        @endforeach
       </div>
   </section>
   <!-- End feature Area -->
   <!--================ New Product Area =================-->
-  <section class="new_product_area section_gap_top section_gap_bottom_custom">
+  <section class="new_product_area">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
             <h2><span>new products</span></h2>
-            <p>Bring called seed first of third give itself now ment</p>
           </div>
         </div>
       </div>
@@ -163,130 +123,49 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="new_product">
-            <h5 class="text-uppercase">collection of 2019</h5>
-            <h3 class="text-uppercase">Men’s summer t-shirt</h3>
+            <h5 class="text-uppercase">collection of <?php echo date('Y');?></h5>
+            @foreach ($featured as $featured )
+            <h3 class="text-uppercase">{{ $featured->productName }}</h3>
             <div class="product-img">
-              <img src="{{asset('uploads/products/tshirt.jpg')}}" class="img-fluid" alt="New york" style="width:100%;height:350px">
+              <img src="{{asset($featured->image1)}}" class="img-fluid" alt="New york" style="width:100%;height:350px">
             </div>
-            <h4>$120.70</h4>
+            <h4>${{ $featured->newPrice }}</h4>
             <a href="#" class="main_btn">Add to cart</a>
+            @endforeach            
           </div>
         </div>
 
         <div class="col-lg-6 mt-5 mt-lg-0">
           <div class="row">
+            @foreach ($newproducts as $newproduct )
             <div class="col-lg-6 col-md-6">
               <div class="single-product">
                 <div class="product-img">
-                  <img src="{{asset('uploads/products/shoes2.jpg')}}" alt="New york" style="width:100%;height:200px">
+                  <img src="{{asset($newproduct->image1)}}" alt="New york" style="width:100%;height:200px">
                   <div class="p_icon">
-                    <a href="/">
-                      <i class="ti-eye"></i>
-                      Home
+                    <a href="{{ route('product.show',['id'=>$newproduct->slug]) }}">
+                      <i class="fa fa-eye"></i>
                     </a>
                     <a href="#">
-                      <i class="ti-heart"></i>
+                      <i class="fa fa-heart"></i>
                     </a>
                     <a href="#">
-                      <i class="ti-shopping-cart"></i>
+                      <i class="fa fa-shopping-bag"></i>
                     </a>
                   </div>
                 </div>
                 <div class="product-btm">
                   <a href="#" class="d-block">
-                    <h4>Nike latest sneaker</h4>
+                    <h4>{{ $newproduct->productName }}</h4>
                   </a>
                   <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
+                    <span class="mr-4">${{ $newproduct->newPrice }}</span>
+                    <del>${{ $newproduct->originalPrice }}</del>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-6 col-md-6">
-              <div class="single-product">
-                <div class="product-img">
-                  <img src="{{asset('uploads/products/jeans.jpg')}}" alt="New york" style="width:100%;height:200px">
-                  <div class="p_icon">
-                    <a href="#">
-                      <i class="ti-eye"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-heart"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-btm">
-                  <a href="#" class="d-block">
-                    <h4>Men’s denim jeans</h4>
-                  </a>
-                  <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-              <div class="single-product">
-                <div class="product-img">
-                  <img src="{{asset('uploads/products/shoes1.jpg')}}" alt="New york" style="width:100%;height:200px">
-                  <div class="p_icon">
-                    <a href="#">
-                      <i class="ti-eye"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-heart"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-btm">
-                  <a href="#" class="d-block">
-                    <h4>Addidas Sneakers</h4>
-                  </a>
-                  <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-              <div class="single-product">
-                <div class="product-img">
-                  <img src="{{asset('uploads/products/watch2.jpg')}}" alt="New york" style="width:100%;height:200px">
-                  <div class="p_icon">
-                    <a href="#">
-                      <i class="ti-eye"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-heart"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-btm">
-                  <a href="#" class="d-block">
-                    <h4>Quertz Wrist Watch</h4>
-                  </a>
-                  <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
-                  </div>
-                </div>
-              </div>
-            </div>
+            @endforeach
           </div>
         </div>
       </div>
