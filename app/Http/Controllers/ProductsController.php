@@ -16,6 +16,8 @@ use App\Models\ProductsCategories;
 use App\Models\Subcategories;
 use App\Models\Brand;
 use App\Models\Color;
+use App\Models\County;
+use App\Models\Town;
 use App\Models\Label;
 class ProductsController extends AppBaseController
 {

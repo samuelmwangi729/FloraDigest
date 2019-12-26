@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Cart;
+use App\Models\Products;
+use App\Models\County;
+use App\Models\Town;
 
 class CartController extends Controller
 {
@@ -19,8 +22,17 @@ class CartController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return response(json_encode(Cart::where('user',Auth::user()->email)->get()));
+    {   
+        $cart=Cart::where('user',Auth::user()->email)->get();
+        // dd($cart['id']);
+        // $product=Products::where('slug',$cart->product_slug)->get();
+        // dd($product);
+        return view('shop.cart')
+        ->with('cart',$cart)
+        ->with('counties',County::all())
+        ->with('towns',Town::all())
+        
+        ;
     }
 
     /**

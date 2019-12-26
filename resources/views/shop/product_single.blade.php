@@ -17,7 +17,7 @@
                   <img
                     class="d-block w-100"
                     src="{{ asset($product->image1) }}"
-                    alt="" width="500px" height="500px"
+                    alt="" width="100%" height="440px"
                   />
                 </div>
               </div>
@@ -73,7 +73,7 @@
             </div>
             <div class="card_area">
               <button type="submit" class="main_btn">Add to Cart</button>
-              <a class="icon_btn" href="#" title="Add to Wishlist">
+              <a class="icon_btn" href="{{ route('wishlist.add',['slug'=>$product->slug]) }}" title="Add to Wishlist">
                 <i class="fa fa-heart"></i>
               </a>
             </form>

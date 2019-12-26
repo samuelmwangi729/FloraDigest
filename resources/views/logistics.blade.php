@@ -146,7 +146,7 @@
                     <a href="{{ route('product.show',['id'=>$newproduct->slug]) }}">
                       <i class="fa fa-eye"></i>
                     </a>
-                    <a href="#">
+                    <a class="icon_btn" href="{{ route('wishlist.add',['slug'=>$newproduct->slug]) }}" title="Add to Wishlist">
                       <i class="fa fa-heart"></i>
                     </a>
                     <a href="#">

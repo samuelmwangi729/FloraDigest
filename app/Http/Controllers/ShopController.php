@@ -9,7 +9,10 @@ use App\Models\Color;
 use App\Models\Products;
 use App\Cart;
 use Session;
+use App\Models\County;
+use App\Models\Town;
 use Auth;
+use App\Wishlist;
 class ShopController extends Controller
 {
     public function index(){
@@ -28,13 +31,41 @@ class ShopController extends Controller
 
     public function cart(Request $request){
         $product=Products::where('slug',$request->product)->get()->first();
+        $exist=Cart::where('product_slug',$request->product)->get()->first();
+        if(!is_null($exist)){
+            if($exist->product_slug==$request->product){
+                Session::flash('error','Product already In Cat');
+                return redirect()->back();
+            }
+        }
         Cart::create([
             'product_slug'=>$product->slug,
             'price'=>$request->price,
             'qty'=>$request->qty,
+            'total'=>$request->price*$request->qty,
             'user'=>Auth::user()->email
         ]);
         Session::flash('success','Successfully Added to Cart');
+        return redirect()->back();
+    }
+
+    public function addWishlist($request){
+        if(!Auth::check()){
+            Session::flash('error','Please Login');
+            return redirect()->back();
+        }
+        $exist=Wishlist::where('product_slug',$request)->get()->first();
+        if(!is_null($exist)){
+            if($exist->product_slug==$request){
+                Session::flash('error','Product already In wishlist');
+                return redirect()->back();
+            }
+        }
+        Wishlist::create([
+            'product_slug'=>$request,
+            'user'=>Auth::user()->email
+        ]);
+        Session::flash('success','The Product added to  wishlist');
         return redirect()->back();
     }
 }

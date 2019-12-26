@@ -209,3 +209,13 @@ Route::group(['middleware' => ['auth']], function () {
         'as'=>'cart.index'
     ]) ;
 });
+ROute::get('/Wishlist/Add/Product/{slug}',[
+    'uses'=>'ShopController@addWishlist',
+    'as'=>'wishlist.add'
+]);
+
+Route::resource('counties', 'CountyController');
+
+Route::resource('towns', 'TownController');
+
+Route::resource('shippings', 'ShippingController');

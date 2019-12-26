@@ -4,26 +4,19 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cart extends Model
+class Wishlist extends Model
 {
+    
     public $fillable=[
         'product_slug',
-        'price',
-        'qty',
-        'total',
         'user'
     ];
-    protected $casts = [
-        'product_slug' => 'string',
-        'price'=>'integer',
-        'qty'=>'integer',
+    protected $cast=[
+        'product_slug'=>'string',
         'user'=>'string'
     ];
-
     public static $rules=[
         'product_slug'=>'required',
-        'price'=>'required',
-        'qty'=>'required',
         'user'=>'required'
     ];
 }

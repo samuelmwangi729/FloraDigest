@@ -35,28 +35,49 @@
         </ul>
       </div>
 </li>
-
-<li class="{{ Request::is('productsCategories*') ? 'active' : '' }}">
-    <a href="{{ route('productsCategories.index') }}"><i class="fa fa-edit"></i><span>Products Categories</span></a>
-</li>
-
 <li class="{{ Request::is('products*') ? 'active' : '' }}">
-    <a href="{{ route('products.index') }}"><i class="fa fa-edit"></i><span>Products</span></a>
+    <a  data-toggle="collapse" href="#collapseProducts" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Products</span></a>
+      <div class="collapse" id="collapseProducts">
+        <ul class="list-unstyled" style="color:white;padding-left:30px">
+            <li class="{{ Request::is('subcategories*') ? 'active' : '' }}">
+                <a href="{{ route('productsCategories.index') }}"><i class="fa fa-angle-up"></i><span>Products Categories</span></a>
+            </li>
+            <li class="{{ Request::is('subcategories*') ? 'active' : '' }}">
+                <a href="{{ route('subcategories.index') }}"><i class="fa fa-angle-down"></i><span>Subcategories</span></a>
+            </li>
+            <li> <a href="{{ route('tags.index') }}"><i class="fa fa-tags"></i><span>Posts Tags</span></a></li>
+            <li class="{{ Request::is('brands*') ? 'active' : '' }}">
+                <a href="{{ route('brands.index') }}"><i class="fa fa-tag"></i><span>Brands</span></a>
+            </li>
+            
+            <li class="{{ Request::is('colors*') ? 'active' : '' }}">
+                <a href="{{ route('colors.index') }}"><i class="fa fa-check"></i><span>Colors</span></a>
+            </li>
+            
+            <li class="{{ Request::is('labels*') ? 'active' : '' }}">
+                <a href="{{ route('labels.index') }}"><i class="fa fa-tags"></i><span>Labels</span></a>
+            </li>
+            <li class="{{ Request::is('products*') ? 'active' : '' }}">
+                <a href="{{ route('products.index') }}"><i class="fa fa-shopping-cart"></i><span>&nbsp;Products</span></a>
+            </li>
+        </ul>
+      </div>
 </li>
 
-<li class="{{ Request::is('subcategories*') ? 'active' : '' }}">
-    <a href="{{ route('subcategories.index') }}"><i class="fa fa-edit"></i><span>Subcategories</span></a>
+
+
+
+
+
+<li class="{{ Request::is('counties*') ? 'active' : '' }}">
+    <a href="{{ route('counties.index') }}"><i class="fa fa-edit"></i><span>Counties</span></a>
 </li>
 
-<li class="{{ Request::is('brands*') ? 'active' : '' }}">
-    <a href="{{ route('brands.index') }}"><i class="fa fa-edit"></i><span>Brands</span></a>
+<li class="{{ Request::is('towns*') ? 'active' : '' }}">
+    <a href="{{ route('towns.index') }}"><i class="fa fa-edit"></i><span>Towns</span></a>
 </li>
 
-<li class="{{ Request::is('colors*') ? 'active' : '' }}">
-    <a href="{{ route('colors.index') }}"><i class="fa fa-edit"></i><span>Colors</span></a>
-</li>
-
-<li class="{{ Request::is('labels*') ? 'active' : '' }}">
-    <a href="{{ route('labels.index') }}"><i class="fa fa-edit"></i><span>Labels</span></a>
+<li class="{{ Request::is('shippings*') ? 'active' : '' }}">
+    <a href="{{ route('shippings.index') }}"><i class="fa fa-edit"></i><span>Shippings</span></a>
 </li>
 
