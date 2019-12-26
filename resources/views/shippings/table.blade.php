@@ -2,14 +2,16 @@
     <table class="table" id="shippings-table">
         <thead>
             <tr>
-                
+                <th>Label</th>
+                <th>Fee</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
         <tbody>
         @foreach($shippings as $shipping)
             <tr>
-                
+                <td>{{ $shipping->label }}</td>
+                <td>{{ $shipping->fee }}</td>
                 <td>
                     {!! Form::open(['route' => ['shippings.destroy', $shipping->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

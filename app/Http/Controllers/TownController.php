@@ -124,9 +124,12 @@ class TownController extends AppBaseController
             return redirect(route('towns.index'));
         }
 
-        $town = $this->townRepository->update($request->all(), $id);
+        $town = $this->townRepository->update([
+            'county_id'=>$request->county_id,
+            'town'=>$request->town
+        ], $id);
 
-        Flash::success('Town updated successfully.');
+        Session::flash('success','The Details have been successfully updated');
 
         return redirect(route('towns.index'));
     }

@@ -10,7 +10,7 @@
         <tbody>
         @foreach($towns as $town)
             <tr>
-                <td>{{ App\Models\County::find($town->county_id)->get()->first()->county }}</td>
+                <td>{{ App\Models\County::find($town->county_id)->county }}</td>
                 <td>{{ $town->town }}</td>
                 <td>
                     {!! Form::open(['route' => ['towns.destroy', $town->id], 'method' => 'delete']) !!}

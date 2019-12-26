@@ -23,7 +23,8 @@ class Shipping extends Model
 
 
     public $fillable = [
-        
+        'label',
+        'fee'
     ];
 
     /**
@@ -32,7 +33,9 @@ class Shipping extends Model
      * @var array
      */
     protected $casts = [
-        'id' => 'integer'
+        'id' => 'integer',
+        'label'=>'string',
+        'fee'=>'integer'
     ];
 
     /**
@@ -41,7 +44,8 @@ class Shipping extends Model
      * @var array
      */
     public static $rules = [
-        
+        'label'=>'required',
+        'fee'=>'integer'
     ];
 
     

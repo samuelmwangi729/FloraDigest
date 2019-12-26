@@ -9,7 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
-
+use Session;
 class ShippingController extends AppBaseController
 {
     /** @var  ShippingRepository */
@@ -58,7 +58,7 @@ class ShippingController extends AppBaseController
 
         $shipping = $this->shippingRepository->create($input);
 
-        Flash::success('Shipping saved successfully.');
+       Session::flash('success','Shipping Rate Successfully Added');
 
         return redirect(route('shippings.index'));
     }
@@ -75,7 +75,7 @@ class ShippingController extends AppBaseController
         $shipping = $this->shippingRepository->find($id);
 
         if (empty($shipping)) {
-            Flash::error('Shipping not found');
+       Session::flash('error','Shipping Rate Not Found');
 
             return redirect(route('shippings.index'));
         }
@@ -95,7 +95,8 @@ class ShippingController extends AppBaseController
         $shipping = $this->shippingRepository->find($id);
 
         if (empty($shipping)) {
-            Flash::error('Shipping not found');
+            Session::flash('error','Shipping Rate Not Found');
+
 
             return redirect(route('shippings.index'));
         }
@@ -116,14 +117,14 @@ class ShippingController extends AppBaseController
         $shipping = $this->shippingRepository->find($id);
 
         if (empty($shipping)) {
-            Flash::error('Shipping not found');
+            Session::flash('error','Shipping Rate Not Found');
 
             return redirect(route('shippings.index'));
         }
 
         $shipping = $this->shippingRepository->update($request->all(), $id);
 
-        Flash::success('Shipping updated successfully.');
+       Session::flash('success','Shipping Rate Updated');
 
         return redirect(route('shippings.index'));
     }
@@ -142,14 +143,13 @@ class ShippingController extends AppBaseController
         $shipping = $this->shippingRepository->find($id);
 
         if (empty($shipping)) {
-            Flash::error('Shipping not found');
-
+       Session::flash('error','Shipping Rate Not Found');
             return redirect(route('shippings.index'));
         }
 
         $this->shippingRepository->delete($id);
 
-        Flash::success('Shipping deleted successfully.');
+        Session::flash('error','Shipping Rate Successfully Deleted');
 
         return redirect(route('shippings.index'));
     }

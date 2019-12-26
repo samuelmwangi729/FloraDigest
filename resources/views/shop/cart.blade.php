@@ -81,26 +81,18 @@
                 </td>
               </tr>
               <tr class="shipping_area">
-                <td></td>
-                <td></td>
-                <td>
-                  <h5>Shipping</h5>
+                <td colspan="3">
                 </td>
                 <td>
                   <div class="shipping_box">
+                    <h3 style="background-color:gray;color:white" class="text-center">shipping</h3>
                     <ul class="list">
+                      {{ $labels }}
+                      @foreach ($labels as $label)
                       <li>
-                        <a href="#">Flat Rate: $5.00</a>
+                        <a href="#">{{ $label->labelName }}: ${{ $label->fee }}</a>
                       </li>
-                      <li>
-                        <a href="#">Free Shipping</a>
-                      </li>
-                      <li>
-                        <a href="#">Flat Rate: $10.00</a>
-                      </li>
-                      <li class="active">
-                        <a href="#">Local Delivery: $2.00</a>
-                      </li>
+                      @endforeach
                     </ul>
                     <h6>
                       Calculate Shipping

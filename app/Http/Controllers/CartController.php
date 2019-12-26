@@ -8,7 +8,7 @@ use App\Cart;
 use App\Models\Products;
 use App\Models\County;
 use App\Models\Town;
-
+use App\Models\Label;
 class CartController extends Controller
 {
 
@@ -31,6 +31,7 @@ class CartController extends Controller
         ->with('cart',$cart)
         ->with('counties',County::all())
         ->with('towns',Town::all())
+        ->with('labels',Label::all())
         
         ;
     }

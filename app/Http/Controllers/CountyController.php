@@ -9,7 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
-
+use Session;
 class CountyController extends AppBaseController
 {
     /** @var  CountyRepository */
@@ -58,7 +58,7 @@ class CountyController extends AppBaseController
 
         $county = $this->countyRepository->create($input);
 
-        Flash::success('County saved successfully.');
+        Session::flash('success','County Successfully Added');
 
         return redirect(route('counties.index'));
     }
@@ -75,7 +75,7 @@ class CountyController extends AppBaseController
         $county = $this->countyRepository->find($id);
 
         if (empty($county)) {
-            Flash::error('County not found');
+            Session::flash('error','County Not Found');
 
             return redirect(route('counties.index'));
         }
@@ -95,7 +95,8 @@ class CountyController extends AppBaseController
         $county = $this->countyRepository->find($id);
 
         if (empty($county)) {
-            Flash::error('County not found');
+            Session::flash('error','County Not Found');
+
 
             return redirect(route('counties.index'));
         }
@@ -123,7 +124,8 @@ class CountyController extends AppBaseController
 
         $county = $this->countyRepository->update($request->all(), $id);
 
-        Flash::success('County updated successfully.');
+        Session::flash('success','County Updated ');
+
 
         return redirect(route('counties.index'));
     }
@@ -142,14 +144,14 @@ class CountyController extends AppBaseController
         $county = $this->countyRepository->find($id);
 
         if (empty($county)) {
-            Flash::error('County not found');
+            Session::flash('error','County Not Found');
 
             return redirect(route('counties.index'));
         }
 
         $this->countyRepository->delete($id);
 
-        Flash::success('County deleted successfully.');
+        Session::flash('error','County Successfully Deleted');
 
         return redirect(route('counties.index'));
     }
