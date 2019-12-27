@@ -12,7 +12,7 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($payment, ['route' => ['payments.update', $payment->id], 'method' => 'patch']) !!}
+                   {!! Form::model($payment, ['route' => ['payments.update', $payment->id], 'method' => 'post','enctype'=>'multipart/form-data']) !!}
 
                         @include('payments.fields')
 

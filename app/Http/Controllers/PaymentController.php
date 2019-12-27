@@ -122,17 +122,24 @@ class PaymentController extends AppBaseController
      */
     public function update($id, UpdatePaymentRequest $request)
     {
-        $payment = $this->paymentRepository->find($id);
-
+        $payment = Payment::find($id);
+        if($request->hasFile('logo')){
+            $logo=$request->logo;
+            $newLogoName=time().$logo->getClientOriginalName();
+            $logo->move('uploads/payments',$newLogoName);
+            $payment->logo='uploads/payments/'.$newLogoName;
+        }
         if (empty($payment)) {
-            Flash::error('Payment not found');
+            Session::flash('error','The payment method not found');
 
             return redirect(route('payments.index'));
         }
 
-        $payment = $this->paymentRepository->update($request->all(), $id);
+       
+        $payment->name=$request->name;
+        $payment->save();
 
-        Flash::success('Payment updated successfully.');
+        Session::flash('success','Success, Payment Successfully Updated');
 
         return redirect(route('payments.index'));
     }

@@ -130,15 +130,15 @@
                 <div class="col-sm-4 text-center">
                   <label for="payment" class="label-control"><i class="fa fa-truck" style="color:#562fc6"></i>&nbsp;&nbsp;Derivery method</label><br>
                   @foreach($rates as $rate)
-                  <input type="radio" name="rate" value="{{ $rate->id }}">{{ $rate->label."".$rate->fee}}<br>
+                  <input type="radio" name="rate" value="{{ $rate->id }}" required>{{ $rate->label."".$rate->fee}}<br>
                   @endforeach
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-4 text-center">
+                <div class="col-sm-12">
                   <label for="payment" class="label-control"><i class="fa fa-credit-card" style="color:#562fc6"></i>&nbsp;&nbsp;Payment method</label><br>
-                  @foreach($rates as $rate)
-                <input type="radio" name="payMethod" value="{{ $rate->id }}">{{ $rate->label}}:Ksh&nbsp;{{$rate->fee }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  @foreach($payments as $payment)
+                <input type="radio" name="payMethod" value="{{ $payment->id }}" required> <img src="{{ asset($payment->logo) }}" width="100px" height="50px">&nbsp;{{ $payment->name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   @endforeach
                 </div>
               </div>

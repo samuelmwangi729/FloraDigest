@@ -9,6 +9,7 @@ use App\Models\Products;
 use App\Models\County;
 use App\Models\Town;
 use App\Models\Shipping;
+use App\Models\Payment;
 class CartController extends Controller
 {
 
@@ -32,7 +33,7 @@ class CartController extends Controller
         ->with('counties',County::all())
         ->with('towns',Town::all())
         ->with('rates',Shipping::all())
-        
+        ->with('payments',Payment::all())        
         ;
     }
 

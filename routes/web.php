@@ -225,3 +225,7 @@ Route::post('/MyAccount/Order/Make',[
 ]);
 
 Route::resource('payments', 'PaymentController');
+Route::post('/Update/payment/Method/{id}',[
+    'uses'=>'PaymentController@update',
+    'as'=>'payments.update'
+]);
