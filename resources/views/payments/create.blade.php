@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.hsidebar')
 
 @section('content')
     <section class="content-header">
@@ -11,11 +11,10 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                    {!! Form::open(['route' => 'payments.store']) !!}
-
+                    <form method="POST" action="{{ route('payments.store') }}" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                         @include('payments.fields')
-
-                    {!! Form::close() !!}
+                    </form>
                 </div>
             </div>
         </div>

@@ -2,14 +2,16 @@
     <table class="table" id="payments-table">
         <thead>
             <tr>
-                
+                <th>Logo</th>
+                <th>Payment Gateway Name</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
         <tbody>
         @foreach($payments as $payment)
             <tr>
-                
+                <td><img src="{{ asset($payment->logo) }}" width="75px" height="40px"></td>
+                <td>{{ $payment->name }}</td>
                 <td>
                     {!! Form::open(['route' => ['payments.destroy', $payment->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

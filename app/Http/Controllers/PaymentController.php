@@ -9,7 +9,8 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
-
+use App\Models\Payment;
+use Session;
 class PaymentController extends AppBaseController
 {
     /** @var  PaymentRepository */
@@ -55,10 +56,18 @@ class PaymentController extends AppBaseController
     public function store(CreatePaymentRequest $request)
     {
         $input = $request->all();
+        $logo =$request->logo;
+        $newLogoName=time().$logo->getClientOriginalName();
+        $logo->move('uploads/payments',$newLogoName);
 
-        $payment = $this->paymentRepository->create($input);
+        $payment = Payment::create(
+            [
+                'name'=>$request->name,
+                'logo'=>'uploads/payments/'.$newLogoName,
+            ]
+        );
 
-        Flash::success('Payment saved successfully.');
+        Session::flash('success','Payment Method Successfully Added');
 
         return redirect(route('payments.index'));
     }

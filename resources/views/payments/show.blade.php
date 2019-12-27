@@ -1,9 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.hsidebar')
 
 @section('content')
     <section class="content-header">
         <h1>
-            Payment
+            Payment Gateways
         </h1>
     </section>
     <div class="content">

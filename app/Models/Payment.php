@@ -23,6 +23,8 @@ class Payment extends Model
 
 
     public $fillable = [
+        'logo',
+        'name',
         
     ];
 
@@ -32,7 +34,9 @@ class Payment extends Model
      * @var array
      */
     protected $casts = [
-        'id' => 'integer'
+        'id' => 'integer',
+        'logo'=>'string',
+        'name'=>'string'
     ];
 
     /**
@@ -41,7 +45,8 @@ class Payment extends Model
      * @var array
      */
     public static $rules = [
-        
+        'logo'=>'required',
+        'name'=>'required'
     ];
 
     
