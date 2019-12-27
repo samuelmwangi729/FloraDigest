@@ -223,3 +223,5 @@ Route::post('/MyAccount/Order/Make',[
     'uses'=>'OrderController@index',
     'as'=>'order.post'
 ]);
+
+Route::resource('payments', 'PaymentController');

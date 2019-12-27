@@ -9,7 +9,7 @@ class Payment extends Model
     public $fillable=['logo','name'];
 
 
-    public $catst=[
+    public $casts=[
         'logo'=>'string',
         'name'=>'string'
 ];
