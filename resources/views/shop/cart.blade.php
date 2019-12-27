@@ -87,10 +87,9 @@
                   <div class="shipping_box">
                     <h3 style="background-color:gray;color:white" class="text-center">shipping</h3>
                     <ul class="list">
-                      {{ $labels }}
-                      @foreach ($labels as $label)
+                      @foreach ($rates as $label)
                       <li>
-                        <a href="#">{{ $label->labelName }}: ${{ $label->fee }}</a>
+                        <a href="#">{{ $label->label }}: ${{ $label->fee }}</a>
                       </li>
                       @endforeach
                     </ul>
@@ -127,6 +126,67 @@
             </tbody>
           </table>
         </div>
+        <div class="form-group">
+          <form>
+            <fieldset>
+              <legend class="text-center">Fill In Your Shipping Details</legend>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label class="label-control" for="First Name"><i class="fa fa-id-card" style="color:#562fc6"></i>&nbsp;&nbsp;first Name</label>
+                      <input type="text" class="form-control" name="firstName" required>
+                     </div>
+                     <div class="col-sm-6">
+                      <label class="label-control" for="Last Name"><i class="fa fa-id-card" style="color:#562fc6"></i>&nbsp;&nbsp;Last  Name</label>
+                      <input type="text" class="form-control" name="secondName" required>
+                     </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <label for="Phone Number" class="label-control"><i class="fa fa-phone" style="color:#562fc6"></i>&nbsp;&nbsp;Phone Number</label>
+                  <input type="number" class="form-control" name="PhoneNumber">
+                </div>
+                <div class="col-sm-4">
+                  <label for="post Office" class="label-control"><i class="fa fa-user" style="color:#562fc6"></i>&nbsp;&nbsp;Post Office box</label>
+                  <input type="text" class="form-control" placeholder="N/A if none">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <label for="post Office" class="label-control"><i class="fa fa-map-signs" style="color:#562fc6"></i>&nbsp;&nbsp;County</label>
+                  <select class="form-control" name="county">
+                    @foreach($counties as $count)
+                    <option value="{{ $count->id }}">{{ $count->county }}</option>
+                    @endforeach
+                  </select>
+                </div>
+                <div class="col-sm-4">
+                  <label for="town" class="label-control"><i class="fa fa-building" style="color:#562fc6"></i>&nbsp;&nbsp;Town</label>
+                  <select class="form-control">
+                    @foreach($towns as $town)
+                    <option value="{{ $town->id }}">{{ $town->town }}</option>
+                    @endforeach
+                  </select>
+                </div>
+                <div class="col-sm-4">
+                  <label for="payment" class="label-control"><i class="fa fa-truck" style="color:#562fc6"></i>&nbsp;&nbsp;Derivery method</label><br>
+                  @foreach($rates as $rate)
+                  <input type="radio" name="rate" value="{{ $rate->id }}">{{ $rate->label."".$rate->fee}}<br>
+                  @endforeach
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <label for="payment" class="label-control"><i class="fa fa-truck" style="color:#562fc6"></i>&nbsp;&nbsp;Derivery method</label><br>
+                    @foreach($rates as $rate)
+                    <input type="radio" name="rate" value="{{ $rate->id }}">{{ $rate->label."".$rate->fee}}<br>
+                    @endforeach
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>        
       </div>
     </div>
   </section>
