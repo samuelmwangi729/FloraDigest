@@ -219,3 +219,7 @@ Route::resource('counties', 'CountyController');
 Route::resource('towns', 'TownController');
 
 Route::resource('shippings', 'ShippingController');
+Route::post('/MyAccount/Order/Make',[
+    'uses'=>'OrderController@index',
+    'as'=>'order.post'
+]);

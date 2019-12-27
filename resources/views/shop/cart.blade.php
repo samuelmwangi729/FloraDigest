@@ -80,80 +80,38 @@
                 </h5>
                 </td>
               </tr>
-              <tr class="shipping_area">
-                <td colspan="3">
-                </td>
-                <td>
-                  <div class="shipping_box">
-                    <h3 style="background-color:gray;color:white" class="text-center">shipping</h3>
-                    <ul class="list">
-                      @foreach ($rates as $label)
-                      <li>
-                        <a href="#">{{ $label->label }}: ${{ $label->fee }}</a>
-                      </li>
-                      @endforeach
-                    </ul>
-                    <h6>
-                      Calculate Shipping
-                      <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </h6>
-                    <select class="shipping_select">
-                      @foreach($counties as $count)
-                      <option value="{{ $count->id }}">{{ $count->county }}</option>
-                      @endforeach
-                    </select>
-                    <select class="shipping_select">
-                      @foreach($towns as $town)
-                      <option value="{{ $town->id }}">{{ $town->town }}</option>
-                      @endforeach
-                    </select>
-                    <input type="number" placeholder="Postcode/Zipcode" />
-                    <a class="gray_btn" href="#">Update Details</a>
-                  </div>
-                </td>
-              </tr>
-              <tr class="out_button_area">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="checkout_btn_inner">
-                    <a class="gray_btn" href="#">Continue Shopping</a>
-                    <a class="main_btn" href="#">Proceed to checkout</a>
-                  </div>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
         <div class="form-group">
-          <form>
+          <form method="POST" action="{{ route('order.post') }}">
+            {{ csrf_field() }}
             <fieldset>
               <legend class="text-center">Fill In Your Shipping Details</legend>
               <div class="row">
                 <div class="col-sm-4">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 text-center">
                       <label class="label-control" for="First Name"><i class="fa fa-id-card" style="color:#562fc6"></i>&nbsp;&nbsp;first Name</label>
                       <input type="text" class="form-control" name="firstName" required>
                      </div>
-                     <div class="col-sm-6">
+                     <div class="col-sm-6 text-center">
                       <label class="label-control" for="Last Name"><i class="fa fa-id-card" style="color:#562fc6"></i>&nbsp;&nbsp;Last  Name</label>
                       <input type="text" class="form-control" name="secondName" required>
                      </div>
                   </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 text-center">
                   <label for="Phone Number" class="label-control"><i class="fa fa-phone" style="color:#562fc6"></i>&nbsp;&nbsp;Phone Number</label>
                   <input type="number" class="form-control" name="PhoneNumber">
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 text-center">
                   <label for="post Office" class="label-control"><i class="fa fa-user" style="color:#562fc6"></i>&nbsp;&nbsp;Post Office box</label>
-                  <input type="text" class="form-control" placeholder="N/A if none">
+                  <input type="text" class="form-control" placeholder="N/A if none" name="postOffice">
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 text-center">
                   <label for="post Office" class="label-control"><i class="fa fa-map-signs" style="color:#562fc6"></i>&nbsp;&nbsp;County</label>
                   <select class="form-control" name="county">
                     @foreach($counties as $count)
@@ -161,30 +119,31 @@
                     @endforeach
                   </select>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 text-center">
                   <label for="town" class="label-control"><i class="fa fa-building" style="color:#562fc6"></i>&nbsp;&nbsp;Town</label>
-                  <select class="form-control">
+                  <select class="form-control" name="town">
                     @foreach($towns as $town)
                     <option value="{{ $town->id }}">{{ $town->town }}</option>
                     @endforeach
                   </select>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 text-center">
                   <label for="payment" class="label-control"><i class="fa fa-truck" style="color:#562fc6"></i>&nbsp;&nbsp;Derivery method</label><br>
                   @foreach($rates as $rate)
                   <input type="radio" name="rate" value="{{ $rate->id }}">{{ $rate->label."".$rate->fee}}<br>
                   @endforeach
                 </div>
-                <div class="row">
-                  <div class="col-sm-4">
-                    <label for="payment" class="label-control"><i class="fa fa-truck" style="color:#562fc6"></i>&nbsp;&nbsp;Derivery method</label><br>
-                    @foreach($rates as $rate)
-                    <input type="radio" name="rate" value="{{ $rate->id }}">{{ $rate->label."".$rate->fee}}<br>
-                    @endforeach
-                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 text-center">
+                  <label for="payment" class="label-control"><i class="fa fa-credit-card" style="color:#562fc6"></i>&nbsp;&nbsp;Payment method</label><br>
+                  @foreach($rates as $rate)
+                <input type="radio" name="payMethod" value="{{ $rate->id }}">{{ $rate->label}}:Ksh&nbsp;{{$rate->fee }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  @endforeach
                 </div>
               </div>
             </fieldset>
+            <input type="submit" class="main_btn" style="margin-top:20px" value="Proceed to CheckOut">
           </form>
         </div>        
       </div>
