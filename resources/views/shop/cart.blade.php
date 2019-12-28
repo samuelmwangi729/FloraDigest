@@ -150,5 +150,10 @@
     </div>
   </section>
   <!--================End Cart Area =================-->
+  <div class="row">
+    <div id="app">
+            <footer-component></footer-component>
+    </div>
+  </div>
 
 @endsection

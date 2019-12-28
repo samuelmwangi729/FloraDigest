@@ -229,3 +229,15 @@ Route::post('/Update/payment/Method/{id}',[
     'uses'=>'PaymentController@update',
     'as'=>'payments.update'
 ]);
+Route::get('/Shop/Product/Single/{category}',[
+    'uses'=>'ProductsController@category',
+    'as'=>'product.category'
+]);
+Route::get('/Shop/Product/Brand/{brand}',[
+    'uses'=>'ProductsController@brand',
+    'as'=>'product.brand'
+]);
+Route::get('/Shop/Product/Color/{color}',[
+    'uses'=>'ProductsController@color',
+    'as'=>'product.color'
+]);

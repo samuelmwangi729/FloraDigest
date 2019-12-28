@@ -16,7 +16,7 @@
                 <div class="carousel-item">
                   <img
                     class="d-block w-100"
-                    src="{{ asset($product->image1) }}"
+                    src="{{ asset($product->image2) }}"
                     alt="" width="100%" height="440px"
                   />
                 </div>
@@ -31,7 +31,7 @@
             <ul class="list">
               <li>
                 <a class="active" href="#">
-                  <span>Category</span> : {{ $product->category_id }}</a
+                  <span>Category</span> : {{ App\Models\ProductsCategories::find($product->category_id)->name }}</a
                 >
               </li>
               <li>
@@ -607,6 +607,10 @@
     </div>
   </section>
   <!--================End Product Description Area =================-->
-
+  <div class="row">
+    <div id="app">
+            <footer-component></footer-component>
+    </div>
+  </div>
 
 @endsection

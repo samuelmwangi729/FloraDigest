@@ -3,12 +3,12 @@
 @section('content')
 <div class="row">
     <div class="col-lg-9 col-md-9 col-sm-9">    
-      @foreach ($products as $product )
-      <div class="item" style="background-image:url({{asset($product->image2)  }});background-size:cover;background-position:center;color:blue;height:500px">
-        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ App\Models\Label::where('id',$product->label)->get()->first()->labelName }}</span></h1></u>
-            <span>At Ksh {{ $product->originalPrice }}&nbsp; Was Ksh <del>{{ $product->newPrice }}</del></span>
+      @foreach ($lastProduct as $lproduct )
+      <div class="item" style="background-image:url({{asset($lproduct->image4)  }});background-size:cover;background-position:center;color:blue;height:500px">
+        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ App\Models\Label::where('id',$lproduct->label)->get()->first()->labelName }}</span></h1></u>
+            <span>At Ksh {{ $lproduct->originalPrice }}&nbsp; Was Ksh <del>{{ $lproduct->newPrice }}</del></span>
     </div> 
-    {{ $product->productName }}
+    {{ $lproduct->productName }}
       @endforeach
         {{-- <h2 class="text-center"><a href="{{ route('news.single',['slug'=>$postsingle->slug]) }}">{{$postsingle->title }}</a></h2>
         <span class="fa fa-clock">&nbsp;&nbsp;{{ $postsingle->created_at->toFormattedDateString() }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -57,7 +57,7 @@
               
               <div class="latest_product_inner">
                 <div class="row">
-                  @foreach ($newProducts as $product )
+                  @foreach ($products as $product )
                   <div class="col-lg-4 col-md-6">
                     <div class="single-product">
                       <div class="product-img">
@@ -137,4 +137,5 @@
                 <footer-component></footer-component>
         </div>
       </div>
+  
 @stop

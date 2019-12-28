@@ -252,4 +252,66 @@ class ProductsController extends AppBaseController
 
         return redirect(route('products.index'));
     }
+    public function category($category){
+        $id=ProductsCategories::where('name',$category)->get()->first()->id;
+        $products=Products::where('category_id',$id)->orderBy('id','desc')->get();
+        if($products->count()==0){
+            Session::flash('error','Sorry, No Product Exists Under Such Category. Please Check Later');
+            return redirect()->back();
+        }
+        $lastProduct=Products::where('category_id',$id)->orderBy('id','desc')->get()->take(1);
+        $subcategories=Subcategories::where('mainCategory',$id)->get();
+        return view('shop.category')
+        ->with('categories',ProductsCategories::all())
+        ->with('products',$products)
+        ->with('subcategories',$subcategories)
+        ->with('brands',Brand::all())
+        ->with('brands',Brand::all())
+        ->with('colors',Color::all())
+        ->with('labels',Label::all())
+        ->with('lastProduct',$lastProduct);
+
+    }
+    public function brand($brand){
+        $id=Brand::where('brandName',$brand)->get()->first()->id;
+        $products=Products::where('brand',$id)->orderBy('id','desc')->get();
+        if($products->count()==0){
+            Session::flash('error','Sorry, No Product Exists Under Such Brand. Please Check Later');
+            return redirect()->back();
+        }
+        $lastProduct=Products::where('brand',$id)->orderBy('id','desc')->get()->take(1);
+        $subcategories=Subcategories::all();
+        return view('shop.brand')
+        ->with('categories',ProductsCategories::all())
+        ->with('products',$products)
+        ->with('subcategories',$subcategories)
+        ->with('brands',Brand::all())
+        ->with('brands',Brand::all())
+        ->with('colors',Color::all())
+        ->with('labels',Label::all())
+        ->with('lastProduct',$lastProduct);
+    }
+    public function color($color){
+         $id=Color::where('colorName',$color)->get()->first();
+         if(is_null($id)){
+            Session::flash('error','Error');
+            return redirect()->back();
+         }
+         $products=Products::where('color',$id->id)->orderBy('id','desc')->get();
+        if($products->count()==0){
+            Session::flash('error','Sorry, No Product Exists Under Such Color. Please Check Later');
+            return redirect()->back();
+        }
+        $lastProduct=Products::where('color',$id->id)->orderBy('id','desc')->get()->take(1);
+        $subcategories=Subcategories::all();
+        return view('shop.color')
+        ->with('categories',ProductsCategories::all())
+        ->with('products',$products)
+        ->with('subcategories',$subcategories)
+        ->with('brands',Brand::all())
+        ->with('brands',Brand::all())
+        ->with('colors',Color::all())
+        ->with('labels',Label::all())
+        ->with('lastProduct',$lastProduct);
+    }
 }
