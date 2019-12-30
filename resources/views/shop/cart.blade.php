@@ -138,7 +138,7 @@
                 <div class="col-sm-12">
                   <label for="payment" class="label-control"><i class="fa fa-credit-card" style="color:#562fc6"></i>&nbsp;&nbsp;Payment method</label><br>
                   @foreach($payments as $payment)
-                <input type="radio" name="payMethod" value="{{ $payment->id }}" required> <img src="{{ asset($payment->logo) }}" width="100px" height="50px">&nbsp;{{ $payment->name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="payMethod" value="{{ $payment->name }}" required> <img src="{{ asset($payment->logo) }}" width="100px" height="50px">&nbsp;{{ $payment->name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   @endforeach
                 </div>
               </div>

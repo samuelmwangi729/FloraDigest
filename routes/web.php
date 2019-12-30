@@ -241,3 +241,7 @@ Route::get('/Shop/Product/Color/{color}',[
     'uses'=>'ProductsController@color',
     'as'=>'product.color'
 ]);
+Route::post('/MyAccount/Order/CheckOut',[
+    'uses'=>'OrderController@checkOut',
+    'as'=>'order.checkout'
+]);
