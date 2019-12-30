@@ -28,7 +28,6 @@
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  <br>
                  @endforeach
-                 {{ $prod }}
                  {{ $total }}
                     </table>
                 </div>
@@ -60,25 +59,28 @@
         return actions.order.create({
           purchase_units: [{
             amount: {
-              value: '0.01'
+              value: '5000'
             }
           }]
-        });
+        })
       },
       onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Transaction completed by ' + details.payer.name.given_name);
-          // Call your server to save the transaction
-          return fetch('/paypal-transaction-complete', {
-            method: 'post',
-            headers: {
-              'content-type': 'application/json'
-            },
-            body: JSON.stringify({
-              orderID: data.orderID
-            })
-          });
-        });
+        return actions.redirect();
+        // return actions.order.capture().then(function(details) {
+          
+        //   alert('Transaction completed by ' + details.payer.name.given_name);
+        //   console.log(details);
+        //   // Call your server to save the transaction
+        //   return fetch('/Complete', {
+        //     method: 'post',
+        //     headers: {
+        //       'content-type': 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //       orderID: data.orderID
+        //     })
+        //   });
+        // });
       }
     }).render('#paypal-button-container');
   </script>

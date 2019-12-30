@@ -245,3 +245,4 @@ Route::post('/MyAccount/Order/CheckOut',[
     'uses'=>'OrderController@checkOut',
     'as'=>'order.checkout'
 ]);
+Route::post('/Complete','CompleteController@record');
