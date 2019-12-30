@@ -246,3 +246,5 @@ Route::post('/MyAccount/Order/CheckOut',[
     'as'=>'order.checkout'
 ]);
 Route::get('/Complete','CompleteController@record');
+Route::post('/pay','CompleteController@create');
+Route::post('pay-cash','CompleteController@pay')->name('pay-cash');

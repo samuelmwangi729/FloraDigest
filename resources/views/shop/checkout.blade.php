@@ -46,56 +46,16 @@
            <div class="panel panel-default">
                <div class="panel-body">
                 @if($method=="Paypal")
-                <div id="paypal-button" class="text-center text-bold">CheckOut</div>
+                <div class="container">
+                  <form method="post" action="{{ route('pay-cash') }}">
+                  @csrf
+                  <button class="btn btn-success" style="background-color:gold !important;color:green"><i class="fa fa-paypal"></i>&nbsp;Pay with <span style="color:#06307a !important;font-weight:bold">&nbsp;&nbsp;Pay</span><span style="color:#0a98da !important;font-weight:bold">Pal</span></button>
+                </form>
+                 </div>
                 @endif
                </div>
            </div>
         </div>
     </div>
 </div>
-<script src="https://www.paypalobjects.com/api/checkout.js"></script>
-<script>
-  paypal.Button.render({
-    // Configure environment
-    env: 'sandbox',
-    client: {
-      sandbox: 'AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk',
-      // production: 'demo_production_client_id'
-    },
-    // Customize button (optional)
-    locale: 'en_US',
-    style: {
-      size: 'medium',
-      color: 'gold',
-      shape: 'pill',
-    },
-
-    // Enable Pay Now checkout flow (optional)
-    commit: true,
-
-    // Set up a payment
-    payment: function(data, actions) {
-      return actions.payment.create({
-        redirect_urls:{
-          return_url:'http://localhost:8000/Complete'
-        },
-        transactions: [{
-          amount: {
-            total: '500',
-            currency: 'USD'
-          }
-        }]
-      });
-    },
-    // Execute the payment
-    onAuthorize: function(data, actions) {
-      return actions.redirect();
-      // return actions.payment.execute().then(function() {
-      //   // Show a confirmation message to the buyer
-      //   window.alert('Thank you for your purchase!');
-      // });
-    }
-  }, '#paypal-button');
-
-</script>
 @stop
