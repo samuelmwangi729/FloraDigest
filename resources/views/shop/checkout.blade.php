@@ -59,7 +59,7 @@
     // Configure environment
     env: 'sandbox',
     client: {
-      sandbox: 'demo_sandbox_client_id',
+      sandbox: 'AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk',
       // production: 'demo_production_client_id'
     },
     // Customize button (optional)
@@ -81,7 +81,7 @@
         },
         transactions: [{
           amount: {
-            total: '500.01',
+            total: '500',
             currency: 'USD'
           }
         }]
