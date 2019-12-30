@@ -7,7 +7,7 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     @include('layouts.css')
     @yield('css')
-    <script src="https://www.paypal.com/sdk/js?client-id=SB_CLIENT_ID"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk"></script>
     <script>
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
