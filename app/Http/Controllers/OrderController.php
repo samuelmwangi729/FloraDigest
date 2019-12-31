@@ -5,6 +5,9 @@ use App\Models\County;
 use App\Models\Town;
 use App\Models\Shipping;
 use Illuminate\Http\Request;
+use App\Order;
+use Auth;
+use Illuminate\Support\Str;
 
 class OrderController extends Controller
 {
@@ -16,20 +19,35 @@ class OrderController extends Controller
     public function index(Request $request)
     {
         // dd($request->all());
+       
         $name=$request->firstName." ".$request->secondName;
         $phone=$request->PhoneNumber;
         $post=$request->postOffice;
         $county=County::find($request->county)->get()->first()->county;
         $town=Town::find($request->town)->get()->first()->town;
-        $rate=json_encode(Shipping::find($request->rate)->get());
+        $delivery=Shipping::find($request->rate)->get()->first()->label;
+        $shipAmount=Shipping::find($request->rate)->get()->first()->fee;
         $method=$request->payMethod;
+        Order::create([
+            'orderNumber'=>Str::random(),
+            'username'=>Auth::user()->name,
+            'name'=>$name,
+            'phone'=>$phone,
+            'post'=>$post,
+            'county'=>$county,
+            'town'=>$town,
+            'delivery'=>$delivery,
+            'shipmentAmount'=>$shipAmount,
+            'paymentMethod'=>$method,
+        ]);
         return view('shop.checkout')
         ->with('name',$name)
         ->with('phone',$phone)
         ->with('post',$post)
         ->with('county',$county)
         ->with('town',$town)
-        ->with('rate',$rate)
+        ->with('rate',$delivery)
+        ->with('shipmentAmount',$shipAmount)
         ->with('method',$method);
     }
 

@@ -13,6 +13,10 @@ use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
 use PayPal\Api\PaymentExecution;
 use Session;
+use App\Models\County;
+use App\Models\Town;
+use App\Models\Shipping;
+use App\Order;
 
 class CompleteController extends Controller
 {

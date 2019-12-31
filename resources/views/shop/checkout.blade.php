@@ -10,11 +10,14 @@
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped">
                         <tr>
-                            <th>product</th>
+                            <th colspan="2" class="text-center">product</th>
+                            <th>Pcs</th>
+                            <th>Price per Piece</th>
+                            <th>Total Amount</th>
                         </tr>
                         @php 
                 $total=DB::table('carts')->where('user',Auth::user()->email)
-                             ->sum('total') + 5000000000 ;
+                             ->sum('total') + $shipmentAmount;
                 @endphp
                  @foreach(App\Cart::where('user',Auth::user()->email)->get()  as $prod)
                  {{-- {{ $prod }} --}}
@@ -28,7 +31,10 @@
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  <br>
                  @endforeach
-                 {{ $total }}
+                 <tr>
+                     <td colspan="2" class="text-center text-bold">Total</td>
+                     <td class="text-bold text-right" style="color:red" colspan="3">{{ $total }}</td>
+                 </tr>
                     </table>
                 </div>
                </div>
@@ -36,25 +42,25 @@
         </div>
         <div class="col-sm-4">
             <div class="panel panel-primary">
-                <div class="panel-heading">
-                    Shipping Details
-                </div>
                 <div class="panel-body">
-                    contact info
+                    <div class="list-group">
+                        <li class="list-group-item">Name :&nbsp;<span class="text-bold text-center"> {{ $name }}</span></li>
+                        <li class="list-group-item">Phone:&nbsp;<span class="text-bold text-center"> {{ $phone }}</span></li>
+                        <li class="list-group-item">Post :&nbsp;<span class="text-bold text-center"> {{ $post }}</span></li>
+                        <li class="list-group-item">County :&nbsp;<span class="text-bold text-center"> {{ $county }}</span></li>
+                        <li class="list-group-item">Town :&nbsp;<span class="text-bold text-center"> {{ $town }}</span></li>
+                        <li class="list-group-item">Rate :&nbsp;<span class="text-bold text-center"> {{ $rate }} &nbsp;{{ $shipmentAmount }}</span></li>
+                    </div>
                 </div>
             </div>
-           <div class="panel panel-default">
-               <div class="panel-body">
-                @if($method=="Paypal")
-                <div class="container">
-                  <form method="post" action="{{ route('pay-cash') }}">
-                  @csrf
-                  <button class="btn btn-success" style="background-color:gold !important;color:green"><i class="fa fa-paypal"></i>&nbsp;Pay with <span style="color:#06307a !important;font-weight:bold">&nbsp;&nbsp;Pay</span><span style="color:#0a98da !important;font-weight:bold">Pal</span></button>
-                </form>
-                 </div>
-                @endif
-               </div>
-           </div>
+            @if($method=="Paypal")
+            <div class="container">
+              <form method="post" action="{{ route('pay-cash') }}">
+              @csrf
+              <button type="submit" style="background-color:#ffffff !important;border:none"><img src="{{ asset('uploads/payments/paypal.jpg') }}" height="60px" width="50%" style="border-radius:140px"></button>
+            </form>
+             </div>
+            @endif
         </div>
     </div>
 </div>

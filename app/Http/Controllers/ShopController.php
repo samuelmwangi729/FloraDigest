@@ -68,4 +68,5 @@ class ShopController extends Controller
         Session::flash('success','The Product added to  wishlist');
         return redirect()->back();
     }
+    
 }
