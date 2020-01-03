@@ -1,54 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\County;
-use App\Models\Town;
-use App\Models\Shipping;
-use Illuminate\Http\Request;
-use App\Order;
-use Auth;
-use Illuminate\Support\Str;
 
-class OrderController extends Controller
+use Illuminate\Http\Request;
+
+class TransactionsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        // dd($request->all());
-       
-        $name=$request->firstName." ".$request->secondName;
-        $phone=$request->PhoneNumber;
-        $post=$request->postOffice;
-        $county=County::find($request->county)->get()->first()->county;
-        $town=Town::find($request->town)->get()->first()->town;
-        $delivery=Shipping::find($request->rate)->get()->first()->label;
-        $shipAmount=Shipping::find($request->rate)->get()->first()->fee;
-        $method=$request->payMethod;
-        Order::create([
-            'orderNumber'=>Str::random(),
-            'username'=>Auth::user()->email,
-            'name'=>$name,
-            'phone'=>$phone,
-            'post'=>$post,
-            'county'=>$county,
-            'town'=>$town,
-            'delivery'=>$delivery,
-            'shipmentAmount'=>$shipAmount,
-            'paymentMethod'=>$method,
-        ]);
-        return view('shop.checkout')
-        ->with('name',$name)
-        ->with('phone',$phone)
-        ->with('post',$post)
-        ->with('county',$county)
-        ->with('town',$town)
-        ->with('rate',$delivery)
-        ->with('shipmentAmount',$shipAmount)
-        ->with('method',$method);
+        //
     }
 
     /**
@@ -116,5 +81,4 @@ class OrderController extends Controller
     {
         //
     }
-   
 }

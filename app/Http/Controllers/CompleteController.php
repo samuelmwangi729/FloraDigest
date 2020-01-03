@@ -13,20 +13,15 @@ use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
 use PayPal\Api\PaymentExecution;
 use Session;
-use App\Models\County;
-use App\Models\Town;
-use App\Models\Shipping;
 use App\Order;
-
+use App\Cart;
 class CompleteController extends Controller
 {
-
-
-
-
-
-
     public function pay(){
+        $order=Order::getOrder();
+        $cartTotal=Cart::getTotal();
+        $total=$cartTotal+$order->shipmentAmount;
+        dd($cartTotal+$order->shipmentAmount);
         $apiContext = new \PayPal\Rest\ApiContext(
             new \PayPal\Auth\OAuthTokenCredential(
                 'AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk',     // ClientID
@@ -37,32 +32,25 @@ class CompleteController extends Controller
         $payer = new Payer();
         $payer->setPaymentMethod("paypal");
 
-        $item1 = new Item();
-        $item1->setName('Ground Coffee 40 oz')
+        $item2 = new Item();
+        $item2->setName('Flora Digest Order Number '.$order->orderNumber)
                 ->setCurrency('USD')
                 ->setQuantity(1)
                 ->setSku("123123") // Similar to `item_number` in Classic API
-                ->setPrice(7.5);
-        $item2 = new Item();
-        $item2->setName('Granola bars')
-                ->setCurrency('USD')
-                ->setQuantity(5)
-                ->setSku("321321") // Similar to `item_number` in Classic API
-                ->setPrice(2);
-
+                ->setPrice($total);
         $itemList = new ItemList();
         $itemList->setItems(array($item1, $item2));
 
 
         $details = new Details();
-        $details->setShipping(1.2)
-            ->setTax(1.3)
-            ->setSubtotal(17.50);
+        $details->setShipping(200)
+            ->setTax(300)
+            ->setSubtotal($cartTotal);
 
 
         $amount = new Amount();
         $amount->setCurrency("USD")
-            ->setTotal(20)
+            ->setTotal($total)
             ->setDetails($details);
 
         $transaction = new Transaction();

@@ -70,10 +70,10 @@
                           <a href="{{ route('product.show',['id'=>$product->slug]) }}">
                             <i class="fa fa-eye" style="color:red"></i>
                           </a>
-                          <a href="#">
+                          <a href="{{ route('wishlist.add',['slug'=>$product->slug]) }}">
                             <i class="fa fa-heart" style="color:red"></i>
                           </a>
-                          <a href="#">
+                          <a href="{{ route('single.cart',['slug'=>$product->slug]) }}">
                             <i class="fa fa-shopping-basket" style="color:red"></i>
                           </a>
                         </div>

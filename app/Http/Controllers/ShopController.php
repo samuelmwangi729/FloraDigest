@@ -68,5 +68,25 @@ class ShopController extends Controller
         Session::flash('success','The Product added to  wishlist');
         return redirect()->back();
     }
+    public function singleCart($slug){
+        $product=Products::where('slug',$slug)->get()->first();
+        //check if the product is i the cart
+        $checkCart=Cart::where('product_slug',$slug)->get()->first();
+        if(!is_null($checkCart)){
+            if($checkCart->product_slug==$slug){
+                Session::flash('error','The Product already In Cart');
+                return redirect()->back();
+            }
+        }
+        Cart::create([
+            'product_slug'=>$slug,
+            'price'=>$product->newPrice,
+            'qty'=>1,
+            'total'=>$product->newPrice,
+            'user'=>Auth::user()->email
+        ]);
+        Session::flash('success','Successfully Added to Cart');
+        return redirect()->back();
+    }
     
 }

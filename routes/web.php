@@ -209,7 +209,7 @@ Route::group(['middleware' => ['auth']], function () {
         'as'=>'cart.index'
     ]) ;
 });
-ROute::get('/Wishlist/Add/Product/{slug}',[
+Route::get('/Wishlist/Add/Product/{slug}',[
     'uses'=>'ShopController@addWishlist',
     'as'=>'wishlist.add'
 ]);
@@ -245,6 +245,10 @@ Route::post('/MyAccount/Order/CheckOut',[
     'uses'=>'OrderController@checkOut',
     'as'=>'order.checkout'
 ]);
-Route::get('/Complete','CompleteController@record');
+Route::get('/Complete','ConfirmedController@record');
 Route::post('/pay','CompleteController@create');
 Route::post('pay-cash','CompleteController@pay')->name('pay-cash');
+Route::get('single/Cart/{slug}',[
+    'uses'=>'ShopController@singleCart',
+    'as'=>'single.cart'
+]);

@@ -149,7 +149,7 @@
                     <a class="icon_btn" href="{{ route('wishlist.add',['slug'=>$newproduct->slug]) }}" title="Add to Wishlist">
                       <i class="fa fa-heart"></i>
                     </a>
-                    <a href="#">
+                    <a href="{{ route('single.cart',['slug'=>$product->slug]) }}">
                       <i class="fa fa-shopping-bag"></i>
                     </a>
                   </div>

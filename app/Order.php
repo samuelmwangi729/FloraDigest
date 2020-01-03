@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Auth;
 class Order extends Model
 {
     public $fillable=[
@@ -47,4 +47,10 @@ class Order extends Model
         'shipmentAmount'=>'required',
         'paymentMethod'=>'required'
     ];
+     //get the current order items for the logged in user 
+     public static function getOrder(){
+        $user=Auth::user()->email;
+        $order=Order::where('username',$user)->get()->first();
+        return $order;
+    }
 }

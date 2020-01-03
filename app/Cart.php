@@ -3,7 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Auth;
+use DB;
 class Cart extends Model
 {
     public $fillable=[
@@ -26,4 +27,11 @@ class Cart extends Model
         'qty'=>'required',
         'user'=>'required'
     ];
+
+    public static function getTotal(){
+        $user=Auth::user()->email;
+        $total=DB::table('carts')->where('user',Auth::user()->email)
+                             ->sum('total');
+        return $total;
+    }
 }
