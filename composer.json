@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "barryvdh/laravel-dompdf": "^0.8.5",
         "doctrine/dbal": "~2.3",
         "fideloper/proxy": "^4.0",
         "infyomlabs/adminlte-templates": "6.0.x-dev",
@@ -18,6 +19,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.1",
         "laravelcollective/html": "^6.0",
+        "mpdf/mpdf": "^8.0",
         "paypal/rest-api-sdk-php": "^1.14",
         "smodav/mpesa": "^5.0"
     },

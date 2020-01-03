@@ -21,6 +21,7 @@ class CreateCartsTable extends Migration
             $table->integer('total');
             $table->string('user');
             $table->boolean('checkedOut');
+            $table->string('orderNumber');
             $table->softDeletes();
             $table->timestamps();
         });

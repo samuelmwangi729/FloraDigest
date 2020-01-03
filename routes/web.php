@@ -256,3 +256,7 @@ Route::get('/ThankYou/{order}',[
     'uses'=>'ShopController@thankyou',
     'as'=>'thank.you'
 ]);
+Route::get('/Order/View/{order}',[
+    'uses'=>'OrderController@show',
+    'as'=>'view.order'
+]);

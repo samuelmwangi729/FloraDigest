@@ -35,7 +35,10 @@ class ConfirmedController extends Controller
         $carts = DB::table('carts')->where([
             ['checkedOut', '=', '0'],
             ['user', '=', $userEmail],
-        ])->update(['checkedOut'=> 1]);
+        ])->update([
+            'checkedOut'=> 1,
+            'orderNumber'=>$request->orderNumber
+        ]);
 
         Session::flash('success','Order'.$request->orderNumber.' Successfuly Placed');  
         return redirect()->route('thank.you',['order'=>$request->orderNumber]);
