@@ -245,7 +245,7 @@ Route::post('/MyAccount/Order/CheckOut',[
     'uses'=>'OrderController@checkOut',
     'as'=>'order.checkout'
 ]);
-Route::get('/Complete','ConfirmedController@record');
+Route::get('/Complete/{orderNumber}/{useremail}/{total}','ConfirmedController@record')->name('cart.clear');
 Route::post('/pay','CompleteController@create');
 Route::post('pay-cash','CompleteController@pay')->name('pay-cash');
 Route::get('single/Cart/{slug}',[

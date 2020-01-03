@@ -14,14 +14,16 @@ use PayPal\Api\Transaction;
 use PayPal\Api\PaymentExecution;
 use Session;
 use App\Order;
+use Auth;
 use App\Cart;
 class CompleteController extends Controller
 {
-    public function pay(){
+    public function pay(Request $request){
         $order=Order::getOrder();
         $cartTotal=Cart::getTotal();
+        $userEmail=Cart::getUser();
         $total=$cartTotal+$order->shipmentAmount;
-        dd($cartTotal+$order->shipmentAmount);
+        //dd($cartTotal+$order->shipmentAmount);
         $apiContext = new \PayPal\Rest\ApiContext(
             new \PayPal\Auth\OAuthTokenCredential(
                 'AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk',     // ClientID
@@ -37,9 +39,9 @@ class CompleteController extends Controller
                 ->setCurrency('USD')
                 ->setQuantity(1)
                 ->setSku("123123") // Similar to `item_number` in Classic API
-                ->setPrice($total);
+                ->setPrice($cartTotal);
         $itemList = new ItemList();
-        $itemList->setItems(array($item1, $item2));
+        $itemList->setItems(array($item2));
 
 
         $details = new Details();
@@ -60,7 +62,7 @@ class CompleteController extends Controller
             ->setInvoiceNumber(uniqid());
         
         $redirectUrls = new RedirectUrls();
-        $redirectUrls->setReturnUrl("http://localhost:8000/Complete")
+        $redirectUrls->setReturnUrl("http://localhost:8000/Complete/".$order->orderNumber."/".$userEmail."/".$total)
                 ->setCancelUrl("http://localhost:8000/cancel");
             
         $payment = new Payment();
@@ -69,13 +71,10 @@ class CompleteController extends Controller
                 ->setRedirectUrls($redirectUrls)
                 ->setTransactions(array($transaction));
         $payment->create($apiContext);
-
+        //what next after paying the amount?
+        $order=Order::where('username',Auth::user()->email)->get()->first();
+        $order->status=1;
+        $order->save();
         return redirect($payment->getApprovalLink());
-    }
-    public function record(){
-       
-        
-        Session::flash('success','Your Order has been placed');
-        return redirect('/');
     }
 }

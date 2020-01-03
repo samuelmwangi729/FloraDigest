@@ -10,6 +10,7 @@ class Transaction extends Model
         'transactionId',
         'transactionAmount',
         'user',
+        'orderNumber',
         'source',
     ];
 
@@ -17,6 +18,7 @@ class Transaction extends Model
         'transactionId'=>'string',
         'transactionAmount'=>'string',
         'user'=>'string',
+        'orderNumber'=>'string',
         'source'=>'string'
     ];
 
@@ -24,6 +26,7 @@ class Transaction extends Model
         'transactionId'=>'required',
         'transactionAmount'=>'required',
         'user'=>'required',
+        'orderNumber'=>'required',
         'source'=>'required',
     ];
 }

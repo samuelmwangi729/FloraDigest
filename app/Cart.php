@@ -34,4 +34,7 @@ class Cart extends Model
                              ->sum('total');
         return $total;
     }
+    public static function getUser(){
+        return Auth::user()->email;
+    }
 }

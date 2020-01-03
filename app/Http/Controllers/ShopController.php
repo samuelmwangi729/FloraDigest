@@ -31,7 +31,7 @@ class ShopController extends Controller
 
     public function cart(Request $request){
         $product=Products::where('slug',$request->product)->get()->first();
-        $exist=Cart::where('product_slug',$request->product)->get()->first();
+        $exist=Cart::where('product_slug',$request->product,'email',Auth::user()->email)->get()->first();
         if(!is_null($exist)){
             if($exist->product_slug==$request->product){
                 Session::flash('error','Product already In Cat');

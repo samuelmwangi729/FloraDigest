@@ -18,6 +18,7 @@ class CreateTransactionsTable extends Migration
             $table->string('transactionId');
             $table->string('transactionAmount');
             $table->string('user');
+            $table->string('orderNumber');
             $table->string('source');
             $table->softDeletes();
             $table->timestamps();

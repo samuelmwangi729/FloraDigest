@@ -49,8 +49,7 @@ class Order extends Model
     ];
      //get the current order items for the logged in user 
      public static function getOrder(){
-        $user=Auth::user()->email;
-        $order=Order::where('username',$user)->get()->first();
+        $order=Order::orderBy('id','desc')->get()->first();
         return $order;
     }
 }

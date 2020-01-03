@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
+use Auth;
 class User extends Authenticatable
 {
     use Notifiable;
@@ -39,5 +39,9 @@ class User extends Authenticatable
 
     public function profile(){
         return $this->hasOne('App\Profile');
+    }
+
+    public static function getCurrentUser(){
+        return Auth::user()->email;
     }
 }
