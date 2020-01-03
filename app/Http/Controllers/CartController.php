@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use DB;
+use Session;
 use App\Cart;
 use App\Models\Products;
 use App\Models\County;
@@ -24,7 +26,15 @@ class CartController extends Controller
      */
     public function index()
     {   
-        $cart=Cart::where('user',Auth::user()->email)->get();
+        $cart = DB::table('carts')->where([
+            ['checkedOut', '=', '0'],
+            ['user', '=', Auth::user()->email],
+        ])->get();
+        if($cart->count()==0){
+            Session::flash('error','The Shopping cart is currently Empty');
+            return redirect()->back();
+        }
+        // $cart=Cart::where('user',Auth::user()->email)->get();
         // dd($cart['id']);
         // $product=Products::where('slug',$cart->product_slug)->get();
         // dd($product);

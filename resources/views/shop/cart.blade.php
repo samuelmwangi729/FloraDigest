@@ -75,7 +75,10 @@
                 </td>
                 <td>
                   <h5>
-                    {{ DB::table('carts')->where('user',Auth::user()->email)
+                    {{ DB::table('carts')->where([
+                      'user'=>Auth::user()->email,
+                      'checkedOut'=>0
+                    ])
                     ->sum('total') }}
                 </h5>
                 </td>

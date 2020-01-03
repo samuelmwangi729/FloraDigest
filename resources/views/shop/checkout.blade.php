@@ -16,10 +16,16 @@
                             <th>Total Amount</th>
                         </tr>
                         @php 
-                $total=DB::table('carts')->where('user',Auth::user()->email)
+                $total=DB::table('carts')->where([
+                    'user'=>Auth::user()->email,
+                    'checkedOut'=>0
+                ])
                              ->sum('total') + $shipmentAmount;
                 @endphp
-                 @foreach(App\Cart::where('user',Auth::user()->email)->get()  as $prod)
+                 @foreach(App\Cart::where([
+                     'user'=>Auth::user()->email,
+                     'checkedOut'=>0
+                 ])->get()  as $prod)
                  {{-- {{ $prod }} --}}
                 <tr>
                     <td><img src="{{ asset(App\Models\Products::where('slug',$prod->product_slug)->get()->first()->image1) }}" alt="{{ $prod->slug }}" width="100px" style="padding-bottom:20px"></td>

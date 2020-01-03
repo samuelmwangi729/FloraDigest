@@ -252,3 +252,7 @@ Route::get('single/Cart/{slug}',[
     'uses'=>'ShopController@singleCart',
     'as'=>'single.cart'
 ]);
+Route::get('/ThankYou/{order}',[
+    'uses'=>'ShopController@thankyou',
+    'as'=>'thank.you'
+]);

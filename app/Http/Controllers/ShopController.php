@@ -71,7 +71,11 @@ class ShopController extends Controller
     public function singleCart($slug){
         $product=Products::where('slug',$slug)->get()->first();
         //check if the product is i the cart
-        $checkCart=Cart::where('product_slug',$slug)->get()->first();
+        $checkCart=Cart::where([
+            'product_slug'=>$slug,
+            'user'=>Auth::user()->email,
+            'checkedOut'=>0
+            ])->get()->first();
         if(!is_null($checkCart)){
             if($checkCart->product_slug==$slug){
                 Session::flash('error','The Product already In Cart');
@@ -87,6 +91,9 @@ class ShopController extends Controller
         ]);
         Session::flash('success','Successfully Added to Cart');
         return redirect()->back();
+    }
+    public function thankyou(Request $request){
+        return view('shop.thankyou')->with('order',$request->order);
     }
     
 }
