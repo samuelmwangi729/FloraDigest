@@ -2,6 +2,7 @@
 @section('content')
 <div class="container">
     <div class="container">
+        @if(Auth::user()->level=='Administrator')
         <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="panel panel-success">
                 <div class="panel-heading text-center">
@@ -258,6 +259,111 @@
                 </a>
             </div>
         </div>
+        @endif
+    @if(Auth::user()->level=='User')
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                Assignments
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-file" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                    {{ App\Proposal::where('clientEmail',Auth::user()->email)->get()->count() }}
+                </div>
+            </div>
+            <a href="{{ route('assignment.view') }}">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                Pending Assignments
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-exclamation-circle" style="color:white;font-size:35px"></i>&nbsp;
+               <div class="pull-right" style="font-size:35px">
+                {{ App\Proposal::where([
+                    'clientEmail'=>Auth::user()->email,
+                    'status'=>0
+                ])->get()->count() }}
+               </div>
+            </div>
+            <a href="{{ route('assignment.view') }}">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                Completed Assignments
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-check-circle" style="color:white;font-size:35px"></i>&nbsp;
+               <div class="pull-right" style="font-size:35px">
+                {{ App\Proposal::where([
+                    'clientEmail'=>Auth::user()->email,
+                    'status'=>1,
+                    'paid'=>1
+                ])->get()->count() }}
+               </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                Disputed Assignments
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-check-circle" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                    {{ App\Proposal::where([
+                        'clientEmail'=>Auth::user()->email,
+                        'status'=>2
+                    ])->get()->count() }}
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                Payments Made
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-check-circle" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                    {{ App\Transaction::where([
+                        'user'=>Auth::user()->email
+                    ])->get()->count() }}
+                    </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    @endif
     </div>
 </div>
 @endsection

@@ -200,6 +200,18 @@ Route::get('/Shop/Product/{id}',[
 
 Route::resource('labels', 'LabelController');
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('/Assignment/View',[
+        'uses'=>'AssignmentController@index',
+        'as'=>'assignment.view'
+    ]);
+    Route::get('/Assignment/View/Single/{slug}',[
+        'uses'=>'AssignmentController@show',
+        'as'=>'Assignment.show'
+    ]);
+    Route::get('/Assignment/New/',[
+        'uses'=>'AssignmentController@create',
+        'as'=>'assignment.add'
+    ]);
     Route::post('/Product/Cart',[
         'uses'=>'ShopController@cart',
         'as'=>'product.cart'
@@ -259,4 +271,20 @@ Route::get('/ThankYou/{order}',[
 Route::get('/Order/View/{order}',[
     'uses'=>'OrderController@show',
     'as'=>'view.order'
+]);
+Route::get('/Proposal/Order',[
+    'uses'=>'ProposalController@index',
+    'as'=>'proposal.order'
+]);
+Route::post('/Request/Proposal',[
+    'uses'=>'ProposalController@store',
+    'as'=>'proposal.post'
+]);
+Route::get('/Account/Client/Register',[
+    'uses'=>'ClientRegister@create',
+    'as'=>'client.register'
+]);
+Route::post('/Account/Client/Store',[
+    'uses'=>'ClientRegister@store',
+    'as'=>'client.details.login'
 ]);

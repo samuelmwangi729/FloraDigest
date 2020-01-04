@@ -1,6 +1,7 @@
 <li>
     <a href="/home"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
 </li>
+@if(Auth::user()->level=='Administrator')
 <li class="{{ Request::is('posts*') ? 'active' : '' }}">
     <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Posts</span></a>
       <div class="collapse" id="collapseExample">
@@ -63,12 +64,6 @@
         </ul>
       </div>
 </li>
-
-
-
-
-
-
 <li class="{{ Request::is('counties*') ? 'active' : '' }}">
     <a href="{{ route('counties.index') }}"><i class="fa fa-edit"></i><span>Counties</span></a>
 </li>
@@ -84,4 +79,23 @@
 <li class="{{ Request::is('payments*') ? 'active' : '' }}">
     <a href="{{ route('payments.index') }}"><i class="fa fa-edit"></i><span>Payments</span></a>
 </li>
+@endif
+@if(Auth::user()->level=='User')
+<li class="{{ Request::is('products*') ? 'active' : '' }}">
+    <a  data-toggle="collapse" href="#collapseProducts" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Assignments</span></a>
+      <div class="collapse" id="collapseProducts">
+        <ul class="list-unstyled" style="color:white;padding-left:30px">
+            <li>
+                <a href="{{ route('assignment.add') }}"><i class="fa fa-plus"></i><span>&nbsp;&nbsp;New Assignment</span></a>
+            </li>
+            <li>
+                <a href="{{ route('assignment.view') }}"><i class="fa fa-eye"></i><span>&nbsp;&nbsp;View Assignments</span></a>
+            </li>
+        </ul>
+      </div>
+</li>
+<li>
+    <a href="#"><i class="fa fa-cog"></i>Account Settings</a>
+</li>
+@endif
 

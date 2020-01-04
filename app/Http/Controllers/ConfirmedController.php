@@ -32,7 +32,7 @@ class ConfirmedController extends Controller
         ]);
         
         //update the cart set 
-        $carts = DB::table('carts')->where([
+        $carts = DB::table('carts')->orderByRaw('created_at','DESC')->where([
             ['checkedOut', '=', '0'],
             ['user', '=', $userEmail],
         ])->update([

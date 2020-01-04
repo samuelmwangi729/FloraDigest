@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Order;
 use Auth;
 use Illuminate\Support\Str;
-
+use DB;
 class OrderController extends Controller
 {
     /**
@@ -81,7 +81,26 @@ class OrderController extends Controller
     public function show($order)
     {
         //gets and displays the order sent
-        dd($order);
+        $orders=Order::where('orderNumber',$order)->get();
+        $product=\App\Cart::where('orderNumber',$order)->get();
+        // $orders=DB::table('carts')->orderByRaw('created_at','DESC')->where(
+        //     ['checkedOut'=> 0 ],
+        //     ['orderNumber'=> $order],
+        // )->get();
+        //dd($orders);
+        $filename="order.pdf";
+        $data=$orders;
+        $mpdf=new \Mpdf\Mpdf([
+            'margin_left' => 10,
+            'margin_right' => 10,
+            'margin_top' => 10,
+            'margin_bottom' => 10,
+        ]);
+        $html=\View::make('shop.pdf')->with('data',$data);
+        $html=$html->render();
+        $mpdf->WriteHTML($html);
+        $mpdf->Output($filename,'I');
+        return view('order.pdf');
     }
 
     /**

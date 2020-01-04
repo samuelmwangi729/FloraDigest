@@ -37922,14 +37922,15 @@ var staticRenderFns = [
             ),
             _vm._v("   "),
             _c(
-              "button",
+              "a",
               {
                 staticClass: "btn btn-primary",
                 staticStyle: {
                   "border-radius": "20px",
                   "margin-top": "30px",
                   "background-color": "#ff4900 !important"
-                }
+                },
+                attrs: { href: "/Proposal/Order" }
               },
               [
                 _c("i", { staticClass: "fa fa-info" }),
