@@ -39,17 +39,14 @@ class ProposalController extends Controller
             'clientEmail'=>'required',
             'clientName'=>'required',
             'clientAssignment'=>'required',
-            'slug'=>'required',
             'clientDate'=>'required',
             'clientDescription'=>'required',
             'clientAttachment'=>'required',
             'clientBudget'=>'required'
         ]);
-        Proposal::create($request->All());
         $clientFile=$request->clientAttachment;
             $clientFileNewName=time().$clientFile->getClientOriginalName();
             $clientFile->move('uploads/Assignments',$clientFileNewName);
-        // dd($request->all());
         Proposal::create([
             'clientEmail'=>$request->clientEmail,
             'clientName'=>$request->clientName,
@@ -61,8 +58,8 @@ class ProposalController extends Controller
             'clientBudget'=>$request->clientBudget
         ]);
 
-        Session::flash('success','Your Assignment Was Successfully Uploaded, Please Register To track its progress');
-        return redirect()->back();
+        Session::flash('success','Your Assignment Was Successfully Uploaded');
+        return redirect()->route('assignment.view');
     }
 
     /**

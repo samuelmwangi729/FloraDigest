@@ -3,9 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Proposal extends Model
-{
+{   
+    use softDeletes;
     public $fillable=[
         'clientEmail',
         'clientName',

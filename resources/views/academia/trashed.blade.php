@@ -16,7 +16,7 @@
                         <th><i class="fa fa-rss-square"></i> Posted At:</th>
                         <th colspan="3">Actions&nbsp;<i class="fa fa-caret-down"></i></th>
                     </tr>
-                   @if( $assignment->count()==0)
+                   @if( count($assignment)==0)
                    <tr>
                        <td colspan="6">
                            <div class="alert alert-danger">
@@ -34,9 +34,8 @@
                         <td>{{ $assignment->clientBudget}}</td>
                         <td>{{ $assignment->created_at->toFormattedDateString() }}</td>
                         <td>
-                            <a href="{{ route('assignment.single', [$assignment->slug]) }}" class='btn btn-primary btn-xs'><i class="fa fa-eye"></i></a>
-                            <a href="{{ route('assignment.edit', [$assignment->slug]) }}" class='btn btn-info btn-xs'><i class="fa fa-edit"></i></a>
-                            <a href="{{ route('assignment.delete', [$assignment->slug]) }}" class='btn btn-danger btn-xs'><i class="fa fa-trash"></i></a>
+                            <a href="{{ route('assignment.recover', [$assignment->slug]) }}" class='btn btn-primary btn-xs'><i class="fa fa-recycle"></i></a>
+                            <a href="{{ route('assignment.recover', [$assignment->slug]) }}" title="permanently Delete" class='btn btn-danger btn-xs'><i class="fa fa-trash"></i></a>
                         </td>
                         </tr>
                         @endforeach

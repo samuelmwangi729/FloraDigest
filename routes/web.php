@@ -204,13 +204,65 @@ Route::group(['middleware' => ['auth']], function () {
         'uses'=>'AssignmentController@index',
         'as'=>'assignment.view'
     ]);
-    Route::get('/Assignment/View/Single/{slug}',[
+    Route::get('/Assignment/single/{slug}',[
         'uses'=>'AssignmentController@show',
-        'as'=>'Assignment.show'
+        'as'=>'assignment.single'
+    ]);
+    Route::get('/Assignment/Single/Edit/{slug}',[
+        'uses'=>'AssignmentController@edit',
+        'as'=>'assignment.edit'
+    ]);
+    Route::post('/Assignment/Single/Update/{slug}',[
+        'uses'=>'AssignmentController@update',
+        'as'=>'assignment.update'
+    ]);
+    ROute::get('Assignment/Delete/{slug}',[
+        'uses'=>'AssignmentController@delete',
+        'as'=>'assignment.delete'
     ]);
     Route::get('/Assignment/New/',[
         'uses'=>'AssignmentController@create',
         'as'=>'assignment.add'
+    ]);
+    Route::get('/Assignment/Recycle/Bin',[
+        'uses'=>'AssignmentController@trashed',
+        'as'=>'assignment.trashed'
+    ]);
+    Route::get('/Assignment/Recover/{slug}',[
+        'uses'=>'AssignmentController@recover',
+        'as'=>'assignment.recover'
+    ]);
+    Route::get('/Assignment/Disputed',[
+        'uses'=>'AssignmentController@dispute',
+        'as'=>'assignment.disputed'
+    ]);
+    Route::get('/Assignment/Dispute/{slug}',[
+        'uses'=>'DisputeController@create',
+        'as'=>'assignment.dispute'
+    ]);
+    Route::get('/Dispute/Single/{slug}',[
+        'uses'=>'DisputeController@show',
+        'as'=>'dispute.single'
+    ]);
+    Route::get('/Dispute/Settle/{slug}',[
+        'uses'=>'DisputeController@settle',
+        'as'=>'dispute.settle'
+    ]);
+    Route::post('/Dispute/New',[
+        'uses'=>'DisputeController@store',
+        'as'=>'dispute.post'
+    ]);
+    Route::get('/Assignment/Close/Dispute/{slug}',[
+        'uses'=>'DisputeController@remove',
+        'as'=>'assignment.undispute'
+    ]);
+    Route::get('/Dispute/Close/{slug}',[
+        'uses'=>'DisputeController@close',
+        'as'=>'dispute.undispute'
+    ]);
+    Route::get('/Dispute/View/This/{slug}',[
+        'uses'=>'DisputeController@view',
+        'as'=>'dispute.view.this'
     ]);
     Route::post('/Product/Cart',[
         'uses'=>'ShopController@cart',

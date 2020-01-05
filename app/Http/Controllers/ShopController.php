@@ -30,6 +30,10 @@ class ShopController extends Controller
     }
 
     public function cart(Request $request){
+        if(!Auth::check()){
+            Session::flash('error','Please Login or Register');
+            return redirect()->back();
+        }
         $product=Products::where('slug',$request->product)->get()->first();
         $exist=Cart::where('product_slug',$request->product,'email',Auth::user()->email)->get()->first();
         if(!is_null($exist)){
@@ -69,6 +73,10 @@ class ShopController extends Controller
         return redirect()->back();
     }
     public function singleCart($slug){
+        if(!Auth::check()){
+            Session::flash('error','Please Login or Register');
+            return redirect()->back();
+        }
         $product=Products::where('slug',$slug)->get()->first();
         //check if the product is i the cart
         $checkCart=Cart::where([

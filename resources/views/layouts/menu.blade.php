@@ -91,6 +91,9 @@
             <li>
                 <a href="{{ route('assignment.view') }}"><i class="fa fa-eye"></i><span>&nbsp;&nbsp;View Assignments</span></a>
             </li>
+            <li>
+                <a href="{{ route('assignment.trashed') }}"><i class="fa fa-trash"></i><span>&nbsp;&nbsp;Deleted Assignment</span></a>
+            </li>
         </ul>
       </div>
 </li>
