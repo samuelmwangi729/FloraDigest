@@ -368,7 +368,7 @@ Route::get('/Completed/New',[
     'uses'=>'CompletedController@create',
     'as'=>'completed.new'
 ]);
-Route::get('/Assignment/New/Completed',[
-    'uses'=>'COmpletedController@post',
+Route::post('/Assignment/New/Completed',[
+    'uses'=>'CompletedController@store',
     'as'=>'completed.post'
 ]);

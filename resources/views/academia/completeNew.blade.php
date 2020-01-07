@@ -36,9 +36,13 @@
                         <label style="padding-left:10px;color:#562fc6" for="email address" class="label-control"><i class="fa fa-file" style="font-size:16px"></i>&nbsp;Attach File</label>
                         <input type="file" class="form-control text-center" style="border:none"  name="Attachment">
                     </div>
+                    <div class="col-sm-12">
+                        <label style="padding-left:10px;color:#562fc6" for="email address" class="label-control"><i class="fa fa-paragraph" style="font-size:16px"></i>&nbsp;Assignment Conclusion</label>
+                        <textarea class="summernote"  name="AssignmentConclusion"></textarea>
+                    </div>
                     <div class="col-sm-12 mb-5 text-center">
                         <br>
-                        <button type="submit" class="btn btn-success" style="border-radius:20px;background-color:#562fc6">Request Assignment</button>
+                        <button type="submit" class="btn btn-success" style="border-radius:20px;background-color:#562fc6">Upload Assignment</button>
                     </div>
                 </div>
             </form>
