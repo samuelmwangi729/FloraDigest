@@ -52,9 +52,16 @@ class CartController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function remove($slug)
+    {   
+        $product=Cart::where([
+            'product_slug'=>$slug,
+            'user'=>Auth::user()->email
+        ])->get()->first();
+        $product->deleted_at=1;
+        $product->save();
+        Session::flash('error','Proucts removed from Cart');
+        return redirect()->back();
     }
 
     /**

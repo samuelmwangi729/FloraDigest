@@ -58,26 +58,42 @@
             <li class="{{ Request::is('labels*') ? 'active' : '' }}">
                 <a href="{{ route('labels.index') }}"><i class="fa fa-tags"></i><span>Labels</span></a>
             </li>
+            <li class="{{ Request::is('counties*') ? 'active' : '' }}">
+                <a href="{{ route('counties.index') }}"><i class="fa fa-edit"></i><span>Counties</span></a>
+            </li>
+            
+            <li class="{{ Request::is('towns*') ? 'active' : '' }}">
+                <a href="{{ route('towns.index') }}"><i class="fa fa-edit"></i><span>Towns</span></a>
+            </li>
+            
+            <li class="{{ Request::is('shippings*') ? 'active' : '' }}">
+                <a href="{{ route('shippings.index') }}"><i class="fa fa-edit"></i><span>Shippings</span></a>
+            </li>
+            
+            <li class="{{ Request::is('payments*') ? 'active' : '' }}">
+                <a href="{{ route('payments.index') }}"><i class="fa fa-edit"></i><span>Payments</span></a>
+            </li>
             <li class="{{ Request::is('products*') ? 'active' : '' }}">
                 <a href="{{ route('products.index') }}"><i class="fa fa-shopping-cart"></i><span>&nbsp;Products</span></a>
             </li>
         </ul>
       </div>
 </li>
-<li class="{{ Request::is('counties*') ? 'active' : '' }}">
-    <a href="{{ route('counties.index') }}"><i class="fa fa-edit"></i><span>Counties</span></a>
-</li>
-
-<li class="{{ Request::is('towns*') ? 'active' : '' }}">
-    <a href="{{ route('towns.index') }}"><i class="fa fa-edit"></i><span>Towns</span></a>
-</li>
-
-<li class="{{ Request::is('shippings*') ? 'active' : '' }}">
-    <a href="{{ route('shippings.index') }}"><i class="fa fa-edit"></i><span>Shippings</span></a>
-</li>
-
-<li class="{{ Request::is('payments*') ? 'active' : '' }}">
-    <a href="{{ route('payments.index') }}"><i class="fa fa-edit"></i><span>Payments</span></a>
+<li class="{{ Request::is('products*') ? 'active' : '' }}">
+    <a  data-toggle="collapse" href="#Assignments" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Assignments</span></a>
+      <div class="collapse" id="Assignments">
+        <ul class="list-unstyled" style="color:white;padding-left:30px">
+            <li>
+                <a href="{{ route('assignment.add') }}"><i class="fa fa-plus"></i><span>&nbsp;&nbsp;New Assignment</span></a>
+            </li>
+            <li>
+                <a href="{{ route('assignment.view') }}"><i class="fa fa-eye"></i><span>&nbsp;&nbsp;View Assignments</span></a>
+            </li>
+            <li>
+                <a href="{{ route('assignment.trashed') }}"><i class="fa fa-trash"></i><span>&nbsp;&nbsp;Deleted Assignment</span></a>
+            </li>
+        </ul>
+      </div>
 </li>
 @endif
 @if(Auth::user()->level=='User')

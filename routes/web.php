@@ -264,6 +264,10 @@ Route::group(['middleware' => ['auth']], function () {
         'uses'=>'DisputeController@view',
         'as'=>'dispute.view.this'
     ]);
+    Route::get('/Disputes/All/List',[
+        'uses'=>'DisputeController@index',
+        'as'=>'disputes.index'
+    ]);
     Route::post('/Product/Cart',[
         'uses'=>'ShopController@cart',
         'as'=>'product.cart'
@@ -339,4 +343,32 @@ Route::get('/Account/Client/Register',[
 Route::post('/Account/Client/Store',[
     'uses'=>'ClientRegister@store',
     'as'=>'client.details.login'
+]);
+Route::get('/Cart/Remove/{slug}',[
+    'uses'=>'CartController@remove',
+    'as'=>'cart.remove'
+]);
+Route::get('/Completed/Assignment',[
+    'uses'=>'CompletedController@index',
+    'as'=>'assignments.completed'
+]);
+Route::get('/CheckDraft/Assignments/{slug}',[
+    'uses'=>'CompletedController@completed',
+    'as'=>'assignment.complete'
+]);
+Route::get('/Revision/Assignment/{slug}',[
+    'uses'=>'CompletedController@revise',
+    'as'=>'assignment.revise'
+]);
+Route::get('/Complete/Single/{slug}',[
+    'uses'=>'CompletedController@complete',
+    'as'=>'assignment.markComplete'
+]);
+Route::get('/Completed/New',[
+    'uses'=>'CompletedController@create',
+    'as'=>'completed.new'
+]);
+Route::get('/Assignment/New/Completed',[
+    'uses'=>'COmpletedController@post',
+    'as'=>'completed.post'
 ]);

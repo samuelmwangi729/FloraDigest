@@ -65,6 +65,7 @@
                 <td>
                   <h5>Ksh.{{ $product->price*$product->qty }} </h5>
                 </td>
+                <td><a href="{{ route('cart.remove',[$product->product_slug]) }}" class="fa fa-times" style="color:red" title="Remove From Cart"></a></td>
               </tr>                 
               @endforeach
               <tr>

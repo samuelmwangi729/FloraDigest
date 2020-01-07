@@ -16,8 +16,11 @@ class AssignmentController extends Controller
      */
     public function index(Request $request)
     {   
+        $all=Proposal::all();
         $assignment=Proposal::where('clientEmail',Auth::user()->email)->get();
-        return view('academia.assignment')->with('assignment',$assignment);
+        return view('academia.assignment')
+        ->with('assignments',$all)
+        ->with('assignment',$assignment);
     }
 
     /**

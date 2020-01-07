@@ -5,8 +5,11 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Auth;
 use DB;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 class Cart extends Model
 {
+    use softDeletes;
     public $fillable=[
         'product_slug',
         'price',

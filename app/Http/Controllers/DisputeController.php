@@ -9,6 +9,10 @@ use Auth;
 use App\Dispute;
 class DisputeController extends Controller
 {
+    public function index(){
+        $disputes=Dispute::where('user',Auth::user()->email)->get()->all();
+        return view('academia.disputes')->with('disputes',$disputes);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -24,6 +28,11 @@ class DisputeController extends Controller
         $dispute->save();
         Session::flash('error','The Dispute Resolved');
         return redirect()->back();
+    }
+
+    public function view($slug){
+        $dispute=Dispute::where('title',$slug)->get()->last();
+        return view('academia.disputesingle')->with('dispute',$dispute);
     }
 
     /**

@@ -130,7 +130,7 @@
               <img src="{{asset($featured->image1)}}" class="img-fluid" alt="New york" style="width:100%;height:350px">
             </div>
             <h4>${{ $featured->newPrice }}</h4>
-            <a href="#" class="main_btn">Add to cart</a>
+            <a href="{{ route('single.cart',['slug'=>$product->slug]) }}" class="main_btn">Add to cart</a>
             @endforeach            
           </div>
         </div>

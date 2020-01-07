@@ -88,5 +88,6 @@
 @endforeach
         </table>
     </div>
+    <a href="{{ route('disputes.index') }}" class="btn btn-success">View All Disputes</a>
 </div>
 @stop
