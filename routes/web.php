@@ -372,3 +372,11 @@ Route::post('/Assignment/New/Completed',[
     'uses'=>'CompletedController@store',
     'as'=>'completed.post'
 ]);
+Route::get('/Completed/Edit/{slug}',[
+    'uses'=>'CompletedController@edit',
+    'as'=>'completed.edit'
+]);
+Route::post('/Completed/Update',[
+    'uses'=>'CompletedController@update',
+    'as'=>'completed.update'
+]);

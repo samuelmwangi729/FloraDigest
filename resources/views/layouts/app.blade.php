@@ -63,10 +63,12 @@
                     <li><a href="{{ url('/register') }}" style="color:white;font-weight:bold;margin-top:10px">Register</a></li>
                     <li><a href="{{ url('/login') }}" style="color:white;font-weight:bold;margin-top:10px">Login</a></li>
                     @else
-                    <li><a href="{{ route('cart.index') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-shopping-cart"></i><sup class="color:red">{{ $carts = DB::table('carts')->where([
-                        ['checkedOut', '=', '0'],
-                        ['user', '=', Auth::user()->email],
-                    ])->get()->count() ?? '' }}</sup></a></li>
+                    <li><a href="{{ route('cart.index') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-shopping-cart"></i><sup class="color:red">{{
+                        App\Cart::where([
+                        'checkedOut'=> 0,
+                        'user'=>Auth::user()->email,
+                        'deleted_at'=>null
+                        ])->get()->count() ?? ''}}</sup></a></li>
                     <li><a href="{{ url('/Cart') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-heart"></i><sup class="color:red">{{ App\Wishlist::where(['user'=>Auth::user()->email,'deleted_at'=>null])->count() ?? '' }}</sup></a></li>
                     <li><a href="/home" style="color:white;font-weight:bold;margin-top:10px">Dashboard</a></li>
                     <a href="{{ url('/logout') }}" class="btn btn-flat" style="color:white;font-weight:bold;margin-top:10px"

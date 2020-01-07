@@ -35,7 +35,10 @@ class ShopController extends Controller
             return redirect()->back();
         }
         $product=Products::where('slug',$request->product)->get()->first();
-        $exist=Cart::where('product_slug',$request->product,'email',Auth::user()->email)->get()->first();
+        $exist=Cart::where([
+            'product_slug'=>$request->product,
+            'user'=>Auth::user()->email
+        ])->get()->first();
         if(!is_null($exist)){
             if($exist->product_slug==$request->product){
                 Session::flash('error','Product already In Cat');
@@ -82,7 +85,8 @@ class ShopController extends Controller
         $checkCart=Cart::where([
             'product_slug'=>$slug,
             'user'=>Auth::user()->email,
-            'checkedOut'=>0
+            'checkedOut'=>0,
+            'deleted_at'=>null
             ])->get()->first();
         if(!is_null($checkCart)){
             if($checkCart->product_slug==$slug){

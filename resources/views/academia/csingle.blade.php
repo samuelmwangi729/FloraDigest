@@ -29,7 +29,7 @@
                     <!-- Updated At Field -->
                 <div class="form-group box"><hr><i class="fa fa-eye"></i>
                     {!! Form::label('Attachment', 'Assignment Preview') !!}
-                    <p><a href="{{ asset($assignment->clientAttachment) }}"><i class="fa fa-download"></i>&nbsp;&nbsp;Download</a></p>
+                    <p><a href="{{ asset($assignment->Attachment) }}"><i class="fa fa-download"></i>&nbsp;&nbsp;Download</a></p>
                 </div>
                 </div>
                <div class="col-sm-12 text-center"><hr><i class="fa fa-paragraph"></i>

@@ -49,7 +49,26 @@ class CompletedController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $this->validate($request,[
+        'clientAssignment'=>'required',
+        'clientDate'=>'required',
+        'AssignmentInto'=>'required',
+        'AssignmentConclusion'=>'required',
+        'Attachment'=>'required',
+        ]);
+        $upload=$request->Attachment;
+        $newUploadName=time().$upload->getClientOriginalName();
+        $upload->move('uploads/completed',$newUploadName);
+        Completed::create([
+            'clientAssignment'=>$request->clientAssignment,
+            'clientDate'=>$request->clientDate,
+            'AssignmentInto'=>$request->AssignmentInto,
+            'AssignmentConclusion'=>$request->AssignmentConclusion,
+            'Attachment'=>'/uploads/completed/'.$newUploadName,
+        ]);
+        Session::flash('success','The Complete Assignment Has been Uploaded');
+        return redirect('/home');
+        
     }
 
     /**
@@ -69,9 +88,21 @@ class CompletedController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        //
+        $completed=Completed::where('clientAssignment',$slug)->get()->first();
+        if(is_null($completed)){
+            Session::flash('error','Not Found');
+            return redirect()->back();
+        }
+        if(empty($completed)){
+            Session::flash('error','Not Found');
+            return redirect()->back();
+        }
+        $assignments=Proposal::where('status',1)->get();
+        return view('academia.completeNew')
+        ->with('completed',$completed)
+        ->with('assignments',$assignments);
     }
 
     /**
@@ -81,9 +112,30 @@ class CompletedController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $this->validate($request,[
+            'clientAssignment'=>'required',
+            'clientDate'=>'required',
+            'AssignmentInto'=>'required',
+            'AssignmentConclusion'=>'required',
+            'Attachment'=>'required',
+            ]);
+        if($request->hasFile('Attachment')){
+            $completed=Completed::where('clientAssignment',$request->clientAssignment)->get()->first();
+            $attachment=$request->file('Attachment');
+            $newAttachmentName=time().$attachment->getClientOriginalName();
+            $attachment->move('uploads/completed',$newAttachmentName);
+            $completed->Attachment='/uploads/completed/'.$newAttachmentName;
+        }
+        $completed->clientAssignment=$request->clientAssignment;
+        $completed->clientDate=$request->clientDate;
+        $completed->AssignmentInto=$request->AssignmentInto;
+        $completed->AssignmentConclusion=$request->AssignmentConclusion;
+        $completed->status=0;
+        $completed->save();
+        Session::flash('success','Success, the Assignment has been updated');
+        return redirect()->back();
     }
 
     /**

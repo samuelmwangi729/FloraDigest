@@ -12,6 +12,7 @@ use App\Models\County;
 use App\Models\Town;
 use App\Models\Shipping;
 use App\Models\Payment;
+use Carbon\Carbon;
 class CartController extends Controller
 {
 
@@ -26,9 +27,10 @@ class CartController extends Controller
      */
     public function index()
     {   
-        $cart = DB::table('carts')->where([
-            ['checkedOut', '=', '0'],
-            ['user', '=', Auth::user()->email],
+        $cart = Cart::where([
+            'checkedOut'=> 0,
+            'user'=>Auth::user()->email,
+            'deleted_at'=>null
         ])->get();
         if($cart->count()==0){
             Session::flash('error','The Shopping cart is currently Empty');
@@ -57,10 +59,10 @@ class CartController extends Controller
         $product=Cart::where([
             'product_slug'=>$slug,
             'user'=>Auth::user()->email
-        ])->get()->first();
-        $product->deleted_at=1;
+        ])->get()->first();  
+        $now=Carbon::now()->toDateTimeString();
+        $product->deleted_at=$now;
         $product->save();
-        Session::flash('error','Proucts removed from Cart');
         return redirect()->back();
     }
 
