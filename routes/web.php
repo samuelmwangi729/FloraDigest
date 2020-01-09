@@ -380,3 +380,7 @@ Route::post('/Completed/Update',[
     'uses'=>'CompletedController@update',
     'as'=>'completed.update'
 ]);
+
+Route::resource('availables', 'AvailableController');
+
+Route::resource('topics', 'TopicsController');

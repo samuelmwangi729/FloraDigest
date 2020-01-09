@@ -118,3 +118,11 @@
 </li>
 @endif
 
+<li class="{{ Request::is('availables*') ? 'active' : '' }}">
+    <a href="{{ route('availables.index') }}"><i class="fa fa-edit"></i><span>Availables</span></a>
+</li>
+
+<li class="{{ Request::is('topics*') ? 'active' : '' }}">
+    <a href="{{ route('topics.index') }}"><i class="fa fa-edit"></i><span>Topics</span></a>
+</li>
+

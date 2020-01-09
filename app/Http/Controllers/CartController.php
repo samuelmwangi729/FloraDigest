@@ -63,7 +63,8 @@ class CartController extends Controller
         $now=Carbon::now()->toDateTimeString();
         $product->deleted_at=$now;
         $product->save();
-        return redirect()->back();
+        Session::flash('error','Product Successfully removed from Cart');
+        return redirect('/logistics');
     }
 
     /**
