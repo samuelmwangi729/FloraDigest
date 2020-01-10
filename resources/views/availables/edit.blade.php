@@ -10,7 +10,7 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($available, ['route' => ['availables.update', $available->slug], 'method' => 'patch']) !!}
+                   {!! Form::model($available, ['route' => ['availables.update', $available->slug], 'method' => 'patch','enctype'=>'multipart/form-data']) !!}
 
                         @include('availables.fields')
 

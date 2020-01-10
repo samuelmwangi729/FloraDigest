@@ -28,6 +28,7 @@ class Available extends Model
         'topic',
         'budget',
         'displayImage',
+        'AssignmentFile',
         'introParagraph',
         'conclusionParagraph'
     ];
@@ -44,6 +45,7 @@ class Available extends Model
         'topic'=>'string',
         'budget'=>'string',
         'displayImage'=>'string',
+        'AssignmentFile'=>'string',
         'introParagraph'=>'string',
         'conclusionParagraph'=>'string'
     ];
@@ -58,6 +60,7 @@ class Available extends Model
         'topic'=>'required',
         'budget'=>'required',
         'displayImage'=>'required',
+        'AssignmentFile'=>'required',
         'introParagraph'=>'required',
         'conclusionParagraph'=>'required'
     ];

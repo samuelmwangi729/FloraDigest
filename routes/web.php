@@ -384,3 +384,7 @@ Route::post('/Completed/Update',[
 Route::resource('availables', 'AvailableController');
 
 Route::resource('topics', 'TopicsController');
+Route::get('/Available/Assignments',[
+    'uses'=>'AvailableController@available',
+    'as' =>'assignment.available'
+]);

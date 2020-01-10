@@ -3,13 +3,20 @@
         <thead>
             <tr>
                 
+                <th>Display Icon</th>
+                <th>Title</th>
+                <th>Topic</th>
+                <th>Budget</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
         <tbody>
         @foreach($availables as $available)
             <tr>
-                
+                <td><img src="{{ asset($available->displayImage) }}"  width="50px" height="50px" style="border-radius:50px"></td>
+                <td>{{ $available->title }}</td>
+                <td>{{ $available->topic }}</td>
+                <td>{{ $available->budget }}</td>
                 <td>
                     {!! Form::open(['route' => ['availables.destroy', $available->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

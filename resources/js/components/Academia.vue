@@ -152,7 +152,7 @@
                         We want to make the ordering process as easy as possible for you. Which is why, we developed this platform so you can
                         get what you need from our site even if we will be unavailable
                     </li>
-                    <li class="list-unstyled text-center"><button class="btn btn-primary" style="border-radius:20px;margin-top:30px;background-color:#ff4900 !important"><i class="fa fa-eye"></i>&nbsp;&nbsp;Available Proposals</button>&nbsp;&nbsp;&nbsp;<a href="/Proposal/Order" class="btn btn-primary" style="border-radius:20px;margin-top:30px;background-color:#ff4900 !important"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Your Proposal</a></li>
+                    <li class="list-unstyled text-center"><a href="/Available/Assignments" class="btn btn-primary" style="border-radius:20px;margin-top:30px;background-color:#ff4900 !important"><i class="fa fa-eye"></i>&nbsp;&nbsp;Available Proposals</a>&nbsp;&nbsp;&nbsp;<a href="/Proposal/Order" class="btn btn-primary" style="border-radius:20px;margin-top:30px;background-color:#ff4900 !important"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Your Proposal</a></li>
                 </ul>
             </div>
         </div>
