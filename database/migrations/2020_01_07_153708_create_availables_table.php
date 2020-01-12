@@ -20,6 +20,7 @@ class CreateAvailablesTable extends Migration
             $table->string('topic');
             $table->string('budget');
             $table->string('displayImage');
+            $table->string('AssignmentFile');
             $table->longText('introParagraph');
             $table->longText('conclusionParagraph');
             $table->softDeletes();
