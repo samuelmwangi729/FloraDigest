@@ -201,8 +201,8 @@ class AssignmentController extends Controller
         
         $redirectUrls = new RedirectUrls();
         $assignment=Available::where('slug',$slug)->get()->first();
-        $redirectUrls->setReturnUrl("http://localhost:8000/Download/".$file->slug.'/')
-                ->setCancelUrl("http://localhost:8000/academia");
+        $redirectUrls->setReturnUrl("https://floradigest.com/Download/".$file->slug.'/')
+                ->setCancelUrl("https://floradigest.com/academia");
             
         $payment = new Payment();
         $payment->setIntent("sale")
