@@ -196,8 +196,13 @@ class AvailableController extends AppBaseController
         return redirect(route('availables.index'));
     }
     public function available(){
+        $last=Available::orderBy('id','desc')->take(1)->get();
+        if($last->count()==0){
+            Session::flash('error','No Available Proposals, Please check later');
+            return redirect()->back();
+        }
         return view('availables.Assignments')
-        ->with('last',Available::orderBy('id','desc')->take(1)->get())
+        ->with('last',$last)
         ->with('topics',Topics::all())
         ->with('availables',Available::orderBy('id','desc')->skip(1)->take(12)->get());
     }
