@@ -116,9 +116,11 @@ class AvailableController extends AppBaseController
      *
      * @return Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        $available = $this->availableRepository->find($id);
+        // dd($slug);
+
+        $available = Available::where('slug',$slug)->get()->first();
 
         if (empty($available)) {
             Flash::error('Available not found');
