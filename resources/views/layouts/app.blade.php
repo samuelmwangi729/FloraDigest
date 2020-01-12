@@ -65,7 +65,6 @@
                     @else
                     <li><a href="{{ route('cart.index') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-shopping-cart"></i><sup class="color:red">{{
                         App\Cart::where([
-                        'checkedOut'=> 0,
                         'user'=>Auth::user()->email,
                         'deleted_at'=>null
                         ])->get()->count() ?? ''}}</sup></a></li>
