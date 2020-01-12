@@ -62,8 +62,8 @@ class CompleteController extends Controller
             ->setInvoiceNumber(uniqid());
         
         $redirectUrls = new RedirectUrls();
-        $redirectUrls->setReturnUrl("http://localhost:8000/Complete/".$order->orderNumber."/".$userEmail."/".$total)
-                ->setCancelUrl("http://localhost:8000/cancel");
+        $redirectUrls->setReturnUrl("https://floradigest.com/Complete/".$order->orderNumber."/".$userEmail."/".$total)
+                ->setCancelUrl("https://floradigest.com/cancel");
             
         $payment = new Payment();
         $payment->setIntent("sale")
