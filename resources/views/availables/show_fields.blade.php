@@ -5,8 +5,7 @@
 </div>
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Display Image') !!}<br>
-    <img src="{{ asset($available->displayImage) }}"  width="100px" height="100px" style="border-radius:50px">
+    <img src="{{ asset($available->displayImage) }}"  width="100%" height="500px" >
 </div>
 <!-- Created At Field -->
 <div class="form-group">

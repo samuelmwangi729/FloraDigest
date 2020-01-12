@@ -94,9 +94,11 @@ class AvailableController extends AppBaseController
      *
      * @return Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $available = $this->availableRepository->find($id)->first();
+        
+        $available = Available::where('slug',$slug)->get()->first();
+        // dd($available->id);
 
         if (empty($available)) {
             Flash::error('Available not found');
@@ -220,12 +222,12 @@ class AvailableController extends AppBaseController
         ->with('availables',$availables);
     }
     public function Single($slug){
-        $available=Available::where('slug',$slug)->first()->take(1)->get();
+        $available=Available::where('slug',$slug)->get()->first();
         if(is_null($available)){
             Session::flash('error','Assignment Not Found');
             return redirect()->back();
         }
-        if(count($available)==0){
+        if($available->count()==0){
             Session::flash('error','Unknown Error Occurred, Please Try Again later');
             return redirect()->back();
         }
