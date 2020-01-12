@@ -199,6 +199,32 @@ class AvailableController extends AppBaseController
         return view('availables.Assignments')
         ->with('last',Available::orderBy('id','desc')->take(1)->get())
         ->with('topics',Topics::all())
-        ->with('availables',$this->availableRepository->all());
+        ->with('availables',Available::orderBy('id','desc')->skip(1)->take(12)->get());
+    }
+    public function Assignment($slug){
+        $availables=Available::where('topic',$slug)->orderBy('id','desc')->get();
+        if(is_null($availables)){
+            Session::flash('error','Assignment Not Found');
+            return redirect()->back();
+        }
+        if(count($availables)==0){
+            Session::flash('error','Assignments Under Such Topics Are Unavailable. Please Check Later');
+            return redirect()->back();
+        }
+        return view('availables.topic')->with('topics',Topics::all())
+        ->with('availables',$availables);
+    }
+    public function Single($slug){
+        $available=Available::where('slug',$slug)->first()->take(1)->get();
+        if(is_null($available)){
+            Session::flash('error','Assignment Not Found');
+            return redirect()->back();
+        }
+        if(count($available)==0){
+            Session::flash('error','Unknown Error Occurred, Please Try Again later');
+            return redirect()->back();
+        }
+        return view('academia.Topic')->with('topics',Topics::All())
+        ->with('available',$available);
     }
 }

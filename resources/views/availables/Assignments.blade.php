@@ -20,7 +20,7 @@
           <ul class="list">
            @foreach($topics  as $topic)
             <li>
-              <a href="{{ route('product.category',['category'=>$topic->name]) }}">{{ $topic->name }}</a>
+              <a href="{{ route('assignment.category',[$topic->name]) }}">{{ $topic->name }}</a>
             </li>
             @endforeach
           </ul>
@@ -60,15 +60,15 @@
                           alt=""
                         />
                         <div class="p_icon">
-                          <a href="{{ route('product.show',['id'=>$available->slug]) }}">
+                          <a href="{{ route('Topic.single',[$available->slug]) }}">
                             <i class="fa fa-eye" style="color:red"></i>
                           </a>
-                          <a href="{{ route('wishlist.add',['slug'=>$available->slug]) }}">
+                          {{-- <a href="{{ route('wishlist.add',['slug'=>$available->slug]) }}">
                             <i class="fa fa-heart" style="color:red"></i>
                           </a>
                           <a href="{{ route('single.cart',['slug'=>$available->slug]) }}">
                             <i class="fa fa-shopping-basket" style="color:red"></i>
-                          </a>
+                          </a> --}}
                         </div>
                       </div>
                       <div class="product-btm">

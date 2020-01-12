@@ -388,3 +388,18 @@ Route::get('/Available/Assignments',[
     'uses'=>'AvailableController@available',
     'as' =>'assignment.available'
 ]);
+Route::get('/Assignment/Topic/{slug}',[
+    'uses'=>'AvailableController@Assignment',
+    'as'=>'assignment.category'
+]);
+Route::get('/Topic/Assignment/{slug}',[
+    'uses'=>'AvailableController@Single',
+    'as'=>'Topic.single'
+]);
+Route::get('Assignment/Download/{slug}',[
+    'uses'=>'AssignmentController@Download',
+    'as'=>'assignment.download'
+]);
+Route::get('/Download/{slug}',[
+    'uses'=>'AssignmentController@ADownload'
+]);
