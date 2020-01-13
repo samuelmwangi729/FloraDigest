@@ -2,7 +2,13 @@
 
 @section('content')
 <div class="row">
-    <div class="col-lg-9 col-md-9 col-sm-9">    
+    <div class="col-lg-9 col-md-9 col-sm-9">
+      @if(count($products)==0)
+      <div class="alert alert-dismissible alert-danger">
+        {{-- <a href="#" class="close" data-dismiss="alert">&times;</a> --}}
+        No Products
+      </div>
+      @else
       @foreach ($products as $product )
       <div class="item" style="background-image:url({{asset($product->image2)  }});background-size:cover;background-position:center;color:blue;height:500px">
         <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ App\Models\Label::where('id',$product->label)->get()->first()->labelName }}</span></h1></u>
@@ -10,6 +16,7 @@
     </div> 
     {{ $product->productName }}
       @endforeach
+      @endif
  </div>
  <div class="col-lg-3">
     <aside class="left_widgets p_filter_widgets">
@@ -17,13 +24,19 @@
           <h3>Browse Categories</h3>
         </div>
         <div class="widgets_inner">
+          @if(count($categories)==0)
+          <div class="alert alert-danger">
+            <strong>No Categories Available</strong>
+          </div>
+          @else
           <ul class="list">
-           @foreach($categories as $category)
-            <li>
-              <a href="{{ route('product.category',['category'=>$category->name]) }}">{{ $category->name }}</a>
-            </li>
-            @endforeach
-          </ul>
+            @foreach($categories as $category)
+             <li>
+               <a href="{{ route('product.category',['category'=>$category->name]) }}">{{ $category->name }}</a>
+             </li>
+             @endforeach
+           </ul>
+           @endif
         </div>
       </aside>
  </div>
@@ -95,6 +108,11 @@
                     <h3>Product Brand</h3>
                   </div>
                   <div class="widgets_inner">
+                    @if(count($brands)==0)
+                    <div class="alert alert-danger">
+                      <strong>No Brands Posted</strong>
+                    </div>
+                    @else
                     <ul class="list">
                       @foreach($brands as $brand)
                       <li>
@@ -102,6 +120,7 @@
                       </li>
                       @endforeach
                     </ul>
+                    @endif
                   </div>
                 </aside>
   
@@ -110,6 +129,11 @@
                     <h3>Color Filter</h3>
                   </div>
                   <div class="widgets_inner">
+                    @if(count($colors)==0)
+                    <div class="alert alert-danger">
+                      <strong>No Colors Posted</strong>
+                    </div>
+                    @else
                     <ul class="list">
                       @foreach($colors as $color)
                       <li>
@@ -117,6 +141,7 @@
                       </li>
                       @endforeach
                     </ul>
+                    @endif
                   </div>
                 </aside>
               </div>

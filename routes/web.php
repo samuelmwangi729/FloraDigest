@@ -403,3 +403,54 @@ Route::get('Assignment/Download/{slug}',[
 Route::get('/Download/{slug}',[
     'uses'=>'AssignmentController@ADownload'
 ]);
+Route::get('/Opinions/Home',[
+    'uses'=>'OpinionsController@index',
+    'as'=>'opinions.index'
+]);
+
+
+Route::group(['middleware' => ['auth','admin']], function () {
+    Route::get('/Opinions/Home/Create',[
+        'uses'=>'OpinionController@create',
+        'as'=>'opinion.create'
+    ]);
+    Route::get('/Opinions/Approve/{slug}',[
+        'uses'=>'OpinionController@approve',
+        'as'=>'opinions.approve'
+    ]);
+    Route::get('/Opinions/Disapprove/{slug}',[
+        'uses'=>'OpinionController@disapprove',
+        'as'=>'opinions.disapprove'
+    ]);
+    Route::resource('optionsTopics', 'OptionsTopicController');
+    Route::resource('opinions', 'OpinionController');  
+    Route::resource('others', 'OtherController'); 
+});
+Route::get('/Opinions/View',[
+    'uses'=>'OpinionController@Home',
+    'as'=>'opinion.home'
+]);
+Route::get('/Opinions/Single/{slug}',[
+    'uses'=>'OpinionController@singlet',
+    'as'=>'opinion.singlet'
+]);
+Route::get('/Opinions/Topic/{slug}',[
+    'uses'=>'OpinionController@Topic',
+    'as'=>'opinions.topic'
+]);
+Route::get('/Others/Posts',[
+    'uses'=>'OthersController@index',
+    'as'=>'others.all'
+]);
+Route::get('/Others/Single/{slug}',[
+    'uses'=>'OthersController@single',
+    'as'=>'other.single'
+]);
+Route::get('/Others/Publish',[
+    'uses'=>'OtherController@create',
+    'as'=>'others.create'
+]);
+Route::post('/Others/Save',[
+    'uses'=>'OtherController@store',
+    'as'=>'others.store'
+]);

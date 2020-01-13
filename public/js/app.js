@@ -37585,7 +37585,7 @@ var render = function() {
             ),
             _c("span", [_vm._v("Digest")]),
             _vm._v(
-              " is a legitimate, reliable, quick and top-rated online essay writing service that provides high-quality, affordable papers."
+              " is a legitimate, reliable, quick and top-rated online essay writing Website that provides high-quality, affordable papers."
             )
           ]
         ),
@@ -37620,39 +37620,30 @@ var staticRenderFns = [
           [
             _c("div", { staticClass: "carousel-inner" }, [
               _c("div", { staticClass: "item active" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "panel panel-primary",
-                    staticStyle: { height: "250px", width: "100%" }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        staticStyle: {
-                          "background-color": "#562fc6 !important"
-                        }
-                      },
-                      [
-                        _c("h3", { staticClass: "h1 text-center" }, [
-                          _c("i", {
-                            staticClass: "fa fa-credit-card",
-                            staticStyle: { color: "red" }
-                          }),
-                          _vm._v("  Great Pay for Great Writing")
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel-body text-center" }, [
-                      _vm._v(
-                        "\n                    Our goal is to provide the best essay writing service there is online to give you the perfect essay custom to\n                     your needs. Our essay writers know your satisfaction is their objective. If you have an urgent request or need an essay a few weeks \n                     down the line, we can cater to any request, \n                    we know that sometimes things can go wrong and an unexpected urgent essay might be needed.\n                "
-                      )
-                    ])
-                  ]
-                )
+                _c("div", { staticClass: "panel panel-primary" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-heading",
+                      staticStyle: { "background-color": "#562fc6 !important" }
+                    },
+                    [
+                      _c("h3", { staticClass: "h1 text-center" }, [
+                        _c("i", {
+                          staticClass: "fa fa-credit-card",
+                          staticStyle: { color: "red" }
+                        }),
+                        _vm._v("  Great Pay for Great Writing")
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "panel-body text-center" }, [
+                    _vm._v(
+                      "\n                    Our goal is to provide the best essay writing service there is online to give you the perfect essay custom to\n                     your needs. Our essay writers know your satisfaction is their objective.\n                "
+                    )
+                  ])
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item" }, [
@@ -37684,7 +37675,7 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("div", { staticClass: "panel-body text-center" }, [
                       _vm._v(
-                        "\n                   We will serve you at your convenience, with just a call or text message we will start \n                   working on your work and deliver within the preset timeline. We understand your busy schedule and \n                   you may be far from Nairobi, so that’s why we will deliver the work online through email or whaatsap.\n                    We have written all research proposals in all universities in Kenya and abroad and we all are well \n                    acquainted with the proposal guidelines and format.\n                "
+                        "\n                   We will serve you at your convenience.We   work  on your Assignment and deliver within the preset timeline. We understand your busy schedule and \n                   you may be far and that’s why we will deliver it online.\n                "
                       )
                     ])
                   ]
@@ -37720,7 +37711,7 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("div", { staticClass: "panel-body text-center" }, [
                       _vm._v(
-                        "\n                   Get walked through your toughest problems and learn how to solve them from expert writers.\n                   Personal life can sometimes feel a little bit overwhelming.\n                   You’re not alone, a lot of students do. College life these days is demanding and requires a lot of time, \n                   which you sometimes might not have. That’s where Edusson can help you.\n                    We are a dedicated essay writing service that can help you put together a top-quality essay.\n                "
+                        "\n                   Get walked through your toughest problems and learn how to solve them from expert writers.\n                   Personal life can sometimes feel a little bit overwhelming.\n                   You’re not alone, a lot of students do. \n                "
                       )
                     ])
                   ]
@@ -37790,17 +37781,19 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row well" }, [
       _c("u", [
-        _c("h1", { staticClass: "text-center" }, [_vm._v("Research Proposals")])
+        _c("h1", { staticClass: "text-justify" }, [
+          _vm._v("Research Proposals")
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+        _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6 text-justify" }, [
           _vm._v(
             "\n           Having completed hundreds of proposals \n           over a nine year period for a variety of industries and clients. We take our skill a deft hand at research and solid \n           communication with involved parties to produce proposals that meet needs of parties on both sides of the table. \n           We understand Our responsibilities as technical writers is to pay attention to the details and craft material that conveys \n           the importance of any potential transaction. We approach every project with this attitude effectively \n           relaying the needs of the company and through winning original and convincing content how the client can meet those needs.\n        "
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+        _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6 text-justify" }, [
           _vm._v(
             "\n           Our professional research skills and technical writing services are renowned for being the best there is.\n            We have helped thousands of students and have provided a supportive, reliable service. \n            You can relax knowing any essay we provide will be a unique, authentic and insightful. \n            If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n            we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n            your academic needs.\n            Our essay writing services are an easy, stress-free alternative to achieving your goals.\n        "
           )
@@ -37813,21 +37806,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row-fluid" }, [
-      _c("h1", { staticClass: "text-center" }, [
-        _vm._v("Who are We"),
-        _c("i", {
-          staticClass: "fa fa-question-circle",
-          staticStyle: { color: "red" }
-        })
-      ]),
+      _c("h1", { staticClass: "text-center" }, [_vm._v("Who are We")]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-lg-6" }, [
+      _c("div", { staticClass: "col-lg-6 text-justify" }, [
         _vm._v(
           "\n       We understand ordering an essay online can seem a little daunting. There’s a risk the quality\n        won’t be up to scratch, or the formatting will be wrong. When you are working with tight deadlines, \n        there is no margin for these risks. Which is why we screen our writers’ degrees and qualifications \n        before they write for us. Our writers are real people and we review examples of their previous work \n        to make sure it adheres to all correct American university standards. We alleviate the risks, \n       so you can feel safe knowing you are working with a trustworthy pro essay writing service.\n    "
         )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-lg-6" }, [
+      _c("div", { staticClass: "col-lg-6 text-justify" }, [
         _vm._v(
           "\n        Our professional report writing service is renowned for being the best there is. \n        We have helped thousands of students and have provided a supportive, reliable service. \n        You can relax knowing any essay we provide will be a unique, authentic and insightful. \n        If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, \n        we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to \n        your academic needs. \n        Our essay writing services are an easy, stress-free alternative to achieving your goals.\n    "
         )

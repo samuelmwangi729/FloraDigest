@@ -39,11 +39,11 @@
             <div class="text-center" style="font-weight:bold;font-size:20px">
                 <i class="fa fa-credit-card" style="color:#562fc6"></i>&nbsp;&nbsp;${{ $available->budget }}&nbsp;&nbsp;&nbsp; <sup><i class="fa fa-question" title="The Amount you have to pay to get the Document" style="color:#562fc6"></i></sup>
             </div>
-            <div class="col-lg-12 col-sm-12 col-md-12 pull-left">
+            <div class="col-lg-12 col-sm-12 col-md-12 text-justify">
                 <span class="text-center text-bold"><u>Introduction</u></span>
                 {!! $available->introParagraph !!}
             </div>
-            <div class="col-lg-12 col-sm-12 col-md-12 pull-left">
+            <div class="col-lg-12 col-sm-12 col-md-12 text-justify">
                 <span class="text-center text-bold"><u>Conclusion</u></span>
                 {!! $available->conclusionParagraph !!}
             </div>

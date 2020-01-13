@@ -77,9 +77,9 @@ class TopicsController extends AppBaseController
      *
      * @return Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $topics = $this->topicsRepository->find($id);
+        $topics = Topics::where('slug',$slug)->get()->first();
 
         if (empty($topics)) {
            Session::flash('error','Not Found');
@@ -97,9 +97,9 @@ class TopicsController extends AppBaseController
      *
      * @return Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        $topics = $this->topicsRepository->find($id);
+        $topics = Topics::where('slug',$slug)->get()->first();
 
         if (empty($topics)) {
            Session::flash('error','Not Found');

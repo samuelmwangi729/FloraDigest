@@ -95,6 +95,13 @@
         </ul>
       </div>
 </li>
+<li class="{{ Request::is('availables*') ? 'active' : '' }}">
+    <a href="{{ route('availables.index') }}"><i class="fa fa-gift"></i><span>Available Proposals</span></a>
+</li>
+
+<li class="{{ Request::is('topics*') ? 'active' : '' }}">
+    <a href="{{ route('topics.index') }}"><i class="fa fa-graduation-cap"></i><span>Research Topics</span></a>
+</li>
 @endif
 @if(Auth::user()->level=='User')
 <li class="{{ Request::is('products*') ? 'active' : '' }}">
@@ -118,11 +125,15 @@
 </li>
 @endif
 
-<li class="{{ Request::is('availables*') ? 'active' : '' }}">
-    <a href="{{ route('availables.index') }}"><i class="fa fa-edit"></i><span>Availables</span></a>
+<li class="{{ Request::is('opinions*') ? 'active' : '' }}">
+    <a href="{{ route('opinions.index') }}"><i class="fa fa-edit"></i><span>Opinions</span></a>
 </li>
 
-<li class="{{ Request::is('topics*') ? 'active' : '' }}">
-    <a href="{{ route('topics.index') }}"><i class="fa fa-edit"></i><span>Topics</span></a>
+<li class="{{ Request::is('optionsTopics*') ? 'active' : '' }}">
+    <a href="{{ route('optionsTopics.index') }}"><i class="fa fa-edit"></i><span>Options Topics</span></a>
+</li>
+
+<li class="{{ Request::is('others*') ? 'active' : '' }}">
+    <a href="{{ route('others.index') }}"><i class="fa fa-edit"></i><span>Others</span></a>
 </li>
 

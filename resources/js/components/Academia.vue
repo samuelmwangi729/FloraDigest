@@ -6,15 +6,13 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <div class="panel panel-primary" style="height:250px;width:100%">
+              <div class="panel panel-primary">
                     <div class="panel-heading" style="background-color:#562fc6 !important">
                         <h3 class="h1 text-center"><i class="fa fa-credit-card" style="color:red"></i>&nbsp;&nbsp;Great Pay for Great Writing</h3>
                     </div>
                     <div class="panel-body text-center">
                         Our goal is to provide the best essay writing service there is online to give you the perfect essay custom to
-                         your needs. Our essay writers know your satisfaction is their objective. If you have an urgent request or need an essay a few weeks 
-                         down the line, we can cater to any request, 
-                        we know that sometimes things can go wrong and an unexpected urgent essay might be needed.
+                         your needs. Our essay writers know your satisfaction is their objective.
                     </div>
                 </div>
             </div>
@@ -25,11 +23,8 @@
                         <h3 class="h1 text-center"><i class="fa fa-graduation-cap" style="color:red"></i>&nbsp;&nbsp;Study More Efficiently</h3>
                     </div>
                     <div class="panel-body text-center">
-                       We will serve you at your convenience, with just a call or text message we will start 
-                       working on your work and deliver within the preset timeline. We understand your busy schedule and 
-                       you may be far from Nairobi, so that’s why we will deliver the work online through email or whaatsap.
-                        We have written all research proposals in all universities in Kenya and abroad and we all are well 
-                        acquainted with the proposal guidelines and format.
+                       We will serve you at your convenience.We   work  on your Assignment and deliver within the preset timeline. We understand your busy schedule and 
+                       you may be far and that’s why we will deliver it online.
                     </div>
                 </div>
             </div>
@@ -41,9 +36,7 @@
                     <div class="panel-body text-center">
                        Get walked through your toughest problems and learn how to solve them from expert writers.
                        Personal life can sometimes feel a little bit overwhelming.
-                       You’re not alone, a lot of students do. College life these days is demanding and requires a lot of time, 
-                       which you sometimes might not have. That’s where Edusson can help you.
-                        We are a dedicated essay writing service that can help you put together a top-quality essay.
+                       You’re not alone, a lot of students do. 
                     </div>
                 </div>
             </div>       
@@ -76,9 +69,9 @@
         </div>
     </div>
     <div class="row well">
-       <u><h1 class="text-center">Research Proposals</h1></u>
+       <u><h1 class="text-justify">Research Proposals</h1></u>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-justify">
                Having completed hundreds of proposals 
                over a nine year period for a variety of industries and clients. We take our skill a deft hand at research and solid 
                communication with involved parties to produce proposals that meet needs of parties on both sides of the table. 
@@ -86,7 +79,7 @@
                the importance of any potential transaction. We approach every project with this attitude effectively 
                relaying the needs of the company and through winning original and convincing content how the client can meet those needs.
             </div>
-             <div class="col-lg-6 col-md-6 col-sm-6">
+             <div class="col-lg-6 col-md-6 col-sm-6 text-justify">
                Our professional research skills and technical writing services are renowned for being the best there is.
                 We have helped thousands of students and have provided a supportive, reliable service. 
                 You can relax knowing any essay we provide will be a unique, authentic and insightful. 
@@ -98,8 +91,8 @@
         </div>
     </div>
     <div class="row-fluid">
-        <h1 class="text-center">Who are We<i class="fa fa-question-circle" style="color:red"></i></h1>
-        <div class="col-lg-6">
+        <h1 class="text-center">Who are We</h1>
+        <div class="col-lg-6 text-justify">
            We understand ordering an essay online can seem a little daunting. There’s a risk the quality
             won’t be up to scratch, or the formatting will be wrong. When you are working with tight deadlines, 
             there is no margin for these risks. Which is why we screen our writers’ degrees and qualifications 
@@ -107,7 +100,7 @@
             to make sure it adheres to all correct American university standards. We alleviate the risks, 
            so you can feel safe knowing you are working with a trustworthy pro essay writing service.
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-justify">
             Our professional report writing service is renowned for being the best there is. 
             We have helped thousands of students and have provided a supportive, reliable service. 
             You can relax knowing any essay we provide will be a unique, authentic and insightful. 
@@ -118,7 +111,7 @@
         </div>
     </div>
     <div class="container mt-5">
-        <marquee style="background-color:#562fc6;color:white;font-weight:bold"><span style="color:red;font-weight:bold">Flora|</span><span>Digest</span> is a legitimate, reliable, quick and top-rated online essay writing service that provides high-quality, affordable papers.</marquee>
+        <marquee style="background-color:#562fc6;color:white;font-weight:bold"><span style="color:red;font-weight:bold">Flora|</span><span>Digest</span> is a legitimate, reliable, quick and top-rated online essay writing Website that provides high-quality, affordable papers.</marquee>
         <u><h2 class="text-center">Why students choose <span style="color:red;font-weight:bold">Flora|</span><span>Digest</span> Essay writing service?</h2></u>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
