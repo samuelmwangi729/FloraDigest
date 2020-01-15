@@ -1,7 +1,8 @@
 <li>
     <a href="/home"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
 </li>
-@if(Auth::user()->level=='Administrator')
+@if(Auth::user()->level=='Administrator' )
+@if(Auth::user()->level=='Blogger')
 <li class="{{ Request::is('posts*') ? 'active' : '' }}">
     <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Posts</span></a>
       <div class="collapse" id="collapseExample">
@@ -14,6 +15,7 @@
         </ul>
       </div>
 </li>
+@endif
 <li class="{{ Request::is('news*') ? 'active' : '' }}">
     <a  data-toggle="collapse" href="#collapseNews" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-bell"></i><span>News</span></a>
       <div class="collapse" id="collapseNews">
@@ -35,6 +37,17 @@
             <li><a href="{{ route('political.news.trashed') }}"><i class="fa fa-trash"></i><span>Trashed Political News</span></a></li>
         </ul>
       </div>
+</li>
+<li class="{{ Request::is('opinions*') ? 'active' : '' }}">
+    <a href="{{ route('opinions.index') }}"><i class="fa fa-edit"></i><span>Opinions</span></a>
+</li>
+
+<li class="{{ Request::is('optionsTopics*') ? 'active' : '' }}">
+    <a href="{{ route('optionsTopics.index') }}"><i class="fa fa-edit"></i><span>Options Topics</span></a>
+</li>
+
+<li class="{{ Request::is('others*') ? 'active' : '' }}">
+    <a href="{{ route('others.index') }}"><i class="fa fa-edit"></i><span>Others</span></a>
 </li>
 <li class="{{ Request::is('products*') ? 'active' : '' }}">
     <a  data-toggle="collapse" href="#collapseProducts" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Products</span></a>
@@ -124,16 +137,22 @@
     <a href="#"><i class="fa fa-cog"></i>Account Settings</a>
 </li>
 @endif
-
-<li class="{{ Request::is('opinions*') ? 'active' : '' }}">
-    <a href="{{ route('opinions.index') }}"><i class="fa fa-edit"></i><span>Opinions</span></a>
+@if(Auth::user()->level=='Blogger')
+<li class="{{ Request::is('posts*') ? 'active' : '' }}">
+    <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Posts</span></a>
+      <div class="collapse" id="collapseExample">
+        <ul class="list-unstyled" style="color:white;padding-left:30px">
+           @if(Auth::user()->level == 'Administrator')
+           <li><a href="{{ route('categories.index') }}"><i class="fa fa-edit"></i><span>Posts Categories</span></a></li>
+           <li> <a href="{{ route('tags.index') }}"><i class="fa fa-edit"></i><span>Posts Tags</span></a></li>
+           @endif
+            <li><a href="{{ route('posts.create') }}" ><i class="fa fa-plus"></i>&nbsp;&nbsp;Create</a></li>
+            <li><a href="{{ route('posts.view') }}" ><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a></li>
+            <li><a href="{{ route('posts.trashed') }}"><i class="fa fa-trash"></i><span>Recycle Bin</span></a></li>
+        </ul>
+      </div>
 </li>
-
-<li class="{{ Request::is('optionsTopics*') ? 'active' : '' }}">
-    <a href="{{ route('optionsTopics.index') }}"><i class="fa fa-edit"></i><span>Options Topics</span></a>
+<li>
+    <a href="#"><i class="fa fa-cog"></i>Account Settings</a>
 </li>
-
-<li class="{{ Request::is('others*') ? 'active' : '' }}">
-    <a href="{{ route('others.index') }}"><i class="fa fa-edit"></i><span>Others</span></a>
-</li>
-
+@endif

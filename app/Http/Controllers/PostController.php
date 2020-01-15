@@ -224,9 +224,13 @@ class PostController extends AppBaseController
     }
     public function view(Request $request)
     {
+       if(Auth::user()->level=='Administrator'){
         $posts = $this->postRepository->all();
+       }else{
+           $posts=Post::where('published_by',Auth::user()->email)->get();
+       }
 
         return view('blog.post.index')
-            ->with('posts', Post::all());
+            ->with('posts',$posts);
     }
 }

@@ -545,6 +545,26 @@
         </div>
     </div>
     @endif
+    @if(Auth::user()->level=='Blogger')
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="box">
+            <div class="panel-heading text-center">
+                POST
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-globe" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                {{ App\Models\Post::where('published_by',Auth::user()->email)->count() }}
+                </div>
+            </div>
+            <a href="{{route('posts.view')}}">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    @endif
     </div>
 </div>
 @endsection

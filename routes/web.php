@@ -454,3 +454,7 @@ Route::post('/Others/Save',[
     'uses'=>'OtherController@store',
     'as'=>'others.store'
 ]);
+Route::post('/Blogger/Register',[
+    'uses'=>'BlogsController@store',
+    'as'=>'blogger.register'
+]);
