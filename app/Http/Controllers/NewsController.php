@@ -217,6 +217,10 @@ class NewsController extends AppBaseController
     }
     public function singleNews($slug){
         $new=News::where('slug',$slug)->get()->first();
+        if($new->count()==0){
+            Session::flash('error','No  news Available');
+            return redirect()->back();
+        }
         if(is_null($new)){
             Session::flash('error','no way');
             return redirect()->back();
