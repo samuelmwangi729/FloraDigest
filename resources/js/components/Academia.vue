@@ -1,59 +1,5 @@
 <template>
     <div>
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-             <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="5000">      
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="panel panel-primary">
-                    <div class="panel-heading" style="background-color:#562fc6 !important">
-                        <h3 class="h1 text-center"><i class="fa fa-credit-card" style="color:red"></i>&nbsp;&nbsp;Great Pay for Great Writing</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                        Our goal is to provide the best essay writing service there is online to give you the perfect essay custom to
-                         your needs. Our essay writers know your satisfaction is their objective.
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="panel panel-primary" style="height:250px;width:100%">
-                    <div class="panel-heading" style="background-color:#562fc6 !important">
-                        <h3 class="h1 text-center"><i class="fa fa-graduation-cap" style="color:red"></i>&nbsp;&nbsp;Study More Efficiently</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                       We will serve you at your convenience.We   work  on your Assignment and deliver within the preset timeline. We understand your busy schedule and 
-                       you may be far and that’s why we will deliver it online.
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="panel panel-primary" style="height:250px;width:100%">
-                    <div class="panel-heading" style="background-color:#562fc6 !important">
-                       <h3 class="h1 text-center"><i class="fa fa-sort-alpha-desc" style="color:red"></i>&nbsp;&nbsp;Boost Your Grades</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                       Get walked through your toughest problems and learn how to solve them from expert writers.
-                       Personal life can sometimes feel a little bit overwhelming.
-                       You’re not alone, a lot of students do. 
-                    </div>
-                </div>
-            </div>       
-          </div>
-      
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        </div>
-    </div>
     <div class="row well">
         <div class="col-lg-9">
             <span>We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals
@@ -66,48 +12,6 @@
         </div>
         <div class="col-lg-3 panel-body">
            <h3> <i class="fa fa-exclamation-triangle" style="color:red"></i>&nbsp;&nbsp;How We Work</h3>
-        </div>
-    </div>
-    <div class="row well">
-       <u><h1 class="text-justify">Research Proposals</h1></u>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 text-justify">
-               Having completed hundreds of proposals 
-               over a nine year period for a variety of industries and clients. We take our skill a deft hand at research and solid 
-               communication with involved parties to produce proposals that meet needs of parties on both sides of the table. 
-               We understand Our responsibilities as technical writers is to pay attention to the details and craft material that conveys 
-               the importance of any potential transaction. We approach every project with this attitude effectively 
-               relaying the needs of the company and through winning original and convincing content how the client can meet those needs.
-            </div>
-             <div class="col-lg-6 col-md-6 col-sm-6 text-justify">
-               Our professional research skills and technical writing services are renowned for being the best there is.
-                We have helped thousands of students and have provided a supportive, reliable service. 
-                You can relax knowing any essay we provide will be a unique, authentic and insightful. 
-                If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, 
-                we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to 
-                your academic needs.
-                Our essay writing services are an easy, stress-free alternative to achieving your goals.
-            </div>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <h1 class="text-center">Who are We</h1>
-        <div class="col-lg-6 text-justify">
-           We understand ordering an essay online can seem a little daunting. There’s a risk the quality
-            won’t be up to scratch, or the formatting will be wrong. When you are working with tight deadlines, 
-            there is no margin for these risks. Which is why we screen our writers’ degrees and qualifications 
-            before they write for us. Our writers are real people and we review examples of their previous work 
-            to make sure it adheres to all correct American university standards. We alleviate the risks, 
-           so you can feel safe knowing you are working with a trustworthy pro essay writing service.
-        </div>
-        <div class="col-lg-6 text-justify">
-            Our professional report writing service is renowned for being the best there is. 
-            We have helped thousands of students and have provided a supportive, reliable service. 
-            You can relax knowing any essay we provide will be a unique, authentic and insightful. 
-            If you’re having trouble pulling all your research together, or don’t have time to research and write a paper, 
-            we can step in and help you at any stage. We’re on hand whenever you need us, and our essays will always be custom to 
-            your academic needs. 
-            Our essay writing services are an easy, stress-free alternative to achieving your goals.
         </div>
     </div>
     <div class="container mt-5">
