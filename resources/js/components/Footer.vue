@@ -4,8 +4,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <div class="single_footer_part">
-                        <a href="index.html" class="footer_logo_iner"> <img src="img/logo.png" height="100px" width="100%" alt="#"> </a>
+                    <div class="single_footer_part"  style="background-color:white;height:100px">
+                        <a href="index.html" class="footer_logo_iner"> <img src="img/logo/4.png" height="100px" width="100%" alt="#"> </a>
                         <p>We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.
                         </p>
                     </div>
