@@ -27,7 +27,7 @@
 <body class="skin-blue sidebar-mini">
     <nav class="navbar navbar-default navbar-static-top navbar-justify" style="background-color:#562fc6">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header" style="background-color:white;height:70px">
 
                 <!-- Collapsed Hamburger -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -39,8 +39,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="{{asset('img/logo.png')}}" height="40">
+                <a class="navbar-brand pull-left" href="{{ url('/') }}">
+                <img src="{{asset('img/logo/4.png')}}" height="50" width="100px">
                 </a>
             </div>
 

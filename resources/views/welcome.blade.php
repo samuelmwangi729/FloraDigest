@@ -2,9 +2,6 @@
 
 
 @section('content')
-
-
-
 <div class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Indicators -->
@@ -20,20 +17,22 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-                 <img src="{{asset('img/1.jpg')}}" alt="Los Angeles" style="width:100%;height:500px">
+                 <img src="{{asset('img/1.jpg')}}" alt="Los Angeles" style="width:100%;height:400px">
             <div class="carousel-caption d-none d-md-block">
-                <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Education</h1>
+                <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Academia</h1>
                 <div class="panel panel-primary" >
                 <div class="panel-heading"  style="background-color:#562fc6">
                 <p class="panel-heading">We are  Dedicated in provising the technical education topics and resources to our clients</p>
                 </div>
                 </div>
-                <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
+                <a href="#">
+                  <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
+                </a>
             </div>
             </div>
       
             <div class="item">
-                    <img src="{{asset('img/politics.jpg')}}" alt="New york" style="width:100%;height:500px">
+                    <img src="{{asset('img/politics.jpg')}}" alt="New york"  style="width:100%;height:400px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Politics</h1>
                 <div class="panel panel-primary">
@@ -46,9 +45,9 @@
             </div>
           
             <div class="item">
-              <img src="{{asset('img/package.jpg')}}" alt="New york" style="width:100%;height:500px">
+              <img src="{{asset('img/package.jpg')}}" alt="New york"  style="width:100%;height:400px">
               <div class="carousel-caption d-none d-md-block">
-                    <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Logistics</h1>
+                    <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Shop</h1>
                     <div class="panel panel-primary">
                     <div class="panel-heading"  style="background-color:#562fc6">
                             <p class="panel-heading">With our packaging services,We guarantee you that the packages will be received on time and also on the right condition</p>
@@ -58,7 +57,7 @@
                 </div>
             </div>
             <div class="item">
-                    <img src="{{asset('img/new.jpg')}}" alt="New york" style="width:100%;height:500px">
+                    <img src="{{asset('img/new.jpg')}}" alt="New york"  style="width:100%;height:400px">
                    <div class="carousel-caption d-none d-md-block">
                     <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">News</h1>
                     <div class="panel panel-primary">
@@ -70,7 +69,7 @@
                 </div>
                   </div>
                   <div class="item">
-                        <img src="{{asset('img/assign.jpg')}}" alt="New york" style="width:100%;height:500px">
+                        <img src="{{asset('img/assign.jpg')}}" alt="New york"  style="width:100%;height:400px">
                         <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Opinions</h1>
                                 <div class="panel panel-primary">
@@ -82,7 +81,7 @@
                             </div>
                       </div>
                       <div class="item">
-                            <img src="{{asset('img/research.jpg')}}" alt="New york" style="width:100%;height:500px">
+                            <img src="{{asset('img/research.jpg')}}" alt="New york"  style="width:100%;height:400px">
                             <div class="carousel-caption d-none d-md-block">
                                     <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Research</h1>
                                     <div class="panel panel-primary">
