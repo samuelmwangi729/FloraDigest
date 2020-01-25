@@ -27,7 +27,7 @@
 <body class="skin-blue sidebar-mini">
     <nav class="navbar navbar-default navbar-static-top navbar-justify" style="background-color:#562fc6">
         <div class="container">
-            <div class="navbar-header" style="background-color:white;height:70px">
+            <div class="navbar-header">
 
                 <!-- Collapsed Hamburger -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -40,7 +40,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand pull-left" href="{{ url('/') }}">
-                <img src="{{asset('img/logo/4.png')}}" height="50" width="100px">
+                <img src="{{asset('img/logo/11.png')}}" height="70px" style="margin-top:-20px">
                 </a>
             </div>
 
@@ -51,8 +51,8 @@
                     <li><a href="{{ url('/logistics') }}" style="color:white;font-weight:bold;margin-top:10px">Shop</a></li>
                     <li><a href="{{ url('/News') }}" style="color:white;font-weight:bold;margin-top:10px">News </a></li>
                     <li><a href="{{ route('politics.home') }}" style="color:white;font-weight:bold;margin-top:10px">Politics</a></li>
-                    <li><a href="{{ url('/blog') }}" style="color:white;font-weight:bold;margin-top:10px">Blogs </a></li>
-                    <li><a href="{{ route('opinion.home') }}" style="color:white;font-weight:bold;margin-top:10px">Opinions</a></li>
+                    <li><a href="{{ url('/blog') }}" style="color:white;font-weight:bold;margin-top:10px">Blog</a></li>
+                    {{-- <li><a href="{{ route('opinion.home') }}" style="color:white;font-weight:bold;margin-top:10px">Opinions</a></li> --}}
                     <li><a href="{{ route('others.all') }}" style="color:white;font-weight:bold;margin-top:10px">Others</a></li>
                 </ul>
 
@@ -60,8 +60,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if(!Auth::check())
-                    <li><a href="{{ url('/register') }}" style="color:white;font-weight:bold;margin-top:10px">Register</a></li>
-                    <li><a href="{{ url('/login') }}" style="color:white;font-weight:bold;margin-top:10px">Login</a></li>
+                    {{-- <li><a href="{{ url('/register') }}" style="color:white;font-weight:bold;margin-top:10px">Register</a></li>
+                    <li><a href="{{ url('/login') }}" style="color:white;font-weight:bold;margin-top:10px">Login</a></li> --}}
                     @else
                     <li><a href="{{ route('cart.index') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-shopping-cart"></i><sup class="color:red">{{
                         App\Cart::where([

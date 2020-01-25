@@ -41,9 +41,10 @@ class NewsController extends AppBaseController
     public function Index1(Request $request)
     {
         $news = $this->newsRepository->all();
-
         return view('news.home')
-            ->with('news', $news)
+            ->with('news', News::orderBy('id','desc')->get()->take(5)->skip(1))
+            ->with('latest',News::orderBy('id','desc')->get()->take(1)->all())
+            ->with('alln',News::orderBy('id','asc')->get())
             ->with('tags',NewsTags::all()->take(10));
     }
 
