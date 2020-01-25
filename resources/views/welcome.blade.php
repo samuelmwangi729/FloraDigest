@@ -25,7 +25,7 @@
                 <p class="panel-heading">We are  Dedicated in provising the technical education topics and resources to our clients</p>
                 </div>
                 </div>
-                <a href="#">
+                <a href="/academia">
                   <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
                 </a>
             </div>
@@ -40,7 +40,7 @@
                 <p class="panel-heading">With the latest political trends both national and internationaly.</p>
                 </div>
                 </div>
-                <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
+                <a href="/Home/Politics/News" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
             </div>
             </div>
           
@@ -68,18 +68,6 @@
                     <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
                 </div>
                   </div>
-                  <div class="item">
-                        <img src="{{asset('img/assign.jpg')}}" alt="New york"  style="width:100%;height:400px">
-                        <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Opinions</h1>
-                                <div class="panel panel-primary">
-                                <div class="panel-heading"  style="background-color:#562fc6">
-                                        <p class="panel-heading">With value your opinions, Talk to us about the services provided to you.We highly value your feedback</p>
-                                </div>
-                                </div>
-                                <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
-                            </div>
-                      </div>
                       <div class="item">
                             <img src="{{asset('img/research.jpg')}}" alt="New york"  style="width:100%;height:400px">
                             <div class="carousel-caption d-none d-md-block">
@@ -110,7 +98,7 @@
         <div id="app">
                 <home-component></home-component>
                 <projects-component></projects-component>
-                <contact-component></contact-component>
+                {{-- <contact-component></contact-component> --}}
                 <footer-component></footer-component>
         </div>
       </div>

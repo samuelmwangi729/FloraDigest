@@ -38079,7 +38079,90 @@ var staticRenderFns = [
                   _vm._v(" "),
                   _c("span", { staticClass: "text-center" }, [
                     _vm._v(
-                      "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as \n                       possible!You can also reach out to us through our social media handles."
+                      "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as \n                        possible!You can also reach out to us through our social media handles.\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "col-sm-3 mt-3",
+                        staticStyle: { "margin-top": "30px" }
+                      },
+                      [
+                        _c("h1", { staticClass: "text-center" }, [
+                          _c("i", {
+                            staticClass: "fa fa-phone",
+                            staticStyle: { color: "white", "font-size": "30px" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("address", { staticClass: "text-center" }, [
+                          _vm._v("+254704922042")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "col-sm-3 mt-3",
+                        staticStyle: { "margin-top": "30px" }
+                      },
+                      [
+                        _c("h1", { staticClass: "text-center" }, [
+                          _c("i", {
+                            staticClass: "fa fa-headphones",
+                            staticStyle: { color: "white", "font-size": "30px" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("address", { staticClass: "text-center" }, [
+                          _vm._v("24/7 Support")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "col-sm-3 mt-3",
+                        staticStyle: { "margin-top": "30px" }
+                      },
+                      [
+                        _c("h1", { staticClass: "text-center" }, [
+                          _c("i", {
+                            staticClass: "fa fa-paypal",
+                            staticStyle: { color: "white", "font-size": "30px" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("address", { staticClass: "text-center" }, [
+                          _vm._v("Secure Payments Supported by "),
+                          _c("sup", [_vm._v("paypal")])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "col-sm-3 mt-3",
+                        staticStyle: { "margin-top": "30px" }
+                      },
+                      [
+                        _c("h1", { staticClass: "text-center" }, [
+                          _c("i", {
+                            staticClass: "fa fa-facebook",
+                            staticStyle: { color: "white", "font-size": "30px" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("address", { staticClass: "text-center" }, [
+                          _vm._v("Follow Us on Facebook")
+                        ])
+                      ]
                     )
                   ])
                 ])
@@ -38352,7 +38435,7 @@ var staticRenderFns = [
                       _c("span", { staticStyle: { color: "#ff4900" } }, [
                         _vm._v("Flora|Digest")
                       ]),
-                      _vm._v(" Logistics")
+                      _vm._v(" Shop")
                     ]
                   )
                 ]),

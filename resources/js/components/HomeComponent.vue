@@ -30,7 +30,7 @@
                 <br><br><br><br><br><br><br><br>
             </div>
             <div class="item">
-                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Logistics</h1></u><br><br><br>
+                <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Shop</h1></u><br><br><br>
                 <span class="text-center" style="font-size:15px;font-weight:bold">The fastest, easiest way to get products to our clients. <br>The tools we use exceeds clients expectations.</span>
                 <span class="text-center" style="font-size:15px;font-weight:bold" >No one ships packages better for you  more than we do.<br></span><br><br>
                 <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-angle-double-left"></i>&nbsp;&nbsp;Learn More...</button></span>
