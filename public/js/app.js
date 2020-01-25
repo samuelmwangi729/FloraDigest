@@ -38064,213 +38064,24 @@ var staticRenderFns = [
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-sm-3 col-md-2 col-lg-3" }, [
+              _c("div", { staticClass: "col-sm-8 col-md-8 col-lg-8" }, [
                 _c("div", { staticClass: "single_footer_part" }, [
-                  _c("u", [_c("h4", [_vm._v("About Us")])]),
+                  _c("u", [
+                    _c(
+                      "h4",
+                      {
+                        staticClass: "text-center",
+                        staticStyle: { color: "white" }
+                      },
+                      [_vm._v("Get In touch With Us")]
+                    )
+                  ]),
                   _vm._v(" "),
-                  _c(
-                    "ul",
-                    {
-                      staticClass: "list-unstyled",
-                      staticStyle: { "margin-top": "30px" }
-                    },
-                    [
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Managed Website")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Manage Reputation")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Power Tools")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Marketing Service")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Customer Service")]
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-3 col-md-3 col-lg-3" }, [
-                _c("div", { staticClass: "single_footer_part" }, [
-                  _c("u", [_c("h4", [_vm._v("Quick Links")])]),
-                  _vm._v(" "),
-                  _c(
-                    "ul",
-                    {
-                      staticClass: "list-unstyled",
-                      staticStyle: { "margin-top": "30px" }
-                    },
-                    [
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Store Hours")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Brand Assets")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Investor Relations")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Terms of Service")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Privacy & Policy")]
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-3 col-md-2 col-lg-2" }, [
-                _c("div", { staticClass: "single_footer_part" }, [
-                  _c("u", [_c("h4", [_vm._v("Resources")])]),
-                  _vm._v(" "),
-                  _c(
-                    "ul",
-                    {
-                      staticClass: "list-unstyled",
-                      staticStyle: { "margin-top": "30px" }
-                    },
-                    [
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Application Security")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Software Policy")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Supply Chain")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Agencies Relation")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticStyle: { color: "white" },
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("Manage Reputation")]
-                        )
-                      ])
-                    ]
-                  )
+                  _c("span", { staticClass: "text-center" }, [
+                    _vm._v(
+                      "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as \n                       possible!You can also reach out to us through our social media handles."
+                    )
+                  ])
                 ])
               ])
             ]),

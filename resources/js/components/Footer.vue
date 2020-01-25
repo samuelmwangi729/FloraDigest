@@ -10,40 +10,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-2 col-lg-3">
+                <div class="col-sm-8 col-md-8 col-lg-8">
                     <div class="single_footer_part">
-                        <u><h4>About Us</h4></u>
-                        <ul class="list-unstyled" style="margin-top:30px">
-                            <li><a href="" style="color:white">Managed Website</a></li>
-                            <li><a href="" style="color:white">Manage Reputation</a></li>
-                            <li><a href="" style="color:white">Power Tools</a></li>
-                            <li><a href="" style="color:white">Marketing Service</a></li>
-                            <li><a href="" style="color:white">Customer Service</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <div class="single_footer_part">
-                        <u><h4>Quick Links</h4></u>
-                        <ul class="list-unstyled" style="margin-top:30px">
-                            <li><a href="" style="color:white">Store Hours</a></li>
-                            <li><a href="" style="color:white">Brand Assets</a></li>
-                            <li><a href="" style="color:white">Investor Relations</a></li>
-                            <li><a href="" style="color:white">Terms of Service</a></li>
-                            <li><a href="" style="color:white">Privacy & Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-2 col-lg-2">
-                    <div class="single_footer_part">
-                        <u><h4>Resources</h4></u>
-                        <ul class="list-unstyled" style="margin-top:30px">
-                            <li><a href="" style="color:white">Application Security</a></li>
-                            <li><a href="" style="color:white">Software Policy</a></li>
-                            <li><a href="" style="color:white">Supply Chain</a></li>
-                            <li><a href="" style="color:white">Agencies Relation</a></li>
-                            <li><a href="" style="color:white">Manage Reputation</a></li>
-                        </ul>
+                        <u><h4 class="text-center" style="color:white">Get In touch With Us</h4></u>
+                       <span class="text-center">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as 
+                           possible!You can also reach out to us through our social media handles.</span>
                     </div>
                 </div>
             </div>

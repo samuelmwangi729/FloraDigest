@@ -26,8 +26,8 @@
         <header class="main-header">
     
             <!-- Logo -->
-            <a href="/" class="logo" style="background-color:white !important">
-                <img src="{{asset('img/logo/4.png')}}" height="50" width="100px">
+            <a href="/" class="logo" style="background-color:#562fc6 !important">
+                <img src="{{asset('img/logo/11.png')}}" height="50" width="100px">
             </a>
             
             <!-- Header Navbar -->
