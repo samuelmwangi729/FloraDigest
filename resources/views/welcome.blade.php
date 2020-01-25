@@ -53,7 +53,7 @@
                             <p class="panel-heading">With our packaging services,We guarantee you that the packages will be received on time and also on the right condition</p>
                     </div>
                     </div>
-                    <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
+                    <a href="/logistics" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
                 </div>
             </div>
             <div class="item">
@@ -65,7 +65,7 @@
                             <p class="panel-heading">With our reliable source of news, we provide real coverage on whatever goes on.We thus provide reliable information</p>
                     </div>
                     </div>
-                    <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
+                    <a href="/News" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
                 </div>
                   </div>
                       <div class="item">

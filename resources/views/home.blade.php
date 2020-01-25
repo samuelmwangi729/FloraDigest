@@ -565,6 +565,91 @@
         </div>
     </div>
     @endif
+    @if(Auth::user()->level=='Buyer')
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="box">
+            <div class="panel-heading text-center">
+                Shopping Cart
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-shopping-cart" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                {{ App\Cart::where([
+                    'user'=>Auth::user()->email,
+                    'deleted_at'=>null
+                    ])->get()->count() }}
+                </div>
+            </div>
+            <a href="{{route('cart.index')}}">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="box">
+            <div class="panel-heading text-center">
+               All  Orders
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-shopping-cart" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                {{ App\Order::where([
+                    'username'=>Auth::user()->email,
+                    ])->get()->count() }}
+                </div>
+            </div>
+            <a href="{{route('cart.index')}}">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="box">
+            <div class="panel-heading text-center">
+               Processed  Orders
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-shopping-cart" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                {{ App\Order::where([
+                    'username'=>Auth::user()->email,
+                    'status'=>'1'
+                    ])->get()->count() }}
+                </div>
+            </div>
+            <a href="{{route('cart.index')}}">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        <div class="box">
+            <div class="panel-heading text-center">
+               Pending  Orders
+            </div>
+            <div class="panel-body" style="background-color:#562fc6;color:white">
+                <i class="fa fa-shopping-cart" style="color:white;font-size:35px"></i>&nbsp;
+                <div class="pull-right" style="font-size:35px">
+                {{ App\Order::where([
+                    'username'=>Auth::user()->email,
+                    'status'=>'1'
+                    ])->get()->count() }}
+                </div>
+            </div>
+            <a href="{{route('cart.index')}}">
+                <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
+                    More Information
+                </div>
+            </a>
+        </div>
+    </div>
+    @endif
     </div>
 </div>
 @endsection

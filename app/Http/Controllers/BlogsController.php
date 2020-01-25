@@ -17,7 +17,7 @@ class BlogsController extends Controller
             'admin'=>'0',
             'level'=>'Blogger'
         ]);
-        Session::flash('success','Account Successfully Created');
+        Session::flash('success','Account Successfully Created,You can now successfully login');
         return redirect()->back();
     }
 }
