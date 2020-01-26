@@ -91,7 +91,7 @@
             <div class="item">
                     <img src="{{$latest[0]['image']}}" alt="New york"  style="width:100%;height:350px">
                    <div class="carousel-caption d-none d-md-block">
-                    <h3 style="font-size:50px;color:red;font-weight:bold" class="text-center">News</h3>
+                    <h3 style="font-size:30px;color:red;font-weight:bold" class="text-center">News</h3>
                     <div class="panel panel-primary">
                     <div class="panel-heading"  style="background-color:#562fc6">
                     <p class="panel-heading text-bold" style="font-size:16px">{{$latest[0]['text']}}</p>
