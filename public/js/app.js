@@ -37802,7 +37802,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row well" }, [
       _c("div", { staticClass: "col-lg-4" }, [
         _c("h3", { staticStyle: { "font-weight": "bold" } }, [
-          _vm._v("Meet Our Writers")
+          _vm._v("Meet Our Writer")
         ]),
         _vm._v(
           "\n        and our positive reviews reflect this commitment to great service. Over the years, \n        we have perfected the art of essay writing and our team of pro writers is dedicated, \n        experienced, and always ready when you need them\n    "
