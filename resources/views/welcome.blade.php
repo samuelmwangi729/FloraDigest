@@ -17,22 +17,54 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-            <img src="{{asset($proposal[0]['displayImage'])}}" alt="Los Angeles" style="width:100%;height:400px">
-            <div class="carousel-caption d-none d-md-block">
+              @if(count($proposal)==0)
+              <img src="{{asset('img/1.jpg')}}" alt="New york"  style="width:100%;height:500px">
+              <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Academia</h1>
                 <div class="panel panel-primary" >
                 <div class="panel-heading"  style="background-color:#562fc6">
-                <p class="panel-heading">{{$proposal[0]['title']}}</p>
+                {{-- <p class="panel-heading">{{$proposal[0]['title']}}</p> --}}
                 </div>
                 </div>
-                <a href="/Available/Assignments">
+                {{-- <a href="/Available/Assignments">
                   <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</button>
-                </a>
+                </a> --}}
             </div>
             </div>
+              @else
+            <img src="{{asset($proposal[0]['displayImage'])}}" alt="Los Angeles" style="width:100%;height:500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Academia</h1>
+              <div class="panel panel-primary" >
+              <div class="panel-heading"  style="background-color:#562fc6">
+              <p class="panel-heading">{{$proposal[0]['title']}}</p>
+              </div>
+              </div>
+              <a href="/Available/Assignments">
+                <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</button>
+              </a>
+          </div>
+          </div>
+            @endif
+           
       
             <div class="item">
-                    <img src="{{asset($politics[0]['image'])}}" alt="New york"  style="width:100%;height:400px">
+              @if(count($politics)==0)
+              <img src="{{asset('img/1.jpg')}}" alt="New york"  style="width:100%;height:500px">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Academia</h1>
+                <div class="panel panel-primary" >
+                <div class="panel-heading"  style="background-color:#562fc6">
+                {{-- <p class="panel-heading">{{$proposal[0]['title']}}</p> --}}
+                </div>
+                </div>
+                {{-- <a href="/Available/Assignments">
+                  <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</button>
+                </a> --}}
+            </div>
+            </div>
+              @else
+                    <img src="{{asset($politics[0]['image'])}}" alt="New york"  style="width:100%;height:500px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Politics</h1>
                 <div class="panel panel-primary">
@@ -43,9 +75,9 @@
                 <a href="{{ route('politics.single',['slug'=>$politics[0]['slug']])}}" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
             </div>
             </div>
-          
+          @endif
             <div class="item">
-              <img src="{{asset('img/package.jpg')}}" alt="New york"  style="width:100%;height:400px">
+              <img src="{{asset('img/package.jpg')}}" alt="New york"  style="width:100%;height:500px">
               <div class="carousel-caption d-none d-md-block">
                     <h1 style="font-size:75px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Shop</h1>
                     <div class="panel panel-primary">
