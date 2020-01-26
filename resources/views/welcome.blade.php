@@ -94,7 +94,7 @@
                     <h3 style="font-size:50px;color:red;font-weight:bold" class="text-center">News</h3>
                     <div class="panel panel-primary">
                     <div class="panel-heading"  style="background-color:#562fc6">
-                    <p class="panel-heading">{{$latest[0]['text']}}</p>
+                    <p class="panel-heading text-bold" style="font-size:16px">{{$latest[0]['text']}}</p>
                     </div>
                     </div>
                     <a href="{{ route('news.single',['slug'=>$latest[0]['slug']]) }}" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
@@ -106,7 +106,7 @@
                                     <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Research</h1>
                                     <div class="panel panel-primary">
                                     <div class="panel-heading"  style="background-color:#562fc6">
-                                        <p class="panel-heading">With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you</p>
+                                        <p class="panel-heading text-bold" style="font-size:16px">With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you</p>
                                     </div>
                                     </div>
                                     <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
