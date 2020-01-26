@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
+Route::get('/',[
+    'uses'=>'IndexController@index',
+    'as'=>'index'
+]);
 Route::get('/blog/post/{slug}',[
     'uses'=>'PostController@singlePost',
     'as'=>'posts.single'
@@ -64,6 +65,10 @@ Route::get('/blog',[
 ]);
 
 Route::group(['prefix' => 'blog','middleware' => 'auth'], function () {
+    Route::get('/Order/Track',[
+        'as'=>'OrderController@track',
+        'as'=>'order.track'
+    ]);
     Route::resource('posts', 'PostController');
     Route::get('/trashed',[
         'uses'=>'PostController@trashed',

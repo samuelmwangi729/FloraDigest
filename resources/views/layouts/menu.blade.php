@@ -156,3 +156,20 @@
     <a href="#"><i class="fa fa-cog"></i>Account Settings</a>
 </li>
 @endif
+@if(Auth::user()->level=='Buyer')
+<li class="{{ Request::is('posts*') ? 'active' : '' }}">
+    <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Orders</span></a>
+      <div class="collapse" id="collapseExample">
+        <ul class="list-unstyled" style="color:white;padding-left:30px">
+            <li><a href="{{route('cart.index')}}" ><i class="fa fa-plus"></i>&nbsp;&nbsp;New Orders</a></li>
+        </ul>
+      </div>
+</li>
+<li>
+<li><a type="button" href="{{ route('order.track') }}" data-toggle="modal" data-target="#exampleModal">
+    <i class="fa fa-truck"></i>&nbsp;Track Order
+</a>
+  
+    <a href="#"><i class="fa fa-cog"></i>Account Settings</a>
+</li>
+@endif

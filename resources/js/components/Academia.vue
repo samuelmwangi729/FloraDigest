@@ -1,20 +1,6 @@
 <template>
     <div>
-    <div class="row well">
-        <div class="col-lg-9">
-            <span>We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals
-                and other educational materials that will help you in whatever you need. All we do give you sample 3 topics and you have 
-                to choose one of your choice.
-
-                All after writting, we guarantee you a high quality job and also unlimited revisions on the proposals written for youApart from writing the 
-                research proposals for you. We also publish our own research proposals and then one has to purchase them from our website.
-            </span>
-        </div>
-        <div class="col-lg-3 panel-body">
-           <h3> <i class="fa fa-exclamation-triangle" style="color:red"></i>&nbsp;&nbsp;How We Work</h3>
-        </div>
-    </div>
-    <div class="container mt-5">
+        <div class="row-fluid mt-5">
         <marquee style="background-color:#562fc6;color:white;font-weight:bold"><span style="color:red;font-weight:bold">Flora|</span><span>Digest</span> is a legitimate, reliable, quick and top-rated online essay writing Website that provides high-quality, affordable papers.</marquee>
         <u><h2 class="text-center">Why students choose <span style="color:red;font-weight:bold">Flora|</span><span>Digest</span> Essay writing service?</h2></u>
         <div class="row">
@@ -54,6 +40,21 @@
             </div>
         </div>
     </div>
+    <div class="row well">
+        <div class="col-lg-9">
+            <span>We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals
+                and other educational materials that will help you in whatever you need. All we do give you sample 3 topics and you have 
+                to choose one of your choice.
+
+                All after writting, we guarantee you a high quality job and also unlimited revisions on the proposals written for youApart from writing the 
+                research proposals for you. We also publish our own research proposals and then one has to purchase them from our website.
+            </span>
+        </div>
+        <div class="col-lg-3 panel-body">
+           <h3> <i class="fa fa-exclamation-triangle" style="color:red"></i>&nbsp;&nbsp;How We Work</h3>
+        </div>
+    </div>
+    
     <div class="row well">
         <div class="col-lg-4">
             <h3 style="font-weight:bold">Meet Our Writers</h3>

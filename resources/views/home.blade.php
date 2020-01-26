@@ -649,6 +649,43 @@
             </a>
         </div>
     </div>
+     <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Register As A Blogger</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form method="post" action="{{ route('blogger.register') }}">
+                @csrf   
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="checkbox icheck text-center">
+                            <label class="label-control">
+                                Enter Your Order Number
+                            </label>
+                            <input type="text" class="form-control" name="order" placeholder="ENter your order number">
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-12 text-center">
+                        <button type="submit" class="btn btn-primary btn-flat" style="border-radius:20px;background-color:#562fc6"><i class="fa fa-plane"></i>
+                            Track Status</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+        <span class="text-center">&copy;{{ Carbon\Carbon::now()->year }} All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </div>
     @endif
     </div>
 </div>

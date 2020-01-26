@@ -2,7 +2,7 @@
 @section('content')
 <div class="row">
     <div class="col-lg-9 col-md-9 col-sm-9">
-       @if(count($news)==0)
+       @if(count($latest)==0)
        <div class="alert alert-danger">
            <strong><i class="fa fa-exclamation-circle" style="color:yellow;font-size:20px"></i>&nbsp;No news Posted, Please Check With us later</strong>
        </div>

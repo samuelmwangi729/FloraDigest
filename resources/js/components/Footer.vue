@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="single_footer_part">
-                      <hr> <u><a href="/" class="footer_logo_iner"><img src="img/logo/11.png" height="70px"></a></u>
+                      <hr> <u><a href="/" class="footer_logo_iner"><img :src="getPhoto()" height="70px"></a></u>
                         <p>We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.
                         </p>
                     </div>
@@ -45,3 +45,18 @@
     </footer>
     </div>
 </template>
+<script>
+    export default {
+        data:{
+
+        },
+        methods:{
+            getPhoto:function(){
+                return "iimg/logo/11.png";
+            }
+        },
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
+</script>

@@ -31,7 +31,7 @@
    <textarea id="summernote" name="introParagraph">{{ $available->introParagraph ?? '' }}</textarea>
 </div>
 <div class="col-sm-12">
-    <label class="label-control" for="title">Introduction Paragraph</label>
+    <label class="label-control" for="title">COnclusion Paragraph</label>
    <textarea class="summernote" name="conclusionParagraph">{{ $available->conclusionParagraph  ?? ''}}</textarea>
 </div>
 <!-- Submit Field -->

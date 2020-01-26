@@ -2,7 +2,7 @@
 
 <div class="col-sm-6">
     <label class="label-control" for="topic name">Topic Name</label>
-    <input type="text" class="form-control input-sm" name="name" value="{{ $topics->name ?? '' }}">
+    <input type="text" class="form-control input-sm" name="name" value="{{ $topic->name ?? '' }}">
 </div>
 <div class="col-sm-6">
     <label class="label-control" for="topic name">Display Image</label>

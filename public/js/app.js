@@ -1865,6 +1865,76 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: {},
+  methods: {
+    getPhoto: function getPhoto() {
+      return "iimg/logo/11.png";
+    }
+  },
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HomeComponent.vue?vue&type=script&lang=js& ***!
@@ -1874,9 +1944,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -37556,11 +37623,9 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
     _c(
       "div",
-      { staticClass: "container mt-5" },
+      { staticClass: "row-fluid mt-5" },
       [
         _c(
           "marquee",
@@ -37584,41 +37649,19 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _vm._m(1),
+        _vm._m(0),
         _vm._v(" "),
-        _vm._m(2)
+        _vm._m(1)
       ],
       1
     ),
+    _vm._v(" "),
+    _vm._m(2),
     _vm._v(" "),
     _vm._m(3)
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row well" }, [
-      _c("div", { staticClass: "col-lg-9" }, [
-        _c("span", [
-          _vm._v(
-            "We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals\n            and other educational materials that will help you in whatever you need. All we do give you sample 3 topics and you have \n            to choose one of your choice.\n\n            All after writting, we guarantee you a high quality job and also unlimited revisions on the proposals written for youApart from writing the \n            research proposals for you. We also publish our own research proposals and then one has to purchase them from our website.\n        "
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-3 panel-body" }, [
-        _c("h3", [
-          _c("i", {
-            staticClass: "fa fa-exclamation-triangle",
-            staticStyle: { color: "red" }
-          }),
-          _vm._v("  How We Work")
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -37724,6 +37767,30 @@ var staticRenderFns = [
               ]
             )
           ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row well" }, [
+      _c("div", { staticClass: "col-lg-9" }, [
+        _c("span", [
+          _vm._v(
+            "We are a pool of experienced writers with over 10+ years experience in Technical writing,Research proposals\n            and other educational materials that will help you in whatever you need. All we do give you sample 3 topics and you have \n            to choose one of your choice.\n\n            All after writting, we guarantee you a high quality job and also unlimited revisions on the proposals written for youApart from writing the \n            research proposals for you. We also publish our own research proposals and then one has to purchase them from our website.\n        "
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-3 panel-body" }, [
+        _c("h3", [
+          _c("i", {
+            staticClass: "fa fa-exclamation-triangle",
+            staticStyle: { color: "red" }
+          }),
+          _vm._v("  How We Work")
         ])
       ])
     ])
@@ -38019,166 +38086,169 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "row" }, [
+    _c(
+      "footer",
+      {
+        staticClass: "footer_part",
+        staticStyle: {
+          "background-color": "#562fc6",
+          color: "white",
+          "margin-top": "20px"
+        }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-4 col-md-4 col-lg-4" }, [
+              _c("div", { staticClass: "single_footer_part" }, [
+                _c("hr"),
+                _vm._v(" "),
+                _c("u", [
+                  _c(
+                    "a",
+                    { staticClass: "footer_logo_iner", attrs: { href: "/" } },
+                    [
+                      _c("img", {
+                        attrs: { src: _vm.getPhoto(), height: "70px" }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.\n                    "
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(0)
+          ]),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _vm._m(1)
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "footer",
-        {
-          staticClass: "footer_part",
-          staticStyle: {
-            "background-color": "#562fc6",
-            color: "white",
-            "margin-top": "20px"
-          }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-sm-4 col-md-4 col-lg-4" }, [
-                _c("div", { staticClass: "single_footer_part" }, [
-                  _c("hr"),
-                  _vm._v(" "),
-                  _c("u", [
-                    _c(
-                      "a",
-                      { staticClass: "footer_logo_iner", attrs: { href: "/" } },
-                      [
-                        _c("img", {
-                          attrs: { src: "img/logo/11.png", height: "70px" }
-                        })
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.\n                    "
-                    )
-                  ])
-                ])
+    return _c("div", { staticClass: "col-sm-8 col-md-8 col-lg-8" }, [
+      _c("div", { staticClass: "single_footer_part" }, [
+        _c("u", [
+          _c(
+            "h4",
+            { staticClass: "text-center", staticStyle: { color: "white" } },
+            [_vm._v("Get In touch With Us")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "text-center" }, [
+          _vm._v(
+            "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as \n                        possible!You can also reach out to us through our social media handles.\n                    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            {
+              staticClass: "col-sm-3 mt-3",
+              staticStyle: { "margin-top": "30px" }
+            },
+            [
+              _c("h1", { staticClass: "text-center" }, [
+                _c("i", {
+                  staticClass: "fa fa-phone",
+                  staticStyle: { color: "white", "font-size": "30px" }
+                })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-sm-8 col-md-8 col-lg-8" }, [
-                _c("div", { staticClass: "single_footer_part" }, [
-                  _c("u", [
-                    _c(
-                      "h4",
-                      {
-                        staticClass: "text-center",
-                        staticStyle: { color: "white" }
-                      },
-                      [_vm._v("Get In touch With Us")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "text-center" }, [
-                    _vm._v(
-                      "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as \n                        possible!You can also reach out to us through our social media handles.\n                    "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "col-sm-3 mt-3",
-                        staticStyle: { "margin-top": "30px" }
-                      },
-                      [
-                        _c("h1", { staticClass: "text-center" }, [
-                          _c("i", {
-                            staticClass: "fa fa-phone",
-                            staticStyle: { color: "white", "font-size": "30px" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("address", { staticClass: "text-center" }, [
-                          _vm._v("+254704922042")
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "col-sm-3 mt-3",
-                        staticStyle: { "margin-top": "30px" }
-                      },
-                      [
-                        _c("h1", { staticClass: "text-center" }, [
-                          _c("i", {
-                            staticClass: "fa fa-headphones",
-                            staticStyle: { color: "white", "font-size": "30px" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("address", { staticClass: "text-center" }, [
-                          _vm._v("24/7 Support")
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "col-sm-3 mt-3",
-                        staticStyle: { "margin-top": "30px" }
-                      },
-                      [
-                        _c("h1", { staticClass: "text-center" }, [
-                          _c("i", {
-                            staticClass: "fa fa-paypal",
-                            staticStyle: { color: "white", "font-size": "30px" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("address", { staticClass: "text-center" }, [
-                          _vm._v("Secure Payments Supported by "),
-                          _c("sup", [_vm._v("paypal")])
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "col-sm-3 mt-3",
-                        staticStyle: { "margin-top": "30px" }
-                      },
-                      [
-                        _c("h1", { staticClass: "text-center" }, [
-                          _c("i", {
-                            staticClass: "fa fa-facebook",
-                            staticStyle: { color: "white", "font-size": "30px" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("address", { staticClass: "text-center" }, [
-                          _vm._v("Follow Us on Facebook")
-                        ])
-                      ]
-                    )
-                  ])
-                ])
+              _c("address", { staticClass: "text-center" }, [
+                _vm._v("+254704922042")
               ])
-            ]),
-            _vm._v(" "),
-            _c("hr"),
-            _vm._v(" "),
-            _c("div", { staticClass: "row text-center" }, [
-              _vm._v("\n            © 2019 "),
-              _c("span", { staticStyle: { color: "red" } }, [_vm._v("Flora|")]),
-              _vm._v("Digest All rights reserved\n        ")
-            ])
-          ])
-        ]
-      )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-sm-3 mt-3",
+              staticStyle: { "margin-top": "30px" }
+            },
+            [
+              _c("h1", { staticClass: "text-center" }, [
+                _c("i", {
+                  staticClass: "fa fa-headphones",
+                  staticStyle: { color: "white", "font-size": "30px" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("address", { staticClass: "text-center" }, [
+                _vm._v("24/7 Support")
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-sm-3 mt-3",
+              staticStyle: { "margin-top": "30px" }
+            },
+            [
+              _c("h1", { staticClass: "text-center" }, [
+                _c("i", {
+                  staticClass: "fa fa-paypal",
+                  staticStyle: { color: "white", "font-size": "30px" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("address", { staticClass: "text-center" }, [
+                _vm._v("Secure Payments Supported by "),
+                _c("sup", [_vm._v("paypal")])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-sm-3 mt-3",
+              staticStyle: { "margin-top": "30px" }
+            },
+            [
+              _c("h1", { staticClass: "text-center" }, [
+                _c("i", {
+                  staticClass: "fa fa-facebook",
+                  staticStyle: { color: "white", "font-size": "30px" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("address", { staticClass: "text-center" }, [
+                _vm._v("Follow Us on Facebook")
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row text-center" }, [
+      _vm._v("\n            © 2019 "),
+      _c("span", { staticStyle: { color: "red" } }, [_vm._v("Flora|")]),
+      _vm._v("Digest All rights reserved\n        ")
     ])
   }
 ]
@@ -53327,15 +53397,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=61a7c374& */ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.vue?vue&type=script&lang=js& */ "./resources/js/components/Footer.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -53349,6 +53421,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/Footer.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
