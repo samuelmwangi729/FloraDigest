@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-    <div class="text-center"><img src="{{ asset($new->image) }}" width="80%" height="500px">
+    <div class="text-center"><img src="{{ asset($new->image) }}" width="80%" height="300px">
         <br><span><i class="fa fa-user"></i>&nbsp;&nbsp;<i>Published By: </i> {{ $new->published_by }}</span>
         <i class="fa fa-clock"></i>&nbsp;&nbsp;Published: {{ $new->created_at->toFormattedDateString() }}
         <i class="fa fa-tags">{{ App\Models\NewsTags::find($new->category_id)->get()->first()->name }}</i>
