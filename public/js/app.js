@@ -37821,7 +37821,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "col-lg-4 text-center" }, [
         _c("img", {
           staticStyle: { "border-radius": "200px" },
-          attrs: { src: "img/pioneer/img.jpg", width: "280px", height: "280px" }
+          attrs: { src: "img/pioneer.jpeg", width: "280px", height: "280px" }
         })
       ])
     ])

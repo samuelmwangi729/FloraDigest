@@ -57,7 +57,7 @@
     
     <div class="row well">
         <div class="col-lg-4">
-            <h3 style="font-weight:bold">Meet Our Writers</h3>
+            <h3 style="font-weight:bold">Meet Our Writer</h3>
             and our positive reviews reflect this commitment to great service. Over the years, 
             we have perfected the art of essay writing and our team of pro writers is dedicated, 
             experienced, and always ready when you need them
@@ -69,7 +69,7 @@
             so no matter what you’re struggling with, they can help.
         </div>
          <div class="col-lg-4 text-center">
-            <img src="img/pioneer/img.jpg" width="280px" height="280px" style="border-radius:200px">
+            <img src="img/pioneer.jpeg" width="280px" height="280px" style="border-radius:200px">
         </div>
     </div>
     </div>
