@@ -94,6 +94,6 @@
    </div>
 </div>
 @endforeach
-</div>
+
 @endsection
 

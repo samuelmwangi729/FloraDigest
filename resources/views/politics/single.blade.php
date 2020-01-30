@@ -15,6 +15,6 @@
 </div>
 @include('layouts.share')
 <div id="app">
-    <footer-component></footer-component>
+    @include('layouts.disqus')
 </div>
 @stop

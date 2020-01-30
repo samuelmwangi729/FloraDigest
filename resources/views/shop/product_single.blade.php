@@ -609,7 +609,7 @@
   <!--================End Product Description Area =================-->
   <div class="row">
     <div id="app">
-            <footer-component></footer-component>
+      @include('layouts.disqus')
     </div>
   </div>
 

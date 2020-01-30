@@ -10,11 +10,15 @@
         <div class="addthis_inline_share_toolbox text-center"></div>
         <h4>{{ $new->title }}</h4>
 </div>
+@extends('layouts.share')
 <div class="container">
     {!! $new->content !!}
+    
 </div>
-@include('layouts.share')
+<div class="row">
+  
+</div>
 <div id="app">
-    <footer-component></footer-component>
+    @include('layouts.disqus')
 </div>
 @stop
