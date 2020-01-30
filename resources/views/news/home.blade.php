@@ -90,7 +90,8 @@
     <img src=" {{ $all->image }}" width="150px" height="150px">
    </div>
    <div>
-    <h5 class="text-left"><a href="{{ route('news.single',['slug'=>$all->slug]) }}">{{$all->title }}</a></h5>
+    @include('layouts.count')
+    <h5 class="text-left"><a href="{{ route('news.single',['slug'=>$all->slug]) }}#disqus_thread">{{$all->title }}</a></h5>
    </div>
 </div>
 @endforeach

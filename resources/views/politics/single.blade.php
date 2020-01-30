@@ -10,6 +10,7 @@
         <div class="addthis_inline_share_toolbox text-center"></div>
         <h4>{{ $politics->title }}</h4>
 </div>
+@include('layouts.count')
 <div class="container">
     <?php echo $politics->content?>
 </div>
