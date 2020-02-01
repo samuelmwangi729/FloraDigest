@@ -37800,8 +37800,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row well" }, [
-      _c("div", { staticClass: "col-lg-4" }, [
-        _c("h3", { staticStyle: { "font-weight": "bold" } }, [
+      _c("div", { staticClass: "col-lg-6" }, [
+        _c("h4", { staticStyle: { "font-weight": "bold" } }, [
           _vm._v("Meet Our Writer")
         ]),
         _vm._v(
@@ -37809,20 +37809,13 @@ var staticRenderFns = [
         )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-lg-4" }, [
+      _c("div", { staticClass: "col-lg-6" }, [
         _c("h4", { staticStyle: { "font-weight": "bold" } }, [
           _vm._v("Guides to Research Projects")
         ]),
         _vm._v(
           "\n        Our writers can guide you, provide recommendations, write a full essay or help you construct the main ideas that you might be\n         finding difficult to get across. They’re experts, \n        so no matter what you’re struggling with, they can help.\n    "
         )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-4 text-center" }, [
-        _c("img", {
-          staticStyle: { "border-radius": "200px" },
-          attrs: { src: "img/pioneer.jpeg", width: "280px", height: "280px" }
-        })
       ])
     ])
   }

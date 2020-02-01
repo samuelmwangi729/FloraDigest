@@ -23,7 +23,7 @@
                 <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Academia</h1>
                 <div class="panel panel-primary" >
                 <div class="panel-heading"  style="background-color:#562fc6">
-                {{-- <p class="panel-heading">{{$proposal[0]['title']}}</p> --}}
+                <p class="panel-heading">Academic Proposals Available</p>
                 </div>
                 </div>
                 {{-- <a href="/Available/Assignments">

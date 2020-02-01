@@ -15,7 +15,7 @@
                 </h3> --}}
             <br><br><br><br><br><br><br><br>
         </div> 
-        <h2 class="text-center"><a href="{{ route('news.single',['slug'=>$politic->slug]) }}">{{$politic->title }}</a></h2>
+        <h2 class="text-center"><a href="{{ route('politics.single',['slug'=>$politic->slug]) }}">{{$politic->title }}</a></h2>
         <span class="fa fa-clock">&nbsp;&nbsp;{{ $politic->created_at->toFormattedDateString() }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span class=" fa fa-tags text-center">{{ $politic->text }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="fa fa-user">&nbsp;&nbsp;Published by:<i><b>{{ $politic->published_by }}</b></i>&nbsp;&nbsp;&nbsp;
@@ -39,5 +39,17 @@
      </ul>
  </div>
 </div>
+<div class="row-fluid">
+    @foreach (App\Politics::all() as $all)
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+       <div class="main">
+        <img src=" {{ asset($all->image) }}" width="150px" height="150px">
+       </div>
+       <div>
+        @include('layouts.count')
+        <h4 class="text-left"><a href="{{ route('politics.single',['slug'=>$all->slug]) }}#disqus_thread">{{$all->title }}</a></h4>
+       </div>
+    </div>
+@endforeach
 @endsection
 

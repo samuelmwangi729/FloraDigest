@@ -180,6 +180,10 @@ Route::get('/Home/Politics/Single/{slug}',[
     'uses'=>'PoliticsController@single',
     'as'=>'politics.single'
 ]);
+Route::get('/Home/Publications/',[
+    'uses'=>'AssignmentController@all',
+    'as'=>'publications.all'
+]);
 
 Route::resource('productsCategories', 'ProductsCategoriesController');
 

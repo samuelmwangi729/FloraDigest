@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-use App\Proposal;
 use Session;
+use App\Proposal;
 use App\Dispute;
 use App\Models\Available;
 use PayPal\Api\Amount;
@@ -153,6 +153,7 @@ class AssignmentController extends Controller
     }
     public function Download($slug){
         $file=Available::where('slug',$slug)->get()->first();
+        Session::flash('file',$file->AssignmentFile);
         if(is_null($file)){
             Session::flash('error','Not Found');
             return redirect()->back();
@@ -216,7 +217,12 @@ class AssignmentController extends Controller
         $paymentId=$request->paymentId;
         $PayerID=$request->PayerID;
         //insert them into the transactions table 
-        $assignment=Available::where('slug',$slug)->get()->first();
-       return view('availables.Download')->with('link',$assignment->AssignmentFile);
+       // $assignment=Available::where('slug',$slug)->get()->first();
+       return view('availables.Download')->with('link',Session::get('file'));
+    }
+
+    public function all(){
+        $assignment=Available::all();
+        return view('publication.all')->with('proposals',$assignment);
     }
 }

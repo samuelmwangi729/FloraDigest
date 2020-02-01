@@ -56,21 +56,21 @@
     </div>
     
     <div class="row well">
-        <div class="col-lg-4">
-            <h3 style="font-weight:bold">Meet Our Writer</h3>
+        <div class="col-lg-6">
+            <h4 style="font-weight:bold">Meet Our Writer</h4>
             and our positive reviews reflect this commitment to great service. Over the years, 
             we have perfected the art of essay writing and our team of pro writers is dedicated, 
             experienced, and always ready when you need them
         </div>
-         <div class="col-lg-4">
+         <div class="col-lg-6">
              <h4 style="font-weight:bold">Guides to Research Projects</h4>
             Our writers can guide you, provide recommendations, write a full essay or help you construct the main ideas that you might be
              finding difficult to get across. They’re experts, 
             so no matter what you’re struggling with, they can help.
         </div>
-         <div class="col-lg-4 text-center">
+         <!-- <div class="col-lg-4 text-center">
             <img src="img/pioneer.jpeg" width="280px" height="280px" style="border-radius:200px">
-        </div>
+        </div> -->
     </div>
     </div>
 </template>

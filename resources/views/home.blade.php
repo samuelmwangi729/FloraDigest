@@ -11,10 +11,10 @@
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-file" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $users }}
+                    {{ App\Available::all()->count() ?? '0' }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('publications.all')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
