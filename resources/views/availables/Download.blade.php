@@ -13,6 +13,6 @@
 </div>
 @stop
 <script>
-setTimeout(function(){window.location=document.getElementById('download').href}, 3000);
+setTimeout(function(){window.location=document.getElementById('download').href}, 10000);
 setTimeout(function(){window.location='/Available/Assignments'}, 6000);
 </script>

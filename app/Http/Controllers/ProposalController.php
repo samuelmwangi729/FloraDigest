@@ -106,4 +106,8 @@ class ProposalController extends Controller
     {
         //
     }
+    public function paid(){
+        //this will display all the proposals that have been paid for 
+        return view('availables.paid')->with('proposals',Proposal::where('paid',0)->get());
+    }
 }

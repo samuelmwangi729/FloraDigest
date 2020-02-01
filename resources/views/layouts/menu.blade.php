@@ -2,7 +2,6 @@
     <a href="/home"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
 </li>
 @if(Auth::user()->level=='Administrator' )
-@if(Auth::user()->level=='Blogger')
 <li class="{{ Request::is('posts*') ? 'active' : '' }}">
     <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-edit"></i><span>Posts</span></a>
       <div class="collapse" id="collapseExample">
@@ -15,7 +14,6 @@
         </ul>
       </div>
 </li>
-@endif
 <li class="{{ Request::is('news*') ? 'active' : '' }}">
     <a  data-toggle="collapse" href="#collapseNews" role="button" aria-expanded="false" aria-controls="collapseExample" href="{{ route('posts.index') }}"><i class="fa fa-bell"></i><span>News</span></a>
       <div class="collapse" id="collapseNews">
@@ -115,6 +113,7 @@
 <li class="{{ Request::is('topics*') ? 'active' : '' }}">
     <a href="{{ route('topics.index') }}"><i class="fa fa-graduation-cap"></i><span>Research Topics</span></a>
 </li>
+
 @endif
 @if(Auth::user()->level=='User')
 <li class="{{ Request::is('products*') ? 'active' : '' }}">
@@ -126,6 +125,9 @@
             </li>
             <li>
                 <a href="{{ route('assignment.view') }}"><i class="fa fa-eye"></i><span>&nbsp;&nbsp;View Assignments</span></a>
+            </li>
+            <li>
+                <a href="{{ route('assignments.complete') }}"><i class="fa fa-eye"></i><span>&nbsp;&nbsp;Post Complete Assignments</span></a>
             </li>
             <li>
                 <a href="{{ route('assignment.trashed') }}"><i class="fa fa-trash"></i><span>&nbsp;&nbsp;Deleted Assignment</span></a>

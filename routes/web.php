@@ -419,6 +419,18 @@ Route::get('/Opinions/Home',[
 
 
 Route::group(['middleware' => ['auth','admin']], function () {
+    Route::get('/Users/Show',[
+        'uses'=>'HomeController@users',
+        'as'=>'users.all'
+    ]);
+    Route::get('/Users/Suspend/{id}',[
+        'uses'=>'HomeController@suspend',
+        'as'=>'user.suspend'
+    ]);
+    Route::get('/Users/Reinstate/{id}',[
+        'uses'=>'HomeController@reinstate',
+        'as'=>'user.reinstate'
+    ]);
     Route::get('/Opinions/Home/Create',[
         'uses'=>'OpinionController@create',
         'as'=>'opinion.create'
@@ -466,4 +478,8 @@ Route::post('/Others/Save',[
 Route::post('/Blogger/Register',[
     'uses'=>'BlogsController@store',
     'as'=>'blogger.register'
+]);
+Route::get('/Paid/Proposals',[
+    'uses'=>'ProposalController@paid',
+    'as'=>'proposal.paid'
 ]);

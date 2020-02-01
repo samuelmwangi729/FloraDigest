@@ -8,7 +8,9 @@
         <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ $lastavailable->title }}</span></h1></u>
             <span>At Ksh {{ $lastavailable->budget }}&nbsp;</span>
     </div> 
-    {{ $lastavailable->topic }}
+    {{ $lastavailable->topic }}<a href="{{ route('Topic.single',[$lastavailable->slug]) }}">
+     <button class="btn btn-xs btn-success">View Proposal</button>
+    </a>
       @endforeach
  </div>
  <div class="col-lg-3">
@@ -33,21 +35,6 @@
         <div class="row-fluid">
           <div class="row flex-row-reverse">
             <div class="col-lg-12">
-              {{-- <div class="product_top_bar">
-                <div class="left_dorp">
-                  <select class="sorting">
-                    <option value="1">Default sorting</option>
-                    <option value="2">Default sorting 01</option>
-                    <option value="4">Default sorting 02</option>
-                  </select>
-                  <select class="show">
-                    <option value="1">Show 12</option>
-                    <option value="2">Show 14</option>
-                    <option value="4">Show 16</option>
-                  </select>
-                </div>
-              </div> --}}
-              
               <div class="latest_product_inner">
                 <div class="row">
                   @foreach ($availables as $available )
@@ -63,12 +50,6 @@
                           <a href="{{ route('Topic.single',[$available->slug]) }}">
                             <i class="fa fa-eye" style="color:red"></i>
                           </a>
-                          {{-- <a href="{{ route('wishlist.add',['slug'=>$available->slug]) }}">
-                            <i class="fa fa-heart" style="color:red"></i>
-                          </a>
-                          <a href="{{ route('single.cart',['slug'=>$available->slug]) }}">
-                            <i class="fa fa-shopping-basket" style="color:red"></i>
-                          </a> --}}
                         </div>
                       </div>
                       <div class="product-btm">

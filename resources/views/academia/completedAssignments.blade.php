@@ -34,8 +34,9 @@
                    @if(Auth::user()->level=='Administrator')
                    @foreach($assignments as $assignment)
                         <tr>
-                        <td>{{ $assignment->clientName }}</td>
-                        <td>{{ $assignment->clientAssignment }}</td>
+                            {{ dd($assignment) }}
+                            <td>{{ App\Proposal::where('slug',$assignment->clientAssignment)->get()->first()->clientName}}</td>
+                            <td>{{ App\Proposal::where('slug',$assignment->clientAssignment)->get()->first()->clientAssignment }}</td>
                         <td>{{ $assignment->clientDate }}</td>
                         <td>{{ $assignment->status}}</td>
                         <td>{{ $assignment->created_at->toFormattedDateString() }}</td>
@@ -53,23 +54,24 @@
                    @else
                         @foreach($assignments as $assignment)
                         <tr>
-                        <td>{{ $assignment->clientName }}</td>
-                        <td>{{ $assignment->clientAssignment }}</td>
+                        <td>{{ App\Proposal::where('slug',$assignment->clientAssignment)->get()->first()->clientName}}</td>
+                        <td>{{ App\Proposal::where('slug',$assignment->clientAssignment)->get()->first()->clientAssignment }}</td>
                         <td>{{ $assignment->clientDate }}</td>
                         <td>
-                            @if(App\Completed::where('clientAssignment',$assignment->slug)->get()->first()->status ==0)
+                            @if(App\Completed::where('clientAssignment',$assignment->clientAssignment)->get()->first()->status==0)
                             <span style="color:green">Completed</span>
-                            @else
+                            @endif
+                            @if(App\Completed::where('clientAssignment',$assignment->clientAssignment)->get()->first()->status==1)
                             <span style="color:red">Under Revision</span>
                             @endif
                         </td>
                         <td>{{ $assignment->created_at->toFormattedDateString() }}</td>
                         <td>
-                            <a href="{{ route('assignment.single', [$assignment->slug]) }}" class='btn btn-primary btn-xs'>View Assignments</a>
-                            <a href="{{ route('assignment.complete', [$assignment->slug]) }}" class='btn btn-success btn-xs'>Check Drafted Assignment</a>
+                            <a href="{{ route('assignment.single', [$assignment->clientAssignment]) }}" class='btn btn-primary btn-xs'>View Assignment</a>
+                            <a href="{{ route('assignment.complete', [$assignment->clientAssignment]) }}" class='btn btn-success btn-xs'>Check Drafted Assignment</a>
                             @if(Auth::user()->level == 'Administrator')
                                 @if($assignment->status==1)
-                                <a href="{{ route('completed.edit', [$assignment->slug]) }}" class='btn btn-danger btn-xs'><i class="fa fa-check"></i>Edit</a>
+                                <a href="{{ route('completed.edit', [$assignment->clientAssignment]) }}" class='btn btn-danger btn-xs'><i class="fa fa-check"></i>Edit</a>
                                 @endif
                             @endif
                         </td>

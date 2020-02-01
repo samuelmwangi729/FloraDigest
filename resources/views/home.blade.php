@@ -24,22 +24,22 @@
         <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="box">
                 <div class="panel-heading text-center">
-                    Sold Proposals
+                    Paid Assignments
                 </div>
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-credit-card" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $users }}
+                    {{App\Proposal::where('paid','1')->count() ?? 0}}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('proposal.paid')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
                 </a>
             </div>
         </div>
-        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        {{-- <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="box">
                 <div class="panel-heading text-center">
                     Consultations
@@ -56,8 +56,8 @@
                     </div>
                 </a>
             </div>
-        </div>
-        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
+        </div> --}}
+        {{-- <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="box">
                 <div class="panel-heading text-center">
                     Opinions
@@ -74,7 +74,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> --}}
         <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="box">
                 <div class="panel-heading text-center">
@@ -86,7 +86,7 @@
                     {{ $users }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('users.all')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -104,7 +104,7 @@
                     {{ $posts }}
                     </div>
                 </div>
-                <a href="#">
+                <a href="{{route('posts.view')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -114,7 +114,7 @@
         <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="box">
                 <div class="panel-heading text-center">
-                    CATEGORIES
+                    POST CATEGORIES
                 </div>
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-caret-down" style="color:white;font-size:35px"></i>&nbsp;
@@ -122,7 +122,7 @@
                     {{ $categories }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('categories.index')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -140,7 +140,7 @@
                     {{ $trashed }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('posts.trashed')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -150,7 +150,7 @@
         <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="box">
                 <div class="panel-heading text-center">
-                    TAGS
+                    NEWS TAGS
                 </div>
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-tags" style="color:white;font-size:35px"></i>&nbsp;
@@ -158,7 +158,7 @@
                     {{ $tags }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('newsTags.restore')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -168,15 +168,15 @@
         <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="box">
                 <div class="panel-heading text-center">
-                    In Progress
+                    Assignments In Progress
                 </div>
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-comments" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $tags }}
+                    {{ App\Proposal::where('paid',0)->count() }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('assignment.view')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -191,10 +191,10 @@
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-truck" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $tags }}
+                    {{ App\Products::all()->count() }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('products.index')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -209,10 +209,10 @@
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-handshake" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $tags }}
+                        {{ App\Proposal::where('paid',1)->count() }}
                     </div>
                 </div>
-                <a href="#">
+                <a href="{{route('assignment.view')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -227,10 +227,10 @@
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-newspaper" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $news }}
+                    {{ App\Models\News::all()->count() }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('news.index')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
@@ -245,10 +245,10 @@
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-trash" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $tnews }}
+                    {{ App\Models\News::onlyTrashed()->count() }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('news.deleted')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>

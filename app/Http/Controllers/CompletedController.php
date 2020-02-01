@@ -14,7 +14,7 @@ class CompletedController extends Controller
      */
     public function index()
     {
-        $assignments=Proposal::where('status',1)->get();
+        $assignments=Completed::all();
         return view('academia.completedAssignments')->with('assignments',$assignments);
     }
 

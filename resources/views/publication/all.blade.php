@@ -1,6 +1,5 @@
 @extends('layouts.hsidebar')
 @section('content')
-{{ $proposals }}
 <div class="table-responsive">
     <table class="table table-striped table-bordered table-hover">
         <tr>

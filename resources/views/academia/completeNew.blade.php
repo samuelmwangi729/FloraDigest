@@ -9,7 +9,7 @@
     <div class="container-fluid">
         @include('adminlte-templates::common.errors')
         <div class="form-group">
-            <form method="POST" action="{{ route('completed.update',[$completed->slug]) }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('completed.post') }}" enctype="multipart/form-data">
                 @csrf                
                 <div class="row">
                     <div class="col-sm-6">

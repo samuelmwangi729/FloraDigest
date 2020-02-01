@@ -10,6 +10,7 @@ use App\Tag;
 use App\Models\News;
 use App\Models\NewsTags;
 use App\Models\Politics;
+use Session;
 class HomeController extends Controller
 {
     /**
@@ -42,5 +43,32 @@ class HomeController extends Controller
         ->with('tnews',News::onlyTrashed()->count())
         ->with('blogger',User::where('level','blogger')->count())
         ->with('politics',Politics::all()->count());
+    }
+    public function users(){
+        return view('users')->with('users',User::all());
+    }
+    public function suspend($id){
+        $user=User::where('id',$id)->get()->first();
+        if($user->count()==0){
+            Session::flash('error','User Not Found');
+            return back();
+        }else{
+            $user->status=0;
+            $user->save();
+            Session::flash('error','User suspended');
+            return redirect()->back();
+        }
+    }
+    public function reinstate($id){
+        $user=User::where('id',$id)->get()->first();
+        if($user->count()==0){
+            Session::flash('error','User Not Found');
+            return back();
+        }else{
+            $user->status=1;
+            $user->save();
+            Session::flash('success','User Active');
+            return redirect()->back();
+        }
     }
 }

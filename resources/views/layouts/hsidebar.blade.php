@@ -82,10 +82,27 @@
         </header>
     
         <!-- Left side column. contains the logo and sidebar -->
+        
+        @if(Auth::user()->status==1)
         @include('layouts.sidebar')
+        @endif
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            @yield('content')
+            @if(Auth::user()->status==1)
+                  @yield('content')
+                  @endif
+                  @if(Auth::user()->status==0)
+                 <div class="container-fluid" style="padding-top:20px">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" style="background-color:white !important">
+                            <h1 class="text-center"><i class="fa fa-times-circle" style="color:red"></i>&nbsp;&nbsp;Access Denied</h1>
+                        </div>
+                        <div class="panel-body">
+                            <h1 class="text-center"><i class="fa fa-phone" style="color:red"></i>&nbsp;&nbsp;Contact Your Administrator for Access</h1>
+                        </div>
+                    </div>
+                 </div>
+                  @endif
         </div>
     
         <!-- Main Footer -->
