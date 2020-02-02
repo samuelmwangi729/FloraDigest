@@ -10,6 +10,8 @@
     {{-- <script src="https://www.paypal.com/sdk/js?client-id=AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk"></script> --}}
     <!--Start of Tawk.to Script-->
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e360f7b90e82b00128d0a15&cms=sop' async='async'></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e360f7b90e82b00128d0a15&product=inline-share-buttons' async='async'></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e360f7b90e82b00128d0a15&product=email-list-builder&cms=sop' async='async'></script>
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -84,6 +86,8 @@
             </div>
         </div>
     </nav>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5dfd935ad1993c93"></script>
 
     <div id="page-content-wrapper">
         <div class="container-fluid">

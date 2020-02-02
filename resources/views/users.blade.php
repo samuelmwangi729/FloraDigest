@@ -7,6 +7,7 @@
         <tr>
             <th>Username</th>
             <th>Email</th>
+            <th>Role</th>
             <th>Status</th>
             <th>Action</th>
         </tr>
@@ -14,6 +15,7 @@
             <tr>
                <td> {{ $user->name }}</td>
                <td> {{ $user->email }}</td>
+               <td> {{ $user->level }}</td>
                <td>
                    @if($user->status==1)
                    <h6 class="text-active">Active</h6>
