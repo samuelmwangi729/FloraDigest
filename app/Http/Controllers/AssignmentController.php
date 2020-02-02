@@ -168,8 +168,8 @@ class AssignmentController extends Controller
         //dd($cartTotal+$order->shipmentAmount);
         $apiContext = new \PayPal\Rest\ApiContext(
             new \PayPal\Auth\OAuthTokenCredential(
-                'AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk',     // ClientID
-                'EC61YuF3CnC5zTZQckBcXqqvysNoEFoWi9jk42hvydZ0jmU4hgvKPgHKSuE9XBhLAV8sQ3ZZrMEXSiFx'      // ClientSecret
+                'AXlktuQw56zmtMGNz_lbDNfzXFPtm3PgY5uLn5rRB88SvFstS2mj4i4F0cuEVsvg3_ZqsVc9q2r_7IQj',     // ClientID
+                'EBFU8xE7VIISvLulQY65DNch-R9nZLJSRxYudplHAQgYir2h0ayujDYbzu2S9rUfDfCh4_j8vlcqFw5V'      // ClientSecret
             )
         );
 
