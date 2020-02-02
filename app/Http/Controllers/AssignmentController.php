@@ -168,8 +168,8 @@ class AssignmentController extends Controller
         //dd($cartTotal+$order->shipmentAmount);
         $apiContext = new \PayPal\Rest\ApiContext(
             new \PayPal\Auth\OAuthTokenCredential(
-                'AXlktuQw56zmtMGNz_lbDNfzXFPtm3PgY5uLn5rRB88SvFstS2mj4i4F0cuEVsvg3_ZqsVc9q2r_7IQj',     // ClientID
-                'EBFU8xE7VIISvLulQY65DNch-R9nZLJSRxYudplHAQgYir2h0ayujDYbzu2S9rUfDfCh4_j8vlcqFw5V'      // ClientSecret
+                'AZFfuQ2-w87R9_KL_as5JgnqUCiFOAYTlufGoiae8lFP7W2pnmxgY2ApvGVoooK4k4fTQKR-EocTxV3E',     // ClientID
+                'EKBf7MRhpzTb2uhy9O-G1gEFijeVE02_Dl_bvEYOHf34DW9eAICyIilBG4inUJk_JJaqPLjhGYocrx7i'      // ClientSecret
             )
         );
 
@@ -204,6 +204,7 @@ class AssignmentController extends Controller
             ->setDescription("Payment description")
             ->setInvoiceNumber(uniqid());
         
+            
         $redirectUrls = new RedirectUrls();
         $assignment=Available::where('slug',$slug)->get()->first();
         $redirectUrls->setReturnUrl("https://floradigest.com/Download/".$file->slug.'/')
