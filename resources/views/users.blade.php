@@ -35,4 +35,9 @@
         @endforeach
     </table>
 </div>
+<div class="row">
+    <div class="col-lg-6 offset-lg-6 pull-right">
+        <div class="container">{{ $users->links() }}</div>
+    </div>
+</div>
 @endsection

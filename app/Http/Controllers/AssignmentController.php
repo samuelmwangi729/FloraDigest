@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Session;
 use App\Proposal;
+use App\Transactions;
 use App\Dispute;
 use App\Models\Available;
 use PayPal\Api\Amount;
@@ -219,12 +220,10 @@ class AssignmentController extends Controller
     public function ADownload(Request $request,$slug){
         $paymentId=$request->paymentId;
         $PayerID=$request->PayerID;
-        //insert them into the transactions table 
-       // $assignment=Available::where('slug',$slug)->get()->first();
-       App\Transaction::create([
+       Transactions::create([
         'transactionId'=> $paymentId,
         'transactionAmount'=>Session::get('amount'),
-        'user'=>Session::get('user'),
+        'user'=>$PayerID,
         'orderNumber'=>Session::get('orderNum'),
         'source'=>'proposal Sale',
     ]);

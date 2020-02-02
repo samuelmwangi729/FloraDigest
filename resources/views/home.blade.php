@@ -284,13 +284,14 @@
                     {{ $blogger }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('users.all')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>
                 </a>
             </div>
         </div>
+    </div>
         <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
             <div class="panel panel-default">
                 <div class="panel-heading text-center">
@@ -379,42 +380,6 @@
                     </div>
                 </div>
                 <a href="{{ route('assignment.disputed') }}">
-                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
-                        More Information
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
-            <div class="panel panel-default">
-                <div class="panel-heading text-center">
-                    Deleted Assignments
-                </div>
-                <div class="panel-body" style="background-color:#562fc6;color:white">
-                    <i class="fa fa-trash" style="color:white;font-size:35px"></i>&nbsp;
-                    <div class="pull-right" style="font-size:35px">
-                        {{ App\Proposal::onlyTrashed()->count() }}
-                        </div>
-                </div>
-                <a href="{{ route('assignment.trashed') }}">
-                    <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
-                        More Information
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-3 col-lg-3 col-md-3" style="padding-top:30px;width:250px">
-            <div class="panel panel-default">
-                <div class="panel-heading text-center">
-                    Transactions
-                </div>
-                <div class="panel-body" style="background-color:#562fc6;color:white">
-                    <i class="fa fa-money" style="color:white;font-size:35px"></i>&nbsp;
-                    <div class="pull-right" style="font-size:35px">
-                        {{ App\Transaction::all()->count() }}
-                        </div>
-                </div>
-                <a href="#">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use DB;
 use App\User;
 use App\Category;
 use App\Tag;
@@ -41,11 +42,12 @@ class HomeController extends Controller
         ->with('trashed',Post::onlyTrashed()->get()->count())
         ->with('news',News::all()->count())
         ->with('tnews',News::onlyTrashed()->count())
-        ->with('blogger',User::where('level','blogger')->count())
+        ->with('blogger',User::where('level','Blogger')->count())
         ->with('politics',Politics::all()->count());
     }
     public function users(){
-        return view('users')->with('users',User::all());
+        $users=DB::table('users')->paginate(8);
+        return view('users')->with('users',$users);
     }
     public function suspend($id){
         $user=User::where('id',$id)->get()->first();
