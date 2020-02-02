@@ -1921,11 +1921,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: {},
   methods: {
     getPhoto: function getPhoto() {
-      return "iimg/logo/11.png";
+      return "img/logo/11.png";
     }
   },
   mounted: function mounted() {
@@ -38117,7 +38119,12 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _vm._m(0)
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "sharethis-inline-share-buttons pull-left",
+              staticStyle: { "background-color": "white" }
+            })
           ]),
           _vm._v(" "),
           _c("hr"),

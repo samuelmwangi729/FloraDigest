@@ -49,6 +49,7 @@
         @include('layouts.count')
         <h4 class="text-left"><a href="{{ route('politics.single',['slug'=>$all->slug]) }}#disqus_thread">{{$all->title }}</a></h4>
        </div>
+       <div class="badge badge-primary"><div class="sharethis-inline-share-buttons pull-left"></div></div>
     </div>
 @endforeach
 @endsection

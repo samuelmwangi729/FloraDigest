@@ -36,7 +36,9 @@
                         </div>
                     </div>
                 </div>
+                 <div class="sharethis-inline-share-buttons pull-left" style="background-color:white"></div>
             </div>
+            
             <hr>
             <div class="row text-center">
                 &copy; 2019 <span style="color:red">Flora|</span>Digest All rights reserved
@@ -52,7 +54,7 @@
         },
         methods:{
             getPhoto:function(){
-                return "iimg/logo/11.png";
+                return "img/logo/11.png";
             }
         },
         mounted() {

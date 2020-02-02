@@ -93,6 +93,7 @@
     @include('layouts.count')
     <h5 class="text-left"><a href="{{ route('news.single',['slug'=>$all->slug]) }}#disqus_thread">{{$all->title }}</a></h5>
    </div>
+   <div class="badge badge-primary"><div class="sharethis-inline-share-buttons pull-left"></div></div>
 </div>
 @endforeach
 

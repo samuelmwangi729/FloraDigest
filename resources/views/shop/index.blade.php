@@ -93,6 +93,7 @@
                           <del>{{ $product->originalPrice }}</del>
                         </div>
                       </div>
+                      <div class="sharethis-inline-share-buttons"></div>
                     </div>
                   </div>
                   @endforeach

@@ -1,3 +1,4 @@
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e360f7b90e82b00128d0a15&product=inline-share-buttons&cms=sop' async='async'></script>
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/toastr.min.js')}}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

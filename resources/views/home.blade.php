@@ -263,10 +263,10 @@
                 <div class="panel-body" style="background-color:#562fc6;color:white">
                     <i class="fa fa-opera" style="color:white;font-size:35px"></i>&nbsp;
                     <div class="pull-right" style="font-size:35px">
-                    {{ $politics }}
+                    {{ App\Models\Politics::all()->count() }}
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{route('politics.index')}}">
                     <div class="panel-footer text-center" style="background-color:#fe6a00;color:white">
                         More Information
                     </div>

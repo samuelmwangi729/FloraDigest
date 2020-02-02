@@ -154,6 +154,7 @@ class AssignmentController extends Controller
     public function Download($slug){
         $file=Available::where('slug',$slug)->get()->first();
         Session::flash('file',$file->AssignmentFile);
+        Session::flash('user',Auth::user()->email);
         if(is_null($file)){
             Session::flash('error','Not Found');
             return redirect()->back();
@@ -162,6 +163,7 @@ class AssignmentController extends Controller
             Session::flash('error','Not Found');
             return redirect()->back();
         }
+        Session::flash('amount',$file->budget);
         //dd($cartTotal+$order->shipmentAmount);
         $apiContext = new \PayPal\Rest\ApiContext(
             new \PayPal\Auth\OAuthTokenCredential(
@@ -174,7 +176,8 @@ class AssignmentController extends Controller
         $payer->setPaymentMethod("paypal");
 
         $item2 = new Item();
-        $item2->setName('Flora Digest Order Number '.str_random(10))
+        Session::flash('orderNum',str_random(10));
+        $item2->setName('Flora Digest Order Number '.Session::get('orderNum'))
                 ->setCurrency('USD')
                 ->setQuantity(1)
                 ->setSku("123123") // Similar to `item_number` in Classic API
@@ -218,6 +221,14 @@ class AssignmentController extends Controller
         $PayerID=$request->PayerID;
         //insert them into the transactions table 
        // $assignment=Available::where('slug',$slug)->get()->first();
+       App\Transaction::create([
+        'transactionId'=> $paymentId,
+        'transactionAmount'=>Session::get('amount'),
+        'user'=>Session::get('user'),
+        'orderNumber'=>Session::get('orderNum'),
+        'source'=>'proposal Sale',
+    ]);
+    Session::flash('success','Transaction Successfully Completed');
        return view('availables.Download')->with('link',Session::get('file'));
     }
 

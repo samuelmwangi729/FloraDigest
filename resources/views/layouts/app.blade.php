@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <title>{{config('app.name')}}</title>
 <link rel="icon" href="img/logo.png">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -9,6 +9,7 @@
     @yield('css')
     {{-- <script src="https://www.paypal.com/sdk/js?client-id=AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk"></script> --}}
     <!--Start of Tawk.to Script-->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e360f7b90e82b00128d0a15&cms=sop' async='async'></script>
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
