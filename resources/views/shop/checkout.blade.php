@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            @if($method=="Paypal")
+            @if($method=="PayPal")
             <div class="container">
               <form method="post" action="{{ route('pay-cash') }}">
               @csrf
