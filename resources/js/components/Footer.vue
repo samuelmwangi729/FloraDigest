@@ -1,7 +1,6 @@
 <template>
     <div class="row">
-        <footer class="footer_part" style="font-weight:bold;color:white;margin-top:20px;background: rgb(249,4,0);
-background: radial-gradient(circle, rgba(249,4,0,1) 0%, rgba(255,239,0,1) 100%);">
+        <footer class="footer_part bg-dark" style="font-weight:bold;color:white;margin-top:20px;background-color:#222222">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
@@ -42,7 +41,7 @@ background: radial-gradient(circle, rgba(249,4,0,1) 0%, rgba(255,239,0,1) 100%);
             
             <hr>
             <div class="row text-center">
-                &copy; 2019 <span style="color:green">Flora|</span>Digest All rights reserved
+                &copy; 2019 <span style="color:red">Flora|</span>Digest All rights reserved
             </div>
         </div>
     </footer>

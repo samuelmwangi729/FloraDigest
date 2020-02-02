@@ -29,8 +29,7 @@
 </head>
 
 <body class="skin-blue sidebar-mini">
-    <nav class="navbar navbar-default navbar-static-top navbar-justify" style="background: rgb(249,4,0);
-    background: radial-gradient(circle, rgba(249,4,0,1) 0%, rgba(255,239,0,1) 84%);">
+    <nav class="navbar navbar-inverse navbar-static-top navbar-justify">
         <div class="container">
             <div class="navbar-header">
 
@@ -68,12 +67,12 @@
                     {{-- <li><a href="{{ url('/register') }}" style="color:white;font-weight:bold;margin-top:10px">Register</a></li>
                     <li><a href="{{ url('/login') }}" style="color:white;font-weight:bold;margin-top:10px">Login</a></li> --}}
                     @else
-                    <li><a href="{{ route('cart.index') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-shopping-cart"></i><sup style="color:green">{{
+                    <li><a href="{{ route('cart.index') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-shopping-cart"></i><sup class="color:red">{{
                         App\Cart::where([
                         'user'=>Auth::user()->email,
                         'deleted_at'=>null
                         ])->get()->count() ?? ''}}</sup></a></li>
-                    <li><a href="{{ url('/Cart') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-heart"></i><sup style="color:green">{{ App\Wishlist::where(['user'=>Auth::user()->email,'deleted_at'=>null])->count() ?? '' }}</sup></a></li>
+                    <li><a href="{{ url('/Cart') }}" style="color:white;font-weight:bold;margin-top:10px"><i class="fa fa-heart"></i><sup class="color:red">{{ App\Wishlist::where(['user'=>Auth::user()->email,'deleted_at'=>null])->count() ?? '' }}</sup></a></li>
                     <li><a href="/home" style="color:white;font-weight:bold;margin-top:10px">Dashboard</a></li>
                     <a href="{{ url('/logout') }}" class="btn btn-flat" style="color:white;font-weight:bold;margin-top:10px"
                                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -93,7 +92,7 @@
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12" style="font-family:'Times New Roman', Times, serif">
+                <div class="col-lg-12">
                     @yield('content')
                 </div>
             </div>

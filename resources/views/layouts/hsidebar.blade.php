@@ -37,7 +37,7 @@
                     <span class="sr-only">Toggle navigation</span>
                 </a>
                 <!-- Navbar Right Menu -->
-                <div class="navbar-custom-menu">
+                <div class="navbar-custom-menu" style="font-family:'Times New Roman', Times, serif">
                     <ul class="nav navbar-nav">
                         <!-- User Account Menu -->
                         <li class="dropdown user user-menu">
