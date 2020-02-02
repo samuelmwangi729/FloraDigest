@@ -2,7 +2,7 @@
 
 
 @section('content')
-<img src="{{asset('img/home.gif')}}" alt="New york"  style="width:100%;height:350px">
+{{-- <img src="{{asset('img/home.gif')}}" alt="New york"  style="width:100%;height:350px"> --}}
 <div class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Indicators -->

@@ -1923,6 +1923,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: {},
   methods: {
@@ -38087,9 +38088,11 @@ var render = function() {
       {
         staticClass: "footer_part",
         staticStyle: {
-          "background-color": "#562fc6",
+          "font-weight": "bold",
           color: "white",
-          "margin-top": "20px"
+          "margin-top": "20px",
+          background:
+            "radial-gradient(circle, rgba(249,4,0,1) 0%, rgba(255,239,0,1) 100%)"
         }
       },
       [
@@ -38113,7 +38116,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.\n                    "
+                    "We are committed to providing highly professional writing services of unrivaled excellence for our customers and also treat you like a friend whenever you are ordering essay writer help. This is done speedily and we offer 24/7 support writing support for students and researchers.\n                        "
                   )
                 ])
               ])
@@ -38152,7 +38155,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("span", { staticClass: "text-center" }, [
           _vm._v(
-            "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as \n                        possible!You can also reach out to us through our social media handles.\n                    "
+            "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as \n                            possible!You can also reach out to us through our social media handles.\n                        "
           )
         ]),
         _vm._v(" "),
@@ -38213,7 +38216,9 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("address", { staticClass: "text-center" }, [
                 _vm._v("Secure Payments Supported by "),
-                _c("sup", [_vm._v("paypal")])
+                _c("sup", { staticStyle: { color: "green" } }, [
+                  _vm._v("paypal")
+                ])
               ])
             ]
           ),
@@ -38246,9 +38251,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row text-center" }, [
-      _vm._v("\n            © 2019 "),
-      _c("span", { staticStyle: { color: "red" } }, [_vm._v("Flora|")]),
-      _vm._v("Digest All rights reserved\n        ")
+      _vm._v("\n                © 2019 "),
+      _c("span", { staticStyle: { color: "green" } }, [_vm._v("Flora|")]),
+      _vm._v("Digest All rights reserved\n            ")
     ])
   }
 ]

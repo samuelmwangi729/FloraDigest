@@ -29,7 +29,8 @@
 </head>
 
 <body class="skin-blue sidebar-mini">
-    <nav class="navbar navbar-default navbar-static-top navbar-justify" style="background-color:#562fc6">
+    <nav class="navbar navbar-default navbar-static-top navbar-justify" style="background: rgb(249,4,0);
+    background: radial-gradient(circle, rgba(249,4,0,1) 0%, rgba(255,239,0,1) 84%);">
         <div class="container">
             <div class="navbar-header">
 

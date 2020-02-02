@@ -1,6 +1,7 @@
 <template>
     <div class="row">
-        <footer class="footer_part" style="background-color:#562fc6;color:white;margin-top:20px">
+        <footer class="footer_part" style="font-weight:bold;color:white;margin-top:20px;background: rgb(249,4,0);
+background: radial-gradient(circle, rgba(249,4,0,1) 0%, rgba(255,239,0,1) 100%);">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
@@ -27,7 +28,7 @@
                         </div>
                         <div class="col-sm-3 mt-3" style="margin-top:30px">
                             <h1 class="text-center"><i class="fa fa-paypal" style="color:white;font-size:30px"></i></h1>
-                            <address class="text-center">Secure Payments Supported by <sup>paypal</sup></address>
+                            <address class="text-center">Secure Payments Supported by <sup style="color:green">paypal</sup></address>
                         </div>
                         <div class="col-sm-3 mt-3" style="margin-top:30px">
                             <h1 class="text-center"><i class="fa fa-facebook" style="color:white;font-size:30px"></i></h1>
@@ -41,7 +42,7 @@
             
             <hr>
             <div class="row text-center">
-                &copy; 2019 <span style="color:red">Flora|</span>Digest All rights reserved
+                &copy; 2019 <span style="color:green">Flora|</span>Digest All rights reserved
             </div>
         </div>
     </footer>
