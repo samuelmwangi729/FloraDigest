@@ -220,7 +220,7 @@ class AssignmentController extends Controller
     public function ADownload(Request $request,$slug){
         $paymentId=$request->paymentId;
         $PayerID=$request->PayerID;
-        dd($request->paymentId);
+        dd($request);
        Transactions::create([
         'transactionId'=>$request->paymentId,
         'transactionAmount'=>Session::get('amount'),
