@@ -155,7 +155,7 @@ class AssignmentController extends Controller
     public function Download($slug){
         $file=Available::where('slug',$slug)->get()->first();
         Session::flash('file',$file->AssignmentFile);
-        Session::flash('user',Auth::user()->email);
+        Session::flash('user','Guest');
         if(is_null($file)){
             Session::flash('error','Not Found');
             return redirect()->back();

@@ -23,15 +23,15 @@
 <body class="skin-blue sidebar-mini">
     <div class="wrapper">
         <!-- Main Header -->
-        <header class="main-header">
+        <header class="main-header" style="background-color:#222222 !important">
     
             <!-- Logo -->
-            <a href="/" class="logo" style="background-color:#562fc6 !important">
+            <a href="/" class="logo" style="background-color:#222222 !important">
                 <img src="{{asset('img/logo/11.png')}}" height="50" width="100px">
             </a>
             
             <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation" style="background-color:#562fc6 !important">
+            <nav class="navbar navbar-inverse navbar-static-top navbar-justify" style="background-color:#222222 !important">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>
@@ -82,10 +82,11 @@
         </header>
     
         <!-- Left side column. contains the logo and sidebar -->
-        
-        @if(Auth::user()->status==1)
-        @include('layouts.sidebar')
-        @endif
+        <div>
+            @if(Auth::user()->status==1)
+            @include('layouts.sidebar')
+            @endif
+        </div>         
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             @if(Auth::user()->status==1)
