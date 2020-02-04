@@ -20,7 +20,7 @@
               <div class="item active">
                 @foreach ($first_post as $postsingle)
                     <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:500px;width:100%">
-                        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ dd(json_response(App\Models\NewsTags::find($postsingle->category_id)))}}</span></h1></u><br><br><br>
+                        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ dd(json_encode(App\Models\NewsTags::find($postsingle->category_id)))}}</span></h1></u><br><br><br>
                             {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
                                     {{ $first_post['title'] }}
                             </h3> --}}
