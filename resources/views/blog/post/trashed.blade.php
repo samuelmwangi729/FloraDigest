@@ -8,7 +8,6 @@
     
 </div>
 @endif
-@if(count($posts) >0)
 <div class="table-responsive">
     <table class="table" id="posts-table">
         <thead>
@@ -41,6 +40,5 @@
         </tbody>
     </table>
 </div>
-@endif
 
 @stop
