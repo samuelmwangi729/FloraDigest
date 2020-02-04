@@ -1,29 +1,71 @@
 @extends('layouts.app')
 @section('content')
 <div class="row">
-    <div class="col-lg-9 col-md-9 col-sm-9">
+    <div class="col-lg-12 col-md-12 col-sm-12">
         @if(count($first_post)==0)
         <div class="alert alert-danger">
             <strong>No Posts Available</strong>
         </div>
         @else
-        @foreach($first_post as $postsingle)
-        <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:white;background-position:center;height:500px">
-            <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Featured Article</h1></u><br><br><br>
-                {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
-                        {{ $first_post['title'] }}
-                </h3> --}}
-            <br><br><br><br><br><br><br><br>
-        </div> 
-        <h2 class="text-center"><a href="{{ route('posts.single',['slug'=>$postsingle->slug]) }}">{{$postsingle->title }}</a></h2>
-        <span class="fa fa-clock">&nbsp;&nbsp;{{ $postsingle->created_at }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class=" fa fa-tags text-center">{{ $postsingle->text }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="fa fa-comment">&nbsp;&nbsp;68</span>&nbsp;&nbsp;
-        <span class="fa fa-user">&nbsp;&nbsp;Published by:<i><b>{{ $postsingle->published_by }}</b></i>
-    @endforeach
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                @foreach ($first_post as $postsingle)
+                    <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:500px;width:100%">
+                        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{  App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name}}</span></h1></u><br><br><br>
+                            {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
+                                    {{ $first_post['title'] }}
+                            </h3> --}}
+                        <br><br><br><br><br><br><br><br>
+                    </div> 
+                    <h2 class="text-center"><a href="{{ route('posts.single',['slug'=>$postsingle->slug]) }}">{{$postsingle->title }}</a></h2>
+                    <span class="fa fa-clock">&nbsp;&nbsp;{{ $postsingle->created_at }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class=" fa fa-tags text-center">{{ $postsingle->text }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{-- <span class="fa fa-comment">&nbsp;&nbsp;68</span>&nbsp;&nbsp; --}}
+                    <span class="fa fa-user">&nbsp;&nbsp;Published by:<i><b>{{ $postsingle->published_by }}</b></i>
+                    <i class="fa fa-tags">{{ App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name }}</i>
+                @endforeach
+              </div>
+              @foreach ($posts as $postsingle)
+                <div class="item">
+                    <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:500px">
+                        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{  App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name}}</span></h1></u><br><br><br>
+                            {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
+                                    {{ $first_post['title'] }}
+                            </h3> --}}
+                        <br><br><br><br><br><br><br><br>
+                    </div> 
+                    <h2 class="text-center"><a href="{{ route('posts.single',['slug'=>$postsingle->slug]) }}">{{$postsingle->title }}</a></h2>
+                    <span class="fa fa-clock">&nbsp;&nbsp;{{ $postsingle->created_at }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class=" fa fa-tags text-center">{{ $postsingle->text }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{-- <span class="fa fa-comment">&nbsp;&nbsp;68</span>&nbsp;&nbsp; --}}
+                    <span class="fa fa-user">&nbsp;&nbsp;Published by:<i><b>{{ $postsingle->published_by }}</b></i>
+                        <i class="fa fa-tags">{{ App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name }}</i>
+                </div>
+              @endforeach
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     @endif
  </div>
- <div class="col-lg-3">
+ {{-- <div class="col-lg-3">
      <h3 class="h1" style="font-family:courier;text-decoration:underline;background-color:red">Top Articles</h3>
      <ul class="list-unstyled" style="font-size:13px">
         @if(count($posts)==0)
@@ -46,6 +88,7 @@
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color:#562fc6 !important">
     <i class="fa fa-user-plus"></i>&nbsp;Register As A Blogger
   </button>
+</div> --}}
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
