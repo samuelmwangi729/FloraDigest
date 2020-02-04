@@ -8,7 +8,6 @@
                 <th>Image</th>
         <th>Text</th>
         <th>Slug</th>
-        <th>Content</th>
         <th>Category Id</th>
             </tr>
         </thead>
@@ -18,7 +17,6 @@
             <td><img src="{{ asset($post->image) }}" alt="{{ $post->title }}" width="90px" height="90px"></td>
             <td>{{ $post->title }}</td>
             <td>{{ $post->slug }}</td>
-            <td>{{ $post->content }}</td>
             <td>{{ $post->category_id }}</td>
             
             @if(Auth::check())
