@@ -1,13 +1,6 @@
 @extends('layouts.hsidebar')
 
 @section('content')
-@if($posts->count()==0)
-<div class="alert alert-danger">
-    <strong><i class="fa fa-exclamation-circle"></i>Error!!!</strong> No Posts Trashed
-    <a href="#" class="close" data-dismiss="alert" style="color:white">&times</a>
-    
-</div>
-@endif
 <div class="table-responsive">
     <table class="table" id="posts-table">
         <thead>
