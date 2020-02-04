@@ -8,7 +8,7 @@
     
 </div>
 @endif
-@if($posts->count()>0)
+@if(count($posts) >0)
 <div class="table-responsive">
     <table class="table" id="posts-table">
         <thead>
