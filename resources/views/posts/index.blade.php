@@ -35,6 +35,7 @@
                 @endforeach
               </div>
               @foreach ($posts as $postsingle)
+              {{ dd($postsingle) }}
                 <div class="item">
                     <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:500px">
                         <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{  App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name}}</span></h1></u><br><br><br>
