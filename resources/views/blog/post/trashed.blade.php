@@ -5,12 +5,11 @@
     <table class="table" id="posts-table">
         <thead>
             <tr>
-                <th>Title</th>
+                <th>Image</th>
         <th>Text</th>
         <th>Slug</th>
         <th>Content</th>
         <th>Category Id</th>
-        <th>Image</th>
             </tr>
         </thead>
         <tbody>
@@ -19,7 +18,6 @@
             <td><img src="{{ asset($post->image) }}" alt="{{ $post->title }}" width="90px" height="90px"></td>
             <td>{{ $post->title }}</td>
             <td>{{ $post->slug }}</td>
-            <td>{{ $post->text }}</td>
             <td>{{ $post->content }}</td>
             <td>{{ $post->category_id }}</td>
             
