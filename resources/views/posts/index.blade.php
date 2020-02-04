@@ -49,7 +49,11 @@
               {{-- {{ dd(json_encode() }} --}}
                 <div class="item">
                     <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:500px">
-                        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{  App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name}}</span></h1></u><br><br><br>
+                        <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp; @if(is_null(App\Models\NewsTags::find($postsingle->category_id)))
+                            Category
+                        @else
+                           {{ App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name }}
+                        @endif</span></h1></u><br><br><br>
                             {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
                                     {{ $first_post['title'] }}
                             </h3> --}}
