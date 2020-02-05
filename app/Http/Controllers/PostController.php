@@ -37,7 +37,7 @@ class PostController extends AppBaseController
         $posts = $this->postRepository->all();
 
         return view('posts.index')
-            ->with('posts', Post::orderBy('id','desc')->take(10)->get()->skip(1))
+            ->with('posts', Post::orderBy('id','desc')->take(5)->get())
             ->with('first_post',Post::orderBy('id','desc')->take(1)->get());
     }
 

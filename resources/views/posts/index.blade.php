@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="col-lg-9 col-md-9 col-sm-9">
         @if(count($first_post)==0)
         <div class="alert alert-danger">
             <strong>No Posts Available</strong>
@@ -87,7 +87,7 @@
           </div>
     @endif
  </div>
- {{-- <div class="col-lg-3">
+ <div class="col-lg-3 col-md-3 col-sm-3">
      <h3 class="h1" style="font-family:courier;text-decoration:underline;background-color:red">Top Articles</h3>
      <ul class="list-unstyled" style="font-size:13px">
         @if(count($posts)==0)
@@ -96,7 +96,7 @@
         </div>
         @else
         @foreach ($posts as  $post)
-        <li class="well well-sm" style="height:100px">
+        <li style="height:100px">
             <a href="{{ route('posts.single',['slug'=>$post->slug]) }}"><img src="{{ asset($post->image) }}" width="50px" height="50px" align="left" style="border-radius:50px">{{$postsingle->title }}</a>
             
             <br>&nbsp;&nbsp;<span class="fa fa-tags"></span>{{ $post->title }}
@@ -107,10 +107,12 @@
         @endif
      </ul>
      <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color:#562fc6 !important">
-    <i class="fa fa-user-plus"></i>&nbsp;Register As A Blogger
-  </button>
-</div> --}}
+     <div class="container pull-left" style="padding-top:50px">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color:#562fc6 !important">
+            <i class="fa fa-user-plus"></i>&nbsp;Register As A Blogger
+          </button>
+     </div>
+</div>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

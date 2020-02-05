@@ -21,6 +21,7 @@ class IndexController extends Controller
         return view('welcome')
         ->with('politics',$politics)
         ->with('latest',$latest)
-        ->with('proposal',$academia);
+        ->with('proposal',$academia)
+        ->with('post',Post::orderBy('id','desc')->take(1)->get());;
     }
 }

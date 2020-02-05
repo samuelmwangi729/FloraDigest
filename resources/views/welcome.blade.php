@@ -23,7 +23,7 @@
               <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Academia</h1>
                 <div class="panel panel-primary" >
-                <div class="panel-heading"  style="background-color:#562fc6">
+                <div class="panel-heading"  style="background-color:#222222">
                 <p class="panel-heading">Academic Proposals Available</p>
                 </div>
                 </div>
@@ -37,12 +37,12 @@
             <div class="carousel-caption d-none d-md-block">
               <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Academia</h1>
               <div class="panel panel-primary" >
-              <div class="panel-heading"  style="background-color:#562fc6">
+              <div class="panel-heading"  style="background-color:#222222">
               <p class="panel-heading text-bold" style="font-size:16px">{{$proposal[0]['title']}}</p>
               </div>
               </div>
               <a href="/Available/Assignments">
-                <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</button>
+                <button class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</button>
               </a>
           </div>
           </div>
@@ -55,7 +55,7 @@
               <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Politics</h1>
                 <div class="panel panel-primary" >
-                {{-- <div class="panel-heading"  style="background-color:#562fc6">
+                {{-- <div class="panel-heading"  style="background-color:#222222">
                 <p class="panel-heading">{{$proposal[0]['title']}}</p>
                 </div> --}}
                 </div>
@@ -69,11 +69,11 @@
             <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Politics</h1>
                 <div class="panel panel-primary">
-                <div class="panel-heading"  style="background-color:#562fc6">
+                <div class="panel-heading"  style="background-color:#222222">
                 <p class="panel-heading text-bold" style="font-size:16px">{{$politics[0]['title']}}</p>
                 </div>
                 </div>
-                <a href="{{ route('politics.single',['slug'=>$politics[0]['slug']])}}" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
+                <a href="{{ route('politics.single',['slug'=>$politics[0]['slug']])}}" class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
             </div>
             </div>
           @endif
@@ -82,11 +82,23 @@
               <div class="carousel-caption d-none d-md-block">
                     <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Shop</h1>
                     <div class="panel panel-primary">
-                    <div class="panel-heading text-bold" style="font-size:16px">
+                    <div class="panel-heading text-bold" style="font-size:16px;background-color:#222222 !important">
                             <p>With our packaging services,We guarantee you that the packages will be received on time and also on the right condition</p>
                     </div>
                     </div>
-                    <a href="/logistics" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;View Shop</a>
+                    <a href="/logistics" class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;View Shop</a>
+                </div>
+            </div>
+            <div class="item">
+              <img src="{{asset($post[0]['image'])}}" alt="Posts"  style="width:100%;height:350px">
+              <div class="carousel-caption d-none d-md-block">
+                    <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Blog</h1>
+                    <div class="panel panel-primary">
+                    <div class="panel-heading text-bold" style="font-size:16px;background-color:#222222 !important">
+                    <p>{{$post[0]['title']}}</p>
+                    </div>
+                    </div>
+                    <a href="/blog" class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-send"></i>&nbsp;&nbsp;Blog</a>
                 </div>
             </div>
             <div class="item">
@@ -95,7 +107,7 @@
               <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">News</h1>
                 <div class="panel panel-primary" >
-                {{-- <div class="panel-heading"  style="background-color:#562fc6">
+                {{-- <div class="panel-heading"  style="background-color:#222222">
                 <p class="panel-heading">{{$proposal[0]['title']}}</p>
                 </div> --}}
                 </div>
@@ -109,11 +121,11 @@
                    <div class="carousel-caption d-none d-md-block">
                     <h3 style="font-size:30px;color:red;font-weight:bold" class="text-center">News</h3>
                     <div class="panel panel-primary">
-                    <div class="panel-heading"  style="background-color:#562fc6">
+                    <div class="panel-heading"  style="background-color:#222222">
                     <p class="panel-heading text-bold" style="font-size:16px">{{$latest[0]['text']}}</p>
                     </div>
                     </div>
-                    <a href="{{ route('news.single',['slug'=>$latest[0]['slug']]) }}" class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
+                    <a href="{{ route('news.single',['slug'=>$latest[0]['slug']]) }}" class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</a>
                 </div>
                   </div>
                   @endif
@@ -122,11 +134,11 @@
                             <div class="carousel-caption d-none d-md-block">
                                     <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Research</h1>
                                     <div class="panel panel-primary">
-                                    <div class="panel-heading"  style="background-color:#562fc6">
+                                    <div class="panel-heading"  style="background-color:#222222">
                                         <p class="panel-heading text-bold" style="font-size:16px">With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you</p>
                                     </div>
                                     </div>
-                                    <button class="btn btn-primary" style="border-radius:20px;font-size:30px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
+                                    <button class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
                                 </div>
                           </div>
           </div>
