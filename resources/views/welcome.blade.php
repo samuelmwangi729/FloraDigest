@@ -85,7 +85,7 @@
                 <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Shop</h1>
                 <div class="panel panel-primary">
                 <div class="panel-heading text-bold" style="font-size:16px;background-color:#222222 !important">
-                        <p>With our packaging services,We guarantee you that the packages will be received on time and also on the right condition</p>
+                        <p>We guarantee package delivery on time and also on the right condition</p>
                 </div>
                 </div>
                 <a href="/logistics" class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;View Shop</a>
