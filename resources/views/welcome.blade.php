@@ -2,7 +2,7 @@
 
 
 @section('content')
-{{-- <img src="{{asset('img/home.gif')}}" alt="New york"  style="width:100%;height:500px"> --}}
+{{-- <img src="{{asset('img/home.gif')}}" alt="New york"  style="width:100%;height:300px"> --}}
 <div class="row">
   <div class="col-sm-9 col-md-9 col-lg-9">
     
@@ -21,7 +21,7 @@
       <div class="carousel-inner">
         <div class="item active">
           @if(count($proposal)==0)
-          <img src="{{asset('img/1.jpg')}}" alt="New york"  style="width:100%;height:500px">
+          <img src="{{asset('img/1.jpg')}}" alt="New york"  style="width:100%;height:300px">
           <div class="carousel-caption d-none d-md-block">
             <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Academia</h1>
             <div class="panel panel-primary" >
@@ -35,7 +35,7 @@
         </div>
         </div>
           @else
-        <img src="{{asset($proposal[0]['displayImage'])}}" alt="Los Angeles" style="width:100%;height:500px">
+        <img src="{{asset($proposal[0]['displayImage'])}}" alt="Los Angeles" style="width:100%;height:300px">
         <div class="carousel-caption d-none d-md-block">
           <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Academia</h1>
           <div class="panel panel-primary" >
@@ -53,7 +53,7 @@
   
         <div class="item">
           @if(count($politics)==0)
-          <img src="{{asset('img/politics.jpg')}}" alt="New york"  style="width:100%;height:500px">
+          <img src="{{asset('img/politics.jpg')}}" alt="New york"  style="width:100%;height:300px">
           <div class="carousel-caption d-none d-md-block">
             <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Politics</h1>
             <div class="panel panel-primary" >
@@ -67,7 +67,7 @@
         </div>
         </div>
           @else
-                <img src="{{asset($politics[0]['image'])}}" alt="New york"  style="width:100%;height:500px">
+                <img src="{{asset($politics[0]['image'])}}" alt="New york"  style="width:100%;height:300px">
         <div class="carousel-caption d-none d-md-block">
             <h1 style="font-size:50px;margin-top:-50px;color:red;font-weight:bold" class="text-center">Politics</h1>
             <div class="panel panel-primary">
@@ -80,7 +80,7 @@
         </div>
       @endif
         <div class="item">
-          <img src="{{asset('img/package.jpg')}}" alt="New york"  style="width:100%;height:500px">
+          <img src="{{asset('img/package.jpg')}}" alt="New york"  style="width:100%;height:300px">
           <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Shop</h1>
                 <div class="panel panel-primary">
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="item">
-          <img src="{{asset($post[0]['image'])}}" alt="Posts"  style="width:100%;height:500px">
+          <img src="{{asset($post[0]['image'])}}" alt="Posts"  style="width:100%;height:300px">
           <div class="carousel-caption d-none d-md-block">
                 <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Blog</h1>
                 <div class="panel panel-primary">
@@ -105,7 +105,7 @@
         </div>
         <div class="item">
           @if(count($latest)==0)
-          <img src="{{ asset('img/new.jpg') }}" alt="New york"  style="width:100%;height:500px">
+          <img src="{{ asset('img/new.jpg') }}" alt="New york"  style="width:100%;height:300px">
           <div class="carousel-caption d-none d-md-block">
             <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">News</h1>
             <div class="panel panel-primary" >
@@ -119,7 +119,7 @@
         </div>
         </div>
           @else
-                <img src="{{$latest[0]['image']}}" alt="New york"  style="width:100%;height:500px">
+                <img src="{{$latest[0]['image']}}" alt="New york"  style="width:100%;height:300px">
                <div class="carousel-caption d-none d-md-block">
                 <h3 style="font-size:30px;color:red;font-weight:bold" class="text-center">News</h3>
                 <div class="panel panel-primary">
@@ -132,7 +132,7 @@
               </div>
               @endif
                   <div class="item">
-                        <img src="{{asset('img/research.jpg')}}" alt="New york"  style="width:100%;height:500px">
+                        <img src="{{asset('img/research.jpg')}}" alt="New york"  style="width:100%;height:300px">
                         <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Research</h1>
                                 <div class="panel panel-primary">
