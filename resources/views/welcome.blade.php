@@ -137,7 +137,7 @@
                                 <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Research</h1>
                                 <div class="panel panel-primary">
                                 <div class="panel-heading"  style="background-color:#222222">
-                                    <p class="panel-heading text-bold" style="font-size:16px">With the growing complex fields in Science, we are excellent in research studies and we would be glad to serve you</p>
+                                    <p class="panel-heading text-bold" style="font-size:16px">With the growing complex fields in Science,we would be glad to serve you</p>
                                 </div>
                                 </div>
                                 <button class="btn btn-primary" style="border-radius:20px;font-size:20px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Read More</button>
