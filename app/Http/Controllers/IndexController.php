@@ -23,7 +23,7 @@ class IndexController extends Controller
         ->with('politics',$politics)
         ->with('latest',$latest)
         ->with('proposal',$academia)
-        ->with('topics',Topics::All()->take(11))
+        ->with('topics',Topics::orderBy('id','desc')->get()->take(6))
         ->with('post',Post::orderBy('id','desc')->take(1)->get());;
     }
 }
