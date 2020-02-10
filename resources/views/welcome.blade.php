@@ -134,7 +134,7 @@
                   <div class="item">
                         <img src="{{asset('img/research.jpg')}}" alt="New york"  style="width:100%;height:300px">
                         <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:50px;color:red;font-weight:bold" class="text-center">Research</h1>
+                                <h1 style="font-size:30px;color:red;font-weight:bold" class="text-center">Research</h1>
                                 <div class="panel panel-primary">
                                 <div class="panel-heading"  style="background-color:#222222">
                                     <p class="panel-heading text-bold" style="font-size:16px">With the growing complex fields in Science,we would be glad to serve you</p>
