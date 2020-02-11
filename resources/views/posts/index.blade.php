@@ -19,7 +19,7 @@
             <div class="carousel-inner">
               <div class="item active">
                 @foreach ($first_post as $postsingle)
-                    <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:500px;width:100%">
+                    <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:300px;;width:100%">
                         <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;
                             @if(is_null(App\Models\NewsTags::find($postsingle->category_id)))
                             Category
@@ -48,7 +48,7 @@
               @foreach ($posts as $postsingle)
               {{-- {{ dd(json_encode() }} --}}
                 <div class="item">
-                    <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:500px">
+                    <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:300px;">
                         <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp; @if(is_null(App\Models\NewsTags::find($postsingle->category_id)))
                             Category
                         @else
