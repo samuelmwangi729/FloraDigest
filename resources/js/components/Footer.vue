@@ -19,7 +19,7 @@
                         <div class="row">
                             <div class="col-sm-3 mt-3" style="margin-top:30px">
                             <h1 class="text-center"><i class="fa fa-phone" style="color:white;font-size:30px"></i></h1>
-                            <address class="text-center">+254704922042</address>
+                            <address class="text-center">+254729844826</address>
                         </div>
                         <div class="col-sm-3 mt-3" style="margin-top:30px">
                             <h1 class="text-center"><i class="fa fa-headphones" style="color:white;font-size:30px"></i></h1>
@@ -41,7 +41,8 @@
             
             <hr>
             <div class="row text-center">
-                &copy; 2019 <span style="color:red">Flora|</span>Digest All rights reserved
+                &copy; 2019 <span style="color:red">Flora|</span>Digest All rights reserved<br>
+                made with <i class="fa fa-heart" style="color:red" aria-hidden="true"></i> by <a href="#" target="_blank">Samuel Mwangi</a>
             </div>
         </div>
     </footer>

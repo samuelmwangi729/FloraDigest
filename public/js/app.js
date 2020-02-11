@@ -1923,6 +1923,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: {},
   methods: {
@@ -38173,7 +38174,7 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("address", { staticClass: "text-center" }, [
-                _vm._v("+254704922042")
+                _vm._v("+254729844826")
               ])
             ]
           ),
@@ -38251,7 +38252,18 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row text-center" }, [
       _vm._v("\n            © 2019 "),
       _c("span", { staticStyle: { color: "red" } }, [_vm._v("Flora|")]),
-      _vm._v("Digest All rights reserved\n        ")
+      _vm._v("Digest All rights reserved"),
+      _c("br"),
+      _vm._v("\n            made with "),
+      _c("i", {
+        staticClass: "fa fa-heart",
+        staticStyle: { color: "red" },
+        attrs: { "aria-hidden": "true" }
+      }),
+      _vm._v(" by "),
+      _c("a", { attrs: { href: "#", target: "_blank" } }, [
+        _vm._v("Samuel Mwangi")
+      ])
     ])
   }
 ]
