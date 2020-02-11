@@ -96,10 +96,10 @@
         </div>
         @else
         @foreach ($posts as  $post)
-        <li class="well well-sm text-bold">
-            {{$postsingle->title }}
-            {{-- <br>&nbsp;&nbsp;<span class="fa fa-tags"></span>{{ $post->title }} --}}
+        <li class="text-bold">
+            <a href="{{ route('posts.single',['slug'=>$post->slug]) }}">{{$postsingle->title }}</a> 
         </li>
+        <hr>
         @endforeach
         @endif
      </ul>
