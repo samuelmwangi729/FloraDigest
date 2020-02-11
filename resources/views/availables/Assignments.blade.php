@@ -6,7 +6,7 @@
       @foreach ($last as $lastavailable )
       <div class="item" style="background-image:url({{asset($lastavailable->displayImage)  }});background-size:cover;background-position:center;color:blue;height:300px">
         <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ $lastavailable->title }}</span></h1></u>
-            <span>At Ksh {{ $lastavailable->budget }}&nbsp;</span>
+            <span>At $ {{ $lastavailable->budget }}&nbsp;</span>
     </div> 
     {{ $lastavailable->topic }}<a href="{{ route('Topic.single',[$lastavailable->slug]) }}">
      <button class="btn btn-xs btn-success">View Proposal</button>
@@ -57,7 +57,7 @@
                           <h6 class="text-bold">{{ $available->title }}</h6>
                         </a>
                         <div class="mt-3">
-                          <span class="mr-4"><b></b>{{ $available->budget }}</span>
+                          <span class="mr-4"><b></b> $ {{ $available->budget }}</span>
                         </div>
                       </div>
                     </div>
