@@ -42,7 +42,7 @@
                         Category
                     @else
                        {{ App\Models\NewsTags::find($postsingle->category_id)->get()->first()->name }}
-                    @endif }}</i>
+                    @endif</i>
                 @endforeach
               </div>
               @foreach ($posts as $postsingle)
