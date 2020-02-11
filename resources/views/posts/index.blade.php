@@ -96,12 +96,9 @@
         </div>
         @else
         @foreach ($posts as  $post)
-        <li style="height:100px">
-            <a href="{{ route('posts.single',['slug'=>$post->slug]) }}"><img src="{{ asset($post->image) }}" width="50px" height="50px" align="left" style="border-radius:50px">{{$postsingle->title }}</a>
-            
+        <li>
+            <a href="{{ route('posts.single',['slug'=>$post->slug]) }}"><img src="{{ asset($post->image) }}" width="50px" height="50px" align="left" style="border-radius:50px">{{$postsingle->title }}</a> 
             <br>&nbsp;&nbsp;<span class="fa fa-tags"></span>{{ $post->title }}
-            <br>&nbsp;&nbsp;<span class="fa fa-comment">&nbsp;&nbsp;&nbsp;45</span><br>
-            <span style="font-weight:bold;opacity:.4">Category:</span><i><b>{{ $post->category->name }}</b></i>
         </li>
         @endforeach
         @endif
