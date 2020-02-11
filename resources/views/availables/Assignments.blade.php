@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-9 col-md-9 col-sm-9">    
       @foreach ($last as $lastavailable )
-      <div class="item" style="background-image:url({{asset($lastavailable->displayImage)  }});background-size:cover;background-position:center;color:blue;height:500px">
+      <div class="item" style="background-image:url({{asset($lastavailable->displayImage)  }});background-size:cover;background-position:center;color:blue;height:300px">
         <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{ $lastavailable->title }}</span></h1></u>
             <span>At Ksh {{ $lastavailable->budget }}&nbsp;</span>
     </div> 
