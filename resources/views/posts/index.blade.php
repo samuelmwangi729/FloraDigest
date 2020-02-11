@@ -96,9 +96,9 @@
         </div>
         @else
         @foreach ($posts as  $post)
-        <li>
-            <a href="{{ route('posts.single',['slug'=>$post->slug]) }}"><img src="{{ asset($post->image) }}" width="50px" height="50px" align="left" style="border-radius:50px">{{$postsingle->title }}</a> 
-            <br>&nbsp;&nbsp;<span class="fa fa-tags"></span>{{ $post->title }}
+        <li class="well well-sm text-bold">
+            {{$postsingle->title }}
+            {{-- <br>&nbsp;&nbsp;<span class="fa fa-tags"></span>{{ $post->title }} --}}
         </li>
         @endforeach
         @endif
