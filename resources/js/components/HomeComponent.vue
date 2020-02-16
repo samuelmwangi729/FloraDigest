@@ -17,7 +17,7 @@
                         <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Research</h1></u><br><br><br>
                         <span class="text-center" style="font-size:15px;font-weight:bold">The first one of its kind. Purchase our research proposals and get all what you needed. <br>Its always under a single place</span>
                         <span class="text-center" style="font-size:15px;font-weight:bold" >With our advanced tools,experts and also researchers, we bet you will like us</span><br><br>
-                        <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Purchase membership</button></span>
+                        <span class="text-center"> <a href="/academia" class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Purchase membership</a></span>
                         <br><br><br><br><br><br><br><br>
                     </div>
                 <!-- writer carousel -->
@@ -25,7 +25,7 @@
                         <u><h1 class="text-center" style="font-size:30px;"><span style="color:#ff4900">Flora|Digest</span>&nbsp;Writers</h1></u><br><br><br>
                         <span class="text-center" style="font-size:15px;font-weight:bold">If your are looking for writing services anywhere within the globe. <br>Then, you can count on Us</span>
                         <span class="text-center" style="font-size:15px;font-weight:bold" >With our clients retention rates,its evident we provide high quality assignments</span><br><br>
-                        <span class="text-center"> <button class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</button></span>
+                        <span class="text-center"> <a href="/Proposal/Order" class="btn btn-primary" style="border-radius:15px;font-size:15px;background-color:#ff4900 !important;font-weight:bold"><i class="fa fa-info"></i>&nbsp;&nbsp;Order Service</a></span>
                         <br><br><br><br><br><br><br><br>
                     </div>
                     <div class="item">

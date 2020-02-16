@@ -38402,7 +38402,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("span", { staticClass: "text-center" }, [
                   _c(
-                    "button",
+                    "a",
                     {
                       staticClass: "btn btn-primary",
                       staticStyle: {
@@ -38410,7 +38410,8 @@ var staticRenderFns = [
                         "font-size": "15px",
                         "background-color": "#ff4900 !important",
                         "font-weight": "bold"
-                      }
+                      },
+                      attrs: { href: "/academia" }
                     },
                     [
                       _c("i", { staticClass: "fa fa-credit-card" }),
@@ -38481,7 +38482,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("span", { staticClass: "text-center" }, [
                   _c(
-                    "button",
+                    "a",
                     {
                       staticClass: "btn btn-primary",
                       staticStyle: {
@@ -38489,7 +38490,8 @@ var staticRenderFns = [
                         "font-size": "15px",
                         "background-color": "#ff4900 !important",
                         "font-weight": "bold"
-                      }
+                      },
+                      attrs: { href: "/Proposal/Order" }
                     },
                     [
                       _c("i", { staticClass: "fa fa-info" }),

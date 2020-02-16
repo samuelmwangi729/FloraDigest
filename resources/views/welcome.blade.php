@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -138,7 +138,7 @@
     </a>
   </div>
 </div>
-  
+   --}}
       <div class="row">
         <div id="app">
                 <home-component></home-component>

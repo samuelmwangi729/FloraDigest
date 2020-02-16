@@ -6,7 +6,6 @@
 <link rel="icon" href="{{asset('img/logo/11.png')}}">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     @include('layouts.css')
-    @yield('css')
     {{-- <script src="https://www.paypal.com/sdk/js?client-id=AaIvaL5r4z3H7PBCkDNDv5T339vzrV-eGYMdXyJ2xn9J7Bhot8yFYcUKQWOHYJz40sjEBFXAT5SShrXk"></script> --}}
     <!--Start of Tawk.to Script-->
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e360f7b90e82b00128d0a15&cms=sop' async='async'></script>

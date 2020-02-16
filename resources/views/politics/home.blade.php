@@ -9,7 +9,7 @@
         @else
         @foreach($politics as $politic)
         <div class="item" style="background-image:url({{ asset($politic->image) }});background-size:cover;color:blue;background-position:center;height:500px">
-            <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{  App\Models\PoliticsTags::find($politic->tag_id)->get()->first()->name}}</span></h1></u><br><br><br>
+            {{-- <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{  App\Models\PoliticsTags::find($politic->tag_id)->get()->first()->name}}</span></h1></u><br><br><br> --}}
                 {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
                         {{ $first_post['title'] }}
                 </h3> --}}
@@ -25,7 +25,7 @@
         
  </div>
  <div class="col-lg-3">
-     <h6 class="h1" style="font-family:courier;text-decoration:underline;background-color:green;color:white"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;Categories</h6>
+     {{-- <h6 class="h1" style="font-family:courier;text-decoration:underline;background-color:green;color:white"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;Categories</h6> --}}
      <ul class="list-group">
          @if(count(App\Models\PoliticsTags::all())==0)
          <div class="alert alert-danger">
