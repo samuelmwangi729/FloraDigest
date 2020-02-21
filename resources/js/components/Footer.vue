@@ -41,7 +41,7 @@
             
             <hr>
             <div class="row text-center">
-                &copy; 2019 <span style="color:red">Flora|</span>Digest All rights reserved<br>
+                &copy; 2020 <span style="color:red">Flora|</span>Digest All rights reserved<br>
                 made with <i class="fa fa-heart" style="color:red" aria-hidden="true"></i> by <a href="#" target="_blank">Samuel Mwangi</a>
             </div>
         </div>

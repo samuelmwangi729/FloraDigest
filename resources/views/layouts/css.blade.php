@@ -1,4 +1,5 @@
-    <!-- Bootstrap 3.3.7 -->
+<link rel="stylesheet" href="{{ asset('css/creative.min.css') }}">
+<!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
     <!-- Font Awesome -->
@@ -21,4 +22,5 @@
     <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }}">
+    
     <link rel="stylesheet" href="{{ asset('css/table.css') }}">
