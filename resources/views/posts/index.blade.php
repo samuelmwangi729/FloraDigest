@@ -97,7 +97,7 @@
         @else
         @foreach ($posts as  $post)
         <li class="text-bold">
-            <a href="{{ route('posts.single',['slug'=>$post->slug]) }}">{{$postsingle->title }}</a> 
+            <a href="{{ route('posts.single',['slug'=>$post->slug]) }}">{{$post->title }}</a> 
         </li>
         <hr>
         @endforeach
