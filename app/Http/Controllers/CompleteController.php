@@ -26,8 +26,8 @@ class CompleteController extends Controller
         //dd($cartTotal+$order->shipmentAmount);
         $apiContext = new \PayPal\Rest\ApiContext(
             new \PayPal\Auth\OAuthTokenCredential(
-                'AZFfuQ2-w87R9_KL_as5JgnqUCiFOAYTlufGoiae8lFP7W2pnmxgY2ApvGVoooK4k4fTQKR-EocTxV3E',     // ClientID
-                'EKBf7MRhpzTb2uhy9O-G1gEFijeVE02_Dl_bvEYOHf34DW9eAICyIilBG4inUJk_JJaqPLjhGYocrx7i'      // ClientSecret
+                'AZrPLhOhyD-FI8CPcbkv2A3wOa1YxzB0WVvGyRV6mb0VUcItjSRIj9hAQIv6q6idm65tecCbnglqAu1p',     // ClientID
+                'EB1GzaGl1jDB2ueAAcHkZPMaZ0dCI8gZss8zLdTevLbIllqrJHyf0q-qW5n-bbw0P23JePfs0mNxyVo8'      // ClientSecret
             )
         );
 
