@@ -8,7 +8,7 @@
         </div>
         @else
         @foreach($politics as $politic)
-        <div class="item" style="background-image:url({{ asset($politic->image) }});background-size:cover;color:blue;background-position:center;height:500px">
+        <div class="item" style="background-image:url({{ asset($politic->image) }});background-size:cover;color:blue;">
             {{-- <u><h1 class="text-left" style="font-size:30px;"><span style="background-color:greenyellow"><i class="fa fa-thumb-tack" aria-hidden="true" style="color:red"></i>&nbsp;{{  App\Models\PoliticsTags::find($politic->tag_id)->get()->first()->name}}</span></h1></u><br><br><br> --}}
                 {{-- <h3 class="text-center" style="font-size:15px;font-weight:bold;background-color:black;line-height:50px;opacity:.6">
                         {{ $first_post['title'] }}

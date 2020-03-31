@@ -357,6 +357,14 @@ Route::get('/Cart/Remove/{slug}',[
     'uses'=>'CartController@remove',
     'as'=>'cart.remove'
 ]);
+Route::get('/profile',[
+    'uses'=>'AccountController@index',
+    'as'=>'profile.view'
+]);
+Route::post('/password',[
+    'uses'=>'AccountController@update',
+    'as'=>'password.change'
+]);
 Route::get('/Completed/Assignment',[
     'uses'=>'CompletedController@index',
     'as'=>'assignments.completed'

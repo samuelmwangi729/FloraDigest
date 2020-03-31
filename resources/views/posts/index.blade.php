@@ -19,7 +19,7 @@
             <div class="carousel-inner">
               <div class="item active">
                 @foreach ($first_post as $postsingle)
-                <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;background-position:center;height:300px;">
+                <div class="item" style="background-image:url({{ $postsingle->image }});background-size:cover;color:blue;">
                        
                             
     </span></h1></u><br><br><br>
